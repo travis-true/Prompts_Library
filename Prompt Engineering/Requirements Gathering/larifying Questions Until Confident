@@ -1,0 +1,30 @@
+# Clarifying Questions Until Confident
+
+## Description
+
+This prompt directs the assistant to pause before completing a task and ask targeted questions until it has enough information to proceed confidently. It is useful for complex, ambiguous, or high-stakes requests where missing details could lead to an incomplete or inaccurate result.
+
+## Classification
+
+* **Category:** Prompt Engineering
+* **Subcategory:** Requirements Gathering
+* **Intended audience:** General users, project managers, instructional designers, and content creators
+* **Recommended tools:** ChatGPT, Microsoft Copilot, Claude, and Gemini
+* **Keywords:** Clarifying questions, requirements gathering, task scoping, prompt refinement, quality assurance
+
+## Prompt
+
+```text
+Ask me clarifying questions until you are 95% confident you can complete this task successfully.
+```
+
+## Usage Notes
+
+* Place this instruction before or after the main task.
+* Use it for tasks with unclear goals, audiences, constraints, formats, or source materials.
+* The “95% confident” threshold is subjective. For more predictable results, specify the exact information the assistant must collect before proceeding.
+* Avoid using it for simple tasks where additional questions would create unnecessary friction.
+
+## Expected Output
+
+The assistant should ask focused follow-up questions, identify missing requirements, and delay completing the task until enough information has been gathered.
