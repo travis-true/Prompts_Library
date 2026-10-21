@@ -1,0 +1,710 @@
+{
+  "schema_version": "1.1",
+  "artifact_version": "1.1.0",
+  "document": "workplace-communication-workshop.md",
+  "release_state": "Draft complete; review required",
+  "total_minutes": 90,
+  "break_minutes": 5,
+  "administration_minutes": 0,
+  "instructional_minutes": 85,
+  "higher_risk": false,
+  "software_training": false,
+  "agenda": [
+    {
+      "id": "M-01",
+      "start_minute": 0,
+      "minutes": 8,
+      "kind": "instruction",
+      "substeps": [
+        {
+          "cue": "Say purpose",
+          "minutes": 2
+        },
+        {
+          "cue": "Show messages",
+          "minutes": 2
+        },
+        {
+          "cue": "Ask comparison",
+          "minutes": 3
+        },
+        {
+          "cue": "Do orient to criteria",
+          "minutes": 1
+        }
+      ]
+    },
+    {
+      "id": "M-02",
+      "start_minute": 8,
+      "minutes": 12,
+      "kind": "instruction",
+      "substeps": [
+        {
+          "cue": "Show scan",
+          "minutes": 3
+        },
+        {
+          "cue": "Do mark issues",
+          "minutes": 5
+        },
+        {
+          "cue": "Ask explain one",
+          "minutes": 2
+        },
+        {
+          "cue": "Observe/feedback",
+          "minutes": 2
+        }
+      ]
+    },
+    {
+      "id": "M-03",
+      "start_minute": 20,
+      "minutes": 15,
+      "kind": "instruction",
+      "substeps": [
+        {
+          "cue": "Show facts",
+          "minutes": 2
+        },
+        {
+          "cue": "Say think-aloud",
+          "minutes": 6
+        },
+        {
+          "cue": "Ask predictions",
+          "minutes": 3
+        },
+        {
+          "cue": "Show failure/recovery",
+          "minutes": 2
+        },
+        {
+          "cue": "Do check criteria",
+          "minutes": 2
+        }
+      ]
+    },
+    {
+      "id": "M-04",
+      "start_minute": 35,
+      "minutes": 15,
+      "kind": "instruction",
+      "substeps": [
+        {
+          "cue": "Say facts/instructions",
+          "minutes": 2
+        },
+        {
+          "cue": "Do rewrite",
+          "minutes": 8
+        },
+        {
+          "cue": "Do criteria check",
+          "minutes": 3
+        },
+        {
+          "cue": "Ask/feedback",
+          "minutes": 2
+        }
+      ]
+    },
+    {
+      "id": "M-05",
+      "start_minute": 50,
+      "minutes": 8,
+      "kind": "instruction",
+      "substeps": [
+        {
+          "cue": "Show key",
+          "minutes": 2
+        },
+        {
+          "cue": "Do peer/self-check",
+          "minutes": 4
+        },
+        {
+          "cue": "Ask revision rationale",
+          "minutes": 2
+        }
+      ]
+    },
+    {
+      "id": "B-01",
+      "start_minute": 58,
+      "minutes": 5,
+      "kind": "break",
+      "substeps": [
+        {
+          "cue": "Stretch pause",
+          "minutes": 5
+        }
+      ]
+    },
+    {
+      "id": "M-06",
+      "start_minute": 63,
+      "minutes": 17,
+      "kind": "instruction",
+      "substeps": [
+        {
+          "cue": "Say task/conditions",
+          "minutes": 1
+        },
+        {
+          "cue": "Do rewrite",
+          "minutes": 9
+        },
+        {
+          "cue": "Do self-rate",
+          "minutes": 4
+        },
+        {
+          "cue": "Do explain",
+          "minutes": 1
+        },
+        {
+          "cue": "Observe/feedback",
+          "minutes": 2
+        }
+      ]
+    },
+    {
+      "id": "M-07",
+      "start_minute": 80,
+      "minutes": 10,
+      "kind": "instruction",
+      "substeps": [
+        {
+          "cue": "Ask debrief",
+          "minutes": 4
+        },
+        {
+          "cue": "Do application plan",
+          "minutes": 3
+        },
+        {
+          "cue": "Say support/follow-up",
+          "minutes": 2
+        },
+        {
+          "cue": "Close",
+          "minutes": 1
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S-01",
+      "kind": "fictional",
+      "locator": "Intake summary",
+      "local_path": "workplace-communication-workshop.md",
+      "quote": "Fictional course request"
+    },
+    {
+      "id": "S-02",
+      "kind": "fictional",
+      "locator": "Fictional scenario facts, final conditions and equivalent retry",
+      "local_path": "workplace-communication-workshop.md",
+      "quote": "Fictional scenario facts (S-02, guided task)"
+    },
+    {
+      "id": "S-03",
+      "kind": "recommendation",
+      "locator": "Five success criteria",
+      "local_path": "workplace-communication-workshop.md",
+      "quote": "The purpose appears early."
+    }
+  ],
+  "practices": [
+    {
+      "id": "P-01",
+      "source_id": "S-02",
+      "prompt_quote": "Identify one phrase that creates uncertainty",
+      "facts": {
+        "message": "Can everyone take a look and let me know what you think?"
+      },
+      "required_facts": [
+        "message"
+      ]
+    },
+    {
+      "id": "P-02",
+      "source_id": "S-02",
+      "prompt_quote": "Put the purpose in the first sentence.",
+      "facts": {
+        "deadline": "noon Thursday",
+        "channel": "Test Issues shared list",
+        "owner": "Morgan Chen",
+        "required_details": "affected task, observed result, expected result and impact"
+      },
+      "required_facts": [
+        "deadline",
+        "channel",
+        "owner",
+        "required_details"
+      ]
+    },
+    {
+      "id": "P-03",
+      "source_id": "S-02",
+      "prompt_quote": "Revise this message independently:",
+      "facts": {
+        "deadline": "2 p.m. Tuesday",
+        "owner": "Jordan Lee",
+        "channel": "shared list",
+        "fields": "work location and equipment needs"
+      },
+      "required_facts": [
+        "deadline",
+        "owner",
+        "channel",
+        "fields"
+      ]
+    }
+  ],
+  "assessments": [
+    {
+      "id": "A-01",
+      "practice_id": "P-01",
+      "source_id": "S-02",
+      "criteria": [
+        {
+          "id": "D1",
+          "critical": true,
+          "points": 1,
+          "evidence": "Name at least three supported issues"
+        },
+        {
+          "id": "D2",
+          "critical": true,
+          "points": 1,
+          "evidence": "Explain one issue"
+        }
+      ],
+      "threshold": 2,
+      "critical_rule": "all",
+      "invented_requirements_fail": true,
+      "key_quote": "at least three supported issues are named and one is explained",
+      "feedback_quote": "targeted feedback on the missing criterion",
+      "retry_quote": "Equivalent retry",
+      "score_examples": []
+    },
+    {
+      "id": "A-02",
+      "practice_id": "P-02",
+      "source_id": "S-02",
+      "criteria": [
+        {
+          "id": "G1",
+          "critical": true,
+          "points": 1,
+          "evidence": "Purpose"
+        },
+        {
+          "id": "G2",
+          "critical": true,
+          "points": 1,
+          "evidence": "Useful context"
+        },
+        {
+          "id": "G3",
+          "critical": true,
+          "points": 1,
+          "evidence": "Specific action"
+        }
+      ],
+      "threshold": 3,
+      "critical_rule": "all",
+      "invented_requirements_fail": true,
+      "key_quote": "For this supported task, require purpose, useful context and specific action",
+      "feedback_quote": "targeted feedback on the missing criterion",
+      "retry_quote": "Equivalent retry",
+      "score_examples": []
+    },
+    {
+      "id": "A-03",
+      "practice_id": "P-03",
+      "source_id": "S-02",
+      "criteria": [
+        {
+          "id": "C1",
+          "critical": true,
+          "points": 1,
+          "evidence": "Early purpose"
+        },
+        {
+          "id": "C2",
+          "critical": false,
+          "points": 1,
+          "evidence": "Useful context"
+        },
+        {
+          "id": "C3",
+          "critical": true,
+          "points": 1,
+          "evidence": "Verify the named fields and identify corrections"
+        },
+        {
+          "id": "C4",
+          "critical": true,
+          "points": 1,
+          "evidence": "Jordan consolidates corrections"
+        },
+        {
+          "id": "C5",
+          "critical": true,
+          "points": 1,
+          "evidence": "2 p.m. Tuesday"
+        }
+      ],
+      "threshold": 4,
+      "critical_rule": "all",
+      "invented_requirements_fail": true,
+      "key_quote": "all critical criteria AND at least 4/5 points",
+      "feedback_quote": "targeted feedback on the missing criterion",
+      "retry_quote": "Equivalent retry",
+      "score_examples": [
+        {
+          "scores": {
+            "C1": 1,
+            "C2": 0,
+            "C3": 1,
+            "C4": 1,
+            "C5": 1
+          },
+          "expected_pass": true
+        },
+        {
+          "scores": {
+            "C1": 1,
+            "C2": 1,
+            "C3": 1,
+            "C4": 1,
+            "C5": 0
+          },
+          "expected_pass": false
+        },
+        {
+          "scores": {
+            "C1": 1,
+            "C2": 1,
+            "C3": 1,
+            "C4": 1,
+            "C5": 1
+          },
+          "invented_requirements": true,
+          "expected_pass": false
+        }
+      ]
+    },
+    {
+      "id": "A-04",
+      "practice_id": "P-03",
+      "source_id": "S-02",
+      "criteria": [
+        {
+          "id": "E1",
+          "critical": true,
+          "points": 1,
+          "evidence": "Accurate criterion self-ratings"
+        },
+        {
+          "id": "E2",
+          "critical": true,
+          "points": 1,
+          "evidence": "Grounded explanation of one revision"
+        }
+      ],
+      "threshold": 2,
+      "critical_rule": "all",
+      "invented_requirements_fail": true,
+      "key_quote": "both are critical and 2/2 is required",
+      "feedback_quote": "targeted feedback on the missing criterion",
+      "retry_quote": "Equivalent retry",
+      "score_examples": []
+    }
+  ],
+  "objectives": [
+    {
+      "id": "O-01",
+      "text": "Identify unclear purpose, missing context, vague action, and absent timing in a workplace message.",
+      "instruction_modules": [
+        "M-02"
+      ],
+      "practice_ids": [
+        "P-01"
+      ],
+      "assessment_ids": [
+        "A-01"
+      ]
+    },
+    {
+      "id": "O-02",
+      "text": "Revise a workplace message using a purpose-context-action structure.",
+      "instruction_modules": [
+        "M-03"
+      ],
+      "practice_ids": [
+        "P-02",
+        "P-03"
+      ],
+      "assessment_ids": [
+        "A-02",
+        "A-03"
+      ]
+    },
+    {
+      "id": "O-03",
+      "text": "Evaluate a revised message against five success criteria and explain one improvement.",
+      "instruction_modules": [
+        "M-05"
+      ],
+      "practice_ids": [
+        "P-03"
+      ],
+      "assessment_ids": [
+        "A-04"
+      ]
+    }
+  ],
+  "traceability": [
+    {
+      "element": "Audience and duration",
+      "source_ids": [
+        "S-01"
+      ],
+      "treatment": "Preserved"
+    },
+    {
+      "element": "Practice scenario requirements",
+      "source_ids": [
+        "S-02"
+      ],
+      "treatment": "Added"
+    },
+    {
+      "element": "Message structure and scoring recommendations",
+      "source_ids": [
+        "S-03"
+      ],
+      "treatment": "Added"
+    }
+  ],
+  "open_items": [
+    {
+      "id": "OPEN-01",
+      "owner": "Delivery owner, unassigned",
+      "disposition": "Confirm delivery mode, enrollment, response tool, captions and support contact",
+      "blocks_delivery": true,
+      "resolved": false
+    },
+    {
+      "id": "OPEN-02",
+      "owner": "Accessibility reviewer, unassigned",
+      "disposition": "Inspect actual rendered materials and selected tools",
+      "blocks_delivery": true,
+      "resolved": false
+    },
+    {
+      "id": "OPEN-03",
+      "owner": "Facilitator, unassigned",
+      "disposition": "Perform timed walkthrough and delivery checks",
+      "blocks_delivery": true,
+      "resolved": false
+    },
+    {
+      "id": "OPEN-04",
+      "owner": "Sponsor, unassigned",
+      "disposition": "Confirm completion and follow-up arrangements",
+      "blocks_delivery": true,
+      "resolved": false
+    }
+  ],
+  "quality_checks": [
+    {
+      "id": "alignment",
+      "applicable": true,
+      "rationale": "",
+      "status": "Pass",
+      "method": "Document inspection",
+      "reviewer": "Package editor (document review only)",
+      "date": "2026-10-21",
+      "artifact_version": "1.1.0",
+      "evidence": [
+        {
+          "path": "workplace-communication-workshop.md",
+          "quote": "| Identify message problems |",
+          "result": "Located and reviewed the stated written-design evidence; no external execution claimed."
+        }
+      ]
+    },
+    {
+      "id": "timing",
+      "applicable": true,
+      "rationale": "",
+      "status": "Pass",
+      "method": "Document inspection",
+      "reviewer": "Package editor (document review only)",
+      "date": "2026-10-21",
+      "artifact_version": "1.1.0",
+      "evidence": [
+        {
+          "path": "workplace-communication-workshop.md",
+          "quote": "**Available instructional time:** 85 minutes",
+          "result": "Located and reviewed the stated written-design evidence; no external execution claimed."
+        }
+      ]
+    },
+    {
+      "id": "sources",
+      "applicable": true,
+      "rationale": "",
+      "status": "Pass",
+      "method": "Document inspection",
+      "reviewer": "Package editor (document review only)",
+      "date": "2026-10-21",
+      "artifact_version": "1.1.0",
+      "evidence": [
+        {
+          "path": "workplace-communication-workshop.md",
+          "quote": "S-03: Proposed plain-language method",
+          "result": "Located and reviewed the stated written-design evidence; no external execution claimed."
+        }
+      ]
+    },
+    {
+      "id": "assessment",
+      "applicable": true,
+      "rationale": "",
+      "status": "Pass",
+      "method": "Document inspection",
+      "reviewer": "Package editor (document review only)",
+      "date": "2026-10-21",
+      "artifact_version": "1.1.0",
+      "evidence": [
+        {
+          "path": "workplace-communication-workshop.md",
+          "quote": "any invented requirement overrides the score and fails the task",
+          "result": "Located and reviewed the stated written-design evidence; no external execution claimed."
+        }
+      ]
+    },
+    {
+      "id": "accessibility-design",
+      "applicable": true,
+      "rationale": "",
+      "status": "Pass",
+      "method": "Document inspection",
+      "reviewer": "Package editor (document review only)",
+      "date": "2026-10-21",
+      "artifact_version": "1.1.0",
+      "evidence": [
+        {
+          "path": "workplace-communication-workshop.md",
+          "quote": "learners complete a self-review using the same criteria.",
+          "result": "Located and reviewed the stated written-design evidence; no external execution claimed."
+        }
+      ]
+    },
+    {
+      "id": "accessibility-rendered",
+      "applicable": true,
+      "rationale": "",
+      "status": "Not checked",
+      "method": null,
+      "reviewer": null,
+      "date": null,
+      "artifact_version": "1.1.0",
+      "evidence": []
+    },
+    {
+      "id": "facilitator",
+      "applicable": true,
+      "rationale": "",
+      "status": "Pass",
+      "method": "Document inspection",
+      "reviewer": "Package editor (document review only)",
+      "date": "2026-10-21",
+      "artifact_version": "1.1.0",
+      "evidence": [
+        {
+          "path": "workplace-communication-workshop.md",
+          "quote": "## Timed facilitator cues",
+          "result": "Located and reviewed the stated written-design evidence; no external execution claimed."
+        }
+      ]
+    },
+    {
+      "id": "open-items",
+      "applicable": true,
+      "rationale": "",
+      "status": "Pass",
+      "method": "Document inspection",
+      "reviewer": "Package editor (document review only)",
+      "date": "2026-10-21",
+      "artifact_version": "1.1.0",
+      "evidence": [
+        {
+          "path": "workplace-communication-workshop.md",
+          "quote": "| OPEN-01 |",
+          "result": "Located and reviewed the stated written-design evidence; no external execution claimed."
+        }
+      ]
+    },
+    {
+      "id": "delivery",
+      "applicable": true,
+      "rationale": "",
+      "status": "Not checked",
+      "method": null,
+      "reviewer": null,
+      "date": null,
+      "artifact_version": "1.1.0",
+      "evidence": []
+    },
+    {
+      "id": "qualified-review",
+      "applicable": false,
+      "rationale": "No higher-risk procedure is taught.",
+      "status": null,
+      "method": null,
+      "reviewer": null,
+      "date": null,
+      "artifact_version": "1.1.0",
+      "evidence": []
+    },
+    {
+      "id": "software",
+      "applicable": false,
+      "rationale": "No specific product feature is taught; delivery-tool checks remain applicable.",
+      "status": null,
+      "method": null,
+      "reviewer": null,
+      "date": null,
+      "artifact_version": "1.1.0",
+      "evidence": []
+    }
+  ],
+  "supporting_documents": [
+    {
+      "path": "workplace-communication-learner-practice.md",
+      "required_quotes": [
+        "**Version:** 1.1.0",
+        "noon Thursday",
+        "Test Issues shared list",
+        "Morgan Chen",
+        "2 p.m. Tuesday",
+        "Jordan Lee",
+        "at least 4/5 AND meet C1 purpose",
+        "2/2"
+      ],
+      "forbidden_quotes": [
+        "Model answer:",
+        "**Model answer:**"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Live Training Session Design"
+  short_description: "Build live sessions with validated practice and release checks"
+  default_prompt: "Use $live-training-session-design to build a facilitator-ready workplace session with aligned practice and evidence-based release checks."

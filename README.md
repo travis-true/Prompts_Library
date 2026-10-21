@@ -25,6 +25,8 @@ Prompts are portable text intended for ChatGPT, Microsoft Copilot, Gemini, Claud
 
 The original 13 skill guides were reconstructed from source pages; 22 additional personal skills include their installed instruction files and supporting resources. Two imported skills include optional Python utilities. Read [using skills](docs/using-skills.md) before enabling one. They supply no missing tools and have not been runtime-tested or installed during this migration.
 
+The upgraded [Live Training Session Design](skills/live-training-session-design/SKILL.md) includes reusable course templates, a corrected 90-minute example with a separate learner handout, critical assessment criteria, and a Python validator. See [upgrade and verification details](docs/live-training-session-design-upgrade.md).
+
 ## Browse and maintain
 
 - [Full searchable catalog](CATALOG.md) and [machine-readable catalog](catalog.json)
@@ -111,7 +113,7 @@ Browse every entry below, or open a collection README for its focused list.
 | [Excel Data Analysis & Workbook Builder](skills/excel-data-analysis-workbook-builder/SKILL.md) | Clean and analyze Excel data, build or improve workbooks, and verify the result through the path the task requires. |
 | [Minimum Effective Training Package](skills/minimum-effective-training-package/SKILL.md) | Select and plan the smallest coordinated set of resources needed to support a workplace behavior. |
 | [Performance Diagnosis & Solution Selection](skills/performance-diagnosis-solution-selection/SKILL.md) | Diagnose a workplace performance gap and select a proportionate response supported by evidence. |
-| [Live Training Session Design](skills/live-training-session-design/SKILL.md) | Turn a confirmed learning need into a timed, accessible session with practice, evaluation, and reinforcement. |
+| [Live Training Session Design](skills/live-training-session-design/SKILL.md) | Build facilitator-ready workplace sessions with aligned practice, assessment keys, reusable templates, automated validation, and evidence-based release checks. |
 | [Market Signal Mining](skills/market-signal-mining/SKILL.md) | Turn evidence of buyer friction and spending into a scoped offer hypothesis and validation plan. |
 | [Layered Image Prompts](skills/layered-image-prompts/SKILL.md) | Build or revise image-generation prompts with clear subject, composition, lighting, detail, style, and exclusions. |
 | [Skill Creator](skills/skill-creator/SKILL.md) | Design, evaluate, and refine a reusable skill with clear triggers, workflow, outputs, and quality checks. |
