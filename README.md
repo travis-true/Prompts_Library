@@ -5,7 +5,7 @@ Practical workplace prompts, skills, workflows, and training resources by Travis
 | Collection | Resources | Use it for |
 | --- | ---: | --- |
 | [Prompts](prompts/README.md) | 58 | A focused task with a copy-ready prompt, input guide, example, and checks |
-| [Skills](skills/README.md) | 34 | Reusable processes in readable `SKILL.md` folders |
+| [Skills](skills/README.md) | 35 | Reusable processes in readable `SKILL.md` folders |
 | [Workflows](workflows/README.md) | 7 | A sequence from intake through review and follow-through |
 | [Training resources](resources/README.md) | 7 | Adaptable checklists, worksheets, blueprints, and prompt packs |
 | [Planned resources](planned/README.md) | 7 ideas | Descriptions awaiting complete instructions |
@@ -19,7 +19,7 @@ Practical workplace prompts, skills, workflows, and training resources by Travis
 
 Prompts are portable text intended for ChatGPT, Microsoft Copilot, Gemini, Claude, and DeepSeek. Tool tags describe intended use, not runtime testing in every product. Paste authorized source text if file access is unavailable. Examples are illustrative, not verified product results.
 
-The original 13 skill guides were reconstructed from source pages; 21 additional personal skills include their installed instruction files and supporting resources. Two imported skills include optional Python utilities. Read [using skills](docs/using-skills.md) before enabling one. They supply no missing tools and have not been runtime-tested or installed during this migration.
+The original 13 skill guides were reconstructed from source pages; 22 additional personal skills include their installed instruction files and supporting resources. Two imported skills include optional Python utilities. Read [using skills](docs/using-skills.md) before enabling one. They supply no missing tools and have not been runtime-tested or installed during this migration.
 
 ## Browse and maintain
 
@@ -135,6 +135,7 @@ Browse every entry below, or open a collection README for its focused list.
 | [Grill With Docs](skills/grill-with-docs/SKILL.md) | Challenge a plan through focused questions while recording architecture decisions and a shared glossary. |
 | [Wiifm Statement Writer](skills/wiifm-statement-writer/SKILL.md) | Write learner-benefit statements that explain why a training session matters to its audience. |
 | [Social Media Asset Sizing](skills/social-media-asset-sizing/SKILL.md) | Choose social-media dimensions, adapt compositions, and check exports for the intended placement. |
+| [Reference Video to Production Brief](skills/reference-video-to-production-brief/SKILL.md) | Turn reference videos into shot breakdowns, generation prompts, continuity plans, and targeted revisions. |
 
 ### Workflows
 

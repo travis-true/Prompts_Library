@@ -1,0 +1,14 @@
+interface:
+  display_name: Reference Video to Production Brief
+  short_description: Analyze video references and plan reproducible shots
+  default_prompt: Use $reference-video-to-production-brief to analyze my reference
+    video and create a shot-by-shot production plan.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

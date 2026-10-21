@@ -110,6 +110,7 @@
 | skills | [Wiifm Statement Writer](skills/wiifm-statement-writer/SKILL.md) | Write learner-benefit statements that explain why a training session matters to its audience. |
 | skills | [Social Media Asset Sizing](skills/social-media-asset-sizing/SKILL.md) | Choose social-media dimensions, adapt compositions, and check exports for the intended placement. |
 | prompts | [Improve a prompt for rigor and verifiable results](prompts/improve-a-prompt-for-rigor-and-verifiable-results.md) | Strengthen a prompt with relevant evidence, suitable methods, and observable acceptance criteria. |
+| skills | [Reference Video to Production Brief](skills/reference-video-to-production-brief/SKILL.md) | Turn reference videos into shot breakdowns, generation prompts, continuity plans, and targeted revisions. |
 
 ## Planned ideas
 
