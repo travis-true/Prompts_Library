@@ -564,7 +564,7 @@
     "function": "Training design",
     "purpose": "Build facilitator-ready workplace sessions with aligned practice, assessment keys, reusable templates, automated validation, and evidence-based release checks.",
     "status": "Migrated",
-    "short_description": "Build facilitator-ready workplace sessions with aligned practice, assessment keys, reusable templates, automated validation, and evidence-based release checks.",
+    "short_description": "Build workplace sessions and live demos with grounded practice, state-aware recovery, fallback checks, validators, and evidence-based release gates.",
     "version": "1.1.0"
   },
   {

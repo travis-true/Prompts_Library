@@ -65,3 +65,7 @@ Verify before delivery:
 - Backup assets
 
 Unknown items must appear in the pre-delivery checklist and quality report.
+
+
+## State-aware live demo recovery
+Use [the demo workflow](demo/workflow.md) and [state/recovery rules](demo/10-state-recovery-and-equivalence.md) for scene design. Preserve starting/exit states and source versions; verify uncertain mutations before retry. Track backup status and equivalence separately from actual access testing. An unverified screenshot or prepared state cannot confirm a live assignment or omitted operation evidence.

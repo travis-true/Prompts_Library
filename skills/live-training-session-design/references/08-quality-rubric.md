@@ -30,3 +30,7 @@ For an outline, explicitly report which build/release checks are not yet applica
 - **Ready for delivery:** all applicable checks Pass with current evidence; no unresolved delivery-blocking item; actual delivery setup verified; required qualified review documented. Unperformed external checks prevent readiness. A validator exit code never grants this status.
 
 Use a separate approval record when actual approval is required: approver identity and role, date, artifact version, decision, scope, evidence location. Never infer approval from review or user preference. Do not claim approved, compliant, certified or legally sufficient without the corresponding authorized evidence. After changes, invalidate affected review evidence and retest.
+
+
+## Demo component boundary
+A demo has [thirteen scoped checks](../templates/demo/quality-report.md), separate from parent course readiness. Keep demo record, course record, actual verification and release authorization distinct. A structural demo PASS or a verified component does not establish readiness for the complete course. Preserve unresolved demo findings as parent integration dependencies.

@@ -54,3 +54,6 @@ Repository validation passed for all 105 active resources. Imported YAML, declar
 
 
 Training Engagement and Assessment Designer 1.1.0 is incorporated into [Build Assessments and Evaluations](../skills/build-assessments-and-evaluations/SKILL.md) as a specialized live-training workflow. No separate catalog skill is added; counts remain unchanged. See [upgrade details](assessment-engagement-upgrade.md).
+
+
+Live Demo Script Builder 1.1.0 is incorporated into [Live Training Session Design](../skills/live-training-session-design/SKILL.md), with a cross-link from the existing demonstration-script prompt. No separate catalog skill is added. See [demo integration details](live-demo-integration.md).

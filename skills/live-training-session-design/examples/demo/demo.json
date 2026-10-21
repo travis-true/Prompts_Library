@@ -1,0 +1,906 @@
+{
+  "schema_version": "1.1",
+  "artifact_version": "1.1.0",
+  "document": "examples/demo/fictional-productivity-app-demo.md",
+  "release_state": "Draft complete; review required",
+  "intended_use": "Fictional identification demonstration and coaching only; no proficiency decision",
+  "objective": {
+    "id": "O-01",
+    "text": "Identify the information required to turn an unclear request into an assignable task."
+  },
+  "sources": [
+    {
+      "id": "SRC-01",
+      "version": "1.1.0",
+      "path": "examples/demo/taskflow-spec.md",
+      "locator": "Fictional state and fact specification",
+      "kind": "fictional-specification"
+    }
+  ],
+  "states": [
+    "T0",
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "scenes": [
+    {
+      "id": "DS-001",
+      "objective_ids": [
+        "O-01"
+      ],
+      "title": "Diagnose request",
+      "entry_state": "T0",
+      "exit_state": "T0",
+      "action_ids": [
+        "A-01"
+      ],
+      "narration": "The original request hides decisions. We will use the supplied clarifications rather than invent them.",
+      "optional_enrichment": "Explain why preserving ambiguity in a new tool does not resolve it.",
+      "expert_commentary": "Use only verified environment-specific detail; otherwise omit.",
+      "checkpoint": {
+        "prompt": "Which missing field would you clarify first, and why?",
+        "response_mode": "Spoken, chat or paper; text prompt supplied",
+        "expected_evidence": "Name a missing field and rationale",
+        "facilitator_response": "Use the source fact sheet and facilitator guidance; correct omissions without awarding proficiency.",
+        "max_seconds": 20,
+        "fallback": "Text response or facilitator readback"
+      },
+      "expected_result": "Four missing fields identified",
+      "failure_signal": "Request absent",
+      "recovery_id": "R-01",
+      "observation": "Read meaningful fields and state aloud; provide text; validate visibility, focus, captions and access in actual environment before live use.",
+      "transition": "Pause at a known state boundary. Reconfirm entry state or disclose switching to the storyboard.",
+      "durations": {
+        "standard": 2,
+        "compressed": 1,
+        "expanded": 3
+      }
+    },
+    {
+      "id": "DS-002",
+      "objective_ids": [
+        "O-01"
+      ],
+      "title": "Create one draft",
+      "entry_state": "T0",
+      "exit_state": "T1",
+      "action_ids": [
+        "A-02"
+      ],
+      "narration": "Save one draft with a specific action title. A missing confirmation is an uncertain outcome.",
+      "optional_enrichment": "Explain why preserving ambiguity in a new tool does not resolve it.",
+      "expert_commentary": "Use only verified environment-specific detail; otherwise omit.",
+      "checkpoint": {
+        "prompt": "What makes the new action title more specific?",
+        "response_mode": "Spoken, chat or paper; text prompt supplied",
+        "expected_evidence": "Identify specific action wording",
+        "facilitator_response": "Use the source fact sheet and facilitator guidance; correct omissions without awarding proficiency.",
+        "max_seconds": 15,
+        "fallback": "Text response or facilitator readback"
+      },
+      "expected_result": "One unassigned titled draft",
+      "failure_signal": "Save uncertain",
+      "recovery_id": "R-02",
+      "observation": "Read meaningful fields and state aloud; provide text; validate visibility, focus, captions and access in actual environment before live use.",
+      "transition": "Pause at a known state boundary. Reconfirm entry state or disclose switching to the storyboard.",
+      "durations": {
+        "standard": 3,
+        "compressed": 1,
+        "expanded": 4
+      }
+    },
+    {
+      "id": "DS-003",
+      "objective_ids": [
+        "O-01"
+      ],
+      "title": "Populate details",
+      "entry_state": "T1",
+      "exit_state": "T2",
+      "action_ids": [
+        "A-03"
+      ],
+      "narration": "Populate the four fields from the fact sheet; editing an owner field is not assignment.",
+      "optional_enrichment": "Explain why preserving ambiguity in a new tool does not resolve it.",
+      "expert_commentary": "Use only verified environment-specific detail; otherwise omit.",
+      "checkpoint": {
+        "prompt": "Which supplied detail defines finished?",
+        "response_mode": "Spoken, chat or paper; text prompt supplied",
+        "expected_evidence": "Name definition of done",
+        "facilitator_response": "Use the source fact sheet and facilitator guidance; correct omissions without awarding proficiency.",
+        "max_seconds": 20,
+        "fallback": "Text response or facilitator readback"
+      },
+      "expected_result": "Same draft populated, still unassigned",
+      "failure_signal": "Details save uncertain",
+      "recovery_id": "R-03",
+      "observation": "Read meaningful fields and state aloud; provide text; validate visibility, focus, captions and access in actual environment before live use.",
+      "transition": "Pause at a known state boundary. Reconfirm entry state or disclose switching to the storyboard.",
+      "durations": {
+        "standard": 4,
+        "compressed": 2,
+        "expanded": 7
+      }
+    },
+    {
+      "id": "DS-004",
+      "objective_ids": [
+        "O-01"
+      ],
+      "title": "Verify and hand off",
+      "entry_state": "T2",
+      "exit_state": "T3",
+      "action_ids": [
+        "A-04"
+      ],
+      "narration": "Review all four fields, assign once only when authorized, and verify the same task status.",
+      "optional_enrichment": "Explain why preserving ambiguity in a new tool does not resolve it.",
+      "expert_commentary": "Use only verified environment-specific detail; otherwise omit.",
+      "checkpoint": {
+        "prompt": "Name the four fields to check before assignment.",
+        "response_mode": "Spoken, chat or paper; text prompt supplied",
+        "expected_evidence": "Action, owner, due date, definition of done",
+        "facilitator_response": "Use the source fact sheet and facilitator guidance; correct omissions without awarding proficiency.",
+        "max_seconds": 15,
+        "fallback": "Text response or facilitator readback"
+      },
+      "expected_result": "Same task assignment confirmed",
+      "failure_signal": "Assignment confirmation delayed",
+      "recovery_id": "R-04",
+      "observation": "Read meaningful fields and state aloud; provide text; validate visibility, focus, captions and access in actual environment before live use.",
+      "transition": "Pause at a known state boundary. Reconfirm entry state or disclose switching to the storyboard.",
+      "durations": {
+        "standard": 3,
+        "compressed": 1,
+        "expanded": 4
+      }
+    }
+  ],
+  "actions": [
+    {
+      "id": "A-01",
+      "source_id": "SRC-01",
+      "from_state": "T0",
+      "to_state": "T0",
+      "effect": "read-only",
+      "non_idempotent": false,
+      "success_signal": "Request text visible",
+      "verification_route": "Inspect the authoritative same-record state; conceptual until actual environment route is tested.",
+      "on_unknown": "Stop live input; inspect state; if unresolved within budget switch to prepared storyboard and disclose Unknown live outcome.",
+      "retry_policy": "No automatic retry; never repeat while outcome Unknown.",
+      "verify_before_retry": true,
+      "authorization": "Read approved fictional content",
+      "executed": false
+    },
+    {
+      "id": "A-02",
+      "source_id": "SRC-01",
+      "from_state": "T0",
+      "to_state": "T1",
+      "effect": "mutation",
+      "non_idempotent": true,
+      "success_signal": "Exactly one draft with expected title",
+      "verification_route": "Inspect the authoritative same-record state; conceptual until actual environment route is tested.",
+      "on_unknown": "Stop live input; inspect state; if unresolved within budget switch to prepared storyboard and disclose Unknown live outcome.",
+      "retry_policy": "No automatic retry; never repeat while outcome Unknown.",
+      "verify_before_retry": true,
+      "authorization": "Required before live mutation; not supplied",
+      "executed": false
+    },
+    {
+      "id": "A-03",
+      "source_id": "SRC-01",
+      "from_state": "T1",
+      "to_state": "T2",
+      "effect": "mutation",
+      "non_idempotent": true,
+      "success_signal": "Same draft details match source, unassigned",
+      "verification_route": "Inspect the authoritative same-record state; conceptual until actual environment route is tested.",
+      "on_unknown": "Stop live input; inspect state; if unresolved within budget switch to prepared storyboard and disclose Unknown live outcome.",
+      "retry_policy": "No automatic retry; never repeat while outcome Unknown.",
+      "verify_before_retry": true,
+      "authorization": "Required before live mutation; not supplied",
+      "executed": false
+    },
+    {
+      "id": "A-04",
+      "source_id": "SRC-01",
+      "from_state": "T2",
+      "to_state": "T3",
+      "effect": "mutation",
+      "non_idempotent": true,
+      "success_signal": "Same task Assigned status to Avery Morgan",
+      "verification_route": "Inspect the authoritative same-record state; conceptual until actual environment route is tested.",
+      "on_unknown": "Stop live input; inspect state; if unresolved within budget switch to prepared storyboard and disclose Unknown live outcome.",
+      "retry_policy": "No automatic retry; never repeat while outcome Unknown.",
+      "verify_before_retry": true,
+      "authorization": "Required before live mutation; not supplied",
+      "executed": false
+    }
+  ],
+  "paths": [
+    {
+      "id": "standard",
+      "total_minutes": 12,
+      "steps": [
+        {
+          "scene_id": "DS-001",
+          "minutes": 2,
+          "components_seconds": {
+            "checkpoint": 20,
+            "recovery_reserve": 10,
+            "transition": 5,
+            "narration_actions_loading": 85
+          },
+          "mode": "planned-live-or-disclosed-storyboard",
+          "entry_dependency": "T0",
+          "action": "Follow specified action and checkpoint; use bounded recovery if needed.",
+          "omissions": [],
+          "result_preserved": "Four-field identification only"
+        },
+        {
+          "scene_id": "DS-002",
+          "minutes": 3,
+          "components_seconds": {
+            "checkpoint": 15,
+            "recovery_reserve": 10,
+            "transition": 5,
+            "narration_actions_loading": 150
+          },
+          "mode": "planned-live-or-disclosed-storyboard",
+          "entry_dependency": "T0",
+          "action": "Follow specified action and checkpoint; use bounded recovery if needed.",
+          "omissions": [],
+          "result_preserved": "Four-field identification only"
+        },
+        {
+          "scene_id": "DS-003",
+          "minutes": 4,
+          "components_seconds": {
+            "checkpoint": 20,
+            "recovery_reserve": 10,
+            "transition": 5,
+            "narration_actions_loading": 205
+          },
+          "mode": "planned-live-or-disclosed-storyboard",
+          "entry_dependency": "T1",
+          "action": "Follow specified action and checkpoint; use bounded recovery if needed.",
+          "omissions": [],
+          "result_preserved": "Four-field identification only"
+        },
+        {
+          "scene_id": "DS-004",
+          "minutes": 3,
+          "components_seconds": {
+            "checkpoint": 15,
+            "recovery_reserve": 10,
+            "transition": 5,
+            "narration_actions_loading": 150
+          },
+          "mode": "planned-live-or-disclosed-storyboard",
+          "entry_dependency": "T2",
+          "action": "Follow specified action and checkpoint; use bounded recovery if needed.",
+          "omissions": [],
+          "result_preserved": "Four-field identification only"
+        }
+      ]
+    },
+    {
+      "id": "compressed",
+      "total_minutes": 5,
+      "steps": [
+        {
+          "scene_id": "DS-001",
+          "minutes": 1,
+          "components_seconds": {
+            "checkpoint": 0,
+            "recovery_reserve": 10,
+            "transition": 5,
+            "narration_actions_loading": 45
+          },
+          "mode": "prepared-text",
+          "entry_dependency": "SB-01",
+          "action": "Read and inspect prepared state; omit live operation and extended discussion.",
+          "omissions": [
+            "Actual UI operation evidence"
+          ],
+          "result_preserved": "Four-field identification only"
+        },
+        {
+          "scene_id": "DS-002",
+          "minutes": 1,
+          "components_seconds": {
+            "checkpoint": 0,
+            "recovery_reserve": 10,
+            "transition": 5,
+            "narration_actions_loading": 45
+          },
+          "mode": "prepared-text",
+          "entry_dependency": "SB-02",
+          "action": "Read and inspect prepared state; omit live operation and extended discussion.",
+          "omissions": [
+            "Actual UI operation evidence"
+          ],
+          "result_preserved": "Four-field identification only"
+        },
+        {
+          "scene_id": "DS-003",
+          "minutes": 2,
+          "components_seconds": {
+            "checkpoint": 0,
+            "recovery_reserve": 10,
+            "transition": 5,
+            "narration_actions_loading": 105
+          },
+          "mode": "prepared-text",
+          "entry_dependency": "SB-03",
+          "action": "Read and inspect prepared state; omit live operation and extended discussion.",
+          "omissions": [
+            "Actual UI operation evidence"
+          ],
+          "result_preserved": "Four-field identification only"
+        },
+        {
+          "scene_id": "DS-004",
+          "minutes": 1,
+          "components_seconds": {
+            "checkpoint": 15,
+            "recovery_reserve": 10,
+            "transition": 5,
+            "narration_actions_loading": 30
+          },
+          "mode": "prepared-text",
+          "entry_dependency": "SB-04",
+          "action": "Read and inspect prepared state; omit live operation and extended discussion.",
+          "omissions": [
+            "Actual UI operation evidence"
+          ],
+          "result_preserved": "Four-field identification only"
+        }
+      ]
+    },
+    {
+      "id": "expanded",
+      "total_minutes": 18,
+      "steps": [
+        {
+          "scene_id": "DS-001",
+          "minutes": 3,
+          "components_seconds": {
+            "checkpoint": 20,
+            "recovery_reserve": 10,
+            "transition": 5,
+            "narration_actions_loading": 145
+          },
+          "mode": "planned-live-or-disclosed-storyboard",
+          "entry_dependency": "T0",
+          "action": "Follow specified action and checkpoint; use bounded recovery if needed.",
+          "omissions": [],
+          "result_preserved": "Four-field identification only"
+        },
+        {
+          "scene_id": "DS-002",
+          "minutes": 4,
+          "components_seconds": {
+            "checkpoint": 15,
+            "recovery_reserve": 10,
+            "transition": 5,
+            "narration_actions_loading": 210
+          },
+          "mode": "planned-live-or-disclosed-storyboard",
+          "entry_dependency": "T0",
+          "action": "Follow specified action and checkpoint; use bounded recovery if needed.",
+          "omissions": [],
+          "result_preserved": "Four-field identification only"
+        },
+        {
+          "scene_id": "DS-003",
+          "minutes": 7,
+          "components_seconds": {
+            "checkpoint": 20,
+            "recovery_reserve": 10,
+            "transition": 5,
+            "narration_actions_loading": 385
+          },
+          "mode": "planned-live-or-disclosed-storyboard",
+          "entry_dependency": "T1",
+          "action": "Follow specified action and checkpoint; use bounded recovery if needed.",
+          "omissions": [],
+          "result_preserved": "Four-field identification only"
+        },
+        {
+          "scene_id": "DS-004",
+          "minutes": 4,
+          "components_seconds": {
+            "checkpoint": 15,
+            "recovery_reserve": 10,
+            "transition": 5,
+            "narration_actions_loading": 210
+          },
+          "mode": "planned-live-or-disclosed-storyboard",
+          "entry_dependency": "T2",
+          "action": "Follow specified action and checkpoint; use bounded recovery if needed.",
+          "omissions": [],
+          "result_preserved": "Four-field identification only"
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "SB-01",
+      "path": "examples/demo/storyboard.md",
+      "quote": "SB-01 / T",
+      "status": "Created",
+      "source_id": "SRC-01",
+      "artifact_version": "1.1.0",
+      "required": true,
+      "verification": null
+    },
+    {
+      "id": "SB-02",
+      "path": "examples/demo/storyboard.md",
+      "quote": "SB-02 / T",
+      "status": "Created",
+      "source_id": "SRC-01",
+      "artifact_version": "1.1.0",
+      "required": true,
+      "verification": null
+    },
+    {
+      "id": "SB-03",
+      "path": "examples/demo/storyboard.md",
+      "quote": "SB-03 / T",
+      "status": "Created",
+      "source_id": "SRC-01",
+      "artifact_version": "1.1.0",
+      "required": true,
+      "verification": null
+    },
+    {
+      "id": "SB-04",
+      "path": "examples/demo/storyboard.md",
+      "quote": "SB-04 / T",
+      "status": "Created",
+      "source_id": "SRC-01",
+      "artifact_version": "1.1.0",
+      "required": true,
+      "verification": null
+    }
+  ],
+  "recoveries": [
+    {
+      "id": "R-01",
+      "scene_id": "DS-001",
+      "asset_id": "SB-01",
+      "max_seconds": 10,
+      "decision": "switch",
+      "language": "I am switching to a prepared fictional state; the live outcome is unverified.",
+      "state_check_required": false,
+      "unknown_live_outcome": "Unknown; do not repeat mutation",
+      "stop_rule": "Stop live branch on private data, unauthorized state change, or integrity uncertainty."
+    },
+    {
+      "id": "R-02",
+      "scene_id": "DS-002",
+      "asset_id": "SB-02",
+      "max_seconds": 10,
+      "decision": "switch",
+      "language": "I am switching to a prepared fictional state; the live outcome is unverified.",
+      "state_check_required": true,
+      "unknown_live_outcome": "Unknown; do not repeat mutation",
+      "stop_rule": "Stop live branch on private data, unauthorized state change, or integrity uncertainty."
+    },
+    {
+      "id": "R-03",
+      "scene_id": "DS-003",
+      "asset_id": "SB-03",
+      "max_seconds": 10,
+      "decision": "switch",
+      "language": "I am switching to a prepared fictional state; the live outcome is unverified.",
+      "state_check_required": true,
+      "unknown_live_outcome": "Unknown; do not repeat mutation",
+      "stop_rule": "Stop live branch on private data, unauthorized state change, or integrity uncertainty."
+    },
+    {
+      "id": "R-04",
+      "scene_id": "DS-004",
+      "asset_id": "SB-04",
+      "max_seconds": 10,
+      "decision": "switch",
+      "language": "I am switching to a prepared fictional state; the live outcome is unverified.",
+      "state_check_required": true,
+      "unknown_live_outcome": "Unknown; do not repeat mutation",
+      "stop_rule": "Stop live branch on private data, unauthorized state change, or integrity uncertainty."
+    }
+  ],
+  "fallbacks": [
+    {
+      "id": "FB-01",
+      "asset_ids": [
+        "SB-01",
+        "SB-02",
+        "SB-03",
+        "SB-04"
+      ],
+      "objective_id": "O-01",
+      "construct": "Identify the four fields from a worked example",
+      "classification": "Partially equivalent",
+      "rationale": "Preserves field identification; omits UI transitions and operation evidence.",
+      "omissions": [
+        "Live UI transitions",
+        "Independent software operation"
+      ],
+      "verification_status": "Not checked",
+      "verification": null,
+      "claim": "Identification only; no live execution or proficiency inference",
+      "proficiency_use_allowed": false
+    }
+  ],
+  "learner_path": "examples/demo/learner-practice.md",
+  "key_path": "examples/demo/facilitator-key.md",
+  "practice": [
+    {
+      "id": "P-01",
+      "fact_quotes": [
+        "Jordan Lee",
+        "October 30, 2026 at noon America/Chicago",
+        "Event Updates",
+        "Morgan Chen"
+      ],
+      "key_quote": "P-01 model:",
+      "retry_id": "P-02"
+    },
+    {
+      "id": "P-02",
+      "fact_quotes": [
+        "Casey Patel",
+        "November 6, 2026 at 10 a.m. America/Chicago",
+        "Team Resources",
+        "Rowan Ellis"
+      ],
+      "key_quote": "P-02 model:",
+      "retry_id": null
+    }
+  ],
+  "practice_minutes_outside_demo": 4,
+  "quality_checks": [
+    {
+      "id": "Q-01",
+      "title": "Objective alignment",
+      "applicable": true,
+      "required": true,
+      "status": "Pass",
+      "scope": "Written design only",
+      "rationale": "Check is applicable to the planned demonstration.",
+      "artifact_version": "1.1.0",
+      "method": "Inspect written specification and scene records",
+      "evidence_path": "examples/demo/taskflow-spec.md",
+      "evidence_quote": "The four fields are action, owner, due date and definition of done.",
+      "reviewer": "Package editor",
+      "date": "2026-10-21",
+      "corrective_action": "None for this written review."
+    },
+    {
+      "id": "Q-02",
+      "title": "Source/current behavior",
+      "applicable": true,
+      "required": true,
+      "status": "Not checked",
+      "scope": "Actual environment/rehearsal/evidence",
+      "rationale": "Check is applicable to the planned demonstration.",
+      "artifact_version": "1.1.0",
+      "method": null,
+      "evidence_path": null,
+      "evidence_quote": null,
+      "reviewer": null,
+      "date": null,
+      "corrective_action": "Complete actual checks before delivery."
+    },
+    {
+      "id": "Q-03",
+      "title": "Environment/prerequisites",
+      "applicable": true,
+      "required": true,
+      "status": "Not checked",
+      "scope": "Actual environment/rehearsal/evidence",
+      "rationale": "Check is applicable to the planned demonstration.",
+      "artifact_version": "1.1.0",
+      "method": null,
+      "evidence_path": null,
+      "evidence_quote": null,
+      "reviewer": null,
+      "date": null,
+      "corrective_action": "Complete actual checks before delivery."
+    },
+    {
+      "id": "Q-04",
+      "title": "Sample data/privacy",
+      "applicable": true,
+      "required": true,
+      "status": "Not checked",
+      "scope": "Actual environment/rehearsal/evidence",
+      "rationale": "Check is applicable to the planned demonstration.",
+      "artifact_version": "1.1.0",
+      "method": null,
+      "evidence_path": null,
+      "evidence_quote": null,
+      "reviewer": null,
+      "date": null,
+      "corrective_action": "Complete actual checks before delivery."
+    },
+    {
+      "id": "Q-05",
+      "title": "Scene completeness",
+      "applicable": true,
+      "required": true,
+      "status": "Pass",
+      "scope": "Written design only",
+      "rationale": "Check is applicable to the planned demonstration.",
+      "artifact_version": "1.1.0",
+      "method": "Inspect written specification and scene records",
+      "evidence_path": "examples/demo/fictional-productivity-app-demo.md",
+      "evidence_quote": "## DS-003: Populate details",
+      "reviewer": "Package editor",
+      "date": "2026-10-21",
+      "corrective_action": "None for this written review."
+    },
+    {
+      "id": "Q-06",
+      "title": "Narration synchronization",
+      "applicable": true,
+      "required": true,
+      "status": "Not checked",
+      "scope": "Actual environment/rehearsal/evidence",
+      "rationale": "Check is applicable to the planned demonstration.",
+      "artifact_version": "1.1.0",
+      "method": null,
+      "evidence_path": null,
+      "evidence_quote": null,
+      "reviewer": null,
+      "date": null,
+      "corrective_action": "Complete actual checks before delivery."
+    },
+    {
+      "id": "Q-07",
+      "title": "Timing/scope",
+      "applicable": true,
+      "required": true,
+      "status": "Not checked",
+      "scope": "Actual environment/rehearsal/evidence",
+      "rationale": "Check is applicable to the planned demonstration.",
+      "artifact_version": "1.1.0",
+      "method": null,
+      "evidence_path": null,
+      "evidence_quote": null,
+      "reviewer": null,
+      "date": null,
+      "corrective_action": "Complete actual checks before delivery."
+    },
+    {
+      "id": "Q-08",
+      "title": "Checkpoints",
+      "applicable": true,
+      "required": true,
+      "status": "Pass",
+      "scope": "Written design only",
+      "rationale": "Check is applicable to the planned demonstration.",
+      "artifact_version": "1.1.0",
+      "method": "Inspect written specification and scene records",
+      "evidence_path": "examples/demo/fictional-productivity-app-demo.md",
+      "evidence_quote": "Four standard checkpoints are scripted.",
+      "reviewer": "Package editor",
+      "date": "2026-10-21",
+      "corrective_action": "None for this written review."
+    },
+    {
+      "id": "Q-09",
+      "title": "Accessibility/observation",
+      "applicable": true,
+      "required": true,
+      "status": "Not checked",
+      "scope": "Actual environment/rehearsal/evidence",
+      "rationale": "Check is applicable to the planned demonstration.",
+      "artifact_version": "1.1.0",
+      "method": null,
+      "evidence_path": null,
+      "evidence_quote": null,
+      "reviewer": null,
+      "date": null,
+      "corrective_action": "Complete actual checks before delivery."
+    },
+    {
+      "id": "Q-10",
+      "title": "Recovery/backup readiness",
+      "applicable": true,
+      "required": true,
+      "status": "Not checked",
+      "scope": "Actual environment/rehearsal/evidence",
+      "rationale": "Check is applicable to the planned demonstration.",
+      "artifact_version": "1.1.0",
+      "method": null,
+      "evidence_path": null,
+      "evidence_quote": null,
+      "reviewer": null,
+      "date": null,
+      "corrective_action": "Complete actual checks before delivery."
+    },
+    {
+      "id": "Q-11",
+      "title": "Reset/cleanup",
+      "applicable": true,
+      "required": true,
+      "status": "Not checked",
+      "scope": "Actual environment/rehearsal/evidence",
+      "rationale": "Check is applicable to the planned demonstration.",
+      "artifact_version": "1.1.0",
+      "method": null,
+      "evidence_path": null,
+      "evidence_quote": null,
+      "reviewer": null,
+      "date": null,
+      "corrective_action": "Complete actual checks before delivery."
+    },
+    {
+      "id": "Q-12",
+      "title": "Asset metadata",
+      "applicable": true,
+      "required": true,
+      "status": "Pass",
+      "scope": "Written design only",
+      "rationale": "Check is applicable to the planned demonstration.",
+      "artifact_version": "1.1.0",
+      "method": "Inspect written specification and scene records",
+      "evidence_path": "examples/demo/fictional-productivity-app-demo.md",
+      "evidence_quote": "DEMO-TF-001 v1.1.0; O-01; beginner workplace task management; source SRC-01;",
+      "reviewer": "Package editor",
+      "date": "2026-10-21",
+      "corrective_action": "None for this written review."
+    },
+    {
+      "id": "Q-13",
+      "title": "Qualified higher-risk review",
+      "applicable": false,
+      "required": false,
+      "status": "Not applicable",
+      "scope": "Fictional field-identification practice; no consequential use",
+      "rationale": "No higher-risk content or qualification decision; reassess if use changes.",
+      "artifact_version": "1.1.0",
+      "method": null,
+      "evidence_path": null,
+      "evidence_quote": null,
+      "reviewer": null,
+      "date": null,
+      "corrective_action": "None for this written review."
+    }
+  ],
+  "rehearsals": [
+    {
+      "path_id": "standard",
+      "status": "Not checked",
+      "evidence": null
+    },
+    {
+      "path_id": "compressed",
+      "status": "Not checked",
+      "evidence": null
+    },
+    {
+      "path_id": "expanded",
+      "status": "Not checked",
+      "evidence": null
+    },
+    {
+      "path_id": "offline",
+      "status": "Not checked",
+      "evidence": null
+    },
+    {
+      "path_id": "reset",
+      "status": "Not checked",
+      "evidence": null
+    }
+  ],
+  "open_items": [
+    {
+      "id": "OPEN-01",
+      "description": "Implement and authorize a real isolated training environment and source-supported workflow.",
+      "owner": "Unassigned environment owner",
+      "blocking": true,
+      "status": "Open"
+    },
+    {
+      "id": "OPEN-02",
+      "description": "Test state-check/recovery/reset, timing variants, backup and actual access.",
+      "owner": "Unassigned facilitator/QA owner",
+      "blocking": true,
+      "status": "Open"
+    },
+    {
+      "id": "OPEN-03",
+      "description": "Obtain actual release review and authorization.",
+      "owner": "Unassigned release owner",
+      "blocking": true,
+      "status": "Open"
+    }
+  ],
+  "release_authorization": {
+    "status": "Not checked",
+    "evidence": null
+  },
+  "handoff_document": "examples/demo/handoff.md",
+  "handoffs": [
+    {
+      "id": "H-01",
+      "destination": "live-training-session-design",
+      "status": "Prepared; not executed",
+      "source_ids": [
+        "SRC-01"
+      ],
+      "scene_ids": [
+        "DS-001",
+        "DS-002",
+        "DS-003",
+        "DS-004"
+      ],
+      "finding_ids": [],
+      "open_item_ids": [
+        "OPEN-01",
+        "OPEN-02"
+      ],
+      "owner": "Unassigned course owner",
+      "tasks": [
+        "Integrate demo within parent agenda without adding embedded time twice"
+      ],
+      "acceptance": "Preserve O-01, sources, scene/action IDs, scope and timing; no competing course package."
+    },
+    {
+      "id": "H-02",
+      "destination": "build-assessments-and-evaluations",
+      "status": "Prepared; not executed",
+      "source_ids": [
+        "SRC-01"
+      ],
+      "scene_ids": [
+        "DS-001",
+        "DS-002",
+        "DS-003",
+        "DS-004"
+      ],
+      "finding_ids": [],
+      "open_item_ids": [
+        "OPEN-01"
+      ],
+      "owner": "Unassigned assessment owner",
+      "tasks": [
+        "Adapt P-01/P-02 coaching practice if required; define evidence before any operation assessment"
+      ],
+      "acceptance": "No proficiency claim or invented passing standard; preserve supplied facts."
+    },
+    {
+      "id": "H-03",
+      "destination": "qa-and-release-assets",
+      "status": "Prepared; not executed",
+      "source_ids": [
+        "SRC-01"
+      ],
+      "scene_ids": [
+        "DS-001",
+        "DS-002",
+        "DS-003",
+        "DS-004"
+      ],
+      "finding_ids": [],
+      "open_item_ids": [
+        "OPEN-02",
+        "OPEN-03"
+      ],
+      "owner": "Unassigned QA owner",
+      "tasks": [
+        "Inspect actual assets, rehearsal, access, reset and authorization evidence"
+      ],
+      "acceptance": "Report unperformed checks and retain draft state until actual required evidence exists."
+    }
+  ]
+}

@@ -48,3 +48,8 @@ The regression suite includes positive and negative cases for timing, critical o
 ## Verification record — October 21, 2026
 
 Repository validation, skill metadata validation, package/course structural validation and 30 regression tests passed. A text-only independent trial confirmed that the integrated skill exposes a schedule conflict and withholds unsupported delivery/accessibility claims. No live course, rendered native-file accessibility or actual learner results were verified.
+
+
+## Revision 1.2.0 — live demo specialization
+
+Adds the revised Live Demo Script Builder 1.1.0 as a namespaced mode while retaining the original course workflow, validator and examples. See [demo usage, provenance and verification](live-demo-integration.md). Component and course evidence/release decisions remain separate.

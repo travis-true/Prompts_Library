@@ -5,7 +5,7 @@ description: "Build or revise workplace live sessions and facilitator-ready cour
 
 # Live Training Session Design
 
-**Package revision:** 1.1.0
+**Package revision:** 1.2.0
 
 ## Goal
 Create a facilitator-ready live course that is teachable within the available time, aligned to measurable learner performance, grounded in reliable sources, accessible, and explicit about unresolved risks or review needs.
@@ -15,6 +15,17 @@ Follow the current user request for scope, format and preferences within applica
 
 ## Read only what applies
 Always read [intake](references/00-input-checklist.md), [design](references/01-course-design-standards.md), [assessment](references/05-activity-and-assessment-guidance.md), and [release rules](references/08-quality-rubric.md). Read [research](references/02-research-and-source-rules.md) for sources or factual claims; [alignment](references/03-objectives-and-alignment.md) and [timing](references/04-agenda-and-timing-rules.md) for course builds; [software checks](references/06-software-training-checks.md) for software; and [accessibility](references/07-accessibility-checklist.md) for every deliverable. Read [validation contract](references/09-validation-contract.md) before producing machine-readable course records. Templates and examples illustrate implementation; they do not override requirements.
+
+## Live-demo specialization
+For a demo script, walkthrough, click path, presenter narration, recovery plan or modeled scene, read the [live-demonstration workflow](references/demo/workflow.md). Choose single scene, script improvement or complete demo package from user scope. A focused demo request does not require a full course or the course-record schema. Preserve the existing course modes below for broader training work.
+
+Read [state, retry and fallback equivalence](references/demo/10-state-recovery-and-equivalence.md) before specifying operations or recovery. Record preconditions, state transitions, side effects and visible success. After an uncertain create/save/assign/send outcome, stop input and verify the same record before any safe retry; never repeat while the outcome is Unknown. Use bounded recovery and disclose switching to prepared evidence. Stop the live branch when state cannot be established or private data/unauthorized changes appear.
+
+Use the [corrected demo](examples/demo/fictional-productivity-app-demo.md), [fictional specification](examples/demo/taskflow-spec.md), [learner practice](examples/demo/learner-practice.md), [facilitator guidance](examples/demo/facilitator-key.md), [text storyboard](examples/demo/storyboard.md) and [structured demo record](examples/demo/demo.json). These remain Draft complete; review required; the storyboard is Created, not verified live evidence. Distinguish Equivalent / Partially equivalent / Not equivalent fallbacks and actual verification. Demonstration/recall cannot establish individual operation proficiency.
+
+Use [the demo validation contract](references/demo/11-validation-and-handoffs.md), [scene template](templates/demo/scene-template.md), [fallback record](templates/demo/fallback-equivalence.md), [quality report](templates/demo/quality-report.md) and [handoff template](templates/demo/development-qa-handoff.md). Validate complete demo records with `python scripts/validate_demo.py --record <demo.json> --root <deliverable-folder>`; single scenes may use scoped templates/manual checks. The demo's thirteen checks, source scope, artifacts and rehearsal/authorization evidence remain separate from parent course checks. Structural PASS, a fictional source or a ready demo component cannot make the parent course Ready for delivery. A complete course must still satisfy its own validator and release gate.
+
+Prepare parent-course integration work within this skill's existing course workflow; the live-training-session-design destination is an internal integration task, not a recursive invocation. Prepare assessment development for Build Assessments and Evaluations and actual artifact/rehearsal/release-evidence checks for QA and Release Assets. Preserve supplied finding/source/objective/scene/action/asset IDs, versions, gaps, owner roles, dependencies and acceptance criteria. Use the [prepared handoff example](examples/demo/handoff.md). Do not create a competing course or imply prepared handoffs were dispatched, accepted or executed.
 
 ## Output size
 Honor the user's requested scope. Use one of:

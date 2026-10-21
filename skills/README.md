@@ -9,7 +9,7 @@
 | [Excel Data Analysis & Workbook Builder](excel-data-analysis-workbook-builder/SKILL.md) | Clean and analyze Excel data, build or improve workbooks, and verify the result through the path the task requires. |
 | [Minimum Effective Training Package](minimum-effective-training-package/SKILL.md) | Select and plan the smallest coordinated set of resources needed to support a workplace behavior. |
 | [Performance Diagnosis & Solution Selection](performance-diagnosis-solution-selection/SKILL.md) | Diagnose a workplace performance gap and select a proportionate response supported by evidence. |
-| [Live Training Session Design](live-training-session-design/SKILL.md) | Build facilitator-ready workplace sessions with aligned practice, assessment keys, reusable templates, automated validation, and evidence-based release checks. |
+| [Live Training Session Design](live-training-session-design/SKILL.md) | Build workplace sessions and live demos with grounded practice, state-aware recovery, fallback checks, validators, and evidence-based release gates. |
 | [Market Signal Mining](market-signal-mining/SKILL.md) | Turn evidence of buyer friction and spending into a scoped offer hypothesis and validation plan. |
 | [Layered Image Prompts](layered-image-prompts/SKILL.md) | Build or revise image-generation prompts with clear subject, composition, lighting, detail, style, and exclusions. |
 | [Skill Creator](skill-creator/SKILL.md) | Design, evaluate, and refine a reusable skill with clear triggers, workflow, outputs, and quality checks. |
