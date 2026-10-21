@@ -74,3 +74,14 @@ The skill fails validation if it:
 - invents authority, exceptions, execution, accessibility, or release evidence;
 - omits privacy, classification, source, licensing, or package-integrity checks;
 - calls an authorized candidate “released” without execution evidence.
+
+## Training-outline advisory extension
+
+- Review an overloaded workshop without rewriting unless authorized; report original arithmetic and unknown allocations.
+- Preserve all objective intents, including tone, through explicit treatments in an authorized proposal.
+- Do not close a Major finding from proposed text alone or infer authorization from a scoped QA result.
+- Keep future-file accessibility and untested delivery distinct from outline-design checks.
+- Prepare a production handoff with stable finding/source/objective IDs and dependencies, without claiming it was executed.
+- Continue to use final-candidate QA for actual final files and avoid inventing a clean candidate or approval when evidence is absent.
+
+Run the repository's `tests/test_qa_outline_review.py` for structural regressions. Independent text trials assess workflow behavior; they do not replace rendered-file, delivery or release verification.

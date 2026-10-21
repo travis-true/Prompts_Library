@@ -1,15 +1,17 @@
 ---
 name: qa-and-release-assets
-description: "Inspect, compare, repair when authorized, and gate the release of cross-format deliverables and asset packages. Use when a user requests quality assurance, preflight, accessibility review, source verification, visual inspection, technical validation, regression testing, defect logging, cross-format consistency checks, package integrity checks, release-readiness decisions, exception handling, or controlled handoff for DOCX, PPTX, XLSX, PDF, images, SVG, HTML, JSON, audio, video, captions, transcripts, archives, or mixed training and enablement packages."
+description: "Inspect, compare, repair when authorized, and gate the release of cross-format deliverables and asset packages. Use when a user requests quality assurance, preflight, accessibility review, source verification, visual inspection, technical validation, regression testing, defect logging, cross-format consistency checks, package integrity checks, release-readiness decisions, exception handling, or controlled handoff for DOCX, PPTX, XLSX, PDF, images, SVG, HTML, JSON, audio, video, captions, transcripts, archives, or mixed training and enablement packages. Also review training outlines for objective alignment, realistic timing, practice, assessment and accessibility-design, using traceable findings, structural validation and a development handoff to Live Training Session Design."
 ---
 
 # Cross-Format QA and Release
 
-Verify final deliverables against their requirements and source baseline, preserve evidence, classify defects, and separate QA results from human release authority.
+Verify deliverables against their requirements and source baseline, preserve evidence, classify defects, and separate QA results from human release authority. Use the specialized advisory workflow below for training outlines.
+
+**Package revision:** 1.1.0
 
 ## Governing rules
 
-- Inspect the final candidate files, not only source text, plans, prompts, or generation logs.
+- For final-candidate and release QA, inspect final candidate files, not only source text, plans, prompts or generation logs. For advisory outline review, assess the identified outline and keep future-file and delivery checks unverified.
 - Use the intended delivery environment or the closest available equivalent.
 - Never claim a visual, functional, accessibility, technical, content, or package pass without performing the relevant check.
 - Mark unavailable or incomplete checks `NOT VERIFIED`.
@@ -34,7 +36,17 @@ Select one:
 5. **Package QA:** Check a multi-file deliverable, manifest, relationships, and archive integrity.
 6. **Release gate:** Produce the evidence-based QA disposition and route it to the named release authority.
 
-If the user does not authorize changes, default to Final-candidate QA without repair.
+For a training outline, agenda or lesson plan, use **Training-outline advisory QA** below, with no rewrite unless requested. For other assets, if the user does not authorize changes, default to Final-candidate QA without repair.
+
+## Training-outline advisory QA
+
+Read [the outline-review mode](references/outline-review-mode.md). Use it to review learner performance, objective alignment, time accounting, practice/scoring, source support, access provisions and facilitator usability before full production. Choose quick triage, full review, or review plus proposed outline only as authorized. Keep the original source and every finding/source/objective ID stable.
+
+A proposed correction is not verified closure. Map every original objective to explicit treatment; preserve tone and other scope unless a decision owner accepts a change. Separate original/proposed judgments, accessibility-design, actual rendered materials, live delivery, QA result, release authority and execution. Never infer a file's accessibility or release readiness from an outline.
+
+Hand off unfinished development to **Live Training Session Design** using [the integrated handoff template](templates/outline-review/development-handoff.md). Preserve original IDs, source/artifact versions/hashes, constraints, decisions, owners, dependencies and acceptance criteria. Preparation is not dispatch or execution; do not generate a competing complete course package.
+
+Use [the outline validator](scripts/validate_outline_review.py) when Python is available. It validates records only; structural PASS grants no favorable QA, finding closure or authorization. If unavailable or the task is text-only, report validation Not checked. Return only the selected review scope; the final-file/release workflow below remains available for actual production assets.
 
 ## QA levels
 

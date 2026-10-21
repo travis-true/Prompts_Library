@@ -23,7 +23,7 @@
 | [Architect Training Sessions](architect-training-sessions/SKILL.md) | Plan complete training sessions, including delivery, practice, contingencies, evaluation, and reinforcement. |
 | [Build Slide Decks](build-slide-decks/SKILL.md) | Create or improve editable presentations with clear narratives, accessible layouts, speaker guidance, and visual checks. |
 | [Build Assessments And Evaluations](build-assessments-and-evaluations/SKILL.md) | Design aligned quizzes, practical tasks, rubrics, surveys, and evaluation plans with defensible scoring. |
-| [Qa And Release Assets](qa-and-release-assets/SKILL.md) | Inspect deliverables, document defects, verify corrections, and assess readiness for release. |
+| [Qa And Release Assets](qa-and-release-assets/SKILL.md) | Review deliverables and training outlines with traceable findings, validation, development handoffs, and separate QA and release decisions. |
 | [Build Gcse Prompt](build-gcse-prompt/SKILL.md) | Build a copy-ready Copilot prompt using Goal, Context, Source, and Expectation. |
 | [Improve Gcse Prompt](improve-gcse-prompt/SKILL.md) | Strengthen an existing Copilot prompt while preserving its intent and filling essential gaps. |
 | [Optimize Prompt For M365](optimize-prompt-for-m365/SKILL.md) | Adapt a prompt to the Microsoft 365 app where it will be used. |

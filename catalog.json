@@ -815,9 +815,10 @@
     "type": "skills",
     "path": "skills/qa-and-release-assets/SKILL.md",
     "function": "Workplace workflow",
-    "purpose": "Inspect, compare, repair when authorized, and gate the release of cross-format deliverables and asset packages. Use when a user requests quality assurance, preflight, accessibility review, source verification, visual inspection, technical validation, regression testing, defect logging, cross-format consistency checks, package integrity checks, release-readiness decisions, exception handling, or controlled handoff for DOCX, PPTX, XLSX, PDF, images, SVG, HTML, JSON, audio, video, captions, transcripts, archives, or mixed training and enablement packages.",
+    "purpose": "Review deliverables and training outlines with traceable findings, validation, development handoffs, and separate QA and release decisions.",
     "status": "Installed skill import",
-    "short_description": "Inspect deliverables, document defects, verify corrections, and assess readiness for release."
+    "short_description": "Review deliverables and training outlines with traceable findings, validation, development handoffs, and separate QA and release decisions.",
+    "version": "1.1.0"
   },
   {
     "title": "Build Gcse Prompt",

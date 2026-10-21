@@ -1,0 +1,925 @@
+{
+  "schema_version": "1.1",
+  "review_id": "REV-01",
+  "review_version": "1.1.0",
+  "mode": "review-plus-revision",
+  "scope": [
+    "outline-design"
+  ],
+  "report": "examples/outline-review/02-complete-worked-review.md",
+  "artifacts": [
+    {
+      "id": "OUT-01",
+      "version": "1.0",
+      "path": "examples/outline-review/01-flawed-outline.md",
+      "sha256": "eab83e5e1301981268bd9eae7e172cbe61f154033df40ab8245749343a91af49"
+    },
+    {
+      "id": "OUT-02",
+      "version": "1.1.0",
+      "path": "examples/outline-review/03-proposed-revision.md",
+      "sha256": "1eb96f920d3674cd6a49807cdd44e0e8d5a23b7a36b77fe5cc67aa073c7a919b"
+    }
+  ],
+  "sources": [
+    {
+      "id": "SRC-01",
+      "artifact_id": "OUT-01",
+      "kind": "supplied-fictional",
+      "locator": "Original outline"
+    },
+    {
+      "id": "SRC-02",
+      "kind": "reviewer-recommendation",
+      "locator": "Reviewer design recommendations; no external policy authority"
+    }
+  ],
+  "original_objectives": [
+    {
+      "id": "O-01",
+      "source_id": "SRC-01",
+      "quote": "Understand good communication."
+    },
+    {
+      "id": "O-02",
+      "source_id": "SRC-01",
+      "quote": "Learn how to write better messages."
+    },
+    {
+      "id": "O-03",
+      "source_id": "SRC-01",
+      "quote": "Know how tone affects communication."
+    }
+  ],
+  "revised_objective_ids": [
+    "R-01",
+    "R-02",
+    "R-03"
+  ],
+  "objective_treatments": [
+    {
+      "original_objective_id": "O-01",
+      "treatment": "Revised",
+      "revised_objective_ids": [
+        "R-01"
+      ],
+      "finding_ids": [
+        "F-02"
+      ],
+      "source_ids": [
+        "SRC-01",
+        "SRC-02"
+      ],
+      "rationale": "Make the stated intent observable while preserving its scope.",
+      "decision_owner": "Course owner (Unassigned)",
+      "decision_status": "Pending"
+    },
+    {
+      "original_objective_id": "O-02",
+      "treatment": "Revised",
+      "revised_objective_ids": [
+        "R-02"
+      ],
+      "finding_ids": [
+        "F-02"
+      ],
+      "source_ids": [
+        "SRC-01",
+        "SRC-02"
+      ],
+      "rationale": "Make the stated intent observable while preserving its scope.",
+      "decision_owner": "Course owner (Unassigned)",
+      "decision_status": "Pending"
+    },
+    {
+      "original_objective_id": "O-03",
+      "treatment": "Revised",
+      "revised_objective_ids": [
+        "R-03"
+      ],
+      "finding_ids": [
+        "F-02"
+      ],
+      "source_ids": [
+        "SRC-01",
+        "SRC-02"
+      ],
+      "rationale": "Make the stated intent observable while preserving its scope.",
+      "decision_owner": "Course owner (Unassigned)",
+      "decision_status": "Pending"
+    }
+  ],
+  "findings": [
+    {
+      "id": "F-01",
+      "category": "Timing",
+      "criterion_layer": "built-in",
+      "severity": "Major",
+      "severity_rationale": "A 25-minute overrun forces omissions or a late finish.",
+      "confidence": "High for artifact evidence; external effects unverified",
+      "original_artifact_id": "OUT-01",
+      "original_location": "Agenda table",
+      "evidence": {
+        "type": "calculation",
+        "source_ids": [
+          "SRC-01"
+        ],
+        "text": "115 minutes of agenda for a 90-minute session"
+      },
+      "impact": "A 25-minute overrun forces omissions or a late finish.",
+      "recommendation": "Rebalance the outline; protect practice and final performance evidence.",
+      "acceptance_criteria": "Verify 90 total / 5 break / 0 separately allocated administration / 85 instruction, then test realistic pacing.",
+      "owner": "Course designer (Unassigned)",
+      "target_artifact_id": "OUT-02",
+      "status": "Revision proposed",
+      "verification": null
+    },
+    {
+      "id": "F-02",
+      "category": "Objectives and scope",
+      "criterion_layer": "built-in",
+      "severity": "Major",
+      "severity_rationale": "Unobservable objectives cannot anchor a defensible performance check. Dropping tone would also change original scope.",
+      "confidence": "High for artifact evidence; external effects unverified",
+      "original_artifact_id": "OUT-01",
+      "original_location": "Objectives",
+      "evidence": {
+        "type": "quote",
+        "source_ids": [
+          "SRC-01"
+        ],
+        "text": "Understand good communication."
+      },
+      "impact": "Unobservable objectives cannot anchor a defensible performance check. Dropping tone would also change original scope.",
+      "recommendation": "Use R-01\u2013R-03 and preserve O-03 tone through explicit treatment.",
+      "acceptance_criteria": "Course owner confirms all three objective treatments; instruction/practice/assessment includes audience-specific tone.",
+      "owner": "Course owner (Unassigned)",
+      "target_artifact_id": "OUT-02",
+      "status": "Revision proposed",
+      "verification": null
+    },
+    {
+      "id": "F-03",
+      "category": "Practice",
+      "criterion_layer": "built-in",
+      "severity": "Major",
+      "severity_rationale": "The practice has no sufficient scenario inputs or feedback specification; duration alone does not establish adequacy.",
+      "confidence": "High for artifact evidence; external effects unverified",
+      "original_artifact_id": "OUT-01",
+      "original_location": "Practice",
+      "evidence": {
+        "type": "quote",
+        "source_ids": [
+          "SRC-01"
+        ],
+        "text": "Learners rewrite an email."
+      },
+      "impact": "The practice has no sufficient scenario inputs or feedback specification; duration alone does not establish adequacy.",
+      "recommendation": "Hand off complete guided and independent tasks with facts, timing and equivalent participation.",
+      "acceptance_criteria": "Supply all scenario facts, learner prompts, expected outputs, feedback and an equivalent retry; verify feasibility.",
+      "owner": "Course designer (Unassigned)",
+      "target_artifact_id": "OUT-02",
+      "status": "Revision proposed",
+      "verification": null
+    },
+    {
+      "id": "F-04",
+      "category": "Assessment",
+      "criterion_layer": "built-in",
+      "severity": "Major",
+      "severity_rationale": "Completion or self-rating could be mistaken for verified performance.",
+      "confidence": "High for artifact evidence; external effects unverified",
+      "original_artifact_id": "OUT-01",
+      "original_location": "Entire outline",
+      "evidence": {
+        "type": "gap",
+        "source_ids": [
+          "SRC-01"
+        ],
+        "text": "No explicit performance criteria, model answer or scoring method is supplied."
+      },
+      "impact": "Completion or self-rating could be mistaken for verified performance.",
+      "recommendation": "Develop grounded clarity and tone criteria, an annotated key and a critical-criteria pass rule.",
+      "acceptance_criteria": "Verify all critical criteria are mandatory, threshold is defined, no invented requirements pass, and tone evidence is assessed.",
+      "owner": "Assessment designer (Unassigned)",
+      "target_artifact_id": "OUT-02",
+      "status": "Revision proposed",
+      "verification": null
+    },
+    {
+      "id": "F-05",
+      "category": "Accessibility-design",
+      "criterion_layer": "built-in",
+      "severity": "Major",
+      "severity_rationale": "The outline lacks planned access routes for its discussion/rewrite tasks; this is a material design gap, not proof of a defective future file.",
+      "confidence": "High for artifact evidence; external effects unverified",
+      "original_artifact_id": "OUT-01",
+      "original_location": "Entire outline",
+      "evidence": {
+        "type": "gap",
+        "source_ids": [
+          "SRC-01"
+        ],
+        "text": "No explicit written instructions or equivalent participation route is specified."
+      },
+      "impact": "The outline lacks planned access routes for its discussion/rewrite tasks; this is a material design gap, not proof of a defective future file.",
+      "recommendation": "Specify written and nonverbal/individual alternatives; queue actual materials and delivery tests separately.",
+      "acceptance_criteria": "Inspect activity access provisions in implemented outline; record actual rendered/tool tests as separate evidence when available.",
+      "owner": "Accessibility reviewer (Unassigned)",
+      "target_artifact_id": "OUT-02",
+      "status": "Revision proposed",
+      "verification": null
+    },
+    {
+      "id": "F-06",
+      "category": "Facilitator usability",
+      "criterion_layer": "built-in",
+      "severity": "Major",
+      "severity_rationale": "The outline-wide absence of usable prompts, expected observations and contingencies materially weakens repeatability.",
+      "confidence": "High for artifact evidence; external effects unverified",
+      "original_artifact_id": "OUT-01",
+      "original_location": "Topics, examples and practice",
+      "evidence": {
+        "type": "quote",
+        "source_ids": [
+          "SRC-01"
+        ],
+        "text": "Ask learners what they notice."
+      },
+      "impact": "The outline-wide absence of usable prompts, expected observations and contingencies materially weakens repeatability.",
+      "recommendation": "Develop concise facilitator cues, materials, timing substeps and fallback actions.",
+      "acceptance_criteria": "A second facilitator can identify what to say/show/ask/do/observe, transitions and recovery; rehearse the actual plan.",
+      "owner": "Facilitator/designer (Unassigned)",
+      "target_artifact_id": "OUT-02",
+      "status": "Revision proposed",
+      "verification": null
+    },
+    {
+      "id": "F-07",
+      "category": "Source authority",
+      "criterion_layer": "built-in",
+      "severity": "Minor",
+      "severity_rationale": "Generic advice may be mistaken for local policy; no high-risk or current-product claim is present.",
+      "confidence": "High for artifact evidence; external effects unverified",
+      "original_artifact_id": "OUT-01",
+      "original_location": "Email best practices",
+      "evidence": {
+        "type": "quote",
+        "source_ids": [
+          "SRC-01"
+        ],
+        "text": "Use a good subject line."
+      },
+      "impact": "Generic advice may be mistaken for local policy; no high-risk or current-product claim is present.",
+      "recommendation": "Label advice as recommendations or replace it with supplied approved requirements.",
+      "acceptance_criteria": "Keep advice explicitly non-policy; any controlling source is identified by owner/version/section.",
+      "owner": "Course owner (Unassigned)",
+      "target_artifact_id": "OUT-02",
+      "status": "Revision proposed",
+      "verification": null
+    },
+    {
+      "id": "F-08",
+      "category": "Transfer",
+      "criterion_layer": "built-in",
+      "severity": "Enhancement",
+      "severity_rationale": "No required defect demonstrated; there is an optional transfer opportunity.",
+      "confidence": "High for artifact evidence; external effects unverified",
+      "original_artifact_id": "OUT-01",
+      "original_location": "Questions and wrap-up",
+      "evidence": {
+        "type": "quote",
+        "source_ids": [
+          "SRC-01"
+        ],
+        "text": "Answer questions and summarize the session."
+      },
+      "impact": "No required defect demonstrated; there is an optional transfer opportunity.",
+      "recommendation": "Offer an application/reflection prompt and proposed follow-up owner.",
+      "acceptance_criteria": "If adopted, label the arrangement proposed until ownership and timing are confirmed.",
+      "owner": "Course designer (Unassigned)",
+      "target_artifact_id": "OUT-02",
+      "status": "Revision proposed",
+      "verification": null
+    }
+  ],
+  "severity_counts": {
+    "Critical": 0,
+    "Major": 6,
+    "Minor": 1,
+    "Enhancement": 1
+  },
+  "evidence_gaps": [
+    {
+      "id": "G-01",
+      "description": "Audience roles/baseline and exact performance scope are not confirmed.",
+      "material": true,
+      "owner": "Course owner (Unassigned)",
+      "status": "Open"
+    },
+    {
+      "id": "G-02",
+      "description": "Delivery mode and platform are unknown; actual tool/material tests have not occurred.",
+      "material": false,
+      "owner": "Delivery owner (Unassigned)",
+      "status": "Open"
+    },
+    {
+      "id": "G-03",
+      "description": "No controlling organizational writing standard is supplied; recommendations remain provisional.",
+      "material": true,
+      "owner": "Course owner (Unassigned)",
+      "status": "Open"
+    },
+    {
+      "id": "G-04",
+      "description": "Proposed break and zero separate administration assumption need confirmation.",
+      "material": true,
+      "owner": "Course owner (Unassigned)",
+      "status": "Open"
+    }
+  ],
+  "original_timing": {
+    "artifact_id": "OUT-01",
+    "session_minutes": 90,
+    "agenda": [
+      {
+        "minutes": 10,
+        "kind": "unknown"
+      },
+      {
+        "minutes": 25,
+        "kind": "unknown"
+      },
+      {
+        "minutes": 20,
+        "kind": "unknown"
+      },
+      {
+        "minutes": 20,
+        "kind": "unknown"
+      },
+      {
+        "minutes": 20,
+        "kind": "unknown"
+      },
+      {
+        "minutes": 10,
+        "kind": "unknown"
+      },
+      {
+        "minutes": 10,
+        "kind": "unknown"
+      }
+    ],
+    "row_total": 115,
+    "break_minutes": null,
+    "administration_minutes": null,
+    "instructional_minutes": null,
+    "variance": 25
+  },
+  "proposed_timing": {
+    "artifact_id": "OUT-02",
+    "session_minutes": 90,
+    "agenda": [
+      {
+        "start_minute": 0,
+        "minutes": 8,
+        "kind": "instruction",
+        "objective_ids": []
+      },
+      {
+        "start_minute": 8,
+        "minutes": 12,
+        "kind": "instruction",
+        "objective_ids": [
+          "R-01",
+          "R-03"
+        ]
+      },
+      {
+        "start_minute": 20,
+        "minutes": 15,
+        "kind": "instruction",
+        "objective_ids": [
+          "R-01",
+          "R-02",
+          "R-03"
+        ]
+      },
+      {
+        "start_minute": 35,
+        "minutes": 15,
+        "kind": "instruction",
+        "objective_ids": [
+          "R-02",
+          "R-03"
+        ]
+      },
+      {
+        "start_minute": 50,
+        "minutes": 8,
+        "kind": "instruction",
+        "objective_ids": [
+          "R-01",
+          "R-02",
+          "R-03"
+        ]
+      },
+      {
+        "start_minute": 58,
+        "minutes": 5,
+        "kind": "break",
+        "objective_ids": []
+      },
+      {
+        "start_minute": 63,
+        "minutes": 17,
+        "kind": "instruction",
+        "objective_ids": [
+          "R-02",
+          "R-03"
+        ]
+      },
+      {
+        "start_minute": 80,
+        "minutes": 10,
+        "kind": "instruction",
+        "objective_ids": [
+          "R-01",
+          "R-02",
+          "R-03"
+        ]
+      }
+    ],
+    "row_total": 90,
+    "break_minutes": 5,
+    "administration_minutes": 0,
+    "instructional_minutes": 85,
+    "variance": 0
+  },
+  "dispositions": [
+    {
+      "artifact_id": "OUT-01",
+      "value": "Major revision required",
+      "blocking_finding_ids": [
+        "F-01",
+        "F-02",
+        "F-03",
+        "F-04",
+        "F-05",
+        "F-06"
+      ],
+      "basis": "Six Major design findings; meaningful revision remains possible."
+    },
+    {
+      "artifact_id": "OUT-02",
+      "value": "Major revision required",
+      "blocking_finding_ids": [
+        "F-01",
+        "F-02",
+        "F-03",
+        "F-04",
+        "F-05",
+        "F-06"
+      ],
+      "basis": "Proposed corrections remain unverified; complete practice, assessment and material decisions remain open."
+    }
+  ],
+  "domain_checks": [
+    {
+      "id": "accessibility-design",
+      "status": "Needs revision",
+      "artifact_id": "OUT-01",
+      "finding_ids": [
+        "F-05"
+      ]
+    },
+    {
+      "id": "accessibility-rendered",
+      "status": "Not checked",
+      "rationale": "No rendered materials supplied or inspected."
+    },
+    {
+      "id": "delivery",
+      "status": "Not checked",
+      "rationale": "No selected/tested delivery environment."
+    },
+    {
+      "id": "qualified-review",
+      "status": "Not applicable",
+      "rationale": "Fictional general communication course, no higher-risk procedure."
+    }
+  ],
+  "handoff": {
+    "id": "HANDOFF-01",
+    "destination": "live-training-session-design",
+    "status": "Prepared; not executed",
+    "path": "examples/outline-review/04-development-handoff.md",
+    "artifact_ids": [
+      "OUT-01",
+      "OUT-02"
+    ],
+    "source_ids": [
+      "SRC-01",
+      "SRC-02"
+    ],
+    "tasks": [
+      {
+        "id": "T-01",
+        "finding_ids": [
+          "F-02",
+          "F-07"
+        ],
+        "source_ids": [
+          "SRC-01",
+          "SRC-02"
+        ],
+        "objective_ids": [
+          "O-01",
+          "O-02",
+          "O-03"
+        ],
+        "task": "Confirm audience, performance scope including tone, source basis and proposed agenda constraints.",
+        "acceptance_criteria": "Record owner decisions; preserve controlling requirements and three objective treatments.",
+        "owner": "Live Training Session Design producer (Unassigned)",
+        "dependencies": [
+          "G-01",
+          "G-03"
+        ],
+        "status": "Open"
+      },
+      {
+        "id": "T-02",
+        "finding_ids": [
+          "F-03",
+          "F-04"
+        ],
+        "source_ids": [
+          "SRC-01",
+          "SRC-02"
+        ],
+        "objective_ids": [
+          "O-01",
+          "O-02"
+        ],
+        "task": "Build complete fictional clarity/rewrite scenarios, prompts, annotated keys, feedback and retry.",
+        "acceptance_criteria": "Every task has all required facts; no invented requirement may pass; critical criteria and threshold are explicit.",
+        "owner": "Live Training Session Design producer (Unassigned)",
+        "dependencies": [
+          "T-01"
+        ],
+        "status": "Open"
+      },
+      {
+        "id": "T-03",
+        "finding_ids": [
+          "F-02",
+          "F-03",
+          "F-04"
+        ],
+        "source_ids": [
+          "SRC-01",
+          "SRC-02"
+        ],
+        "objective_ids": [
+          "O-03"
+        ],
+        "task": "Build audience-specific tone comparison and revision evidence.",
+        "acceptance_criteria": "R-03 has instruction, practice, criterion-based independent evidence and acceptable alternative wording.",
+        "owner": "Live Training Session Design producer (Unassigned)",
+        "dependencies": [
+          "T-01"
+        ],
+        "status": "Open"
+      },
+      {
+        "id": "T-04",
+        "finding_ids": [
+          "F-06"
+        ],
+        "source_ids": [
+          "SRC-01",
+          "SRC-02"
+        ],
+        "objective_ids": [
+          "O-01",
+          "O-02",
+          "O-03"
+        ],
+        "task": "Create facilitator cues, materials, substeps, transitions and fallback.",
+        "acceptance_criteria": "Usable guide preserves scope; substeps fit modules; actual assets are identified.",
+        "owner": "Live Training Session Design producer (Unassigned)",
+        "dependencies": [
+          "T-02",
+          "T-03"
+        ],
+        "status": "Open"
+      },
+      {
+        "id": "T-05",
+        "finding_ids": [
+          "F-05"
+        ],
+        "source_ids": [
+          "SRC-01",
+          "SRC-02"
+        ],
+        "objective_ids": [
+          "O-01",
+          "O-02",
+          "O-03"
+        ],
+        "task": "Implement access provisions; queue actual rendered and delivery checks.",
+        "acceptance_criteria": "Written/nonverbal routes assess the same objectives; separate design, rendered and tool evidence.",
+        "owner": "Live Training Session Design producer (Unassigned)",
+        "dependencies": [
+          "G-02",
+          "T-02",
+          "T-03"
+        ],
+        "status": "Open"
+      },
+      {
+        "id": "T-06",
+        "finding_ids": [
+          "F-01"
+        ],
+        "source_ids": [
+          "SRC-01",
+          "SRC-02"
+        ],
+        "objective_ids": [
+          "O-01",
+          "O-02",
+          "O-03"
+        ],
+        "task": "Recalculate the developed agenda and rehearse pacing.",
+        "acceptance_criteria": "90 total, 5 break, 0 separate administration, 85 instruction if assumptions confirmed; preserve practice and tone or surface conflict.",
+        "owner": "Live Training Session Design producer (Unassigned)",
+        "dependencies": [
+          "T-04",
+          "T-05",
+          "G-04"
+        ],
+        "status": "Open"
+      },
+      {
+        "id": "T-07",
+        "finding_ids": [
+          "F-08"
+        ],
+        "source_ids": [
+          "SRC-01",
+          "SRC-02"
+        ],
+        "objective_ids": [
+          "O-01",
+          "O-02",
+          "O-03"
+        ],
+        "task": "Optionally add workplace transfer and reinforcement.",
+        "acceptance_criteria": "Owner and timing are labeled recommendations until accepted.",
+        "owner": "Live Training Session Design producer (Unassigned)",
+        "dependencies": [
+          "T-01"
+        ],
+        "status": "Open"
+      }
+    ],
+    "scope_decision_ids": [
+      "G-01",
+      "G-03",
+      "G-04"
+    ]
+  },
+  "quality_checks": [
+    {
+      "id": "Q-01",
+      "applicable": true,
+      "status": "Pass",
+      "method": "Document inspection",
+      "reviewer": "Package editor (document review only)",
+      "date": "2026-10-21",
+      "review_version": "1.1.0",
+      "evidence": {
+        "path": "examples/outline-review/02-complete-worked-review.md",
+        "quote": "Each defect cites original text, calculation or a documented gap.",
+        "result": "Reviewed the stated written-review evidence; no external execution asserted."
+      }
+    },
+    {
+      "id": "Q-02",
+      "applicable": true,
+      "status": "Pass",
+      "method": "Document inspection",
+      "reviewer": "Package editor (document review only)",
+      "date": "2026-10-21",
+      "review_version": "1.1.0",
+      "evidence": {
+        "path": "examples/outline-review/02-complete-worked-review.md",
+        "quote": "Severity follows the material impact stated for F-01\u2013F-07; F-08 remains optional.",
+        "result": "Reviewed the stated written-review evidence; no external execution asserted."
+      }
+    },
+    {
+      "id": "Q-03",
+      "applicable": true,
+      "status": "Pass",
+      "method": "Document inspection",
+      "reviewer": "Package editor (document review only)",
+      "date": "2026-10-21",
+      "review_version": "1.1.0",
+      "evidence": {
+        "path": "examples/outline-review/02-complete-worked-review.md",
+        "quote": "Strengths and all three original objective intents are explicitly preserved or revised.",
+        "result": "Reviewed the stated written-review evidence; no external execution asserted."
+      }
+    },
+    {
+      "id": "Q-04",
+      "applicable": true,
+      "status": "Pass",
+      "method": "Document inspection",
+      "reviewer": "Package editor (document review only)",
+      "date": "2026-10-21",
+      "review_version": "1.1.0",
+      "evidence": {
+        "path": "examples/outline-review/02-complete-worked-review.md",
+        "quote": "Original alignment gaps and proposed objective treatments are distinguished.",
+        "result": "Reviewed the stated written-review evidence; no external execution asserted."
+      }
+    },
+    {
+      "id": "Q-05",
+      "applicable": true,
+      "status": "Pass",
+      "method": "Document inspection",
+      "reviewer": "Package editor (document review only)",
+      "date": "2026-10-21",
+      "review_version": "1.1.0",
+      "evidence": {
+        "path": "examples/outline-review/02-complete-worked-review.md",
+        "quote": "Original arithmetic is 115 versus 90; proposed time is 90 total and 85 instruction.",
+        "result": "Reviewed the stated written-review evidence; no external execution asserted."
+      }
+    },
+    {
+      "id": "Q-06",
+      "applicable": true,
+      "status": "Pass",
+      "method": "Document inspection",
+      "reviewer": "Package editor (document review only)",
+      "date": "2026-10-21",
+      "review_version": "1.1.0",
+      "evidence": {
+        "path": "examples/outline-review/02-complete-worked-review.md",
+        "quote": "Missing practice and assessment production is recorded in F-03/F-04 and the handoff.",
+        "result": "Reviewed the stated written-review evidence; no external execution asserted."
+      }
+    },
+    {
+      "id": "Q-07",
+      "applicable": true,
+      "status": "Pass",
+      "method": "Document inspection",
+      "reviewer": "Package editor (document review only)",
+      "date": "2026-10-21",
+      "review_version": "1.1.0",
+      "evidence": {
+        "path": "examples/outline-review/02-complete-worked-review.md",
+        "quote": "Accessibility-design is separate from unperformed rendered/tool checks.",
+        "result": "Reviewed the stated written-review evidence; no external execution asserted."
+      }
+    },
+    {
+      "id": "Q-08",
+      "applicable": true,
+      "status": "Pass",
+      "method": "Document inspection",
+      "reviewer": "Package editor (document review only)",
+      "date": "2026-10-21",
+      "review_version": "1.1.0",
+      "evidence": {
+        "path": "examples/outline-review/02-complete-worked-review.md",
+        "quote": "Source evidence and reviewer recommendations are distinguished; no higher-risk review is claimed.",
+        "result": "Reviewed the stated written-review evidence; no external execution asserted."
+      }
+    },
+    {
+      "id": "Q-09",
+      "applicable": true,
+      "status": "Pass",
+      "method": "Document inspection",
+      "reviewer": "Package editor (document review only)",
+      "date": "2026-10-21",
+      "review_version": "1.1.0",
+      "evidence": {
+        "path": "examples/outline-review/02-complete-worked-review.md",
+        "quote": "Each structural change has a mapped finding and preservation rationale.",
+        "result": "Reviewed the stated written-review evidence; no external execution asserted."
+      }
+    },
+    {
+      "id": "Q-10",
+      "applicable": true,
+      "status": "Pass",
+      "method": "Document inspection",
+      "reviewer": "Package editor (document review only)",
+      "date": "2026-10-21",
+      "review_version": "1.1.0",
+      "evidence": {
+        "path": "examples/outline-review/02-complete-worked-review.md",
+        "quote": "Every material development task retains finding, source and objective IDs.",
+        "result": "Reviewed the stated written-review evidence; no external execution asserted."
+      }
+    },
+    {
+      "id": "Q-11",
+      "applicable": true,
+      "status": "Pass",
+      "method": "Document inspection",
+      "reviewer": "Package editor (document review only)",
+      "date": "2026-10-21",
+      "review_version": "1.1.0",
+      "evidence": {
+        "path": "examples/outline-review/02-complete-worked-review.md",
+        "quote": "Original and proposed dispositions remain Major revision required; no closure is invented.",
+        "result": "Reviewed the stated written-review evidence; no external execution asserted."
+      }
+    },
+    {
+      "id": "Q-12",
+      "applicable": true,
+      "status": "Pass",
+      "method": "Document inspection",
+      "reviewer": "Package editor (document review only)",
+      "date": "2026-10-21",
+      "review_version": "1.1.0",
+      "evidence": {
+        "path": "examples/outline-review/02-complete-worked-review.md",
+        "quote": "The review claims no formal approval, actual delivery, learner results or completed production.",
+        "result": "Reviewed the stated written-review evidence; no external execution asserted."
+      }
+    }
+  ],
+  "qa_bridge": {
+    "scope": "outline-design",
+    "candidate_results": [
+      {
+        "artifact_id": "OUT-01",
+        "qa_status": "QA FAIL",
+        "authorization": "AUTHORIZATION NOT VERIFIED",
+        "release_executed": false
+      },
+      {
+        "artifact_id": "OUT-02",
+        "qa_status": "QA FAIL",
+        "authorization": "AUTHORIZATION NOT VERIFIED",
+        "release_executed": false
+      }
+    ],
+    "defect_map": [
+      {
+        "finding_id": "F-01",
+        "qa_defect_id": "DEF-OUT-01",
+        "qa_severity": "MAJOR"
+      },
+      {
+        "finding_id": "F-02",
+        "qa_defect_id": "DEF-OUT-02",
+        "qa_severity": "MAJOR"
+      },
+      {
+        "finding_id": "F-03",
+        "qa_defect_id": "DEF-OUT-03",
+        "qa_severity": "MAJOR"
+      },
+      {
+        "finding_id": "F-04",
+        "qa_defect_id": "DEF-OUT-04",
+        "qa_severity": "MAJOR"
+      },
+      {
+        "finding_id": "F-05",
+        "qa_defect_id": "DEF-OUT-05",
+        "qa_severity": "MAJOR"
+      },
+      {
+        "finding_id": "F-06",
+        "qa_defect_id": "DEF-OUT-06",
+        "qa_severity": "MAJOR"
+      },
+      {
+        "finding_id": "F-07",
+        "qa_defect_id": "DEF-OUT-07",
+        "qa_severity": "MINOR"
+      },
+      {
+        "finding_id": "F-08",
+        "qa_defect_id": "DEF-OUT-08",
+        "qa_severity": "NOTE"
+      }
+    ]
+  }
+}

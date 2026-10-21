@@ -63,3 +63,7 @@ If release is performed, record:
 - support and monitoring owner.
 
 Without execution evidence, report “authorized for release,” not “released.”
+
+## Advisory training-outline scope
+
+For an outline-design advisory review, use [the outline-review mode](outline-review-mode.md). Report the specialized version-specific design judgment and the parent scoped QA disposition separately. Future uncreated learner files and untested delivery environments remain unverified; a design-only pass never authorizes their release. Material outline defects produce QA FAIL for that scope. Prepared development handoffs and proposed fixes are not execution or verified defect closure. Actual final-file and release decisions continue to require all applicable parent checks and authorization evidence above.

@@ -75,3 +75,7 @@
 - **Support and review triggers:**  
 
 Never populate authority, approval, or execution evidence without support.
+
+## 10. Advisory training-outline review and development handoff
+
+For the outline mode, use the [review report](../templates/outline-review/comprehensive-review-report.md), [finding lifecycle record](../templates/outline-review/finding-record.md), [objective/change traceability](../templates/outline-review/detailed-traceability-matrix.md), [gap log](../templates/outline-review/evidence-gap-log.md), [proposed outline](../templates/outline-review/revised-outline-template.md) only when authorized, [development handoff](../templates/outline-review/development-handoff.md), and [twelve review-quality checks](../templates/outline-review/review-quality-check.md). Preserve F IDs alongside QA defect aliases; keep outline judgment, scoped QA result, authorization and actual execution distinct.

@@ -1,8 +1,8 @@
 interface:
   display_name: Cross-Format QA and Release
-  short_description: Verify assets and control release decisions
-  default_prompt: Use $qa-and-release-assets to inspect this deliverable package,
-    log defects, and determine its evidence-based release status.
+  short_description: Review assets and training outlines with evidence-based QA
+  default_prompt: Use $qa-and-release-assets to review this asset or training outline,
+    preserve traceable findings, and report scoped QA and authorization separately.
   icon_small: assets/icon.svg
   icon_large: assets/icon.svg
 policy:
