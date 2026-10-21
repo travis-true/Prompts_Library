@@ -22,7 +22,7 @@
 | [Deconstruct Knowledge](deconstruct-knowledge/SKILL.md) | Turn source material into traceable workflows, decisions, rules, and reusable operational knowledge. |
 | [Architect Training Sessions](architect-training-sessions/SKILL.md) | Plan complete training sessions, including delivery, practice, contingencies, evaluation, and reinforcement. |
 | [Build Slide Decks](build-slide-decks/SKILL.md) | Create or improve editable presentations with clear narratives, accessible layouts, speaker guidance, and visual checks. |
-| [Build Assessments And Evaluations](build-assessments-and-evaluations/SKILL.md) | Design aligned quizzes, practical tasks, rubrics, surveys, and evaluation plans with defensible scoring. |
+| [Build Assessments And Evaluations](build-assessments-and-evaluations/SKILL.md) | Design assessments and evaluation plans with source-grounded scoring, live-training practice, fallback-equivalence checks, validation, and traceable handoffs. |
 | [Qa And Release Assets](qa-and-release-assets/SKILL.md) | Review deliverables and training outlines with traceable findings, validation, development handoffs, and separate QA and release decisions. |
 | [Build Gcse Prompt](build-gcse-prompt/SKILL.md) | Build a copy-ready Copilot prompt using Goal, Context, Source, and Expectation. |
 | [Improve Gcse Prompt](improve-gcse-prompt/SKILL.md) | Strengthen an existing Copilot prompt while preserving its intent and filling essential gaps. |

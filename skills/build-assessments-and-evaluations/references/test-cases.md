@@ -74,3 +74,8 @@ The skill fails validation if it:
 - claims causation from simple pre/post change or operational trends;
 - analyzes data without verifying definitions, denominators, missingness, and permitted use;
 - releases a high-stakes instrument without appropriate authority and evidence.
+
+
+## Engagement extension
+
+Unknown-stakes case: a certificate program with unclear result use must trigger a decision/consequence question; if no questions are allowed, leave stakes unresolved. Fallback case: screenshot recognition cannot certify software operation. No standard means no global pass. Run the extension regression suite at repository path `tests/test_engagement_assessment.py` after changes.

@@ -51,7 +51,7 @@ Determine:
 - privacy, classification, consent, security, accessibility, and approval requirements;
 - consequences of false positive, false negative, or misleading interpretation.
 
-Ask grouped clarifying questions only when missing answers could materially change the design. Target roughly 95% confidence when questions are permitted. If immediate work is required, continue with explicit assumptions and limits.
+Ask one focused clarifying question at a time when missing answers materially change the design. Indications of certification, authorization, eligibility, qualification, hiring, promotion, discipline or employment consequences require clarification of the decision use before classifying unknown stakes. Ask: **What decision will these results support, and could they affect certification, authorization, qualification or employment?** Keep stakes unresolved and consequential decisions blocked until answered. Do not infer low stakes from labels such as quiz or practice. If questions are disallowed, provide only independent planning with explicit limits; never fabricate the answer or a candidate pass/fail rule. Use low-stakes practice after consequential signals only when the user explicitly confirms practice-only use without consequences.
 
 ### 2. Classify the measurement need
 
@@ -165,7 +165,7 @@ Use criterion-referenced rules when performance standards exist. Determine:
 - reviewer calibration and adjudication;
 - confidence and limitations.
 
-Never default to 70%, 80%, or another conventional threshold without a defensible basis. For high-risk work, failure on a critical safety, policy, privacy, or control criterion may override the total score.
+Never default to a conventional threshold. Without an authorized decision standard, report criterion-level descriptive evidence and **No proficiency decision**; do not imply a global pass in a key, total or alignment table. Record the actual standard, authority, source, version, scope, threshold and critical-rule basis before applying a proficiency rule. Preserve non-compensable criteria required by that standard. Proposed practice criteria are recommendations, not passing standards. Keep missing or unobserved individual evidence unknown; class sampling and self-rating cannot establish individual proficiency. Estimate scoring workload and distinguish planned calibration from completed calibration. See [scoring guidance](references/engagement/05-rubric-and-scoring-guidance.md).
 
 ### 9. Design administration
 
@@ -180,7 +180,7 @@ Specify:
 - security, item exposure, versioning, and incident handling;
 - learner notice, feedback, results, and support.
 
-Provide equivalent access without changing the construct being measured. If an accommodation changes the construct, document and obtain the required decision.
+Classify each fallback as Equivalent, Partially equivalent or Not equivalent against the actual task, construct, conditions and evidence. Screenshot recognition does not demonstrate software operation. Record omissions, rationale, access needs and actual verification separately. Untested or changed-construct routes cannot justify proficiency for omitted performance. Offer accessible operation, rescheduling or a narrower interpretation. Use the [fallback equivalence template](templates/engagement/fallback-equivalence-template.md).
 
 ### 10. Design evaluation and analysis
 
@@ -278,3 +278,14 @@ Before release, verify:
 - all unperformed checks are labeled `NOT VERIFIED`.
 
 Use [references/test-cases.md](references/test-cases.md) to validate revisions to this skill.
+
+
+## Live-training engagement extension — 1.1.0
+
+Retain Design, Build, Revise, Review and Analyze modes above. For engagement, practice, scenarios or assessments within live training, read the [specialized workflow](references/engagement/workflow.md). Keep single-asset requests small; use complete-package mode only when explicitly requested. Preserve parent objectives and agenda, distinguish embedded from additional/follow-up time, and count embedded time once. Supply all required learner facts and separate facilitator keys, annotated models, feedback and a new-fact retry.
+
+Use the [validation and handoff contract](references/engagement/10-validation-and-handoffs.md), [worked example](examples/engagement/workplace-communication-complete-example.md), [learner handout](examples/engagement/learner-practice.md), [facilitator keys](examples/engagement/facilitator-keys.md), [structured record](examples/engagement/package.json) and [prepared handoff](examples/engagement/handoff.md). The fictional example remains **Draft complete; review required**. No learner proficiency, actual delivery, access testing or approval is implied.
+
+Run `python scripts/validate_engagement_package.py --record <package.json> --root <deliverable-folder>` for the specialized asset-set/complete-package schema. Single assets can use scoped templates/manual checks; other assessment/evaluation modes retain their existing blueprints and quality gates. Do not invent a course, agenda or evaluation levels merely to satisfy this validator. Report unavailable validation as NOT VERIFIED. Structural success cannot authenticate sources, judgments, actual tests or approval.
+
+Prepare unfinished parent-course integration for **Live Training Session Design** and actual file/evidence checks for **QA and Release Assets**. Preserve stable finding (when supplied), source, objective, asset and requirement IDs, versions, owner roles, dependencies, constraints, open items and acceptance criteria. Keep the assessment package as the evidence source rather than creating a competing course. Handoffs are Prepared; not executed until separately authorized and performed.

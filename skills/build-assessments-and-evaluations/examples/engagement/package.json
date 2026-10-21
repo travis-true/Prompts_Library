@@ -1,0 +1,861 @@
+{
+  "schema_version": "1.1",
+  "artifact_version": "1.1.0",
+  "release_state": "Draft complete; review required",
+  "document": "examples/engagement/workplace-communication-complete-example.md",
+  "intended_use": "Fictional workplace message-writing coaching practice only",
+  "stakes": {
+    "classification": "low-stakes-practice",
+    "consequence_signals": [],
+    "clarification_required": false,
+    "clarification_status": "Answered",
+    "clarification_answer": "Fictional example scope: coaching practice only; results do not affect qualification, authorization or employment.",
+    "consequential_decisions_enabled": false,
+    "clarified_use": "practice-only-no-consequences"
+  },
+  "sources": [
+    {
+      "id": "SRC-01",
+      "version": "1.1.0",
+      "kind": "fictional-example",
+      "path": "examples/engagement/learner-practice.md",
+      "locator": "Complete messages, fact sheets and prompts"
+    }
+  ],
+  "objectives": [
+    {
+      "id": "O-01",
+      "text": "Identify unclear purpose, missing context, vague action and absent timing in a message."
+    },
+    {
+      "id": "O-02",
+      "text": "Revise a message using supplied facts so purpose, action, ownership and timing are clear."
+    },
+    {
+      "id": "O-03",
+      "text": "Evaluate a message against criteria and explain an evidence-supported improvement."
+    }
+  ],
+  "agenda": [
+    {
+      "id": "M-01",
+      "start_minute": 0,
+      "minutes": 8,
+      "kind": "instruction",
+      "title": "Opening"
+    },
+    {
+      "id": "M-02",
+      "start_minute": 8,
+      "minutes": 12,
+      "kind": "instruction",
+      "title": "Diagnosis"
+    },
+    {
+      "id": "M-03",
+      "start_minute": 20,
+      "minutes": 15,
+      "kind": "instruction",
+      "title": "Modeling"
+    },
+    {
+      "id": "M-04",
+      "start_minute": 35,
+      "minutes": 15,
+      "kind": "instruction",
+      "title": "Guided rewrite"
+    },
+    {
+      "id": "M-05",
+      "start_minute": 50,
+      "minutes": 8,
+      "kind": "instruction",
+      "title": "Feedback"
+    },
+    {
+      "id": "B-01",
+      "start_minute": 58,
+      "minutes": 5,
+      "kind": "break",
+      "title": "Pause"
+    },
+    {
+      "id": "M-06",
+      "start_minute": 63,
+      "minutes": 17,
+      "kind": "instruction",
+      "title": "Independent practice"
+    },
+    {
+      "id": "M-07",
+      "start_minute": 80,
+      "minutes": 10,
+      "kind": "instruction",
+      "title": "Transfer and close"
+    }
+  ],
+  "total_minutes": 90,
+  "break_minutes": 5,
+  "administration_minutes": 0,
+  "instructional_minutes": 85,
+  "embedded_minutes": 45,
+  "assets": [
+    {
+      "id": "ENG-001",
+      "version": "1.1.0",
+      "title": "Opening comparison",
+      "kind": "learning",
+      "objective_ids": [
+        "O-01"
+      ],
+      "source_ids": [
+        "SRC-01"
+      ],
+      "stake": "low-stakes-practice",
+      "difficulty": "Foundational",
+      "delivery_mode": "Virtual or in person",
+      "placement": "embedded",
+      "parent_module": "M-01",
+      "offset_minutes": 0,
+      "minutes": 5,
+      "required_fact_quotes": [
+        "ENG-001"
+      ],
+      "learner_path": "examples/engagement/learner-practice.md",
+      "key_path": "examples/engagement/facilitator-keys.md",
+      "key_quote": "B is more actionable",
+      "learner_prompt_quote": "ENG-001",
+      "evidence": "Learner selection/rationale or composed message and criterion evidence",
+      "review_status": "Draft; actual delivery untested",
+      "owner": "Facilitator/designer (Unassigned)",
+      "technology": "Editable document or optional poll; accessible paper alternative",
+      "fallback_id": "FB-01",
+      "feedback_quote": "criterion-specific feedback",
+      "retry_asset_id": "RETRY-001",
+      "decision_rule": null,
+      "classification": "No proficiency decision",
+      "criteria": [
+        {
+          "id": "K-01",
+          "description": "Evidence matches the task prompt and actual text",
+          "critical": false,
+          "max_points": 1
+        }
+      ],
+      "observation_only": true
+    },
+    {
+      "id": "KC-001",
+      "version": "1.1.0",
+      "title": "Missing detail",
+      "kind": "learning",
+      "objective_ids": [
+        "O-01"
+      ],
+      "source_ids": [
+        "SRC-01"
+      ],
+      "stake": "low-stakes-practice",
+      "difficulty": "Foundational",
+      "delivery_mode": "Virtual or in person",
+      "placement": "embedded",
+      "parent_module": "M-02",
+      "offset_minutes": 0,
+      "minutes": 2,
+      "required_fact_quotes": [
+        "KC-001"
+      ],
+      "learner_path": "examples/engagement/learner-practice.md",
+      "key_path": "examples/engagement/facilitator-keys.md",
+      "key_quote": "B, Deadline",
+      "learner_prompt_quote": "KC-001",
+      "evidence": "Learner selection/rationale or composed message and criterion evidence",
+      "review_status": "Draft; actual delivery untested",
+      "owner": "Facilitator/designer (Unassigned)",
+      "technology": "Editable document or optional poll; accessible paper alternative",
+      "fallback_id": "FB-01",
+      "feedback_quote": "criterion-specific feedback",
+      "retry_asset_id": "RETRY-001",
+      "decision_rule": null,
+      "classification": "No proficiency decision",
+      "criteria": [
+        {
+          "id": "K-01",
+          "description": "Evidence matches the task prompt and actual text",
+          "critical": false,
+          "max_points": 1
+        }
+      ],
+      "observation_only": true
+    },
+    {
+      "id": "KC-002",
+      "version": "1.1.0",
+      "title": "Strongest revision",
+      "kind": "learning",
+      "objective_ids": [
+        "O-02"
+      ],
+      "source_ids": [
+        "SRC-01"
+      ],
+      "stake": "low-stakes-practice",
+      "difficulty": "Intermediate",
+      "delivery_mode": "Virtual or in person",
+      "placement": "embedded",
+      "parent_module": "M-03",
+      "offset_minutes": 10,
+      "minutes": 3,
+      "required_fact_quotes": [
+        "KC-002"
+      ],
+      "learner_path": "examples/engagement/learner-practice.md",
+      "key_path": "examples/engagement/facilitator-keys.md",
+      "key_quote": "B; it supplies review action",
+      "learner_prompt_quote": "KC-002",
+      "evidence": "Learner selection/rationale or composed message and criterion evidence",
+      "review_status": "Draft; actual delivery untested",
+      "owner": "Facilitator/designer (Unassigned)",
+      "technology": "Editable document or optional poll; accessible paper alternative",
+      "fallback_id": "FB-01",
+      "feedback_quote": "criterion-specific feedback",
+      "retry_asset_id": "RETRY-001",
+      "decision_rule": null,
+      "classification": "No proficiency decision",
+      "criteria": [
+        {
+          "id": "K-01",
+          "description": "Evidence matches the task prompt and actual text",
+          "critical": false,
+          "max_points": 1
+        }
+      ],
+      "observation_only": true
+    },
+    {
+      "id": "KC-003",
+      "version": "1.1.0",
+      "title": "Explain evidence",
+      "kind": "learning",
+      "objective_ids": [
+        "O-03"
+      ],
+      "source_ids": [
+        "SRC-01"
+      ],
+      "stake": "low-stakes-practice",
+      "difficulty": "Intermediate",
+      "delivery_mode": "Virtual or in person",
+      "placement": "embedded",
+      "parent_module": "M-05",
+      "offset_minutes": 0,
+      "minutes": 3,
+      "required_fact_quotes": [
+        "KC-003"
+      ],
+      "learner_path": "examples/engagement/learner-practice.md",
+      "key_path": "examples/engagement/facilitator-keys.md",
+      "key_quote": "Timing \u2014 \u201cby 3 p.m. Thursday\u201d",
+      "learner_prompt_quote": "KC-003",
+      "evidence": "Learner selection/rationale or composed message and criterion evidence",
+      "review_status": "Draft; actual delivery untested",
+      "owner": "Facilitator/designer (Unassigned)",
+      "technology": "Editable document or optional poll; accessible paper alternative",
+      "fallback_id": "FB-01",
+      "feedback_quote": "criterion-specific feedback",
+      "retry_asset_id": "RETRY-001",
+      "decision_rule": null,
+      "classification": "No proficiency decision",
+      "criteria": [
+        {
+          "id": "K-01",
+          "description": "Evidence matches the task prompt and actual text",
+          "critical": false,
+          "max_points": 1
+        }
+      ],
+      "observation_only": true
+    },
+    {
+      "id": "SCN-001",
+      "version": "1.1.0",
+      "title": "Guided rewrite",
+      "kind": "learning",
+      "objective_ids": [
+        "O-02"
+      ],
+      "source_ids": [
+        "SRC-01"
+      ],
+      "stake": "low-stakes-practice",
+      "difficulty": "Intermediate",
+      "delivery_mode": "Virtual or in person",
+      "placement": "embedded",
+      "parent_module": "M-04",
+      "offset_minutes": 0,
+      "minutes": 15,
+      "required_fact_quotes": [
+        "noon Thursday",
+        "Test Issues list",
+        "Morgan Chen",
+        "affected task, observed result, expected result and impact"
+      ],
+      "learner_path": "examples/engagement/learner-practice.md",
+      "key_path": "examples/engagement/facilitator-keys.md",
+      "key_quote": "Please report testing problems",
+      "learner_prompt_quote": "SCN-001",
+      "evidence": "Learner selection/rationale or composed message and criterion evidence",
+      "review_status": "Draft; actual delivery untested",
+      "owner": "Facilitator/designer (Unassigned)",
+      "technology": "Editable document or optional poll; accessible paper alternative",
+      "fallback_id": "FB-01",
+      "feedback_quote": "criterion-specific feedback",
+      "retry_asset_id": "RETRY-001",
+      "decision_rule": null,
+      "classification": "No proficiency decision",
+      "criteria": [
+        {
+          "id": "C-01",
+          "description": "Purpose",
+          "critical": false,
+          "max_points": 1
+        },
+        {
+          "id": "C-02",
+          "description": "Useful context",
+          "critical": false,
+          "max_points": 1
+        },
+        {
+          "id": "C-03",
+          "description": "Specific action",
+          "critical": true,
+          "max_points": 1
+        },
+        {
+          "id": "C-04",
+          "description": "Ownership",
+          "critical": true,
+          "max_points": 1
+        },
+        {
+          "id": "C-05",
+          "description": "Timing",
+          "critical": true,
+          "max_points": 1
+        },
+        {
+          "id": "C-06",
+          "description": "Factual fidelity",
+          "critical": true,
+          "max_points": 1
+        }
+      ],
+      "observation_only": true
+    },
+    {
+      "id": "ASMT-001",
+      "version": "1.1.0",
+      "title": "Independent performance practice",
+      "kind": "learning",
+      "objective_ids": [
+        "O-02",
+        "O-03"
+      ],
+      "source_ids": [
+        "SRC-01"
+      ],
+      "stake": "low-stakes-practice",
+      "difficulty": "Intermediate",
+      "delivery_mode": "Virtual or in person",
+      "placement": "embedded",
+      "parent_module": "M-06",
+      "offset_minutes": 0,
+      "minutes": 17,
+      "required_fact_quotes": [
+        "2 p.m. Tuesday",
+        "Jordan Lee",
+        "work location and equipment needs"
+      ],
+      "learner_path": "examples/engagement/learner-practice.md",
+      "key_path": "examples/engagement/facilitator-keys.md",
+      "key_quote": "Please confirm your work location",
+      "learner_prompt_quote": "ASMT-001",
+      "evidence": "Learner selection/rationale or composed message and criterion evidence",
+      "review_status": "Draft; actual delivery untested",
+      "owner": "Facilitator/designer (Unassigned)",
+      "technology": "Editable document or optional poll; accessible paper alternative",
+      "fallback_id": "FB-01",
+      "feedback_quote": "criterion-specific feedback",
+      "retry_asset_id": "RETRY-001",
+      "decision_rule": null,
+      "classification": "No proficiency decision",
+      "criteria": [
+        {
+          "id": "C-01",
+          "description": "Purpose",
+          "critical": false,
+          "max_points": 1
+        },
+        {
+          "id": "C-02",
+          "description": "Useful context",
+          "critical": false,
+          "max_points": 1
+        },
+        {
+          "id": "C-03",
+          "description": "Specific action",
+          "critical": true,
+          "max_points": 1
+        },
+        {
+          "id": "C-04",
+          "description": "Ownership",
+          "critical": true,
+          "max_points": 1
+        },
+        {
+          "id": "C-05",
+          "description": "Timing",
+          "critical": true,
+          "max_points": 1
+        },
+        {
+          "id": "C-06",
+          "description": "Factual fidelity",
+          "critical": true,
+          "max_points": 1
+        },
+        {
+          "id": "C-07",
+          "description": "Accurate self-evaluation",
+          "critical": false,
+          "max_points": 1
+        },
+        {
+          "id": "C-08",
+          "description": "Grounded rationale",
+          "critical": false,
+          "max_points": 1
+        }
+      ],
+      "observation_only": true
+    },
+    {
+      "id": "RETRY-001",
+      "version": "1.1.0",
+      "title": "New-fact retry",
+      "kind": "learning",
+      "objective_ids": [
+        "O-02",
+        "O-03"
+      ],
+      "source_ids": [
+        "SRC-01"
+      ],
+      "stake": "low-stakes-practice",
+      "difficulty": "Intermediate",
+      "delivery_mode": "Virtual or in person",
+      "placement": "follow-up",
+      "parent_module": null,
+      "offset_minutes": null,
+      "minutes": 10,
+      "required_fact_quotes": [
+        "10 a.m. Friday",
+        "Casey Patel",
+        "Workshop Choices list"
+      ],
+      "learner_path": "examples/engagement/learner-practice.md",
+      "key_path": "examples/engagement/facilitator-keys.md",
+      "key_quote": "Please confirm your session choice",
+      "learner_prompt_quote": "RETRY-001",
+      "evidence": "Learner selection/rationale or composed message and criterion evidence",
+      "review_status": "Draft; actual delivery untested",
+      "owner": "Facilitator/designer (Unassigned)",
+      "technology": "Editable document or optional poll; accessible paper alternative",
+      "fallback_id": "FB-01",
+      "feedback_quote": "criterion-specific feedback",
+      "retry_asset_id": null,
+      "decision_rule": null,
+      "classification": "No proficiency decision",
+      "criteria": [
+        {
+          "id": "C-01",
+          "description": "Purpose",
+          "critical": false,
+          "max_points": 1
+        },
+        {
+          "id": "C-02",
+          "description": "Useful context",
+          "critical": false,
+          "max_points": 1
+        },
+        {
+          "id": "C-03",
+          "description": "Specific action",
+          "critical": true,
+          "max_points": 1
+        },
+        {
+          "id": "C-04",
+          "description": "Ownership",
+          "critical": true,
+          "max_points": 1
+        },
+        {
+          "id": "C-05",
+          "description": "Timing",
+          "critical": true,
+          "max_points": 1
+        },
+        {
+          "id": "C-06",
+          "description": "Factual fidelity",
+          "critical": true,
+          "max_points": 1
+        },
+        {
+          "id": "C-07",
+          "description": "Accurate self-evaluation",
+          "critical": false,
+          "max_points": 1
+        },
+        {
+          "id": "C-08",
+          "description": "Grounded rationale",
+          "critical": false,
+          "max_points": 1
+        }
+      ],
+      "observation_only": true
+    }
+  ],
+  "standards": [],
+  "fallbacks": [
+    {
+      "id": "FB-01",
+      "objective_ids": [
+        "O-01",
+        "O-02",
+        "O-03"
+      ],
+      "primary_construct": "Compose/evaluate written workplace messages or identify text evidence",
+      "fallback_construct": "Compose/evaluate written workplace messages or identify text evidence",
+      "primary_method": "Optional digital responses/editable document",
+      "fallback_method": "Accessible paper or agreed text-response route",
+      "classification": "Equivalent",
+      "omitted_evidence": [],
+      "rationale": "Writing/evidence remains the task; optional polling software is not the assessed construct.",
+      "verification_status": "Not checked",
+      "proficiency_use_allowed": false
+    }
+  ],
+  "observation": {
+    "learners": 24,
+    "scoring_minutes_per_response": 2,
+    "total_scoring_minutes": 48,
+    "scoring_placement": "Outside session",
+    "individual_collection": true,
+    "actual_scoring_performed": false,
+    "unobserved_result": "Not observed"
+  },
+  "evaluation": [
+    {
+      "id": "EV-01",
+      "level": "Learning",
+      "selected": true,
+      "question": "Which writing/evaluation criteria need more coaching?",
+      "indicator": "Criterion evidence in independent message, self-check and rationale",
+      "source_asset_ids": [
+        "ASMT-001"
+      ],
+      "owner": "Facilitator (Unassigned)",
+      "timing": "After responses are reviewed; owner confirms interval",
+      "analysis": "Describe criterion patterns; no global passing inference",
+      "action": "Target feedback and retry",
+      "limits": "Individual results unknown until scored; no causal business claim"
+    },
+    {
+      "id": "EV-02",
+      "level": "Reaction",
+      "selected": false,
+      "rationale": "Optional owner choice; no automatic survey required"
+    },
+    {
+      "id": "EV-03",
+      "level": "Application",
+      "selected": false,
+      "rationale": "Defer until owner selects a real follow-up decision and authorized evidence source"
+    },
+    {
+      "id": "EV-04",
+      "level": "Outcomes",
+      "selected": false,
+      "rationale": "No operational decision, baseline or owner supplied; no causal inference"
+    }
+  ],
+  "quality_checks": [
+    {
+      "id": "Q-01",
+      "title": "Objective and evidence mapping",
+      "applicable": true,
+      "status": "Pass",
+      "method": "Written design inspection",
+      "reviewer": "Package editor (document review only)",
+      "date": "2026-10-21",
+      "artifact_version": "1.1.0",
+      "rationale": "",
+      "evidence": {
+        "path": "examples/engagement/workplace-communication-complete-example.md",
+        "quote": "Q-01: Objective and evidence mapping",
+        "result": "Reviewed the stated written-design record; no actual delivery result asserted."
+      }
+    },
+    {
+      "id": "Q-02",
+      "title": "Existing assets and changes",
+      "applicable": true,
+      "status": "Pass",
+      "method": "Written design inspection",
+      "reviewer": "Package editor (document review only)",
+      "date": "2026-10-21",
+      "artifact_version": "1.1.0",
+      "rationale": "",
+      "evidence": {
+        "path": "examples/engagement/workplace-communication-complete-example.md",
+        "quote": "Q-02: Existing assets and changes",
+        "result": "Reviewed the stated written-design record; no actual delivery result asserted."
+      }
+    },
+    {
+      "id": "Q-03",
+      "title": "Placement and timing",
+      "applicable": true,
+      "status": "Pass",
+      "method": "Written design inspection",
+      "reviewer": "Package editor (document review only)",
+      "date": "2026-10-21",
+      "artifact_version": "1.1.0",
+      "rationale": "",
+      "evidence": {
+        "path": "examples/engagement/workplace-communication-complete-example.md",
+        "quote": "Q-03: Placement and timing",
+        "result": "Reviewed the stated written-design record; no actual delivery result asserted."
+      }
+    },
+    {
+      "id": "Q-04",
+      "title": "Stakes and decision use",
+      "applicable": true,
+      "status": "Pass",
+      "method": "Written design inspection",
+      "reviewer": "Package editor (document review only)",
+      "date": "2026-10-21",
+      "artifact_version": "1.1.0",
+      "rationale": "",
+      "evidence": {
+        "path": "examples/engagement/workplace-communication-complete-example.md",
+        "quote": "Q-04: Stakes and decision use",
+        "result": "Reviewed the stated written-design record; no actual delivery result asserted."
+      }
+    },
+    {
+      "id": "Q-05",
+      "title": "Complete facts and keys",
+      "applicable": true,
+      "status": "Pass",
+      "method": "Written design inspection",
+      "reviewer": "Package editor (document review only)",
+      "date": "2026-10-21",
+      "artifact_version": "1.1.0",
+      "rationale": "",
+      "evidence": {
+        "path": "examples/engagement/workplace-communication-complete-example.md",
+        "quote": "Q-05: Complete facts and keys",
+        "result": "Reviewed the stated written-design record; no actual delivery result asserted."
+      }
+    },
+    {
+      "id": "Q-06",
+      "title": "Passing-standard integrity",
+      "applicable": true,
+      "status": "Pass",
+      "method": "Written design inspection",
+      "reviewer": "Package editor (document review only)",
+      "date": "2026-10-21",
+      "artifact_version": "1.1.0",
+      "rationale": "",
+      "evidence": {
+        "path": "examples/engagement/workplace-communication-complete-example.md",
+        "quote": "Q-06: Passing-standard integrity",
+        "result": "Reviewed the stated written-design record; no actual delivery result asserted."
+      }
+    },
+    {
+      "id": "Q-07",
+      "title": "Accessibility design and rendered access",
+      "applicable": true,
+      "status": "Not checked",
+      "method": null,
+      "reviewer": null,
+      "date": null,
+      "artifact_version": "1.1.0",
+      "rationale": "Actual rendered/platform/fallback access has not been tested.",
+      "evidence": null
+    },
+    {
+      "id": "Q-08",
+      "title": "Fallback performance equivalence",
+      "applicable": true,
+      "status": "Not checked",
+      "method": null,
+      "reviewer": null,
+      "date": null,
+      "artifact_version": "1.1.0",
+      "rationale": "Actual rendered/platform/fallback access has not been tested.",
+      "evidence": null
+    },
+    {
+      "id": "Q-09",
+      "title": "Feedback, retry and individual evidence",
+      "applicable": true,
+      "status": "Pass",
+      "method": "Written design inspection",
+      "reviewer": "Package editor (document review only)",
+      "date": "2026-10-21",
+      "artifact_version": "1.1.0",
+      "rationale": "",
+      "evidence": {
+        "path": "examples/engagement/workplace-communication-complete-example.md",
+        "quote": "Q-09: Feedback, retry and individual evidence",
+        "result": "Reviewed the stated written-design record; no actual delivery result asserted."
+      }
+    },
+    {
+      "id": "Q-10",
+      "title": "Evaluation scope",
+      "applicable": true,
+      "status": "Pass",
+      "method": "Written design inspection",
+      "reviewer": "Package editor (document review only)",
+      "date": "2026-10-21",
+      "artifact_version": "1.1.0",
+      "rationale": "",
+      "evidence": {
+        "path": "examples/engagement/workplace-communication-complete-example.md",
+        "quote": "Q-10: Evaluation scope",
+        "result": "Reviewed the stated written-design record; no actual delivery result asserted."
+      }
+    },
+    {
+      "id": "Q-11",
+      "title": "Metadata/source versions",
+      "applicable": true,
+      "status": "Pass",
+      "method": "Written design inspection",
+      "reviewer": "Package editor (document review only)",
+      "date": "2026-10-21",
+      "artifact_version": "1.1.0",
+      "rationale": "",
+      "evidence": {
+        "path": "examples/engagement/workplace-communication-complete-example.md",
+        "quote": "Q-11: Metadata/source versions",
+        "result": "Reviewed the stated written-design record; no actual delivery result asserted."
+      }
+    },
+    {
+      "id": "Q-12",
+      "title": "Higher-risk/high-stakes review",
+      "applicable": false,
+      "status": "Not applicable",
+      "method": null,
+      "reviewer": null,
+      "date": null,
+      "artifact_version": "1.1.0",
+      "rationale": "Fictional practice-only scope; no consequential or higher-risk decision is supported.",
+      "evidence": null
+    }
+  ],
+  "open_items": [
+    {
+      "id": "OPEN-01",
+      "owner": "Course owner (Unassigned)",
+      "description": "Formal proficiency use is deferred until the actual standard/decision is supplied.",
+      "blocks_current_use": false,
+      "status": "Open"
+    },
+    {
+      "id": "OPEN-02",
+      "owner": "Accessibility/delivery reviewer (Unassigned)",
+      "description": "Test actual learner formats, platform access and fallback route.",
+      "blocks_current_use": true,
+      "status": "Open"
+    },
+    {
+      "id": "OPEN-03",
+      "owner": "Facilitator/course owner (Unassigned)",
+      "description": "Confirm 24-learner assumption, later 48-minute scoring capacity, mode, response collection and feedback timing.",
+      "blocks_current_use": true,
+      "status": "Open"
+    }
+  ],
+  "handoffs": [
+    {
+      "id": "H-01",
+      "destination": "live-training-session-design",
+      "status": "Prepared; not executed",
+      "source_ids": [
+        "SRC-01"
+      ],
+      "asset_ids": [
+        "ENG-001",
+        "KC-001",
+        "KC-002",
+        "KC-003",
+        "SCN-001",
+        "ASMT-001",
+        "RETRY-001"
+      ],
+      "objective_ids": [
+        "O-01",
+        "O-02",
+        "O-03"
+      ],
+      "tasks": [
+        "Confirm parent agenda and embed the supplied assets without double-counting",
+        "Confirm scoring workload, ownership and feedback arrangements"
+      ],
+      "acceptance_criteria": "Preserve source/objective/asset IDs, 90/85 time accounting and no unapproved proficiency rule."
+    },
+    {
+      "id": "H-02",
+      "destination": "qa-and-release-assets",
+      "status": "Prepared; not executed",
+      "source_ids": [
+        "SRC-01"
+      ],
+      "asset_ids": [
+        "ENG-001",
+        "KC-001",
+        "KC-002",
+        "KC-003",
+        "SCN-001",
+        "ASMT-001",
+        "RETRY-001"
+      ],
+      "objective_ids": [
+        "O-01",
+        "O-02",
+        "O-03"
+      ],
+      "tasks": [
+        "Inspect actual rendered learner/facilitator files separately",
+        "Test selected access/fallback route and verify open-item evidence"
+      ],
+      "acceptance_criteria": "Report performed and unperformed checks; never infer approval or delivery from this design."
+    }
+  ],
+  "handoff_document": "examples/engagement/handoff.md"
+}

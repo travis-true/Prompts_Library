@@ -51,3 +51,6 @@ No school-oriented prompts or market defaults were added. Source licenses are re
 ## Validation performed
 
 Repository validation passed for all 105 active resources. Imported YAML, declared icon files, and reference/script paths were checked. The raster utility passed both matching-size and mismatching-size cases. The opportunity utility passed CSV input/output, minimum/maximum scores, buyer-intent gating, and out-of-range input checks. These utility checks do not establish end-to-end host compatibility.
+
+
+Training Engagement and Assessment Designer 1.1.0 is incorporated into [Build Assessments and Evaluations](../skills/build-assessments-and-evaluations/SKILL.md) as a specialized live-training workflow. No separate catalog skill is added; counts remain unchanged. See [upgrade details](assessment-engagement-upgrade.md).

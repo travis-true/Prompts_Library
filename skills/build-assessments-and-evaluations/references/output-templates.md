@@ -97,3 +97,8 @@ Statuses:
 - `NOT VERIFIED`
 
 Never populate approval or validation evidence without support.
+
+
+## Engagement extension
+
+Use the [engagement workflow](engagement/workflow.md) and its scoped templates only when applicable. Preserve the original IDs in prepared development and QA handoffs; preparation is not execution or release.

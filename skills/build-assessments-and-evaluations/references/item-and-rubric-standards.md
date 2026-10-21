@@ -84,3 +84,8 @@ Do not score “not observed” as failure without a defined rule.
 - Avoid double-barreled, leading, loaded, or mandatory open-text questions.
 - Include “not applicable” or “not enough opportunity” when valid.
 - Do not collect identity or sensitive detail without a decision need.
+
+
+## Engagement extension
+
+For live-training assets, use the [scoring safeguards](engagement/05-rubric-and-scoring-guidance.md) and [complete example keys](../examples/engagement/facilitator-keys.md). Missing standards mean No proficiency decision; missing facts cannot be invented and then scored.

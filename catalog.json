@@ -808,7 +808,7 @@
     "function": "Workplace workflow",
     "purpose": "Design, build, revise, or quality-check assessments and evaluations for corporate learning, training, enablement, performance support, certification, pilots, and programs. Use when a user requests diagnostics, pre- or post-assessments, knowledge checks, quizzes, practical or skills assessments, scenarios, observation checklists, rubrics, surveys, feedback forms, transfer measures, operational metrics, evaluation plans, scoring rules, item banks, analysis plans, or evidence reports. Align every measure to an intended decision, outcome, authoritative source, administration context, accessibility requirement, and defensible interpretation.",
     "status": "Installed skill import",
-    "short_description": "Design aligned quizzes, practical tasks, rubrics, surveys, and evaluation plans with defensible scoring."
+    "short_description": "Design assessments and evaluation plans with source-grounded scoring, live-training practice, fallback-equivalence checks, validation, and traceable handoffs."
   },
   {
     "title": "Qa And Release Assets",
