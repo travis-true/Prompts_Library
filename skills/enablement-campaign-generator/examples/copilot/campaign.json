@@ -1,0 +1,3590 @@
+{
+  "schema_version": "1.1",
+  "version": "1.1.0",
+  "overview": "examples/copilot/30-day-copilot-tip-campaign.md",
+  "release_state": "Draft complete; review required",
+  "calendar": {
+    "mode": "sequence-only",
+    "count": 30,
+    "cadence": "One tip per sequence position; calendar versus working days not selected",
+    "timezone": null,
+    "start_date": null
+  },
+  "sources": [
+    {
+      "id": "SRC-01",
+      "title": "Get started writing prompts in Microsoft Copilot",
+      "publisher": "Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-writing-prompts-in-microsoft-365-copilot",
+      "updated": "2026-09",
+      "accessed": "2026-10-21",
+      "path": "examples/copilot/source-register.md",
+      "quote": "Prompts may specify a goal, relevant context, the information to use and the desired response."
+    },
+    {
+      "id": "SRC-02",
+      "title": "Write effective prompts for Copilot in Word",
+      "publisher": "Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/word/copilot/write-effective-prompts",
+      "updated": null,
+      "accessed": "2026-10-21",
+      "path": "examples/copilot/source-register.md",
+      "quote": "inspect generated work for accuracy and suitability before sharing."
+    },
+    {
+      "id": "SRC-03",
+      "title": "Write a great prompt in Microsoft Copilot",
+      "publisher": "Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/microsoft-365-copilot/write-a-great-prompt-in-microsoft-365-copilot",
+      "updated": "2026-02",
+      "accessed": "2026-10-21",
+      "path": "examples/copilot/source-register.md",
+      "quote": "Give clear task instructions and refine responses with follow-up requests."
+    }
+  ],
+  "claims": [
+    {
+      "id": "CL-01",
+      "statement": "Goal, context, source and expected response can structure a prompt.",
+      "source_ids": [
+        "SRC-01"
+      ],
+      "scope": "general-guidance",
+      "documentation_status": "Checked",
+      "environment_status": "Not checked",
+      "environment_evidence": null,
+      "dependencies": "No tenant feature availability inferred; approved chat/pasted-text access must be confirmed.",
+      "refresh_by": "2027-01-21"
+    },
+    {
+      "id": "CL-02",
+      "statement": "People should review generated work before sharing.",
+      "source_ids": [
+        "SRC-02"
+      ],
+      "scope": "general-guidance",
+      "documentation_status": "Checked",
+      "environment_status": "Not checked",
+      "environment_evidence": null,
+      "dependencies": "No tenant feature availability inferred; approved chat/pasted-text access must be confirmed.",
+      "refresh_by": "2027-01-21"
+    },
+    {
+      "id": "CL-03",
+      "statement": "Source access depends on the Copilot account/experience.",
+      "source_ids": [
+        "SRC-01"
+      ],
+      "scope": "general-guidance",
+      "documentation_status": "Checked",
+      "environment_status": "Not checked",
+      "environment_evidence": null,
+      "dependencies": "No tenant feature availability inferred; approved chat/pasted-text access must be confirmed.",
+      "refresh_by": "2027-01-21"
+    },
+    {
+      "id": "CL-04",
+      "statement": "Follow-up refinement can tailor a response.",
+      "source_ids": [
+        "SRC-03"
+      ],
+      "scope": "general-guidance",
+      "documentation_status": "Checked",
+      "environment_status": "Not checked",
+      "environment_evidence": null,
+      "dependencies": "No tenant feature availability inferred; approved chat/pasted-text access must be confirmed.",
+      "refresh_by": "2027-01-21"
+    }
+  ],
+  "tips": [
+    {
+      "id": "TIP-001",
+      "sequence": 1,
+      "title": "Start with one clear goal",
+      "phase": "Awareness",
+      "mode": "new-task",
+      "difficulty": "Foundational",
+      "difficulty_rationale": "One supplied task with explicit facts and a review check; advocacy alone does not raise difficulty.",
+      "prerequisite_ids": [],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "A progress note buries its requested decision.",
+      "inputs": "Project Cedar: testing finished for 8 of 10 forms. Two forms await review by Jordan Lee. Decision needed: whether to keep the October 30 launch date. No review deadline was supplied.",
+      "prompt": {
+        "goal": "Draft a three-bullet status update: progress, risk, decision needed.",
+        "context": "Fictional workplace coaching for a general employee. Focus on start with one clear goal; draft only, no external action.",
+        "source": "Project Cedar: testing finished for 8 of 10 forms. Two forms await review by Jordan Lee. Decision needed: whether to keep the October 30 launch date. No review deadline was supplied.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. Preserve 8/10; do not invent a review deadline or launch decision. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "Progress: 8 of 10 forms tested. Risk: two forms await Jordan Lee review; review timing is unknown. Decision: confirm whether the October 30 launch date remains appropriate.",
+      "review": "Preserve 8/10; do not invent a review deadline or launch decision.",
+      "question": "Which part makes the requested decision visible?",
+      "reinforcement": "Repeat with a different fictional progress note tomorrow.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "path": "examples/copilot/tips/tip-001.md",
+      "visual": {
+        "concept": "Three labeled status blocks: progress, risk, decision.",
+        "purpose": "Make the review distinction in start with one clear goal visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "Three labeled status blocks: progress, risk, decision. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: Three labeled status blocks: progress, risk, decision. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: Three labeled status blocks: progress, risk, decision..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "id": "TIP-002",
+      "sequence": 2,
+      "title": "Give useful context",
+      "phase": "Awareness",
+      "mode": "new-task",
+      "difficulty": "Foundational",
+      "difficulty_rationale": "One supplied task with explicit facts and a review check; advocacy alone does not raise difficulty.",
+      "prerequisite_ids": [],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "An update uses jargon a new colleague cannot interpret.",
+      "inputs": "Audience: a new coordinator. Message: The access request is queued pending owner sign-off. Meaning: the request is waiting for the team owner to approve it. No completion date is known.",
+      "prompt": {
+        "goal": "Rewrite for the new coordinator in two plain-language sentences.",
+        "context": "Fictional workplace coaching for a general employee. Focus on give useful context; draft only, no external action.",
+        "source": "Audience: a new coordinator. Message: The access request is queued pending owner sign-off. Meaning: the request is waiting for the team owner to approve it. No completion date is known.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. Keep the approval dependency and unknown date; do not promise access. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "Your access request is waiting for the team owner to approve it. We do not yet have a completion date.",
+      "review": "Keep the approval dependency and unknown date; do not promise access.",
+      "question": "What audience detail changed the wording?",
+      "reinforcement": "Try the same facts for an experienced team lead; compare wording, not facts.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "path": "examples/copilot/tips/tip-002.md",
+      "visual": {
+        "concept": "A jargon phrase beside its plain-language explanation.",
+        "purpose": "Make the review distinction in give useful context visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "A jargon phrase beside its plain-language explanation. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: A jargon phrase beside its plain-language explanation. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: A jargon phrase beside its plain-language explanation..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "id": "TIP-003",
+      "sequence": 3,
+      "title": "Name the source",
+      "phase": "Awareness",
+      "mode": "new-task",
+      "difficulty": "Foundational",
+      "difficulty_rationale": "One supplied task with explicit facts and a review check; advocacy alone does not raise difficulty.",
+      "prerequisite_ids": [],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "A summary mixes notes with guesses.",
+      "inputs": "SOURCE A: Room Maple is reserved for 14 people on October 29. Casey Patel will confirm catering. The notes do not state a catering deadline. END SOURCE A.",
+      "prompt": {
+        "goal": "Summarize confirmed facts and unknowns using SOURCE A labels.",
+        "context": "Fictional workplace coaching for a general employee. Focus on name the source; draft only, no external action.",
+        "source": "SOURCE A: Room Maple is reserved for 14 people on October 29. Casey Patel will confirm catering. The notes do not state a catering deadline. END SOURCE A.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. Check each fact against SOURCE A; absence is not a license to guess. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "Confirmed [SOURCE A]: Room Maple, 14 people, October 29; Casey Patel will confirm catering. Unknown [SOURCE A]: catering deadline.",
+      "review": "Check each fact against SOURCE A; absence is not a license to guess.",
+      "question": "Which sentence should remain an open question?",
+      "reinforcement": "Replace SOURCE A with another small supplied note and retain source labels.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "path": "examples/copilot/tips/tip-003.md",
+      "visual": {
+        "concept": "One source note feeding separate Facts and Unknowns boxes.",
+        "purpose": "Make the review distinction in name the source visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "One source note feeding separate Facts and Unknowns boxes. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: One source note feeding separate Facts and Unknowns boxes. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: One source note feeding separate Facts and Unknowns boxes..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "id": "TIP-004",
+      "sequence": 4,
+      "title": "Set output expectations",
+      "phase": "Awareness",
+      "mode": "new-task",
+      "difficulty": "Foundational",
+      "difficulty_rationale": "One supplied task with explicit facts and a review check; advocacy alone does not raise difficulty.",
+      "prerequisite_ids": [],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "A long response hides action items.",
+      "inputs": "Notes: Rowan Ellis will update the FAQ by October 28. Morgan Chen will test the links; no date is stated for testing.",
+      "prompt": {
+        "goal": "Return a table with Task, Owner, Due date, and Missing information; no extra narrative.",
+        "context": "Fictional workplace coaching for a general employee. Focus on set output expectations; draft only, no external action.",
+        "source": "Notes: Rowan Ellis will update the FAQ by October 28. Morgan Chen will test the links; no date is stated for testing.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. Both rows need correct owners; missing date must remain Not stated. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "FAQ update | Rowan Ellis | October 28 | None stated. Link test | Morgan Chen | Not stated | Confirm testing date.",
+      "review": "Both rows need correct owners; missing date must remain Not stated.",
+      "question": "How does the requested format expose the gap?",
+      "reinforcement": "Change the format to a checklist while preserving all facts.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "path": "examples/copilot/tips/tip-004.md",
+      "visual": {
+        "concept": "A two-row action table with one missing-date cell.",
+        "purpose": "Make the review distinction in set output expectations visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "A two-row action table with one missing-date cell. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: A two-row action table with one missing-date cell. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: A two-row action table with one missing-date cell..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "id": "TIP-005",
+      "sequence": 5,
+      "title": "Retrieve and verify",
+      "phase": "First wins",
+      "mode": "retrieval/retry",
+      "difficulty": "Foundational",
+      "difficulty_rationale": "One supplied task with explicit facts and a review check; advocacy alone does not raise difficulty.",
+      "prerequisite_ids": [],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "An attractive draft changes a deadline.",
+      "inputs": "Authoritative fictional note: Cedar review is due October 30; Casey Patel owns it. Draft to inspect: Jordan Lee will complete Cedar review by October 28.",
+      "prompt": {
+        "goal": "Without looking at an earlier tip, list the prompt ingredients, then compare the draft to the supplied note.",
+        "context": "Fictional workplace coaching for a general employee. Focus on retrieve and verify; draft only, no external action.",
+        "source": "Authoritative fictional note: Cedar review is due October 30; Casey Patel owns it. Draft to inspect: Jordan Lee will complete Cedar review by October 28.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. Inspect owner and deadline directly; a generated critique is not proof that other facts are correct. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "Goal, Context, Source, Expectation. Draft conflicts: owner should be Casey Patel and due date October 30. No independent verification beyond this supplied note is implied.",
+      "review": "Inspect owner and deadline directly; a generated critique is not proof that other facts are correct.",
+      "question": "Which correction can you demonstrate from the note?",
+      "reinforcement": "Apply the same human source comparison to a new two-fact draft.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "path": "examples/copilot/tips/tip-005.md",
+      "visual": {
+        "concept": "Two highlighted mismatches between a note and draft.",
+        "purpose": "Make the review distinction in retrieve and verify visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "Two highlighted mismatches between a note and draft. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: Two highlighted mismatches between a note and draft. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: Two highlighted mismatches between a note and draft..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "id": "TIP-006",
+      "sequence": 6,
+      "title": "Summarize a supplied thread",
+      "phase": "First wins",
+      "mode": "new-task",
+      "difficulty": "Foundational",
+      "difficulty_rationale": "One supplied task with explicit facts and a review check; advocacy alone does not raise difficulty.",
+      "prerequisite_ids": [],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "Discussion and decisions are mixed together.",
+      "inputs": "Thread: Jordan proposes October 29 for the team demo. Casey replies that October 29 is confirmed. Rowan volunteers to prepare the agenda. No agenda deadline appears.",
+      "prompt": {
+        "goal": "Separate decisions, assigned actions and open questions from this pasted thread.",
+        "context": "Fictional workplace coaching for a general employee. Focus on summarize a supplied thread; draft only, no external action.",
+        "source": "Thread: Jordan proposes October 29 for the team demo. Casey replies that October 29 is confirmed. Rowan volunteers to prepare the agenda. No agenda deadline appears.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. Do not assign all work to Jordan or invent a deadline; use pasted text only. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "Decision: team demo October 29. Action: Rowan prepares agenda. Open question: agenda deadline. Jordan proposed the date; Casey confirmed it.",
+      "review": "Do not assign all work to Jordan or invent a deadline; use pasted text only.",
+      "question": "What distinguishes the proposal from the confirmed decision?",
+      "reinforcement": "Reuse the categories on another fictional discussion.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "path": "examples/copilot/tips/tip-006.md",
+      "visual": {
+        "concept": "A short thread sorted into Decision, Action and Question.",
+        "purpose": "Make the review distinction in summarize a supplied thread visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "A short thread sorted into Decision, Action and Question. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: A short thread sorted into Decision, Action and Question. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: A short thread sorted into Decision, Action and Question..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "id": "TIP-007",
+      "sequence": 7,
+      "title": "Draft a bounded reply",
+      "phase": "First wins",
+      "mode": "new-task",
+      "difficulty": "Foundational",
+      "difficulty_rationale": "One supplied task with explicit facts and a review check; advocacy alone does not raise difficulty.",
+      "prerequisite_ids": [],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "A polite response accidentally commits to work.",
+      "inputs": "Request: please send the revised guide today. Facts: Taylor Reed can review it tomorrow morning; approval is required before sending; no approval time is known.",
+      "prompt": {
+        "goal": "Draft a respectful reply acknowledging the request without promising an unapproved send.",
+        "context": "Fictional workplace coaching for a general employee. Focus on draft a bounded reply; draft only, no external action.",
+        "source": "Request: please send the revised guide today. Facts: Taylor Reed can review it tomorrow morning; approval is required before sending; no approval time is known.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. Preserve tomorrow morning and approval requirement; do not promise sending today. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "I can review the revised guide tomorrow morning. It requires approval before I send it; I do not yet have an approval time. Would that review timing help?",
+      "review": "Preserve tomorrow morning and approval requirement; do not promise sending today.",
+      "question": "Which wording avoids creating an unsupported commitment?",
+      "reinforcement": "Ask for a shorter version and verify that the boundary remains.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "path": "examples/copilot/tips/tip-007.md",
+      "visual": {
+        "concept": "A reply draft with separate Can do and Needs approval labels.",
+        "purpose": "Make the review distinction in draft a bounded reply visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "A reply draft with separate Can do and Needs approval labels. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: A reply draft with separate Can do and Needs approval labels. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: A reply draft with separate Can do and Needs approval labels..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "id": "TIP-008",
+      "sequence": 8,
+      "title": "Change tone, preserve meaning",
+      "phase": "First wins",
+      "mode": "new-task",
+      "difficulty": "Foundational",
+      "difficulty_rationale": "One supplied task with explicit facts and a review check; advocacy alone does not raise difficulty.",
+      "prerequisite_ids": [],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "A friendlier rewrite weakens a requirement.",
+      "inputs": "Original: Submit the checklist by 2 p.m. October 29. Include the project code. Requests without the code will be returned. Audience: internal project coordinators.",
+      "prompt": {
+        "goal": "Make the message friendly while retaining every requirement and consequence.",
+        "context": "Fictional workplace coaching for a general employee. Focus on change tone, preserve meaning; draft only, no external action.",
+        "source": "Original: Submit the checklist by 2 p.m. October 29. Include the project code. Requests without the code will be returned. Audience: internal project coordinators.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. Check deadline, required code and return condition; friendliness cannot remove them. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "Please submit your checklist by 2 p.m. October 29 and include the project code. Requests missing the code will be returned.",
+      "review": "Check deadline, required code and return condition; friendliness cannot remove them.",
+      "question": "Which word change would alter the requirement?",
+      "reinforcement": "Compare a concise version against the original checklist of facts.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "path": "examples/copilot/tips/tip-008.md",
+      "visual": {
+        "concept": "The same three facts under a warmer sentence.",
+        "purpose": "Make the review distinction in change tone, preserve meaning visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "The same three facts under a warmer sentence. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: The same three facts under a warmer sentence. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: The same three facts under a warmer sentence..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "id": "TIP-009",
+      "sequence": 9,
+      "title": "Choose the next action",
+      "phase": "First wins",
+      "mode": "new-task",
+      "difficulty": "Foundational",
+      "difficulty_rationale": "One supplied task with explicit facts and a review check; advocacy alone does not raise difficulty.",
+      "prerequisite_ids": [],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "A plan starts work before resolving a dependency.",
+      "inputs": "Project Birch: report draft is complete. Data totals conflict between two supplied worksheets. Casey owns data reconciliation. External distribution is blocked until totals agree.",
+      "prompt": {
+        "goal": "Recommend the next action with evidence, assumptions and what remains unconfirmed.",
+        "context": "Fictional workplace coaching for a general employee. Focus on choose the next action; draft only, no external action.",
+        "source": "Project Birch: report draft is complete. Data totals conflict between two supplied worksheets. Casey owns data reconciliation. External distribution is blocked until totals agree.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. Do not recommend sending the draft or assume which worksheet is correct. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "Ask Casey to reconcile the conflicting totals before external distribution. Evidence: totals disagree and distribution is blocked. Unknown: reconciliation completion time.",
+      "review": "Do not recommend sending the draft or assume which worksheet is correct.",
+      "question": "Which dependency must be resolved before distribution?",
+      "reinforcement": "Apply dependency-first reasoning to a new fictional blocker.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "path": "examples/copilot/tips/tip-009.md",
+      "visual": {
+        "concept": "A blocked distribution arrow and reconciliation step.",
+        "purpose": "Make the review distinction in choose the next action visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "A blocked distribution arrow and reconciliation step. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: A blocked distribution arrow and reconciliation step. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: A blocked distribution arrow and reconciliation step..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "id": "TIP-010",
+      "sequence": 10,
+      "title": "Retry with a small plan",
+      "phase": "First wins",
+      "mode": "retrieval/retry",
+      "difficulty": "Foundational",
+      "difficulty_rationale": "One supplied task with explicit facts and a review check; advocacy alone does not raise difficulty.",
+      "prerequisite_ids": [
+        "TIP-005"
+      ],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "A large request needs an actionable starting point.",
+      "inputs": "Task: prepare a team workshop. Facts: topic is document review; date November 5; owner Jordan Lee; venue and participant count are not yet confirmed.",
+      "prompt": {
+        "goal": "Use the first four prompting habits to propose four steps with dependencies and unknowns.",
+        "context": "Fictional workplace coaching for a general employee. Focus on retry with a small plan; draft only, no external action.",
+        "source": "Task: prepare a team workshop. Facts: topic is document review; date November 5; owner Jordan Lee; venue and participant count are not yet confirmed.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. Keep unknown venue/count explicit; no invented bookings or commitments. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "Confirm venue and participant count; define review exercise; prepare materials after attendance is known; rehearse before November 5. Proposed sequencing, not an approved schedule.",
+      "review": "Keep unknown venue/count explicit; no invented bookings or commitments.",
+      "question": "What is the first action that reduces uncertainty?",
+      "reinforcement": "Repeat on a different project and identify which facts you still need.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "path": "examples/copilot/tips/tip-010.md",
+      "visual": {
+        "concept": "Four numbered steps with an Unknown inputs branch.",
+        "purpose": "Make the review distinction in retry with a small plan visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "Four numbered steps with an Unknown inputs branch. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: Four numbered steps with an Unknown inputs branch. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: Four numbered steps with an Unknown inputs branch..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "id": "TIP-011",
+      "sequence": 11,
+      "title": "Plan from supplied priorities",
+      "phase": "Daily habits",
+      "mode": "repeat-use",
+      "difficulty": "Foundational",
+      "difficulty_rationale": "One supplied task with explicit facts and a review check; advocacy alone does not raise difficulty.",
+      "prerequisite_ids": [],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "Calendar urgency crowds out blocked work.",
+      "inputs": "Monday plan: a report due Tuesday needs 60 minutes and has all inputs. A guide due Friday needs 90 minutes but awaits approval. Available focus time today: 90 minutes.",
+      "prompt": {
+        "goal": "Propose up to three priorities within 90 minutes; distinguish work from a request for approval.",
+        "context": "Fictional workplace coaching for a general employee. Focus on plan from supplied priorities; draft only, no external action.",
+        "source": "Monday plan: a report due Tuesday needs 60 minutes and has all inputs. A guide due Friday needs 90 minutes but awaits approval. Available focus time today: 90 minutes.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. Budget cannot exceed 90; proposed buffer is not an actual calendar booking. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "Spend 60 minutes on the Tuesday report; send an approval-status request for the guide; reserve remaining time for review/buffer. Do not count the blocked 90-minute guide as completed.",
+      "review": "Budget cannot exceed 90; proposed buffer is not an actual calendar booking.",
+      "question": "What did you defer, and why?",
+      "reinforcement": "Repeat the planning method on three days; record only a voluntary yes/no repeat-use signal.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01",
+        "MET-02"
+      ],
+      "path": "examples/copilot/tips/tip-011.md",
+      "visual": {
+        "concept": "A 90-minute time bar with report and buffer sections.",
+        "purpose": "Make the review distinction in plan from supplied priorities visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "A 90-minute time bar with report and buffer sections. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: A 90-minute time bar with report and buffer sections. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: A 90-minute time bar with report and buffer sections..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "id": "TIP-012",
+      "sequence": 12,
+      "title": "Prepare a decision-focused meeting",
+      "phase": "Daily habits",
+      "mode": "application",
+      "difficulty": "Foundational",
+      "difficulty_rationale": "One supplied task with explicit facts and a review check; advocacy alone does not raise difficulty.",
+      "prerequisite_ids": [],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "A meeting brief lists topics without a decision.",
+      "inputs": "Meeting: choose a pilot team. Options: Birch has 12 volunteers; Cedar has 8 volunteers and an available facilitator. Decision owner: Morgan Chen. No selection criteria are supplied.",
+      "prompt": {
+        "goal": "Prepare purpose, known options, decision needed and three questions; do not select a winner without criteria.",
+        "context": "Fictional workplace coaching for a general employee. Focus on prepare a decision-focused meeting; draft only, no external action.",
+        "source": "Meeting: choose a pilot team. Options: Birch has 12 volunteers; Cedar has 8 volunteers and an available facilitator. Decision owner: Morgan Chen. No selection criteria are supplied.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. Retain 12/8 counts; distinguish supplied facilitator fact from unknown criteria. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "Purpose: choose a pilot team. Morgan owns decision. Questions: required capacity, facilitator availability for Birch, and selection criteria. Volunteer counts alone do not determine the choice.",
+      "review": "Retain 12/8 counts; distinguish supplied facilitator fact from unknown criteria.",
+      "question": "Which question makes the decision more defensible?",
+      "reinforcement": "Use the brief before a second fictional selection meeting.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "path": "examples/copilot/tips/tip-012.md",
+      "visual": {
+        "concept": "Two pilot cards under a decision-criteria heading.",
+        "purpose": "Make the review distinction in prepare a decision-focused meeting visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "Two pilot cards under a decision-criteria heading. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: Two pilot cards under a decision-criteria heading. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: Two pilot cards under a decision-criteria heading..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "id": "TIP-013",
+      "sequence": 13,
+      "title": "Keep a decision log",
+      "phase": "Daily habits",
+      "mode": "application",
+      "difficulty": "Foundational",
+      "difficulty_rationale": "One supplied task with explicit facts and a review check; advocacy alone does not raise difficulty.",
+      "prerequisite_ids": [],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "A suggestion is recorded as approval.",
+      "inputs": "Notes: October 21, Morgan approved a two-week pilot. Jordan suggested a November launch, but no launch decision was made. Casey will draft pilot instructions.",
+      "prompt": {
+        "goal": "Create a decision log separating approved decisions, proposals and actions.",
+        "context": "Fictional workplace coaching for a general employee. Focus on keep a decision log; draft only, no external action.",
+        "source": "Notes: October 21, Morgan approved a two-week pilot. Jordan suggested a November launch, but no launch decision was made. Casey will draft pilot instructions.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. Do not turn a suggestion into a launch approval or invent a deadline. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "Approved October 21: two-week pilot, Morgan. Proposal: November launch, undecided. Action: Casey drafts pilot instructions; deadline not stated.",
+      "review": "Do not turn a suggestion into a launch approval or invent a deadline.",
+      "question": "Which entry must remain a proposal?",
+      "reinforcement": "Compare the log to source notes before saving it as a work record.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "path": "examples/copilot/tips/tip-013.md",
+      "visual": {
+        "concept": "Three log rows labeled Approved, Proposed and Action.",
+        "purpose": "Make the review distinction in keep a decision log visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "Three log rows labeled Approved, Proposed and Action. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: Three log rows labeled Approved, Proposed and Action. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: Three log rows labeled Approved, Proposed and Action..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "id": "TIP-014",
+      "sequence": 14,
+      "title": "Make action items usable",
+      "phase": "Daily habits",
+      "mode": "repeat-use",
+      "difficulty": "Foundational",
+      "difficulty_rationale": "One supplied task with explicit facts and a review check; advocacy alone does not raise difficulty.",
+      "prerequisite_ids": [],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "A note names work but leaves completion ambiguous.",
+      "inputs": "Notes: Rowan will update the onboarding checklist by October 30. Completion means the revised draft is in Team Drafts and Jordan is notified for review. Approval is not yet granted.",
+      "prompt": {
+        "goal": "Create one action item with owner, due date, done criteria and approval dependency.",
+        "context": "Fictional workplace coaching for a general employee. Focus on make action items usable; draft only, no external action.",
+        "source": "Notes: Rowan will update the onboarding checklist by October 30. Completion means the revised draft is in Team Drafts and Jordan is notified for review. Approval is not yet granted.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. Distinguish draft completion from final approval; preserve folder and reviewer. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "Rowan updates checklist by October 30; done when revised draft is in Team Drafts and Jordan notified for review. Approval remains pending; do not distribute as final.",
+      "review": "Distinguish draft completion from final approval; preserve folder and reviewer.",
+      "question": "What observable result tells you the drafting action is done?",
+      "reinforcement": "Reuse the structure with a different reviewer and folder.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "path": "examples/copilot/tips/tip-014.md",
+      "visual": {
+        "concept": "An action card with Draft done and Approval pending fields.",
+        "purpose": "Make the review distinction in make action items usable visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "An action card with Draft done and Approval pending fields. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: An action card with Draft done and Approval pending fields. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: An action card with Draft done and Approval pending fields..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "id": "TIP-015",
+      "sequence": 15,
+      "title": "Build and retest a template",
+      "phase": "Daily habits",
+      "mode": "retrieval/retry",
+      "difficulty": "Foundational",
+      "difficulty_rationale": "One supplied task with explicit facts and a review check; advocacy alone does not raise difficulty.",
+      "prerequisite_ids": [
+        "TIP-010"
+      ],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "A saved prompt contains last week\u2019s names.",
+      "inputs": "Prior successful structure: create progress/risks/next-actions update from supplied notes. New test facts: Project Harbor, 3 of 4 checks complete, Casey owns the last check, due November 2.",
+      "prompt": {
+        "goal": "Create a reusable GCSE template, then fill and test it with the new facts; remove old names.",
+        "context": "Fictional workplace coaching for a general employee. Focus on build and retest a template; draft only, no external action.",
+        "source": "Prior successful structure: create progress/risks/next-actions update from supplied notes. New test facts: Project Harbor, 3 of 4 checks complete, Casey owns the last check, due November 2.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. No Cedar/Birch facts may leak into Harbor; variables and filled example must match. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "Template variables: project, notes, audience, format. Filled result: Harbor has 3/4 checks complete; Casey owns remaining check due November 2. A model, not an observed run.",
+      "review": "No Cedar/Birch facts may leak into Harbor; variables and filled example must match.",
+      "question": "Which values belong in placeholders rather than fixed text?",
+      "reinforcement": "Use the template again with another new fact set and compare corrections needed.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01",
+        "MET-02"
+      ],
+      "path": "examples/copilot/tips/tip-015.md",
+      "visual": {
+        "concept": "Reusable prompt frame beside a filled Harbor example.",
+        "purpose": "Make the review distinction in build and retest a template visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "Reusable prompt frame beside a filled Harbor example. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: Reusable prompt frame beside a filled Harbor example. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: Reusable prompt frame beside a filled Harbor example..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "id": "TIP-016",
+      "sequence": 16,
+      "title": "Compare source versions",
+      "phase": "Workflow integration",
+      "mode": "application",
+      "difficulty": "Intermediate",
+      "difficulty_rationale": "Compare conflicting evidence and preserve bounded interpretations.",
+      "prerequisite_ids": [],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "Formatting changes hide a material conflict.",
+      "inputs": "Document A: review due October 29; owner Casey; format bullets. Document B: review due October 30; owner Casey; format table. No document is designated authoritative.",
+      "prompt": {
+        "goal": "Compare substantive and formatting differences and list required decisions with source labels.",
+        "context": "Fictional workplace coaching for a general employee. Focus on compare source versions; draft only, no external action.",
+        "source": "Document A: review due October 29; owner Casey; format bullets. Document B: review due October 30; owner Casey; format table. No document is designated authoritative.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. Both source labels must appear; no assumption that B controls. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "Substantive conflict: due date October 29 [A] versus October 30 [B]. Same owner Casey. Formatting difference: bullets/table. Confirm controlling date; do not silently choose newer-looking content.",
+      "review": "Both source labels must appear; no assumption that B controls.",
+      "question": "Which difference needs an owner decision?",
+      "reinforcement": "Recheck a resolved pair after the owner supplies the controlling requirement.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "path": "examples/copilot/tips/tip-016.md",
+      "visual": {
+        "concept": "Two document columns with date conflict and formatting-only tags.",
+        "purpose": "Make the review distinction in compare source versions visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "Two document columns with date conflict and formatting-only tags. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: Two document columns with date conflict and formatting-only tags. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: Two document columns with date conflict and formatting-only tags..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "id": "TIP-017",
+      "sequence": 17,
+      "title": "Draft only from sources",
+      "phase": "Workflow integration",
+      "mode": "application",
+      "difficulty": "Intermediate",
+      "difficulty_rationale": "Compare conflicting evidence and preserve bounded interpretations.",
+      "prerequisite_ids": [],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "A draft adds a benefit the source never states.",
+      "inputs": "Source A: internal help session is November 4 at 10 a.m.; topic is reviewing AI drafts. Source B: registration closes November 2; contact role is session coordinator. No time-savings claim is supplied.",
+      "prompt": {
+        "goal": "Draft a short invitation with source traceability and a missing-information list.",
+        "context": "Fictional workplace coaching for a general employee. Focus on draft only from sources; draft only, no external action.",
+        "source": "Source A: internal help session is November 4 at 10 a.m.; topic is reviewing AI drafts. Source B: registration closes November 2; contact role is session coordinator. No time-savings claim is supplied.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. Dates must match A/B; do not invent a URL, named contact or productivity figure. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "Invitation: join November 4 at 10 a.m. for reviewing AI drafts [A]; register by November 2 [B]. Missing: registration URL and coordinator contact. No guaranteed time saving.",
+      "review": "Dates must match A/B; do not invent a URL, named contact or productivity figure.",
+      "question": "Which tempting sentence would exceed the sources?",
+      "reinforcement": "After contact/URL is confirmed, revise only those fields and keep traceability.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "path": "examples/copilot/tips/tip-017.md",
+      "visual": {
+        "concept": "An invitation with source A/B markers and a Missing links note.",
+        "purpose": "Make the review distinction in draft only from sources visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "An invitation with source A/B markers and a Missing links note. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: An invitation with source A/B markers and a Missing links note. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: An invitation with source A/B markers and a Missing links note..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "id": "TIP-018",
+      "sequence": 18,
+      "title": "Disposition conflicting feedback",
+      "phase": "Workflow integration",
+      "mode": "application",
+      "difficulty": "Intermediate",
+      "difficulty_rationale": "Compare conflicting evidence and preserve bounded interpretations.",
+      "prerequisite_ids": [],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "Two reviewers ask for incompatible changes.",
+      "inputs": "Feedback F-01 from Jordan: keep guide to one page. F-02 from Casey: add five detailed examples. Approved scope: one-page quick reference; detailed companion is not yet authorized.",
+      "prompt": {
+        "goal": "Create a disposition table preserving F-01/F-02 and identify a proposed trade-off for owner review.",
+        "context": "Fictional workplace coaching for a general employee. Focus on disposition conflicting feedback; draft only, no external action.",
+        "source": "Feedback F-01 from Jordan: keep guide to one page. F-02 from Casey: add five detailed examples. Approved scope: one-page quick reference; detailed companion is not yet authorized.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. Retain both finding IDs and mark the companion proposed, not approved. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "F-01 preserve one-page scope. F-02 propose one short example and defer detailed examples to an optional companion pending authorization. Owner decision needed; no silent deletion.",
+      "review": "Retain both finding IDs and mark the companion proposed, not approved.",
+      "question": "How can you preserve both needs without pretending they are compatible?",
+      "reinforcement": "Ask the scope owner to decide the companion before expanding the guide.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "path": "examples/copilot/tips/tip-018.md",
+      "visual": {
+        "concept": "Two feedback cards feeding a disposition table.",
+        "purpose": "Make the review distinction in disposition conflicting feedback visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "Two feedback cards feeding a disposition table. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: Two feedback cards feeding a disposition table. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: Two feedback cards feeding a disposition table..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "id": "TIP-019",
+      "sequence": 19,
+      "title": "Prepare a traceable handoff",
+      "phase": "Workflow integration",
+      "mode": "application",
+      "difficulty": "Intermediate",
+      "difficulty_rationale": "Compare conflicting evidence and preserve bounded interpretations.",
+      "prerequisite_ids": [],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "A colleague receives files without open decisions.",
+      "inputs": "Project Maple: FAQ draft complete in Shared Drafts. F-03 unresolved: support link not confirmed. Jordan owns confirmation. Casey will review once link is supplied. No publication approved.",
+      "prompt": {
+        "goal": "Create a concise handoff retaining finding, source location, dependency and next action.",
+        "context": "Fictional workplace coaching for a general employee. Focus on prepare a traceable handoff; draft only, no external action.",
+        "source": "Project Maple: FAQ draft complete in Shared Drafts. F-03 unresolved: support link not confirmed. Jordan owns confirmation. Casey will review once link is supplied. No publication approved.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. Retain F-03 and dependency; file location is supplied text, not a verified accessible link. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "FAQ draft: Shared Drafts. F-03: Jordan confirms support link; Casey review depends on it. Publication not approved. Next: resolve F-03 before release review.",
+      "review": "Retain F-03 and dependency; file location is supplied text, not a verified accessible link.",
+      "question": "What must the recipient resolve before proceeding?",
+      "reinforcement": "Have the recipient restate the next action before considering the handoff accepted.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "path": "examples/copilot/tips/tip-019.md",
+      "visual": {
+        "concept": "A handoff card with F-03 as an unresolved dependency.",
+        "purpose": "Make the review distinction in prepare a traceable handoff visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "A handoff card with F-03 as an unresolved dependency. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: A handoff card with F-03 as an unresolved dependency. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: A handoff card with F-03 as an unresolved dependency..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "id": "TIP-020",
+      "sequence": 20,
+      "title": "Assemble a repeatable process",
+      "phase": "Workflow integration",
+      "mode": "retrieval/retry",
+      "difficulty": "Intermediate",
+      "difficulty_rationale": "Compare conflicting evidence and preserve bounded interpretations.",
+      "prerequisite_ids": [
+        "TIP-015"
+      ],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "A checklist omits exception handling.",
+      "inputs": "Proposed process: receive event request; confirm date/room with coordinator; prepare draft notice; obtain owner approval; publish through authorized channel owner. If date/room is missing, return for clarification. No publishing permission is delegated.",
+      "prompt": {
+        "goal": "Combine source grounding, action clarity and handoff into a proposed procedure with exception and approval gates.",
+        "context": "Fictional workplace coaching for a general employee. Focus on assemble a repeatable process; draft only, no external action.",
+        "source": "Proposed process: receive event request; confirm date/room with coordinator; prepare draft notice; obtain owner approval; publish through authorized channel owner. If date/room is missing, return for clarification. No publishing permission is delegated.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. Keep exception and approval; proposed process is not organizational policy. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "Receive \u2192 verify date/room \u2192 draft \u2192 owner approval \u2192 authorized publisher. Missing date/room returns to clarification; preparation does not grant publish permission.",
+      "review": "Keep exception and approval; proposed process is not organizational policy.",
+      "question": "Where should the workflow pause rather than invent an answer?",
+      "reinforcement": "Try a new request with a missing room and confirm the pause rule survives.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "path": "examples/copilot/tips/tip-020.md",
+      "visual": {
+        "concept": "A five-stage process with a clarification return branch.",
+        "purpose": "Make the review distinction in assemble a repeatable process visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "A five-stage process with a clarification return branch. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: A five-stage process with a clarification return branch. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: A five-stage process with a clarification return branch..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "id": "TIP-021",
+      "sequence": 21,
+      "title": "Challenge a proposal fairly",
+      "phase": "Advanced practice",
+      "mode": "application",
+      "difficulty": "Intermediate",
+      "difficulty_rationale": "Compare conflicting evidence and preserve bounded interpretations.",
+      "prerequisite_ids": [],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "An appealing plan hides assumptions.",
+      "inputs": "Proposal: replace every workshop with one weekly email. Known facts: email reach is available; no performance data, learner-access study or cost comparison is supplied.",
+      "prompt": {
+        "goal": "Identify assumptions, counterarguments, missing evidence and one reversible pilot; do not assert the proposal works.",
+        "context": "Fictional workplace coaching for a general employee. Focus on challenge a proposal fairly; draft only, no external action.",
+        "source": "Proposal: replace every workshop with one weekly email. Known facts: email reach is available; no performance data, learner-access study or cost comparison is supplied.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. No invented savings or success rate; pilot remains a recommendation. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "Unknown: skill acquisition and access needs. Counterpoint: email reach is not demonstrated learning. Proposed pilot: test one low-risk topic with defined performance evidence before wider change.",
+      "review": "No invented savings or success rate; pilot remains a recommendation.",
+      "question": "Which missing evidence would most change your decision?",
+      "reinforcement": "Repeat on a different proposal and retain the strongest counterargument.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "path": "examples/copilot/tips/tip-021.md",
+      "visual": {
+        "concept": "A proposal card surrounded by evidence-gap questions.",
+        "purpose": "Make the review distinction in challenge a proposal fairly visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "A proposal card surrounded by evidence-gap questions. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: A proposal card surrounded by evidence-gap questions. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: A proposal card surrounded by evidence-gap questions..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "id": "TIP-022",
+      "sequence": 22,
+      "title": "Compare options with trade-offs",
+      "phase": "Advanced practice",
+      "mode": "application",
+      "difficulty": "Intermediate",
+      "difficulty_rationale": "Compare conflicting evidence and preserve bounded interpretations.",
+      "prerequisite_ids": [],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "A recommendation uses unstated priorities.",
+      "inputs": "Options for a help resource: A one-page guide, B five-minute recording, C weekly office hours. Constraints: two hours preparation this week; audience access needs unknown; no approved cost or effectiveness estimates.",
+      "prompt": {
+        "goal": "Compare effort, access, maintenance and uncertainty; recommend only conditionally.",
+        "context": "Fictional workplace coaching for a general employee. Focus on compare options with trade-offs; draft only, no external action.",
+        "source": "Options for a help resource: A one-page guide, B five-minute recording, C weekly office hours. Constraints: two hours preparation this week; audience access needs unknown; no approved cost or effectiveness estimates.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. Do not invent numerical scores or claim one format universally best. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "Conditional recommendation: scope a one-page draft within the two-hour budget, then verify access needs. Recording/office-hours effort and effectiveness remain unknown, not fabricated ratings.",
+      "review": "Do not invent numerical scores or claim one format universally best.",
+      "question": "What condition could reverse the recommendation?",
+      "reinforcement": "Revisit the comparison after one missing access fact is confirmed.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "path": "examples/copilot/tips/tip-022.md",
+      "visual": {
+        "concept": "Three option cards with known constraints and unknown cells.",
+        "purpose": "Make the review distinction in compare options with trade-offs visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "Three option cards with known constraints and unknown cells. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: Three option cards with known constraints and unknown cells. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: Three option cards with known constraints and unknown cells..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "id": "TIP-023",
+      "sequence": 23,
+      "title": "Use a source-grounded rubric",
+      "phase": "Advanced practice",
+      "mode": "application",
+      "difficulty": "Intermediate",
+      "difficulty_rationale": "Compare conflicting evidence and preserve bounded interpretations.",
+      "prerequisite_ids": [],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "A quality score obscures a critical omission.",
+      "inputs": "Draft notice: Review session November 4 at 10 a.m. Register by November 3. Source: session November 4 at 10 a.m.; registration closes November 2. Criteria: accurate date/time; accurate registration deadline; no invented link.",
+      "prompt": {
+        "goal": "Evaluate each criterion with source evidence, propose correction, and avoid an overall proficiency or release decision.",
+        "context": "Fictional workplace coaching for a general employee. Focus on use a source-grounded rubric; draft only, no external action.",
+        "source": "Draft notice: Review session November 4 at 10 a.m. Register by November 3. Source: session November 4 at 10 a.m.; registration closes November 2. Criteria: accurate date/time; accurate registration deadline; no invented link.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. Check actual source lines; do not let two passing checks compensate for wrong deadline. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "Date/time: Pass. Deadline: Needs revision; replace November 3 with November 2. Link: no invented link shown. This written review does not approve the notice for publication.",
+      "review": "Check actual source lines; do not let two passing checks compensate for wrong deadline.",
+      "question": "Which issue blocks factual use of this draft?",
+      "reinforcement": "Retry with a different incorrect field and preserve criterion-level judgments.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "path": "examples/copilot/tips/tip-023.md",
+      "visual": {
+        "concept": "A criterion table with a single deadline mismatch.",
+        "purpose": "Make the review distinction in use a source-grounded rubric visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "A criterion table with a single deadline mismatch. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: A criterion table with a single deadline mismatch. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: A criterion table with a single deadline mismatch..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "id": "TIP-024",
+      "sequence": 24,
+      "title": "Separate analysis from drafting",
+      "phase": "Advanced practice",
+      "mode": "application",
+      "difficulty": "Intermediate",
+      "difficulty_rationale": "Compare conflicting evidence and preserve bounded interpretations.",
+      "prerequisite_ids": [],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "Drafting begins before source conflicts are resolved.",
+      "inputs": "Source A says pilot ends November 6. Source B says pilot ends November 13. Both name Morgan as owner; neither is marked controlling. Requested asset: close-of-pilot notice.",
+      "prompt": {
+        "goal": "First list facts/gaps/conflicts, then propose an outline; pause the final notice until the owner resolves the end date.",
+        "context": "Fictional workplace coaching for a general employee. Focus on separate analysis from drafting; draft only, no external action.",
+        "source": "Source A says pilot ends November 6. Source B says pilot ends November 13. Both name Morgan as owner; neither is marked controlling. Requested asset: close-of-pilot notice.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. Do not choose a date or call a placeholder-filled notice final. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "Shared fact: Morgan owner. Conflict: November 6 versus 13. Outline: purpose, confirmed end date placeholder, next steps. Final notice remains blocked pending resolution.",
+      "review": "Do not choose a date or call a placeholder-filled notice final.",
+      "question": "What work can continue while the date is unresolved?",
+      "reinforcement": "Supply the controlling date later and revise only affected sections.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "path": "examples/copilot/tips/tip-024.md",
+      "visual": {
+        "concept": "Analysis, outline and draft stages with a date-resolution gate.",
+        "purpose": "Make the review distinction in separate analysis from drafting visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "Analysis, outline and draft stages with a date-resolution gate. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: Analysis, outline and draft stages with a date-resolution gate. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: Analysis, outline and draft stages with a date-resolution gate..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "id": "TIP-025",
+      "sequence": 25,
+      "title": "Refine without losing facts",
+      "phase": "Advanced practice",
+      "mode": "retrieval/retry",
+      "difficulty": "Intermediate",
+      "difficulty_rationale": "Compare conflicting evidence and preserve bounded interpretations.",
+      "prerequisite_ids": [
+        "TIP-020"
+      ],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "A shorter draft drops the approval condition.",
+      "inputs": "Previous draft: Rowan will place the updated checklist in Team Drafts by October 30 and notify Jordan for review. It is not approved for distribution. Requested change: reduce length, preserve every commitment and approval limit.",
+      "prompt": {
+        "goal": "Revise concisely, list material changes and verify preserved facts.",
+        "context": "Fictional workplace coaching for a general employee. Focus on refine without losing facts; draft only, no external action.",
+        "source": "Previous draft: Rowan will place the updated checklist in Team Drafts by October 30 and notify Jordan for review. It is not approved for distribution. Requested change: reduce length, preserve every commitment and approval limit.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. Compare owner, folder, deadline, reviewer and approval status before accepting. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "Rowan: save updated checklist in Team Drafts by October 30; notify Jordan for review. Distribution approval pending. Shortened phrasing only; no change to obligations.",
+      "review": "Compare owner, folder, deadline, reviewer and approval status before accepting.",
+      "question": "Which fact would be easiest to lose during compression?",
+      "reinforcement": "Revisit the day-14 structure and test another concise revision.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "path": "examples/copilot/tips/tip-025.md",
+      "visual": {
+        "concept": "A shorter draft with five preserved-fact markers.",
+        "purpose": "Make the review distinction in refine without losing facts visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "A shorter draft with five preserved-fact markers. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: A shorter draft with five preserved-fact markers. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: A shorter draft with five preserved-fact markers..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "id": "TIP-026",
+      "sequence": 26,
+      "title": "Share an evidenced lesson",
+      "phase": "Advocacy",
+      "mode": "application",
+      "difficulty": "Foundational",
+      "difficulty_rationale": "One supplied task with explicit facts and a review check; advocacy alone does not raise difficulty.",
+      "prerequisite_ids": [],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "A success story turns one experience into a claim.",
+      "inputs": "Approved fictional teaching case only: a coordinator used a prompt to draft a meeting brief; human review corrected two missing questions. No measured time saving, real employee evidence or campaign publication approval is supplied.",
+      "prompt": {
+        "goal": "Write a short teaching case with task, approach, human correction, limitation and reusable lesson; no invented impact.",
+        "context": "Fictional workplace coaching for a general employee. Focus on share an evidenced lesson; draft only, no external action.",
+        "source": "Approved fictional teaching case only: a coordinator used a prompt to draft a meeting brief; human review corrected two missing questions. No measured time saving, real employee evidence or campaign publication approval is supplied.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. Keep the case fictional; no percentages, real identities or implied publish approval. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "A coordinator drafted a meeting brief and added two questions during human review. Lesson: prompts help organize a first draft; source review still matters. No measured savings or general effectiveness conclusion.",
+      "review": "Keep the case fictional; no percentages, real identities or implied publish approval.",
+      "question": "Which limitation makes this case more useful to a peer?",
+      "reinforcement": "Invite a voluntary sanitized lesson through an approved route once one exists.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "path": "examples/copilot/tips/tip-026.md",
+      "visual": {
+        "concept": "A case card showing draft plus human-added questions.",
+        "purpose": "Make the review distinction in share an evidenced lesson visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "A case card showing draft plus human-added questions. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: A case card showing draft plus human-added questions. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: A case card showing draft plus human-added questions..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "id": "TIP-027",
+      "sequence": 27,
+      "title": "Create a peer prompt card",
+      "phase": "Advocacy",
+      "mode": "application",
+      "difficulty": "Foundational",
+      "difficulty_rationale": "One supplied task with explicit facts and a review check; advocacy alone does not raise difficulty.",
+      "prerequisite_ids": [],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "A shared prompt lacks instructions for reuse.",
+      "inputs": "Task: turn supplied notes into decisions/actions/questions. Sample: Morgan approved a two-week pilot; Casey drafts instructions; deadline unstated. Audience: a new project coordinator.",
+      "prompt": {
+        "goal": "Create a GCSE card with variable fields, filled example, expected output and review check.",
+        "context": "Fictional workplace coaching for a general employee. Focus on create a peer prompt card; draft only, no external action.",
+        "source": "Task: turn supplied notes into decisions/actions/questions. Sample: Morgan approved a two-week pilot; Casey drafts instructions; deadline unstated. Audience: a new project coordinator.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. Card must include all four components and the missing-date rule; sharing is not proficiency evidence. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "Card variables: notes, audience, output structure. Filled example: decision two-week pilot; action Casey drafts instructions; question deadline. Check approval versus proposal and unknown dates.",
+      "review": "Card must include all four components and the missing-date rule; sharing is not proficiency evidence.",
+      "question": "What does a peer need before copying the prompt?",
+      "reinforcement": "Ask a peer to explain required inputs before using an approved shared copy.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "path": "examples/copilot/tips/tip-027.md",
+      "visual": {
+        "concept": "Prompt card with variables and a small completed example.",
+        "purpose": "Make the review distinction in create a peer prompt card visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "Prompt card with variables and a small completed example. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: Prompt card with variables and a small completed example. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: Prompt card with variables and a small completed example..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "id": "TIP-028",
+      "sequence": 28,
+      "title": "Coach with boundaries",
+      "phase": "Advocacy",
+      "mode": "application",
+      "difficulty": "Foundational",
+      "difficulty_rationale": "One supplied task with explicit facts and a review check; advocacy alone does not raise difficulty.",
+      "prerequisite_ids": [],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "Coaching becomes a substitute for verification.",
+      "inputs": "Coachee has pasted fictional project notes but expects Copilot to know an unsupplied deadline. Facts: Casey owns the FAQ; no due date is stated. No access issue has been diagnosed.",
+      "prompt": {
+        "goal": "Draft three coaching questions and a short explanation without inventing a deadline or blaming tool access.",
+        "context": "Fictional workplace coaching for a general employee. Focus on coach with boundaries; draft only, no external action.",
+        "source": "Coachee has pasted fictional project notes but expects Copilot to know an unsupplied deadline. Facts: Casey owns the FAQ; no due date is stated. No access issue has been diagnosed.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. Avoid asserting account problems or promising hidden-data access; retain unknown deadline. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "Questions: What result do you need? Which facts did you supply? Where will you verify the deadline? Explanation: mark deadline unknown and ask its owner rather than treating a generated date as fact.",
+      "review": "Avoid asserting account problems or promising hidden-data access; retain unknown deadline.",
+      "question": "Which question helps the colleague find the missing input?",
+      "reinforcement": "Try the questions on another missing-owner scenario.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "path": "examples/copilot/tips/tip-028.md",
+      "visual": {
+        "concept": "Three coaching-question bubbles beside an Unknown deadline field.",
+        "purpose": "Make the review distinction in coach with boundaries visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "Three coaching-question bubbles beside an Unknown deadline field. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: Three coaching-question bubbles beside an Unknown deadline field. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: Three coaching-question bubbles beside an Unknown deadline field..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "id": "TIP-029",
+      "sequence": 29,
+      "title": "Reflect on repeated use",
+      "phase": "Advocacy",
+      "mode": "repeat-use",
+      "difficulty": "Intermediate",
+      "difficulty_rationale": "Compare conflicting evidence and preserve bounded interpretations.",
+      "prerequisite_ids": [],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "Frequent activity is mistaken for value.",
+      "inputs": "Voluntary fictional diary: status-update prompt used twice, both drafts needed deadline correction; meeting-brief prompt used once, useful after adding two questions. No timed baseline or complete employee population data exists.",
+      "prompt": {
+        "goal": "Recommend keep/improve/stop decisions bounded to this diary; label frequency as self-report.",
+        "context": "Fictional workplace coaching for a general employee. Focus on reflect on repeated use; draft only, no external action.",
+        "source": "Voluntary fictional diary: status-update prompt used twice, both drafts needed deadline correction; meeting-brief prompt used once, useful after adding two questions. No timed baseline or complete employee population data exists.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. No causal savings claim; do not treat missing diary entries as zero use. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "Improve status-update prompt with an explicit deadline-source check. Consider keeping meeting-brief method with the question review. Three reported attempts do not prove productivity or organization-wide adoption.",
+      "review": "No causal savings claim; do not treat missing diary entries as zero use.",
+      "question": "Which repeated error should change the prompt?",
+      "reinforcement": "Repeat the voluntary reflection after another period without collecting work content.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01",
+        "MET-02"
+      ],
+      "path": "examples/copilot/tips/tip-029.md",
+      "visual": {
+        "concept": "A small diary with correction themes, not a ranking of employees.",
+        "purpose": "Make the review distinction in reflect on repeated use visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "A small diary with correction themes, not a ranking of employees. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: A small diary with correction themes, not a ranking of employees. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: A small diary with correction themes, not a ranking of employees..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "id": "TIP-030",
+      "sequence": 30,
+      "title": "Build the next bounded workflow",
+      "phase": "Advocacy",
+      "mode": "retrieval/retry",
+      "difficulty": "Intermediate",
+      "difficulty_rationale": "Compare conflicting evidence and preserve bounded interpretations.",
+      "prerequisite_ids": [
+        "TIP-025"
+      ],
+      "new_joiner_path": "All facts and prompting components are reproduced in this tip; earlier tip is optional retrieval support.",
+      "scenario": "A useful habit has no trigger or review owner.",
+      "inputs": "Recurring task: weekly project update. Inputs: supplied progress notes, decisions and approved deadlines. Output: draft progress/risks/actions note. Human owner reviews every date and commitment. Storage and publication channels are not yet confirmed.",
+      "prompt": {
+        "goal": "Design a reusable GCSE workflow with trigger, inputs, review, exception handling and next decisions.",
+        "context": "Fictional workplace coaching for a general employee. Focus on build the next bounded workflow; draft only, no external action.",
+        "source": "Recurring task: weekly project update. Inputs: supplied progress notes, decisions and approved deadlines. Output: draft progress/risks/actions note. Human owner reviews every date and commitment. Storage and publication channels are not yet confirmed.",
+        "expectation": "Use only supplied facts; label missing/conflicting information. Retain human verification, unknown storage/channel and no automatic publish; use self-report only for optional repeat-use signal. Return the requested structure; do not claim approval, independent verification or measured results."
+      },
+      "model": "Trigger: weekly review. Paste approved inputs \u2192 draft three sections \u2192 human checks dates/commitments \u2192 store only after owner confirms location. Missing facts pause drafting of those fields; publication remains separate.",
+      "review": "Retain human verification, unknown storage/channel and no automatic publish; use self-report only for optional repeat-use signal.",
+      "question": "What must be confirmed before this becomes a shared routine?",
+      "reinforcement": "Return after one additional use; compare errors corrected, not unsupported time savings.",
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01",
+        "MET-02"
+      ],
+      "path": "examples/copilot/tips/tip-030.md",
+      "visual": {
+        "concept": "A reusable loop with a human review gate and pending storage decision.",
+        "purpose": "Make the review distinction in build the next bounded workflow visible.",
+        "channel": "SharePoint",
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9",
+        "composition": "A reusable loop with a human review gate and pending storage decision. Use a simple left-to-right layout with clear labels.",
+        "style": "Neutral flat editorial diagram; high contrast; no logos or simulated interfaces.",
+        "text_treatment": "Set concise labels as editable text in authoring; do not embed long prompt text in generated imagery.",
+        "image_prompt": "Create a text-free, neutral flat editorial illustration: A reusable loop with a human review gate and pending storage decision. Use generous spacing, two focal groups, and no logos, people identifiers or interface imitation.",
+        "alt_text": "Provisional: A reusable loop with a human review gate and pending storage decision..",
+        "status": "Brief only; not rendered",
+        "accessibility_status": "Not checked"
+      },
+      "version": "1.1.0"
+    }
+  ],
+  "required_channels": [
+    "Teams",
+    "SharePoint"
+  ],
+  "assets": [
+    {
+      "id": "TIP-001-TM",
+      "tip_id": "TIP-001",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-001-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-001-SP",
+      "tip_id": "TIP-001",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-001-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-002-TM",
+      "tip_id": "TIP-002",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-002-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-002-SP",
+      "tip_id": "TIP-002",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-002-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-003-TM",
+      "tip_id": "TIP-003",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-003-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-003-SP",
+      "tip_id": "TIP-003",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-003-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-004-TM",
+      "tip_id": "TIP-004",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-004-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-004-SP",
+      "tip_id": "TIP-004",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-004-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-005-TM",
+      "tip_id": "TIP-005",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-005-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-005-SP",
+      "tip_id": "TIP-005",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-005-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-006-TM",
+      "tip_id": "TIP-006",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-006-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-006-SP",
+      "tip_id": "TIP-006",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-006-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-007-TM",
+      "tip_id": "TIP-007",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-007-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-007-SP",
+      "tip_id": "TIP-007",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-007-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-008-TM",
+      "tip_id": "TIP-008",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-008-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-008-SP",
+      "tip_id": "TIP-008",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-008-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-009-TM",
+      "tip_id": "TIP-009",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-009-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-009-SP",
+      "tip_id": "TIP-009",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-009-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-010-TM",
+      "tip_id": "TIP-010",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-010-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-010-SP",
+      "tip_id": "TIP-010",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-010-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-011-TM",
+      "tip_id": "TIP-011",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-011-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01",
+        "MET-02"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-011-SP",
+      "tip_id": "TIP-011",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-011-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01",
+        "MET-02"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-012-TM",
+      "tip_id": "TIP-012",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-012-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-012-SP",
+      "tip_id": "TIP-012",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-012-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-013-TM",
+      "tip_id": "TIP-013",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-013-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-013-SP",
+      "tip_id": "TIP-013",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-013-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-014-TM",
+      "tip_id": "TIP-014",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-014-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-014-SP",
+      "tip_id": "TIP-014",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-014-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-015-TM",
+      "tip_id": "TIP-015",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-015-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01",
+        "MET-02"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-015-SP",
+      "tip_id": "TIP-015",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-015-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01",
+        "MET-02"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-016-TM",
+      "tip_id": "TIP-016",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-016-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-016-SP",
+      "tip_id": "TIP-016",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-016-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-017-TM",
+      "tip_id": "TIP-017",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-017-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-017-SP",
+      "tip_id": "TIP-017",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-017-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-018-TM",
+      "tip_id": "TIP-018",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-018-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-018-SP",
+      "tip_id": "TIP-018",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-018-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-019-TM",
+      "tip_id": "TIP-019",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-019-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-019-SP",
+      "tip_id": "TIP-019",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-019-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-020-TM",
+      "tip_id": "TIP-020",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-020-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-020-SP",
+      "tip_id": "TIP-020",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-020-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-021-TM",
+      "tip_id": "TIP-021",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-021-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-021-SP",
+      "tip_id": "TIP-021",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-021-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-022-TM",
+      "tip_id": "TIP-022",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-022-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-022-SP",
+      "tip_id": "TIP-022",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-022-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-023-TM",
+      "tip_id": "TIP-023",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-023-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-023-SP",
+      "tip_id": "TIP-023",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-023-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-024-TM",
+      "tip_id": "TIP-024",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-024-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-024-SP",
+      "tip_id": "TIP-024",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-024-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-025-TM",
+      "tip_id": "TIP-025",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-025-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-025-SP",
+      "tip_id": "TIP-025",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-025-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-026-TM",
+      "tip_id": "TIP-026",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-026-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-026-SP",
+      "tip_id": "TIP-026",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-026-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-027-TM",
+      "tip_id": "TIP-027",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-027-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-027-SP",
+      "tip_id": "TIP-027",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-027-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-028-TM",
+      "tip_id": "TIP-028",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-028-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-028-SP",
+      "tip_id": "TIP-028",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-028-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-029-TM",
+      "tip_id": "TIP-029",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-029-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01",
+        "MET-02"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-029-SP",
+      "tip_id": "TIP-029",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-029-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01",
+        "MET-02"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-030-TM",
+      "tip_id": "TIP-030",
+      "channel": "Teams",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-030-TM",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01",
+        "MET-02"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "TIP-030-SP",
+      "tip_id": "TIP-030",
+      "channel": "SharePoint",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "TIP-030-SP",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01",
+        "MET-02"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "EMAIL-LAUNCH",
+      "tip_id": "TIP-001",
+      "channel": "Email",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "EMAIL-LAUNCH",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "EMAIL-ROLLUP-01",
+      "tip_id": "TIP-005",
+      "channel": "Email",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "EMAIL-ROLLUP-01",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "EMAIL-CLOSE",
+      "tip_id": "TIP-030",
+      "channel": "Email",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "EMAIL-CLOSE",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    },
+    {
+      "id": "CARD-015",
+      "tip_id": "TIP-015",
+      "channel": "Prompt card",
+      "path": "examples/copilot/channel-assets.md",
+      "quote": "CARD-015",
+      "content_status": "Draft",
+      "publication_status": "Not scheduled",
+      "owner": "Unassigned channel owner",
+      "version": "1.1.0",
+      "approval": null,
+      "publication_evidence": null,
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "metric_ids": [
+        "MET-01"
+      ],
+      "expires": "2027-01-21",
+      "render_status": "Not checked"
+    }
+  ],
+  "metrics": [
+    {
+      "id": "MET-01",
+      "layer": "Attempt",
+      "decision": "Use reported difficulty to choose support topics.",
+      "numerator": "Voluntary reports that one fictional task was attempted",
+      "denominator": "Number of voluntary respondents to the same item; not all employees",
+      "population": "Voluntary campaign respondents; eligible population not yet confirmed",
+      "period": "Seven days after an approved batch; exact dates unresolved",
+      "deduplication": "One voluntary response per approved collection period; no tracking implemented",
+      "missingness": "Exclude unanswered items from that denominator and report missing count; never infer zero use",
+      "source": "Proposed anonymous optional pulse",
+      "access_status": "Not checked",
+      "collection_owner": "Unassigned measurement owner",
+      "analysis_owner": "Unassigned analyst",
+      "baseline": null,
+      "target": null,
+      "result": null,
+      "target_authority": null,
+      "analysis": "Report counts/denominators and limitations without population extrapolation",
+      "limit": "Attempt reports are self-selected and do not establish learning or adoption.",
+      "privacy": "No collection performed. Confirm permitted collection, minimization, aggregation, small-group disclosure and reviewer access.",
+      "retention": "Unassigned owner must approve retention/deletion interval before collection",
+      "collection_status": "Not authorized; not collected",
+      "authorization": null
+    },
+    {
+      "id": "MET-02",
+      "layer": "Self-reported repeat use",
+      "decision": "Reinforce workflows respondents report reusing; investigate correction themes.",
+      "numerator": "Voluntary respondents reporting use on at least two separate days in a stated seven-day window",
+      "denominator": "Voluntary respondents answering that same repeat-use item",
+      "population": "Voluntary campaign respondents; eligible population not yet confirmed",
+      "period": "Seven days after an approved batch; exact dates unresolved",
+      "deduplication": "One voluntary response per approved collection period; no tracking implemented",
+      "missingness": "Exclude unanswered items from that denominator and report missing count; never infer zero use",
+      "source": "Proposed anonymous optional pulse",
+      "access_status": "Not checked",
+      "collection_owner": "Unassigned measurement owner",
+      "analysis_owner": "Unassigned analyst",
+      "baseline": null,
+      "target": null,
+      "result": null,
+      "target_authority": null,
+      "analysis": "Report counts/denominators and limitations without population extrapolation",
+      "limit": "Self-reported repeat use is not independently verified adoption or productivity.",
+      "privacy": "No collection performed. Confirm permitted collection, minimization, aggregation, small-group disclosure and reviewer access.",
+      "retention": "Unassigned owner must approve retention/deletion interval before collection",
+      "collection_status": "Not authorized; not collected",
+      "authorization": null
+    },
+    {
+      "id": "MET-03",
+      "layer": "Reviewed work sample",
+      "decision": "Revise prompts associated with observed source-fidelity problems.",
+      "numerator": "Voluntarily submitted sanitized examples reviewed against declared source-fidelity criteria",
+      "denominator": "Submitted eligible examples reviewed under the approved plan",
+      "population": "Voluntary campaign respondents; eligible population not yet confirmed",
+      "period": "Seven days after an approved batch; exact dates unresolved",
+      "deduplication": "One voluntary response per approved collection period; no tracking implemented",
+      "missingness": "Exclude unanswered items from that denominator and report missing count; never infer zero use",
+      "source": "Proposed voluntary sanitized sample review",
+      "access_status": "Not checked",
+      "collection_owner": "Unassigned measurement owner",
+      "analysis_owner": "Unassigned analyst",
+      "baseline": null,
+      "target": null,
+      "result": null,
+      "target_authority": null,
+      "analysis": "Report counts/denominators and limitations without population extrapolation",
+      "limit": "Bounded application observation only; no proficiency or causal inference.",
+      "privacy": "No collection performed. Confirm permitted collection, minimization, aggregation, small-group disclosure and reviewer access.",
+      "retention": "Unassigned owner must approve retention/deletion interval before collection",
+      "collection_status": "Not authorized; not collected",
+      "authorization": null
+    }
+  ],
+  "quality_checks": [
+    {
+      "id": "Q-01",
+      "title": "Behavior alignment",
+      "applicable": true,
+      "required": true,
+      "status": "Pass",
+      "scope": "Written design only",
+      "rationale": "Applicable to planned campaign.",
+      "version": "1.1.0",
+      "evidence": {
+        "path": "examples/copilot/tips/tip-001.md",
+        "quote": "TIP-001: Start with one clear goal",
+        "method": "Inspect supplied written tip/channel design and structured records",
+        "reviewer": "Package editor",
+        "date": "2026-10-21",
+        "version": "1.1.0"
+      },
+      "corrective_action": "Maintain scope and recheck affected edits."
+    },
+    {
+      "id": "Q-02",
+      "title": "Journey progression",
+      "applicable": true,
+      "required": true,
+      "status": "Pass",
+      "scope": "Written design only",
+      "rationale": "Applicable to planned campaign.",
+      "version": "1.1.0",
+      "evidence": {
+        "path": "examples/copilot/30-day-copilot-tip-campaign.md",
+        "quote": "Positions 5/10/15/20/25/30 use retrieval",
+        "method": "Inspect supplied written tip/channel design and structured records",
+        "reviewer": "Package editor",
+        "date": "2026-10-21",
+        "version": "1.1.0"
+      },
+      "corrective_action": "Maintain scope and recheck affected edits."
+    },
+    {
+      "id": "Q-03",
+      "title": "Channel adaptation",
+      "applicable": true,
+      "required": true,
+      "status": "Pass",
+      "scope": "Written design only",
+      "rationale": "Applicable to planned campaign.",
+      "version": "1.1.0",
+      "evidence": {
+        "path": "examples/copilot/channel-assets.md",
+        "quote": "TIP-001-SP",
+        "method": "Inspect supplied written tip/channel design and structured records",
+        "reviewer": "Package editor",
+        "date": "2026-10-21",
+        "version": "1.1.0"
+      },
+      "corrective_action": "Maintain scope and recheck affected edits."
+    },
+    {
+      "id": "Q-04",
+      "title": "Prompt usability",
+      "applicable": true,
+      "required": true,
+      "status": "Pass",
+      "scope": "Written design only",
+      "rationale": "Applicable to planned campaign.",
+      "version": "1.1.0",
+      "evidence": {
+        "path": "examples/copilot/tips/tip-001.md",
+        "quote": "## Copy-ready filled GCSE prompt",
+        "method": "Inspect supplied written tip/channel design and structured records",
+        "reviewer": "Package editor",
+        "date": "2026-10-21",
+        "version": "1.1.0"
+      },
+      "corrective_action": "Maintain scope and recheck affected edits."
+    },
+    {
+      "id": "Q-05",
+      "title": "Product verification",
+      "applicable": true,
+      "required": true,
+      "status": "Not checked",
+      "scope": "Actual checks/ownership/authorization",
+      "rationale": "Applicable to planned campaign.",
+      "version": "1.1.0",
+      "evidence": null,
+      "corrective_action": "Complete actual gate and record evidence before release."
+    },
+    {
+      "id": "Q-06",
+      "title": "Responsible use",
+      "applicable": true,
+      "required": true,
+      "status": "Not checked",
+      "scope": "Actual checks/ownership/authorization",
+      "rationale": "Applicable to planned campaign.",
+      "version": "1.1.0",
+      "evidence": null,
+      "corrective_action": "Complete actual gate and record evidence before release."
+    },
+    {
+      "id": "Q-07",
+      "title": "Human review",
+      "applicable": true,
+      "required": true,
+      "status": "Not checked",
+      "scope": "Actual checks/ownership/authorization",
+      "rationale": "Applicable to planned campaign.",
+      "version": "1.1.0",
+      "evidence": null,
+      "corrective_action": "Complete actual gate and record evidence before release."
+    },
+    {
+      "id": "Q-08",
+      "title": "Visual accessibility",
+      "applicable": true,
+      "required": true,
+      "status": "Not checked",
+      "scope": "Actual checks/ownership/authorization",
+      "rationale": "Applicable to planned campaign.",
+      "version": "1.1.0",
+      "evidence": null,
+      "corrective_action": "Complete actual gate and record evidence before release."
+    },
+    {
+      "id": "Q-09",
+      "title": "Publishing ownership",
+      "applicable": true,
+      "required": true,
+      "status": "Not checked",
+      "scope": "Actual checks/ownership/authorization",
+      "rationale": "Applicable to planned campaign.",
+      "version": "1.1.0",
+      "evidence": null,
+      "corrective_action": "Complete actual gate and record evidence before release."
+    },
+    {
+      "id": "Q-10",
+      "title": "Support path",
+      "applicable": true,
+      "required": true,
+      "status": "Not checked",
+      "scope": "Actual checks/ownership/authorization",
+      "rationale": "Applicable to planned campaign.",
+      "version": "1.1.0",
+      "evidence": null,
+      "corrective_action": "Complete actual gate and record evidence before release."
+    },
+    {
+      "id": "Q-11",
+      "title": "Measurement validity",
+      "applicable": true,
+      "required": true,
+      "status": "Not checked",
+      "scope": "Actual checks/ownership/authorization",
+      "rationale": "Applicable to planned campaign.",
+      "version": "1.1.0",
+      "evidence": null,
+      "corrective_action": "Complete actual gate and record evidence before release."
+    },
+    {
+      "id": "Q-12",
+      "title": "Privacy",
+      "applicable": true,
+      "required": true,
+      "status": "Not checked",
+      "scope": "Actual checks/ownership/authorization",
+      "rationale": "Applicable to planned campaign.",
+      "version": "1.1.0",
+      "evidence": null,
+      "corrective_action": "Complete actual gate and record evidence before release."
+    },
+    {
+      "id": "Q-13",
+      "title": "Reusable metadata",
+      "applicable": true,
+      "required": true,
+      "status": "Pass",
+      "scope": "Written design only",
+      "rationale": "Applicable to planned campaign.",
+      "version": "1.1.0",
+      "evidence": {
+        "path": "examples/copilot/channel-assets.md",
+        "quote": "CARD-015",
+        "method": "Inspect supplied written tip/channel design and structured records",
+        "reviewer": "Package editor",
+        "date": "2026-10-21",
+        "version": "1.1.0"
+      },
+      "corrective_action": "Maintain scope and recheck affected edits."
+    },
+    {
+      "id": "Q-14",
+      "title": "Expiration",
+      "applicable": true,
+      "required": true,
+      "status": "Not checked",
+      "scope": "Actual checks/ownership/authorization",
+      "rationale": "Applicable to planned campaign.",
+      "version": "1.1.0",
+      "evidence": null,
+      "corrective_action": "Complete actual gate and record evidence before release."
+    },
+    {
+      "id": "Q-15",
+      "title": "Higher-risk review",
+      "applicable": false,
+      "required": false,
+      "status": "Not applicable",
+      "scope": "Fictional general prompting; no consequential decision",
+      "rationale": "No higher-risk instruction/qualification claim; reassess actual use before release.",
+      "version": "1.1.0",
+      "evidence": null,
+      "corrective_action": "Maintain scope and recheck affected edits."
+    }
+  ],
+  "open_items": [
+    {
+      "id": "OPEN-01",
+      "owner": "Unassigned product/policy owner",
+      "description": "Confirm permitted product experience, tenant access, local policy and support route.",
+      "blocking": true,
+      "status": "Open"
+    },
+    {
+      "id": "OPEN-02",
+      "owner": "Unassigned channel/QA owner",
+      "description": "Render/access-test assets and approve exact versions, owners and dates/expiry.",
+      "blocking": true,
+      "status": "Open"
+    },
+    {
+      "id": "OPEN-03",
+      "owner": "Unassigned measurement owner",
+      "description": "Approve minimal data plan or exclude optional collection before campaign release.",
+      "blocking": true,
+      "status": "Open"
+    },
+    {
+      "id": "OPEN-04",
+      "owner": "Unassigned release owner",
+      "description": "Record real release authorization; scheduling/publication remains separate.",
+      "blocking": true,
+      "status": "Open"
+    }
+  ],
+  "release_authorization": {
+    "status": "Not checked",
+    "evidence": null
+  },
+  "handoff_path": "examples/copilot/handoff.md",
+  "handoffs": [
+    {
+      "id": "H-01",
+      "destination": "qa-and-release-assets",
+      "status": "Prepared; not executed",
+      "finding_ids": [],
+      "source_ids": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03"
+      ],
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "tip_ids": [
+        "TIP-001",
+        "TIP-015",
+        "TIP-030"
+      ],
+      "asset_ids": [
+        "TIP-001-TM",
+        "TIP-015-SP",
+        "CARD-015"
+      ],
+      "metric_ids": [
+        "MET-01",
+        "MET-02",
+        "MET-03"
+      ],
+      "open_item_ids": [
+        "OPEN-01",
+        "OPEN-02",
+        "OPEN-04"
+      ],
+      "owner": "Unassigned authorized recipient role",
+      "tasks": [
+        "Verify actual rendered assets, current claims, policy/support links and exact-version approval evidence"
+      ],
+      "acceptance": "No ready/published claim without performed checks and authorization."
+    },
+    {
+      "id": "H-02",
+      "destination": "build-assessments-and-evaluations",
+      "status": "Prepared; not executed",
+      "finding_ids": [],
+      "source_ids": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03"
+      ],
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "tip_ids": [
+        "TIP-001",
+        "TIP-015",
+        "TIP-030"
+      ],
+      "asset_ids": [
+        "TIP-001-TM",
+        "TIP-015-SP",
+        "CARD-015"
+      ],
+      "metric_ids": [
+        "MET-01",
+        "MET-02",
+        "MET-03"
+      ],
+      "open_item_ids": [
+        "OPEN-03"
+      ],
+      "owner": "Unassigned authorized recipient role",
+      "tasks": [
+        "Review proposed MET-01/MET-02/MET-03 interpretations and any requested learning instrument"
+      ],
+      "acceptance": "Preserve attempt/self-report/application distinctions, null unknowns and no invented proficiency standard."
+    },
+    {
+      "id": "H-03",
+      "destination": "authorized-channel-publishing-owner",
+      "status": "Prepared; not executed",
+      "finding_ids": [],
+      "source_ids": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03"
+      ],
+      "claim_ids": [
+        "CL-01",
+        "CL-02",
+        "CL-03",
+        "CL-04"
+      ],
+      "tip_ids": [
+        "TIP-001",
+        "TIP-015",
+        "TIP-030"
+      ],
+      "asset_ids": [
+        "TIP-001-TM",
+        "TIP-015-SP",
+        "CARD-015"
+      ],
+      "metric_ids": [
+        "MET-01",
+        "MET-02",
+        "MET-03"
+      ],
+      "open_item_ids": [
+        "OPEN-01",
+        "OPEN-02",
+        "OPEN-04"
+      ],
+      "owner": "Unassigned authorized recipient role",
+      "tasks": [
+        "Resolve owners, actual hosted links, approved assets, calendar/timezone and expiry; prepare publication plan"
+      ],
+      "acceptance": "No dispatch, scheduling or publication from this prepared handoff; verify actual execution separately."
+    }
+  ]
+}

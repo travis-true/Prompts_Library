@@ -44,3 +44,8 @@ Hook: Leave your next meeting with a usable action list. Action: try the prompt 
 Adapted and expanded from earlier prompt work and task briefs; this is a reusable rewrite, not a verbatim transcript.
 
 Portable text prompt for ChatGPT, Copilot, Gemini, Claude, and DeepSeek; not individually tested in all five tools.
+
+
+## Related skill
+
+Use [Enablement Campaign Generator](../skills/enablement-campaign-generator/SKILL.md) for broader campaign planning or its [Copilot tip workflow](../skills/enablement-campaign-generator/references/copilot/workflow.md) for source-grounded tips, channel drafts, bounded metrics, validation and release handoffs. A plan is not approval, scheduling or publication.

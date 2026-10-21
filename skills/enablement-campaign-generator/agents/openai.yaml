@@ -1,0 +1,4 @@
+interface:
+  display_name: "Enablement Campaign Generator"
+  short_description: "Build adoption campaigns with grounded tips and metrics"
+  default_prompt: "Use $enablement-campaign-generator to create a scoped workplace adoption campaign with grounded content, bounded metrics and traceable release handoffs."

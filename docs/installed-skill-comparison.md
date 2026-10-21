@@ -57,3 +57,6 @@ Training Engagement and Assessment Designer 1.1.0 is incorporated into [Build As
 
 
 Live Demo Script Builder 1.1.0 is incorporated into [Live Training Session Design](../skills/live-training-session-design/SKILL.md), with a cross-link from the existing demonstration-script prompt. No separate catalog skill is added. See [demo integration details](live-demo-integration.md).
+
+
+Copilot Tip Campaign Builder 1.1.0 is incorporated into [Enablement Campaign Generator](../skills/enablement-campaign-generator/SKILL.md) as a specialized Copilot workflow. No separate catalog skill is added. See [integration details](copilot-campaign-integration.md).

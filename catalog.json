@@ -617,9 +617,9 @@
     "type": "skills",
     "path": "skills/enablement-campaign-generator/SKILL.md",
     "function": "Communication",
-    "purpose": "Designs a multi-channel adoption campaign that moves an audience from awareness to confident, sustained use.",
+    "purpose": "Design scoped workplace adoption campaigns for tools, processes, behaviors and resources. Use for campaign plans, phased calendars, messages, reinforcement, support and measurement; includes a specialized Microsoft Copilot tip workflow with grounded examples, claim verification, bounded metrics, structural validation and traceable release handoffs.",
     "status": "Migrated",
-    "short_description": "Designs a multi-channel adoption campaign that moves an audience from awareness to confident, sustained use."
+    "short_description": "Design workplace adoption campaigns with grounded Copilot tips, bounded behavior metrics, validation, and traceable review and publishing handoffs."
   },
   {
     "title": "Microlearning Series Generator",

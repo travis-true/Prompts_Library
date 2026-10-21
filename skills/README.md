@@ -15,7 +15,7 @@
 | [Skill Creator](skill-creator/SKILL.md) | Design, evaluate, and refine a reusable skill with clear triggers, workflow, outputs, and quality checks. |
 | [Assessment & Evaluation Builder](assessment-evaluation-builder/SKILL.md) | Creates aligned knowledge checks, practical assessments, rubrics, surveys, and evaluation plans with defensible scoring and feedback. |
 | [Screenshot Sanitization & Annotation](screenshot-sanitization-annotation/SKILL.md) | Transforms screenshots into privacy-safe training visuals while preserving authentic interface context and instructional clarity. |
-| [Enablement Campaign Generator](enablement-campaign-generator/SKILL.md) | Designs a multi-channel adoption campaign that moves an audience from awareness to confident, sustained use. |
+| [Enablement Campaign Generator](enablement-campaign-generator/SKILL.md) | Design workplace adoption campaigns with grounded Copilot tips, bounded behavior metrics, validation, and traceable review and publishing handoffs. |
 | [Microlearning Series Generator](microlearning-series-generator/SKILL.md) | Builds short, sequenced learning experiences designed for recall, practice, transfer, and reinforcement. |
 | [Sanitize Annotate Screenshots](sanitize-annotate-screenshots/SKILL.md) | Create privacy-safe screenshots and clear callouts while preserving the authentic interface. |
 | [Recommend Training Assets](recommend-training-assets/SKILL.md) | Diagnose the learning need and recommend the smallest effective set of training materials. |

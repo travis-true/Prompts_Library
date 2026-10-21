@@ -33,6 +33,8 @@ The upgraded [Live Training Session Design](skills/live-training-session-design/
 
 [Live Training Session Design](skills/live-training-session-design/SKILL.md) also includes Live Demo Script Builder 1.1.0 as a specialized scene workflow with state-aware recovery, fallback-equivalence records, worked examples and validation. See [demo usage and verification](docs/live-demo-integration.md).
 
+[Enablement Campaign Generator](skills/enablement-campaign-generator/SKILL.md) includes the Copilot Tip Campaign Builder’s 30-tip example, channel drafts, verification and metric rules, validator and prepared handoffs. See [campaign usage and verification](docs/copilot-campaign-integration.md).
+
 ## Browse and maintain
 
 - [Full searchable catalog](CATALOG.md) and [machine-readable catalog](catalog.json)
@@ -125,7 +127,7 @@ Browse every entry below, or open a collection README for its focused list.
 | [Skill Creator](skills/skill-creator/SKILL.md) | Design, evaluate, and refine a reusable skill with clear triggers, workflow, outputs, and quality checks. |
 | [Assessment & Evaluation Builder](skills/assessment-evaluation-builder/SKILL.md) | Creates aligned knowledge checks, practical assessments, rubrics, surveys, and evaluation plans with defensible scoring and feedback. |
 | [Screenshot Sanitization & Annotation](skills/screenshot-sanitization-annotation/SKILL.md) | Transforms screenshots into privacy-safe training visuals while preserving authentic interface context and instructional clarity. |
-| [Enablement Campaign Generator](skills/enablement-campaign-generator/SKILL.md) | Designs a multi-channel adoption campaign that moves an audience from awareness to confident, sustained use. |
+| [Enablement Campaign Generator](skills/enablement-campaign-generator/SKILL.md) | Design workplace adoption campaigns with grounded Copilot tips, bounded behavior metrics, validation, and traceable review and publishing handoffs. |
 | [Microlearning Series Generator](skills/microlearning-series-generator/SKILL.md) | Builds short, sequenced learning experiences designed for recall, practice, transfer, and reinforcement. |
 | [Sanitize Annotate Screenshots](skills/sanitize-annotate-screenshots/SKILL.md) | Create privacy-safe screenshots and clear callouts while preserving the authentic interface. |
 | [Recommend Training Assets](skills/recommend-training-assets/SKILL.md) | Diagnose the learning need and recommend the smallest effective set of training materials. |
