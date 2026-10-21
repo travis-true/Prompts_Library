@@ -1,0 +1,14 @@
+interface:
+  display_name: Build GCSE Prompt
+  short_description: Build copy-ready prompts with the GCSE framework
+  default_prompt: Use $build-gcse-prompt to help me build a Microsoft 365 Copilot
+    prompt.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

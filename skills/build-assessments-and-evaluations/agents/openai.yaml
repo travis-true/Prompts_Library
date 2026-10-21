@@ -1,0 +1,14 @@
+interface:
+  display_name: Assessment and Evaluation Builder
+  short_description: Build valid assessments and evaluations
+  default_prompt: Use $build-assessments-and-evaluations to design evidence that measures
+    the intended learning, performance, and program decisions.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

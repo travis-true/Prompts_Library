@@ -1,0 +1,14 @@
+interface:
+  display_name: Training Asset Recommendation and Routing
+  short_description: Route needs to the right training assets
+  default_prompt: Use $recommend-training-assets to analyze this training need and
+    recommend the smallest effective asset package.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

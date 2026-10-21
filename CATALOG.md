@@ -88,3 +88,24 @@
 | resources | [Training Asset Quality Checklist](resources/training-asset-quality-checklist.md) | — |
 | resources | [AI Enablement Planning Checklist](resources/ai-enablement-planning-checklist.md) | — |
 | resources | [Goal–Context–Expectations–Source Prompt Builder](resources/goal-context-expectations-source-prompt-builder.md) | — |
+| skills | [Sanitize Annotate Screenshots](skills/sanitize-annotate-screenshots/SKILL.md) | Workplace workflow |
+| skills | [Recommend Training Assets](skills/recommend-training-assets/SKILL.md) | Workplace workflow |
+| skills | [Deconstruct Knowledge](skills/deconstruct-knowledge/SKILL.md) | Workplace workflow |
+| skills | [Architect Training Sessions](skills/architect-training-sessions/SKILL.md) | Workplace workflow |
+| skills | [Build Slide Decks](skills/build-slide-decks/SKILL.md) | Workplace workflow |
+| skills | [Build Assessments And Evaluations](skills/build-assessments-and-evaluations/SKILL.md) | Workplace workflow |
+| skills | [Qa And Release Assets](skills/qa-and-release-assets/SKILL.md) | Workplace workflow |
+| skills | [Build Gcse Prompt](skills/build-gcse-prompt/SKILL.md) | Workplace workflow |
+| skills | [Improve Gcse Prompt](skills/improve-gcse-prompt/SKILL.md) | Workplace workflow |
+| skills | [Optimize Prompt For M365](skills/optimize-prompt-for-m365/SKILL.md) | Workplace workflow |
+| skills | [Validate Gcse Prompt](skills/validate-gcse-prompt/SKILL.md) | Workplace workflow |
+| skills | [Handle Sensitive Prompt Requests](skills/handle-sensitive-prompt-requests/SKILL.md) | Workplace workflow |
+| skills | [Explain Gcse Prompt](skills/explain-gcse-prompt/SKILL.md) | Workplace workflow |
+| skills | [Curate Prompt Packs](skills/curate-prompt-packs/SKILL.md) | Workplace workflow |
+| skills | [Validate Market Opportunities](skills/validate-market-opportunities/SKILL.md) | Workplace workflow |
+| skills | [Find Skills](skills/find-skills/SKILL.md) | Workplace workflow |
+| skills | [Doc Coauthoring](skills/doc-coauthoring/SKILL.md) | Workplace workflow |
+| skills | [Grill Me](skills/grill-me/SKILL.md) | Workplace workflow |
+| skills | [Grill With Docs](skills/grill-with-docs/SKILL.md) | Workplace workflow |
+| skills | [Wiifm Statement Writer](skills/wiifm-statement-writer/SKILL.md) | Workplace workflow |
+| skills | [Social Media Asset Sizing](skills/social-media-asset-sizing/SKILL.md) | Workplace workflow |

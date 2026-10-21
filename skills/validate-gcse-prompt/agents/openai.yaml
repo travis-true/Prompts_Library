@@ -1,0 +1,14 @@
+interface:
+  display_name: Validate GCSE Prompt
+  short_description: Check and repair GCSE prompts before use
+  default_prompt: Use $validate-gcse-prompt to check and repair my GCSE prompt before
+    I use it.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

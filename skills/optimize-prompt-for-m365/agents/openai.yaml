@@ -1,0 +1,14 @@
+interface:
+  display_name: Optimize Prompt for M365
+  short_description: Tailor GCSE prompts to Microsoft 365 apps
+  default_prompt: Use $optimize-prompt-for-m365 to tailor my GCSE prompt to the Microsoft
+    365 app I will use.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

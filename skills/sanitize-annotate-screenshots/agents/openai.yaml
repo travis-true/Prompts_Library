@@ -1,0 +1,14 @@
+interface:
+  display_name: Sanitize & Annotate Screenshots
+  short_description: Create privacy-safe annotated training screenshots
+  default_prompt: Use $sanitize-annotate-screenshots to replace sensitive screenshot
+    data with coherent fictional content, add focused training callouts, and run QA.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

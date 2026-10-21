@@ -1,0 +1,15 @@
+interface:
+  display_name: social media asset sizing
+  short_description: Select, adapt, export, and quality-check social-media image and
+    video dimensions across Instagram, YouTube, Facebook, X, TikTok, LinkedIn, Pinterest,
+    Snapchat, Reddit, Twitch, Discord, and Spotify. Use for posts, stories, reels,
+    shorts, thumbnails, covers, banners, avatars, and cross-platform creative variants.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

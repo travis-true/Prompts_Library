@@ -1,0 +1,14 @@
+interface:
+  display_name: Cross-Format QA and Release
+  short_description: Verify assets and control release decisions
+  default_prompt: Use $qa-and-release-assets to inspect this deliverable package,
+    log defects, and determine its evidence-based release status.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

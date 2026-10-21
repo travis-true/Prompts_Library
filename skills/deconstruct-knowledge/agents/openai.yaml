@@ -1,0 +1,14 @@
+interface:
+  display_name: Knowledge Intake and Content Deconstruction
+  short_description: Turn source material into governed knowledge
+  default_prompt: Use $deconstruct-knowledge to inventory these sources, resolve their
+    authority, and convert them into an AI-ready knowledge package.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

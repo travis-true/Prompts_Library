@@ -1,0 +1,14 @@
+interface:
+  display_name: Curate Prompt Packs
+  short_description: Create and maintain structured Prompt Packs
+  default_prompt: Use $curate-prompt-packs to create or review a department or Microsoft
+    365 app Prompt Pack.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

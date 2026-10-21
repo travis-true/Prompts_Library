@@ -1,0 +1,14 @@
+interface:
+  display_name: Improve GCSE Prompt
+  short_description: Rewrite existing prompts in complete GCSE format
+  default_prompt: Use $improve-gcse-prompt to improve my existing Microsoft 365 Copilot
+    prompt.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

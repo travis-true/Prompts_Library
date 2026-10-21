@@ -9,7 +9,7 @@ root = pathlib.Path(__file__).resolve().parents[1]
 errors = []
 catalog = json.loads((root / 'catalog.json').read_text())
 counts = dict(Counter(item['type'] for item in catalog))
-expected = {'prompts': 57, 'skills': 13, 'workflows': 7, 'resources': 7}
+expected = {'prompts': 57, 'skills': 34, 'workflows': 7, 'resources': 7}
 if counts != expected:
     errors.append(f'Catalog counts: {counts}; expected {expected}')
 paths = [item['path'] for item in catalog]
@@ -37,7 +37,7 @@ for item in catalog:
                     errors.append(f'{path}: empty skill description')
             except ValueError:
                 errors.append(f'{path}: description must be a quoted string')
-        if '## Workflow guide' not in text:
+        if item.get('status') != 'Installed skill import' and '## Workflow guide' not in text:
             errors.append(f'{path}: missing workflow')
 
 for path in root.rglob('*.md'):
@@ -57,7 +57,7 @@ for path in root.rglob('*.md'):
         if not dest.is_relative_to(root) or not dest.exists():
             errors.append(f'{rel}: broken or unsafe local link {target}')
 
-actual = {str(p.relative_to(root)) for d in expected for p in (root/d).rglob('*.md') if p.name != 'README.md'}
+actual = {str(p.relative_to(root)) for d in expected for p in ((root/d).glob('*/SKILL.md') if d == 'skills' else (root/d).glob('*.md')) if p.name != 'README.md'}
 if actual != set(paths):
     errors.append('Catalog and active resource files differ')
 if len(list((root/'planned').glob('*.md'))) - 1 != 7:
@@ -65,4 +65,4 @@ if len(list((root/'planned').glob('*.md'))) - 1 != 7:
 if errors:
     print('\n'.join(errors))
     sys.exit(1)
-print('PASS: 84 active resources, 25 workplace adaptations, 7 planned ideas; sections, skill frontmatter, catalog, local links, source markup, and workplace vocabulary checks passed.')
+print('PASS: 105 active resources, 34 skills, 25 workplace prompt adaptations, 7 planned ideas; sections, skill frontmatter, catalog, local links, source markup, and workplace vocabulary checks passed.')

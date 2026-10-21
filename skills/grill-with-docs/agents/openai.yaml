@@ -1,0 +1,12 @@
+interface:
+  display_name: Grill with Docs
+  short_description: Grill a design and write its docs
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: false
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas

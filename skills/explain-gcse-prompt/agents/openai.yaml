@@ -1,0 +1,14 @@
+interface:
+  display_name: Explain GCSE Prompt
+  short_description: Explain GCSE prompts in plain language
+  default_prompt: Use $explain-gcse-prompt to explain how this GCSE prompt works and
+    how I should customize it.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

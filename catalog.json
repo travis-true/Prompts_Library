@@ -670,5 +670,173 @@
     "function": null,
     "purpose": "A copy-ready worksheet for building grounded prompts with a clear goal, relevant context, output expectations, and an authoritative source.",
     "status": "Migrated"
+  },
+  {
+    "title": "Sanitize Annotate Screenshots",
+    "type": "skills",
+    "path": "skills/sanitize-annotate-screenshots/SKILL.md",
+    "function": "Workplace workflow",
+    "purpose": "Transform screenshots into privacy-safe training assets while preserving the authentic interface. Use when a user asks to sanitize, anonymize, de-identify, fictionalize, redact, clean, annotate, label, add callouts to, or quality-check a screenshot; create matching clean and annotated PNGs; replace sensitive or organization-specific data with coherent fictional data; or audit screenshot fidelity, accessibility, and privacy.",
+    "status": "Installed skill import"
+  },
+  {
+    "title": "Recommend Training Assets",
+    "type": "skills",
+    "path": "skills/recommend-training-assets/SKILL.md",
+    "function": "Workplace workflow",
+    "purpose": "Analyze a workplace learning, enablement, change, communication, or performance-support need and recommend the smallest effective set of training assets. Use when a user asks what training materials to create, which deliverables fit a project, whether training is the right response, how to supplement an existing deck or session, or how to route source material into documents, presentations, practice, media, assessments, reinforcement, and support assets. Apply before producing assets when the correct deliverable mix is uncertain.",
+    "status": "Installed skill import"
+  },
+  {
+    "title": "Deconstruct Knowledge",
+    "type": "skills",
+    "path": "skills/deconstruct-knowledge/SKILL.md",
+    "function": "Workplace workflow",
+    "purpose": "Intake, inventory, evaluate, and deconstruct enterprise or organizational source material into structured, traceable, AI-ready operational knowledge. Use when a user needs to analyze documents, interviews, notes, policies, procedures, tickets, recordings, presentations, or existing training; identify authoritative sources and conflicts; extract workflows, decisions, roles, rules, exceptions, risks, examples, and content atoms; assess gaps and readiness; or prepare a governed source package for SOPs, job aids, training, knowledge bases, assistants, retrieval systems, or automation.",
+    "status": "Installed skill import"
+  },
+  {
+    "title": "Architect Training Sessions",
+    "type": "skills",
+    "path": "skills/architect-training-sessions/SKILL.md",
+    "function": "Workplace workflow",
+    "purpose": "Architect complete live, virtual, in-person, hybrid, webinar, workshop, demonstration, or blended training sessions from intake through delivery, reinforcement, evaluation, handoff, and maintenance. Use when a user needs to plan a new session, improve an existing session, continue from an approved deck or partial design, determine lifecycle steps and roles, create a session blueprint or run of show, coordinate supporting assets, build readiness and contingency plans, or govern an end-to-end corporate learning project without restarting completed work.",
+    "status": "Installed skill import"
+  },
+  {
+    "title": "Build Slide Decks",
+    "type": "skills",
+    "path": "skills/build-slide-decks/SKILL.md",
+    "function": "Workplace workflow",
+    "purpose": "Plan, write, build, revise, or quality-check professional presentations and slide decks for training, enablement, executive communication, recommendations, decisions, demonstrations, workshops, technical briefings, change communication, and reference use. Use when a user requests a PowerPoint, PPTX, Google Slides deck, presentation outline, slide-by-slide blueprint, speaker notes, visual redesign, template-based deck, accessible slide system, or deck review. Support source-grounded creation, existing-template preservation, audience-facing copy, narrative architecture, visual direction, editable-file production when tools permit, and rendered QA.",
+    "status": "Installed skill import"
+  },
+  {
+    "title": "Build Assessments And Evaluations",
+    "type": "skills",
+    "path": "skills/build-assessments-and-evaluations/SKILL.md",
+    "function": "Workplace workflow",
+    "purpose": "Design, build, revise, or quality-check assessments and evaluations for corporate learning, training, enablement, performance support, certification, pilots, and programs. Use when a user requests diagnostics, pre- or post-assessments, knowledge checks, quizzes, practical or skills assessments, scenarios, observation checklists, rubrics, surveys, feedback forms, transfer measures, operational metrics, evaluation plans, scoring rules, item banks, analysis plans, or evidence reports. Align every measure to an intended decision, outcome, authoritative source, administration context, accessibility requirement, and defensible interpretation.",
+    "status": "Installed skill import"
+  },
+  {
+    "title": "Qa And Release Assets",
+    "type": "skills",
+    "path": "skills/qa-and-release-assets/SKILL.md",
+    "function": "Workplace workflow",
+    "purpose": "Inspect, compare, repair when authorized, and gate the release of cross-format deliverables and asset packages. Use when a user requests quality assurance, preflight, accessibility review, source verification, visual inspection, technical validation, regression testing, defect logging, cross-format consistency checks, package integrity checks, release-readiness decisions, exception handling, or controlled handoff for DOCX, PPTX, XLSX, PDF, images, SVG, HTML, JSON, audio, video, captions, transcripts, archives, or mixed training and enablement packages.",
+    "status": "Installed skill import"
+  },
+  {
+    "title": "Build Gcse Prompt",
+    "type": "skills",
+    "path": "skills/build-gcse-prompt/SKILL.md",
+    "function": "Workplace workflow",
+    "purpose": "Build complete, copy-ready Microsoft 365 Copilot prompts with the GCSE framework—Goal, Context, Source, and Expectation. Use when an employee asks to build, create, draft, write, develop, or get help with a Copilot prompt, or selects Start here in the Prompt Library agent. Collect required information one question at a time, use relevant department and Microsoft 365 Prompt Packs silently, and return the prompt with usage guidance, a short explanation, and the safety reminder. Do not use to perform the requested business task itself.",
+    "status": "Installed skill import"
+  },
+  {
+    "title": "Improve Gcse Prompt",
+    "type": "skills",
+    "path": "skills/improve-gcse-prompt/SKILL.md",
+    "function": "Workplace workflow",
+    "purpose": "Rewrite an employee’s existing Microsoft 365 Copilot prompt into a complete, copy-ready GCSE prompt—Goal, Context, Source, and Expectation—without changing its original intent. Use when an employee asks to improve, rewrite, strengthen, fix, expand, enhance, optimize, or convert a prompt, or supplies a short or incomplete prompt such as “summarize this.” Extract details already present, collect only missing required information one question at a time, use relevant Prompt Packs silently, and return the improved prompt with guidance, a brief explanation, and the safety reminder. Do not use to perform the prompt’s business task or to score the original prompt unless explicitly requested.",
+    "status": "Installed skill import"
+  },
+  {
+    "title": "Optimize Prompt For M365",
+    "type": "skills",
+    "path": "skills/optimize-prompt-for-m365/SKILL.md",
+    "function": "Workplace workflow",
+    "purpose": "Tailor a complete or nearly complete GCSE prompt—Goal, Context, Source, and Expectation—to the Microsoft 365 app or tool in which an employee will use it. Use when an employee asks to optimize, adapt, tailor, convert, or make a prompt work better in Word, Excel, PowerPoint, Outlook, Teams, Copilot Chat, OneNote, Loop, SharePoint, Planner, or another Microsoft 365 experience, and after a prompt-building or prompt-improvement workflow needs app-specific refinement. Preserve the prompt’s intent and supported facts, apply relevant app Prompt Packs silently, and return a copy-ready prompt with guidance and the safety reminder. Do not use to execute the business task or claim an app capability that is not supported by available knowledge.",
+    "status": "Installed skill import"
+  },
+  {
+    "title": "Validate Gcse Prompt",
+    "type": "skills",
+    "path": "skills/validate-gcse-prompt/SKILL.md",
+    "function": "Workplace workflow",
+    "purpose": "Quality-check and repair Microsoft 365 Copilot prompts before use. Use when an employee asks to check, review, validate, inspect, troubleshoot, test, or quality-check a prompt, and as the final internal gate after build-gcse-prompt, improve-gcse-prompt, or optimize-prompt-for-m365. Verify Goal, Context, Source, and Expectation completeness; intent preservation; app fit; actionable placeholders; source grounding; unsupported assumptions; personnel safeguards; usability; and the exact safety reminder. Silently repair supported issues and return a copy-ready prompt without Approved, Rejected, pass/fail, score, origin, or library-status labels. Do not perform the prompt’s business task.",
+    "status": "Installed skill import"
+  },
+  {
+    "title": "Handle Sensitive Prompt Requests",
+    "type": "skills",
+    "path": "skills/handle-sensitive-prompt-requests/SKILL.md",
+    "function": "Workplace workflow",
+    "purpose": "Reframe sensitive or personnel-related Microsoft 365 Copilot prompt requests into usable GCSE prompts while preserving the legitimate business purpose. Use when a request asks Copilot to judge, rank, diagnose, profile, infer intent, evaluate character, make employment conclusions, or process confidential, proprietary, protected health information, unnecessary personal information, sensitive identifiers, or other data that should not be placed in a prompt. Replace risky inputs with sanitized, minimized, aggregated, fictional, or placeholder-based sources; focus personnel prompts on observable facts and documented expectations; continue the one-question-at-a-time intake; and return a copy-ready Goal, Context, Source, and Expectation prompt with the exact safety reminder. Do not perform the business task or merely block progress when a safer alternative can meet the goal.",
+    "status": "Installed skill import"
+  },
+  {
+    "title": "Explain Gcse Prompt",
+    "type": "skills",
+    "path": "skills/explain-gcse-prompt/SKILL.md",
+    "function": "Workplace workflow",
+    "purpose": "Explain the GCSE Prompt Framework—Goal, Context, Source, and Expectation—and show employees how a specific Microsoft 365 Copilot prompt works and how to customize it. Use when an employee asks what GCSE means, why a prompt works, what each section does, how to complete placeholders, how Source differs from Context, how to make Copilot output more useful, or requests an annotated breakdown of a prompt. Teach in plain, beginner-friendly language without restarting the five-question prompt-building intake, grading the prompt, exposing Prompt Pack status, or performing the prompt’s business task. Include the safety reminder whenever providing or discussing a usable prompt or example.",
+    "status": "Installed skill import"
+  },
+  {
+    "title": "Curate Prompt Packs",
+    "type": "skills",
+    "path": "skills/curate-prompt-packs/SKILL.md",
+    "function": "Workplace workflow",
+    "purpose": "Create, review, normalize, expand, consolidate, and maintain Prompt Packs for departments, job roles, business tasks, and Microsoft 365 apps. Use when an authorized curator asks to build a new Prompt Pack, convert source material or existing prompts into a pack, add or revise prompt entries, audit pack consistency, remove duplicates, improve retrieval metadata, document gaps, or prepare Prompt Pack knowledge for the Prompt Library agent. Apply the standard pack schema; require GCSE prompts; preserve source traceability and internal lifecycle metadata; use fictional or sanitized examples; prevent sensitive or unsupported content; and ensure employee-facing responses never expose Approved, Adapted, Generated, Draft, origin, match, or Prompt Pack status labels. This is an administrative content-maintenance skill, not an employee prompt-building workflow.",
+    "status": "Installed skill import"
+  },
+  {
+    "title": "Validate Market Opportunities",
+    "type": "skills",
+    "path": "skills/validate-market-opportunities/SKILL.md",
+    "function": "Workplace workflow",
+    "purpose": "Research, validate, score, and monitor commercial product or service opportunities using live buyer-intent evidence, complaint harvesting, market-gap analysis, competitor review, store analytics, and smallest-complete-offer design. Use for market scans, trend reports, product validation, opportunity ranking, marketplace audits, product positioning, launch/no-launch decisions, or recurring weekly and monthly market intelligence.",
+    "status": "Installed skill import"
+  },
+  {
+    "title": "Find Skills",
+    "type": "skills",
+    "path": "skills/find-skills/SKILL.md",
+    "function": "Workplace workflow",
+    "purpose": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.",
+    "status": "Installed skill import"
+  },
+  {
+    "title": "Doc Coauthoring",
+    "type": "skills",
+    "path": "skills/doc-coauthoring/SKILL.md",
+    "function": "Workplace workflow",
+    "purpose": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks.",
+    "status": "Installed skill import"
+  },
+  {
+    "title": "Grill Me",
+    "type": "skills",
+    "path": "skills/grill-me/SKILL.md",
+    "function": "Workplace workflow",
+    "purpose": "A relentless interview to sharpen a plan or design.",
+    "status": "Installed skill import"
+  },
+  {
+    "title": "Grill With Docs",
+    "type": "skills",
+    "path": "skills/grill-with-docs/SKILL.md",
+    "function": "Workplace workflow",
+    "purpose": "A relentless interview to sharpen a plan or design, which also creates docs (ADR's and glossary) as we go.",
+    "status": "Installed skill import"
+  },
+  {
+    "title": "Wiifm Statement Writer",
+    "type": "skills",
+    "path": "skills/wiifm-statement-writer/SKILL.md",
+    "function": "Workplace workflow",
+    "purpose": "Writes a high-quality \"What's In It For Me\" (WIIFM) statement for a training session, course, or module. Use whenever someone asks for a WIIFM, a learner-benefit opener, \"why should I care\" framing, or a course hook for corporate training, onboarding, or enablement. Returns one primary statement plus two alternates, each built on a different motivational angle. Asks 1-2 clarifying questions first if the audience or objectives are vague.",
+    "status": "Installed skill import"
+  },
+  {
+    "title": "Social Media Asset Sizing",
+    "type": "skills",
+    "path": "skills/social-media-asset-sizing/SKILL.md",
+    "function": "Workplace workflow",
+    "purpose": "Select, adapt, export, and quality-check social-media image and video dimensions across Instagram, YouTube, Facebook, X, TikTok, LinkedIn, Pinterest, Snapchat, Reddit, Twitch, Discord, and Spotify. Use for posts, stories, reels, shorts, thumbnails, covers, banners, avatars, and cross-platform creative variants.",
+    "status": "Installed skill import"
   }
 ]

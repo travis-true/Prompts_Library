@@ -1,0 +1,14 @@
+interface:
+  display_name: Presentation and Slide Deck Builder
+  short_description: Build clear, visual, accessible slide decks
+  default_prompt: Use $build-slide-decks to turn these sources and requirements into
+    a coherent, audience-ready presentation.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

@@ -1,0 +1,14 @@
+interface:
+  display_name: Market Intelligence Validator
+  short_description: Research and score market opportunities
+  default_prompt: Use $validate-market-opportunities to run a live market scan and
+    rank evidence-backed offers.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

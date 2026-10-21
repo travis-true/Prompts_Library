@@ -1,0 +1,14 @@
+interface:
+  display_name: WIIFM Statement Writer
+  short_description: Write learner-focused WIIFM statements for training
+  default_prompt: Use $wiifm-statement-writer to write a primary WIIFM statement and
+    two alternatives for my training session.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
