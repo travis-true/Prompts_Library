@@ -943,5 +943,14 @@
     "purpose": "Select, adapt, export, and quality-check social-media image and video dimensions across Instagram, YouTube, Facebook, X, TikTok, LinkedIn, Pinterest, Snapchat, Reddit, Twitch, Discord, and Spotify. Use for posts, stories, reels, shorts, thumbnails, covers, banners, avatars, and cross-platform creative variants.",
     "status": "Installed skill import",
     "short_description": "Choose social-media dimensions, adapt compositions, and check exports for the intended placement."
+  },
+  {
+    "title": "Improve a prompt for rigor and verifiable results",
+    "type": "prompts",
+    "path": "prompts/improve-a-prompt-for-rigor-and-verifiable-results.md",
+    "function": "Writing",
+    "purpose": "Strengthen a prompt with relevant evidence, suitable methods, and observable acceptance criteria.",
+    "status": "Adapted",
+    "short_description": "Strengthen a prompt with relevant evidence, suitable methods, and observable acceptance criteria."
   }
 ]

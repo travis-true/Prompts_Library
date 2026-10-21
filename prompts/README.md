@@ -61,3 +61,4 @@
 | [Draft a usable first version](draft-a-usable-first-version.md) | Create a source-grounded first draft in the requested format. |
 | [Present information as a scannable table](present-information-as-a-scannable-table.md) | Reformat source information without losing material facts. |
 | [Review a training asset for quality](review-a-training-asset-for-quality.md) | Identify prioritized issues in a training resource before release. |
+| [Improve a prompt for rigor and verifiable results](improve-a-prompt-for-rigor-and-verifiable-results.md) | Strengthen a prompt with relevant evidence, suitable methods, and observable acceptance criteria. |
