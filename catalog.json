@@ -1,0 +1,674 @@
+[
+  {
+    "title": "Turn a UI visual into a component specification",
+    "type": "prompts",
+    "path": "prompts/turn-a-ui-visual-into-a-component-specification.md",
+    "function": "Documentation",
+    "purpose": "Convert a UI visual into a developer-ready component specification for a selected tech stack.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Explain a workplace concept with an accurate analogy",
+    "type": "prompts",
+    "path": "prompts/explain-a-workplace-concept-with-an-accurate-analogy.md",
+    "function": "Writing",
+    "purpose": "Make a complex work concept understandable without distorting it.",
+    "status": "Adapted"
+  },
+  {
+    "title": "Turn a rough request into a clear prompt",
+    "type": "prompts",
+    "path": "prompts/turn-a-rough-request-into-a-clear-prompt.md",
+    "function": "Writing",
+    "purpose": "Turn an incomplete task description into a clear, reusable prompt.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Rewrite employee learning communications",
+    "type": "prompts",
+    "path": "prompts/rewrite-employee-learning-communications.md",
+    "function": "Writing",
+    "purpose": "Clarify employee training directions and communications while preserving requirements.",
+    "status": "Adapted"
+  },
+  {
+    "title": "Pressure-test a workplace idea or decision",
+    "type": "prompts",
+    "path": "prompts/pressure-test-a-workplace-idea-or-decision.md",
+    "function": "Analysis",
+    "purpose": "Test the assumptions, evidence, tradeoffs, and opposing arguments behind a workplace idea or decision.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Pressure-test a training initiative",
+    "type": "prompts",
+    "path": "prompts/pressure-test-a-training-initiative.md",
+    "function": "Analysis",
+    "purpose": "Challenge assumptions and implementation conditions before investing in workplace learning.",
+    "status": "Adapted"
+  },
+  {
+    "title": "Review workplace learning materials and prioritize revisions",
+    "type": "prompts",
+    "path": "prompts/review-workplace-learning-materials-and-prioritize-revisions.md",
+    "function": "Feedback",
+    "purpose": "Identify source-supported fixes to employee learning materials.",
+    "status": "Adapted"
+  },
+  {
+    "title": "Review professional work and prioritize fixes",
+    "type": "prompts",
+    "path": "prompts/review-professional-work-and-prioritize-fixes.md",
+    "function": "Feedback",
+    "purpose": "Identify the highest-impact weaknesses in professional work and provide precise, prioritized fixes.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Turn one workplace idea into five posts",
+    "type": "prompts",
+    "path": "prompts/turn-one-workplace-idea-into-five-posts.md",
+    "function": "Writing",
+    "purpose": "Turn one workplace idea into five distinct, platform-ready content posts.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Turn one enablement idea into five employee posts",
+    "type": "prompts",
+    "path": "prompts/turn-one-enablement-idea-into-five-employee-posts.md",
+    "function": "Writing",
+    "purpose": "Create distinct adoption messages grounded in one workplace behavior.",
+    "status": "Adapted"
+  },
+  {
+    "title": "Video to actionable learning brief",
+    "type": "prompts",
+    "path": "prompts/video-to-actionable-learning-brief.md",
+    "function": "Analysis",
+    "purpose": "Turn video or transcript content into a source-grounded learning brief tailored to your role, knowledge level, and goal.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Employee FAQ from approved sources",
+    "type": "prompts",
+    "path": "prompts/employee-faq-from-approved-sources.md",
+    "function": "Documentation",
+    "purpose": "Answer recurring questions consistently.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Source summary to verified actions",
+    "type": "prompts",
+    "path": "prompts/source-summary-to-verified-actions.md",
+    "function": "Documentation",
+    "purpose": "Extract source-supported decisions and actions from notes, threads, or updates.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Learning feedback to improvement priorities",
+    "type": "prompts",
+    "path": "prompts/learning-feedback-to-improvement-priorities.md",
+    "function": "Feedback",
+    "purpose": "Turn feedback into defensible changes.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Executive decision brief",
+    "type": "prompts",
+    "path": "prompts/executive-decision-brief.md",
+    "function": "Analysis",
+    "purpose": "Present a leadership decision with concise evidence and trade-offs.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Improve a recurring workflow",
+    "type": "prompts",
+    "path": "prompts/improve-a-recurring-workflow.md",
+    "function": "Analysis",
+    "purpose": "Find practical ways to reduce unnecessary effort.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Compare documents and flag changes",
+    "type": "prompts",
+    "path": "prompts/compare-documents-and-flag-changes.md",
+    "function": "Analysis",
+    "purpose": "Make revisions and conflicts easy to review.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Weekly priorities and capacity plan",
+    "type": "prompts",
+    "path": "prompts/weekly-priorities-and-capacity-plan.md",
+    "function": "Planning",
+    "purpose": "Balance priorities with actual time available.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Source-grounded research brief",
+    "type": "prompts",
+    "path": "prompts/source-grounded-research-brief.md",
+    "function": "Research",
+    "purpose": "Synthesize supplied evidence without invented citations.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Email that makes the next step clear",
+    "type": "prompts",
+    "path": "prompts/email-that-makes-the-next-step-clear.md",
+    "function": "Communication",
+    "purpose": "Draft a clear email, reply, or follow-up with a specific next action.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Turn expert notes into a demonstration script",
+    "type": "prompts",
+    "path": "prompts/turn-expert-notes-into-a-demonstration-script.md",
+    "function": "Training design",
+    "purpose": "Make a software demonstration clear and reproducible.",
+    "status": "Migrated"
+  },
+  {
+    "title": "AI adoption micro-lesson",
+    "type": "prompts",
+    "path": "prompts/ai-adoption-micro-lesson.md",
+    "function": "Training design",
+    "purpose": "Teach one useful workflow with practice and verification.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Measurable learning objectives",
+    "type": "prompts",
+    "path": "prompts/measurable-learning-objectives.md",
+    "function": "Training design",
+    "purpose": "Connect training to observable job performance.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Live workshop session builder",
+    "type": "prompts",
+    "path": "prompts/live-workshop-session-builder.md",
+    "function": "Training design",
+    "purpose": "Plan a live session with aligned practice, realistic timing, and reinforcement.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Document a problem and its fix",
+    "type": "prompts",
+    "path": "prompts/document-a-problem-and-its-fix.md",
+    "function": "Documentation",
+    "purpose": "Capture how an issue was investigated and resolved.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Onboarding roadmap by role",
+    "type": "prompts",
+    "path": "prompts/onboarding-roadmap-by-role.md",
+    "function": "Planning",
+    "purpose": "Sequence role learning and demonstrated practice.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Training needs assessment",
+    "type": "prompts",
+    "path": "prompts/training-needs-assessment.md",
+    "function": "Analysis",
+    "purpose": "Diagnose a performance gap and choose a proportionate response.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Employee adoption campaign",
+    "type": "prompts",
+    "path": "prompts/employee-adoption-campaign.md",
+    "function": "Communication",
+    "purpose": "Encourage useful behavior through repeated practical examples.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Messy SOP to one-page job aid",
+    "type": "prompts",
+    "path": "prompts/messy-sop-to-one-page-job-aid.md",
+    "function": "Documentation",
+    "purpose": "Convert source material into a task-focused job aid or outline.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Monthly AI challenge designer",
+    "type": "prompts",
+    "path": "prompts/monthly-ai-challenge-designer.md",
+    "function": "Planning",
+    "purpose": "Turn a seasonal theme into a measurable practice challenge.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Training asset recommendation",
+    "type": "prompts",
+    "path": "prompts/training-asset-recommendation.md",
+    "function": "Analysis",
+    "purpose": "Choose the smallest useful set of learning materials.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Employee AI-use directions for a work task",
+    "type": "prompts",
+    "path": "prompts/employee-ai-use-directions-for-a-work-task.md",
+    "function": "Writing",
+    "purpose": "Make permitted assistance, verification, and accountability clear for a work task.",
+    "status": "Adapted"
+  },
+  {
+    "title": "Correct a workplace misconception with a mini-session",
+    "type": "prompts",
+    "path": "prompts/correct-a-workplace-misconception-with-a-mini-session.md",
+    "function": "Training design",
+    "purpose": "Address one misunderstanding with contrasting examples and transfer practice.",
+    "status": "Adapted"
+  },
+  {
+    "title": "Employee professional development sprint",
+    "type": "prompts",
+    "path": "prompts/employee-professional-development-sprint.md",
+    "function": "Planning",
+    "purpose": "Turn a development goal into manageable job practice and reflection.",
+    "status": "Adapted"
+  },
+  {
+    "title": "Training evidence to targeted follow-up plan",
+    "type": "prompts",
+    "path": "prompts/training-evidence-to-targeted-follow-up-plan.md",
+    "function": "Analysis",
+    "purpose": "Use aggregate practice results to choose focused follow-up support.",
+    "status": "Adapted"
+  },
+  {
+    "title": "Department leader decision brief",
+    "type": "prompts",
+    "path": "prompts/department-leader-decision-brief.md",
+    "function": "Analysis",
+    "purpose": "Frame an operational decision around evidence, options, and constraints.",
+    "status": "Adapted"
+  },
+  {
+    "title": "AI claim-verification workplace challenge",
+    "type": "prompts",
+    "path": "prompts/ai-claim-verification-workplace-challenge.md",
+    "function": "Research",
+    "purpose": "Practice checking generated claims against approved work sources.",
+    "status": "Adapted"
+  },
+  {
+    "title": "Accessible employee task directions",
+    "type": "prompts",
+    "path": "prompts/accessible-employee-task-directions.md",
+    "function": "Writing",
+    "purpose": "Make work instructions easier to follow without changing required actions.",
+    "status": "Adapted"
+  },
+  {
+    "title": "Weekly team workload reset",
+    "type": "prompts",
+    "path": "prompts/weekly-team-workload-reset.md",
+    "function": "Planning",
+    "purpose": "Fit recurring work and preparation into actual available capacity.",
+    "status": "Adapted"
+  },
+  {
+    "title": "Workplace terminology in context",
+    "type": "prompts",
+    "path": "prompts/workplace-terminology-in-context.md",
+    "function": "Differentiation",
+    "purpose": "Teach necessary job terms through accurate examples and use.",
+    "status": "Adapted"
+  },
+  {
+    "title": "Staff coverage handoff from work notes",
+    "type": "prompts",
+    "path": "prompts/staff-coverage-handoff-from-work-notes.md",
+    "function": "Documentation",
+    "purpose": "Turn work notes into a usable temporary coverage plan.",
+    "status": "Adapted"
+  },
+  {
+    "title": "Workplace practice session from a performance goal",
+    "type": "prompts",
+    "path": "prompts/workplace-practice-session-from-a-performance-goal.md",
+    "function": "Planning",
+    "purpose": "Plan a focused session around observable work performance.",
+    "status": "Adapted"
+  },
+  {
+    "title": "Workplace applied project planner",
+    "type": "prompts",
+    "path": "prompts/workplace-applied-project-planner.md",
+    "function": "Planning",
+    "purpose": "Build job-relevant capability through a bounded applied project.",
+    "status": "Adapted"
+  },
+  {
+    "title": "Workplace practice questions with a verified key",
+    "type": "prompts",
+    "path": "prompts/workplace-practice-questions-with-a-verified-key.md",
+    "function": "Assessment",
+    "purpose": "Create realistic practice and a source-traceable answer key.",
+    "status": "Adapted"
+  },
+  {
+    "title": "Workplace discussion questions with useful follow-ups",
+    "type": "prompts",
+    "path": "prompts/workplace-discussion-questions-with-useful-follow-ups.md",
+    "function": "Training design",
+    "purpose": "Move team discussion from recall to evidence and judgment.",
+    "status": "Adapted"
+  },
+  {
+    "title": "End-of-session checks that guide follow-up",
+    "type": "prompts",
+    "path": "prompts/end-of-session-checks-that-guide-follow-up.md",
+    "function": "Assessment",
+    "purpose": "Use brief evidence to plan the next workplace learning action.",
+    "status": "Adapted"
+  },
+  {
+    "title": "Manager reinforcement update after training",
+    "type": "prompts",
+    "path": "prompts/manager-reinforcement-update-after-training.md",
+    "function": "Communication",
+    "purpose": "Help managers support application after an employee learning session.",
+    "status": "Adapted"
+  },
+  {
+    "title": "Work-product feedback that leads to revision",
+    "type": "prompts",
+    "path": "prompts/work-product-feedback-that-leads-to-revision.md",
+    "function": "Feedback",
+    "purpose": "Give specific feedback on a work draft while leaving revision with its author.",
+    "status": "Adapted"
+  },
+  {
+    "title": "Workplace practice rubric with observable criteria",
+    "type": "prompts",
+    "path": "prompts/workplace-practice-rubric-with-observable-criteria.md",
+    "function": "Assessment",
+    "purpose": "Make task-quality expectations visible for learning and coaching.",
+    "status": "Adapted"
+  },
+  {
+    "title": "Three access versions of a workplace reference",
+    "type": "prompts",
+    "path": "prompts/three-access-versions-of-a-workplace-reference.md",
+    "function": "Differentiation",
+    "purpose": "Offer varied support while preserving authoritative work information.",
+    "status": "Adapted"
+  },
+  {
+    "title": "Choose-your-path workplace practice",
+    "type": "prompts",
+    "path": "prompts/choose-your-path-workplace-practice.md",
+    "function": "Differentiation",
+    "purpose": "Offer different support routes to the same performance outcome.",
+    "status": "Adapted"
+  },
+  {
+    "title": "Create an assessment blueprint from learning objectives",
+    "type": "prompts",
+    "path": "prompts/create-an-assessment-blueprint-from-learning-objectives.md",
+    "function": "Assessment",
+    "purpose": "Map objectives to valid evidence, scoring, and assessment decisions.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Plan a microlearning series",
+    "type": "prompts",
+    "path": "prompts/plan-a-microlearning-series.md",
+    "function": "Training design",
+    "purpose": "Sequence short learning moments with practice, feedback, and spaced reinforcement.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Rewrite workplace text to sound clear and natural",
+    "type": "prompts",
+    "path": "prompts/rewrite-workplace-text-to-sound-clear-and-natural.md",
+    "function": "Writing",
+    "purpose": "Rewrite workplace text so it sounds clear, natural, and engaging without changing its meaning, voice, or factual claims.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Draft a usable first version",
+    "type": "prompts",
+    "path": "prompts/draft-a-usable-first-version.md",
+    "function": "Writing",
+    "purpose": "Create a source-grounded first draft in the requested format.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Present information as a scannable table",
+    "type": "prompts",
+    "path": "prompts/present-information-as-a-scannable-table.md",
+    "function": "Documentation",
+    "purpose": "Reformat source information without losing material facts.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Review a training asset for quality",
+    "type": "prompts",
+    "path": "prompts/review-a-training-asset-for-quality.md",
+    "function": "Feedback",
+    "purpose": "Identify prioritized issues in a training resource before release.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Context-Efficient Work Partner",
+    "type": "skills",
+    "path": "skills/context-efficient-work-partner/SKILL.md",
+    "function": "Planning",
+    "purpose": "Help users complete complex or ongoing work efficiently while preserving accuracy, useful context, and continuity.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Humanizer",
+    "type": "skills",
+    "path": "skills/humanizer/SKILL.md",
+    "function": "Writing",
+    "purpose": "Make ordinary workplace writing clear, natural, and audience-appropriate while preserving facts, meaning, attribution, and uncertainty.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Excel Data Analysis & Workbook Builder",
+    "type": "skills",
+    "path": "skills/excel-data-analysis-workbook-builder/SKILL.md",
+    "function": "Analysis",
+    "purpose": "Clean and analyze Excel data, build or improve workbooks, and verify the result through the path the task requires.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Minimum Effective Training Package",
+    "type": "skills",
+    "path": "skills/minimum-effective-training-package/SKILL.md",
+    "function": "Planning",
+    "purpose": "Select and plan the smallest coordinated set of resources needed to support a workplace behavior.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Performance Diagnosis & Solution Selection",
+    "type": "skills",
+    "path": "skills/performance-diagnosis-solution-selection/SKILL.md",
+    "function": "Analysis",
+    "purpose": "Diagnose a workplace performance gap and select a proportionate response supported by evidence.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Live Training Session Design",
+    "type": "skills",
+    "path": "skills/live-training-session-design/SKILL.md",
+    "function": "Training design",
+    "purpose": "Turn a confirmed learning need into a timed, accessible session with practice, evaluation, and reinforcement.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Market Signal Mining",
+    "type": "skills",
+    "path": "skills/market-signal-mining/SKILL.md",
+    "function": "Research",
+    "purpose": "Turn evidence of buyer friction and spending into a scoped offer hypothesis and validation plan.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Layered Image Prompts",
+    "type": "skills",
+    "path": "skills/layered-image-prompts/SKILL.md",
+    "function": "Writing",
+    "purpose": "Build or revise image-generation prompts with clear subject, composition, lighting, detail, style, and exclusions.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Skill Creator",
+    "type": "skills",
+    "path": "skills/skill-creator/SKILL.md",
+    "function": "Documentation",
+    "purpose": "Design, evaluate, and refine a reusable skill with clear triggers, workflow, outputs, and quality checks.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Assessment & Evaluation Builder",
+    "type": "skills",
+    "path": "skills/assessment-evaluation-builder/SKILL.md",
+    "function": "Assessment",
+    "purpose": "Creates aligned knowledge checks, practical assessments, rubrics, surveys, and evaluation plans with defensible scoring and feedback.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Screenshot Sanitization & Annotation",
+    "type": "skills",
+    "path": "skills/screenshot-sanitization-annotation/SKILL.md",
+    "function": "Documentation",
+    "purpose": "Transforms screenshots into privacy-safe training visuals while preserving authentic interface context and instructional clarity.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Enablement Campaign Generator",
+    "type": "skills",
+    "path": "skills/enablement-campaign-generator/SKILL.md",
+    "function": "Communication",
+    "purpose": "Designs a multi-channel adoption campaign that moves an audience from awareness to confident, sustained use.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Microlearning Series Generator",
+    "type": "skills",
+    "path": "skills/microlearning-series-generator/SKILL.md",
+    "function": "Training design",
+    "purpose": "Builds short, sequenced learning experiences designed for recall, practice, transfer, and reinforcement.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Draft, Humanize, and Review High-Stakes Writing",
+    "type": "workflows",
+    "path": "workflows/draft-humanize-and-review-high-stakes-writing.md",
+    "function": null,
+    "purpose": "Separate substance, plain-language editing, human read-aloud review, and source verification for important writing.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Training request → session blueprint → delivery → reinforcement",
+    "type": "workflows",
+    "path": "workflows/training-request-session-blueprint-delivery-reinforcement.md",
+    "function": null,
+    "purpose": "Turn an approved learning need into a complete live or virtual session with practice, facilitation guidance, evaluation, and follow-through.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Performance need → root cause → right response",
+    "type": "workflows",
+    "path": "workflows/performance-need-root-cause-right-response.md",
+    "function": null,
+    "purpose": "Diagnose whether a workplace request needs training, performance support, process improvement, communication, or another response before building assets.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Capture → Sanitize → Categorize → Verify → Publish",
+    "type": "workflows",
+    "path": "workflows/capture-sanitize-categorize-verify-publish.md",
+    "function": null,
+    "purpose": "A lightweight workflow for turning useful source material into a safe, searchable, public resource.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Minimum viable training package",
+    "type": "workflows",
+    "path": "workflows/minimum-viable-training-package.md",
+    "function": null,
+    "purpose": "Selects and builds the smallest complete set of assets needed to support a new tool, feature, or workflow.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Goal–Context–Expectations–Source prompting",
+    "type": "workflows",
+    "path": "workflows/goal-context-expectations-source-prompting.md",
+    "function": null,
+    "purpose": "A four-part method for giving an AI tool a clear job, relevant context, output requirements, and grounded source.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Summarize → Decide → Respond → Follow up",
+    "type": "workflows",
+    "path": "workflows/summarize-decide-respond-follow-up.md",
+    "function": null,
+    "purpose": "A practical workflow for turning messages, meetings, or documents into visible action.",
+    "status": "Migrated"
+  },
+  {
+    "title": "60-Minute Training Session Blueprint",
+    "type": "resources",
+    "path": "resources/60-minute-training-session-blueprint.md",
+    "function": null,
+    "purpose": "A reusable template for planning a complete one-hour instructor-led or virtual session with practice and evaluation.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Performance Problem Diagnostic Worksheet",
+    "type": "resources",
+    "path": "resources/performance-problem-diagnostic-worksheet.md",
+    "function": null,
+    "purpose": "A fill-in worksheet for defining a performance gap, testing likely causes, and selecting the smallest effective response.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Minimum Viable Training Package Planner",
+    "type": "resources",
+    "path": "resources/minimum-viable-training-package-planner.md",
+    "function": null,
+    "purpose": "A planning worksheet for selecting the smallest complete set of assets needed to support awareness, practice, performance, and reinforcement.",
+    "status": "Migrated"
+  },
+  {
+    "title": "AI Email Prompt Pack",
+    "type": "resources",
+    "path": "resources/ai-email-prompt-pack.md",
+    "function": null,
+    "purpose": "Ten copy-ready prompts for summarizing, replying, following up, requesting information, escalating, and briefing leaders.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Training Asset Quality Checklist",
+    "type": "resources",
+    "path": "resources/training-asset-quality-checklist.md",
+    "function": null,
+    "purpose": "A concise pre-publication review for usefulness, accuracy, accessibility, visual clarity, and safe distribution.",
+    "status": "Migrated"
+  },
+  {
+    "title": "AI Enablement Planning Checklist",
+    "type": "resources",
+    "path": "resources/ai-enablement-planning-checklist.md",
+    "function": null,
+    "purpose": "A practical checklist for defining the audience, work problem, adoption approach, safeguards, and success measures for an AI enablement initiative.",
+    "status": "Migrated"
+  },
+  {
+    "title": "Goal–Context–Expectations–Source Prompt Builder",
+    "type": "resources",
+    "path": "resources/goal-context-expectations-source-prompt-builder.md",
+    "function": null,
+    "purpose": "A copy-ready worksheet for building grounded prompts with a clear goal, relevant context, output expectations, and an authoritative source.",
+    "status": "Migrated"
+  }
+]
