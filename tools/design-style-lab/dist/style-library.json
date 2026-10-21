@@ -1,0 +1,2367 @@
+{
+  "standard": {
+    "version": "1.0.0",
+    "purpose": "A consistent standard for all 25 available design styles.",
+    "required_fields": [
+      "id",
+      "name",
+      "version",
+      "summary",
+      "source",
+      "classification",
+      "use_when",
+      "avoid_when",
+      "tokens",
+      "typography",
+      "layout",
+      "surfaces",
+      "essential_traits",
+      "exclude",
+      "motion",
+      "adaptations",
+      "quality_checks",
+      "prompt"
+    ],
+    "comparison_fixture": "The same employee-learning card, content page, and dashboard for all 25 styles. Data is fictional.",
+    "acceptance": [
+      "All required fields are present",
+      "Style can be recognized without its label",
+      "Same source content and actions survive every variation",
+      "Appearance and motion are separate",
+      "Every output format has adaptation guidance",
+      "Critical text has stable readable background",
+      "Controls remain keyboard accessible",
+      "Brand requirements win over optional aesthetic choices",
+      "Unperformed tests remain disclosed"
+    ],
+    "expansion_gate": "Review every style on card, page, dashboard, narrow screen, keyboard, and reduced motion when updating the library.",
+    "available_styles": 25
+  },
+  "profiles": [
+    {
+      "version": "0.1.0",
+      "status": "Available style specification; final outputs require format-specific visual checks",
+      "source": "Original interpretations of style names demonstrated in a user-supplied video; not recovered source code.",
+      "outputs": [
+        "web",
+        "slides",
+        "documents",
+        "images"
+      ],
+      "preserve": [
+        "meaning",
+        "required content",
+        "existing visuals",
+        "editable content where supported",
+        "user brand constraints"
+      ],
+      "quality_checks": [
+        "Readable text and measured contrast against rendered colors",
+        "Visible focus and keyboard access",
+        "No information communicated by color alone",
+        "Responsive layout with no horizontal overflow",
+        "Reduced motion and static fallback",
+        "Content remains readable without blur or animation"
+      ],
+      "motion": {
+        "default": "restrained",
+        "reduced_motion": "Remove decorative movement and nonessential transitions",
+        "interaction_ms": 180,
+        "allowed": [
+          "opacity",
+          "small translate"
+        ],
+        "avoid": [
+          "flashing",
+          "infinite essential motion",
+          "movement of reading content"
+        ]
+      },
+      "id": "premium-minimal",
+      "name": "Premium minimal",
+      "summary": "Quiet confidence. Warm paper, editorial type, and generous space.",
+      "use_when": "Use for leadership communication, learning pages, polished documentation, and focused dashboards.",
+      "avoid_when": "Avoid when dense operational data needs strong schematic relationships.",
+      "classification": {
+        "appearance": "Premium minimal",
+        "motion": "Independent, restrained optional behavior"
+      },
+      "tokens": {
+        "colors": {
+          "background": "#fbfaf7",
+          "surface": "#ffffff",
+          "text": "#222b28",
+          "muted": "#59645e",
+          "accent": "#a3422d",
+          "border": "#dcded8"
+        },
+        "spacing_px": [
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "radius_px": 12,
+        "body_px": 16,
+        "minimum_control_height_px": 44,
+        "reading_width_ch": 65
+      },
+      "typography": "Georgia, serif for headings; system sans-serif for body text.",
+      "layout": "Generous whitespace, narrow reading measure, subtle rules, clear hierarchy.",
+      "surfaces": "Opaque paper surfaces, 12px corner radius, restrained shadow.",
+      "essential_traits": [
+        "One prominent primary action per content block",
+        "Editorial heading contrast",
+        "Warm neutral canvas"
+      ],
+      "exclude": [
+        "Decorative gradients",
+        "Heavy glow",
+        "Low-contrast gray text"
+      ],
+      "adaptations": {
+        "web": "Use the tokens and live components; validate keyboard, mobile, contrast, and reduced motion.",
+        "slides": "Preserve hierarchy and palette with native editable shapes and text. Replace motion with static emphasis.",
+        "documents": "Use native headings, readable body text, restrained callouts, and solid reading surfaces.",
+        "images": "Describe composition and material cues; check text and layout separately. Do not claim pixel-exact token fidelity."
+      },
+      "prompt": "Apply Premium minimal to [DELIVERABLE] for [AUDIENCE]. Purpose: [GOAL]. Preserve all supplied content, existing visuals, and required brand constraints. Georgia, serif for headings; system sans-serif for body text. Generous whitespace, narrow reading measure, subtle rules, clear hierarchy. Opaque paper surfaces, 12px corner radius, restrained shadow. Palette: background #fbfaf7, surface #ffffff, text #222b28, muted #59645e, accent #a3422d, border #dcded8. Essential traits: One prominent primary action per content block; Editorial heading contrast; Warm neutral canvas. Avoid: Decorative gradients; Heavy glow; Low-contrast gray text. Keep motion restrained and optional, respect reduced motion, and provide a static fallback. Adapt the appearance to the requested output format. Keep text legible, controls accessible, and content editable where supported. Resolve mandatory brand conflicts explicitly. Return the design and accurately report performed and unperformed checks.",
+      "category": "Editorial"
+    },
+    {
+      "version": "0.1.0",
+      "status": "Available style specification; final outputs require format-specific visual checks",
+      "source": "Original interpretations of style names demonstrated in a user-supplied video; not recovered source code.",
+      "outputs": [
+        "web",
+        "slides",
+        "documents",
+        "images"
+      ],
+      "preserve": [
+        "meaning",
+        "required content",
+        "existing visuals",
+        "editable content where supported",
+        "user brand constraints"
+      ],
+      "quality_checks": [
+        "Readable text and measured contrast against rendered colors",
+        "Visible focus and keyboard access",
+        "No information communicated by color alone",
+        "Responsive layout with no horizontal overflow",
+        "Reduced motion and static fallback",
+        "Content remains readable without blur or animation"
+      ],
+      "motion": {
+        "default": "restrained",
+        "reduced_motion": "Remove decorative movement and nonessential transitions",
+        "interaction_ms": 180,
+        "allowed": [
+          "opacity",
+          "small translate"
+        ],
+        "avoid": [
+          "flashing",
+          "infinite essential motion",
+          "movement of reading content"
+        ]
+      },
+      "id": "blueprint",
+      "name": "Blueprint",
+      "summary": "Make the structure visible. Precise lines, measured spacing, technical clarity.",
+      "use_when": "Use for process maps, technical training, implementation plans, and structured dashboards.",
+      "avoid_when": "Avoid for long narrative reading without a quieter reading surface.",
+      "classification": {
+        "appearance": "Blueprint",
+        "motion": "Independent, restrained optional behavior"
+      },
+      "tokens": {
+        "colors": {
+          "background": "#081e42",
+          "surface": "#102c50",
+          "text": "#eff8ff",
+          "muted": "#b0cce4",
+          "accent": "#8fe1ff",
+          "border": "#426c93"
+        },
+        "spacing_px": [
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "radius_px": 3,
+        "body_px": 16,
+        "minimum_control_height_px": 44,
+        "reading_width_ch": 65
+      },
+      "typography": "System monospace for headings and labels; system sans-serif for body text.",
+      "layout": "Consistent grid, aligned edges, numbered sections, explicit relationships.",
+      "surfaces": "Dark navy surfaces, thin cyan rules, 3px corners, subtle grid outside text blocks.",
+      "essential_traits": [
+        "Schematic labels and structure",
+        "Thin high-contrast lines",
+        "Numbered modules"
+      ],
+      "exclude": [
+        "Dense grids behind body text",
+        "All-caps body paragraphs",
+        "Decoration that resembles real measurements"
+      ],
+      "adaptations": {
+        "web": "Use the tokens and live components; validate keyboard, mobile, contrast, and reduced motion.",
+        "slides": "Preserve hierarchy and palette with native editable shapes and text. Replace motion with static emphasis.",
+        "documents": "Use native headings, readable body text, restrained callouts, and solid reading surfaces.",
+        "images": "Describe composition and material cues; check text and layout separately. Do not claim pixel-exact token fidelity."
+      },
+      "prompt": "Apply Blueprint to [DELIVERABLE] for [AUDIENCE]. Purpose: [GOAL]. Preserve all supplied content, existing visuals, and required brand constraints. System monospace for headings and labels; system sans-serif for body text. Consistent grid, aligned edges, numbered sections, explicit relationships. Dark navy surfaces, thin cyan rules, 3px corners, subtle grid outside text blocks. Palette: background #081e42, surface #102c50, text #eff8ff, muted #b0cce4, accent #8fe1ff, border #426c93. Essential traits: Schematic labels and structure; Thin high-contrast lines; Numbered modules. Avoid: Dense grids behind body text; All-caps body paragraphs; Decoration that resembles real measurements. Keep motion restrained and optional, respect reduced motion, and provide a static fallback. Adapt the appearance to the requested output format. Keep text legible, controls accessible, and content editable where supported. Resolve mandatory brand conflicts explicitly. Return the design and accurately report performed and unperformed checks.",
+      "category": "Technical"
+    },
+    {
+      "version": "0.1.0",
+      "status": "Available style specification; final outputs require format-specific visual checks",
+      "source": "Original interpretations of style names demonstrated in a user-supplied video; not recovered source code.",
+      "outputs": [
+        "web",
+        "slides",
+        "documents",
+        "images"
+      ],
+      "preserve": [
+        "meaning",
+        "required content",
+        "existing visuals",
+        "editable content where supported",
+        "user brand constraints"
+      ],
+      "quality_checks": [
+        "Readable text and measured contrast against rendered colors",
+        "Visible focus and keyboard access",
+        "No information communicated by color alone",
+        "Responsive layout with no horizontal overflow",
+        "Reduced motion and static fallback",
+        "Content remains readable without blur or animation"
+      ],
+      "motion": {
+        "default": "restrained",
+        "reduced_motion": "Remove decorative movement and nonessential transitions",
+        "interaction_ms": 180,
+        "allowed": [
+          "opacity",
+          "small translate"
+        ],
+        "avoid": [
+          "flashing",
+          "infinite essential motion",
+          "movement of reading content"
+        ]
+      },
+      "id": "glassmorphism",
+      "name": "Glassmorphism",
+      "summary": "Depth with discipline. Translucent layers over a luminous atmosphere.",
+      "use_when": "Use for product showcases, interactive learning hubs, and selected dashboard surfaces.",
+      "avoid_when": "Avoid for dense tables over uncontrolled imagery or interfaces without a strong static fallback.",
+      "classification": {
+        "appearance": "Glassmorphism",
+        "motion": "Independent, restrained optional behavior"
+      },
+      "tokens": {
+        "colors": {
+          "background": "#111b40",
+          "surface": "#17264e",
+          "text": "#f3f5ff",
+          "muted": "#c3cde6",
+          "accent": "#c7f4ff",
+          "border": "#6b7aab"
+        },
+        "spacing_px": [
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "radius_px": 20,
+        "body_px": 16,
+        "minimum_control_height_px": 44,
+        "reading_width_ch": 65
+      },
+      "typography": "System sans-serif with strong heading weights and readable body text.",
+      "layout": "Layered surfaces, stable reading zones, controlled background accents.",
+      "surfaces": "20px corners, translucent dark surfaces, backdrop blur where supported, opaque fallback.",
+      "essential_traits": [
+        "Layer separation and bounded transparency",
+        "Subtle luminous background",
+        "Readable opaque or nearly opaque text zones"
+      ],
+      "exclude": [
+        "Transparency as the only boundary",
+        "Blur required to understand content",
+        "Animations behind reading text"
+      ],
+      "adaptations": {
+        "web": "Use the tokens and live components; validate keyboard, mobile, contrast, and reduced motion.",
+        "slides": "Preserve hierarchy and palette with native editable shapes and text. Replace motion with static emphasis.",
+        "documents": "Use native headings, readable body text, restrained callouts, and solid reading surfaces.",
+        "images": "Describe composition and material cues; check text and layout separately. Do not claim pixel-exact token fidelity."
+      },
+      "prompt": "Apply Glassmorphism to [DELIVERABLE] for [AUDIENCE]. Purpose: [GOAL]. Preserve all supplied content, existing visuals, and required brand constraints. System sans-serif with strong heading weights and readable body text. Layered surfaces, stable reading zones, controlled background accents. 20px corners, translucent dark surfaces, backdrop blur where supported, opaque fallback. Palette: background #111b40, surface #17264e, text #f3f5ff, muted #c3cde6, accent #c7f4ff, border #6b7aab. Essential traits: Layer separation and bounded transparency; Subtle luminous background; Readable opaque or nearly opaque text zones. Avoid: Transparency as the only boundary; Blur required to understand content; Animations behind reading text. Keep motion restrained and optional, respect reduced motion, and provide a static fallback. Adapt the appearance to the requested output format. Keep text legible, controls accessible, and content editable where supported. Resolve mandatory brand conflicts explicitly. Return the design and accurately report performed and unperformed checks.",
+      "category": "Light & color"
+    },
+    {
+      "version": "0.1.0",
+      "status": "Available style specification; final outputs require format-specific visual checks",
+      "source": "Original interpretations of style names demonstrated in a user-supplied video; not recovered source code.",
+      "outputs": [
+        "web",
+        "slides",
+        "documents",
+        "images"
+      ],
+      "preserve": [
+        "meaning",
+        "required content",
+        "existing visuals",
+        "editable content where supported",
+        "user brand constraints"
+      ],
+      "quality_checks": [
+        "Readable text and measured contrast against rendered colors",
+        "Visible focus and keyboard access",
+        "No information communicated by color alone",
+        "Responsive layout with no horizontal overflow",
+        "Reduced motion and static fallback",
+        "Content remains readable without blur or animation"
+      ],
+      "motion": {
+        "default": "restrained",
+        "reduced_motion": "Remove decorative movement and nonessential transitions",
+        "interaction_ms": 180,
+        "allowed": [
+          "opacity",
+          "small translate"
+        ],
+        "avoid": [
+          "flashing",
+          "infinite essential motion",
+          "movement of reading content"
+        ]
+      },
+      "id": "neon-glow",
+      "name": "Neon glow",
+      "summary": "Electric edges and focused light on a deep, quiet canvas.",
+      "use_when": "Use for launch moments, interactive showcases, and technology campaigns.",
+      "avoid_when": "Use sparingly in dense reading and preserve stable, high-contrast text surfaces.",
+      "classification": {
+        "appearance": "Neon glow",
+        "motion": "Independent, restrained optional behavior"
+      },
+      "tokens": {
+        "colors": {
+          "background": "#080c19",
+          "surface": "#11182a",
+          "text": "#f4faff",
+          "muted": "#b7c8dc",
+          "accent": "#89fbea",
+          "border": "#496477"
+        },
+        "spacing_px": [
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "radius_px": 12,
+        "body_px": 16,
+        "minimum_control_height_px": 44,
+        "reading_width_ch": 65
+      },
+      "typography": "System sans-serif with bold headings.",
+      "layout": "Dark negative space, concentrated highlights, a single luminous focal point.",
+      "surfaces": "Cyan edge lighting, dark panels, and tightly controlled glow.",
+      "essential_traits": [
+        "Luminous cyan borders",
+        "Dark stable reading surfaces",
+        "One accented action"
+      ],
+      "exclude": [
+        "Glow on body text",
+        "Flashing effects",
+        "Multiple competing neon colors"
+      ],
+      "adaptations": {
+        "web": "Use the tokens and live components; validate keyboard, mobile, contrast, and reduced motion.",
+        "slides": "Preserve hierarchy and palette with native editable shapes and text. Replace motion with static emphasis.",
+        "documents": "Use native headings, readable body text, restrained callouts, and solid reading surfaces.",
+        "images": "Describe composition and material cues; check text and layout separately. Do not claim pixel-exact token fidelity."
+      },
+      "prompt": "Apply Neon glow to [DELIVERABLE] for [AUDIENCE]. Purpose: [GOAL]. Preserve all supplied content, existing visuals, and required brand constraints. System sans-serif with bold headings. Dark negative space, concentrated highlights, a single luminous focal point. Cyan edge lighting, dark panels, and tightly controlled glow. Palette: background #080c19, surface #11182a, text #f4faff, muted #b7c8dc, accent #89fbea, border #496477. Essential traits: Luminous cyan borders; Dark stable reading surfaces; One accented action. Avoid: Glow on body text; Flashing effects; Multiple competing neon colors. Keep motion restrained and optional, respect reduced motion, and provide a static fallback. Adapt the appearance to the requested output format. Keep text legible, controls accessible, and content editable where supported. Resolve mandatory brand conflicts explicitly. Return the design and accurately report performed and unperformed checks.",
+      "category": "Light & color"
+    },
+    {
+      "version": "0.1.0",
+      "status": "Available style specification; final outputs require format-specific visual checks",
+      "source": "Original interpretations of style names demonstrated in a user-supplied video; not recovered source code.",
+      "outputs": [
+        "web",
+        "slides",
+        "documents",
+        "images"
+      ],
+      "preserve": [
+        "meaning",
+        "required content",
+        "existing visuals",
+        "editable content where supported",
+        "user brand constraints"
+      ],
+      "quality_checks": [
+        "Readable text and measured contrast against rendered colors",
+        "Visible focus and keyboard access",
+        "No information communicated by color alone",
+        "Responsive layout with no horizontal overflow",
+        "Reduced motion and static fallback",
+        "Content remains readable without blur or animation"
+      ],
+      "motion": {
+        "default": "restrained",
+        "reduced_motion": "Remove decorative movement and nonessential transitions",
+        "interaction_ms": 180,
+        "allowed": [
+          "opacity",
+          "small translate"
+        ],
+        "avoid": [
+          "flashing",
+          "infinite essential motion",
+          "movement of reading content"
+        ]
+      },
+      "id": "particles",
+      "name": "Particles",
+      "summary": "A quiet constellation gives the interface room to breathe.",
+      "use_when": "Use for technology explainers, discovery pages, and ambient learning hubs.",
+      "avoid_when": "Use sparingly in dense reading and preserve stable, high-contrast text surfaces.",
+      "classification": {
+        "appearance": "Particles",
+        "motion": "Independent, restrained optional behavior"
+      },
+      "tokens": {
+        "colors": {
+          "background": "#0a1630",
+          "surface": "#122747",
+          "text": "#edf5ff",
+          "muted": "#b5cbe3",
+          "accent": "#a2d5ff",
+          "border": "#4d6d91"
+        },
+        "spacing_px": [
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "radius_px": 12,
+        "body_px": 16,
+        "minimum_control_height_px": 44,
+        "reading_width_ch": 65
+      },
+      "typography": "System sans-serif with open heading spacing.",
+      "layout": "Stable foreground panels over a sparse constellation.",
+      "surfaces": "Small decorative dots and fine connecting lines behind opaque panels.",
+      "essential_traits": [
+        "Sparse background particles",
+        "Large quiet reading zones",
+        "Optional slow ambient motion"
+      ],
+      "exclude": [
+        "Particles over text",
+        "Distracting density",
+        "Random movement required for navigation"
+      ],
+      "adaptations": {
+        "web": "Use the tokens and live components; validate keyboard, mobile, contrast, and reduced motion.",
+        "slides": "Preserve hierarchy and palette with native editable shapes and text. Replace motion with static emphasis.",
+        "documents": "Use native headings, readable body text, restrained callouts, and solid reading surfaces.",
+        "images": "Describe composition and material cues; check text and layout separately. Do not claim pixel-exact token fidelity."
+      },
+      "prompt": "Apply Particles to [DELIVERABLE] for [AUDIENCE]. Purpose: [GOAL]. Preserve all supplied content, existing visuals, and required brand constraints. System sans-serif with open heading spacing. Stable foreground panels over a sparse constellation. Small decorative dots and fine connecting lines behind opaque panels. Palette: background #0a1630, surface #122747, text #edf5ff, muted #b5cbe3, accent #a2d5ff, border #4d6d91. Essential traits: Sparse background particles; Large quiet reading zones; Optional slow ambient motion. Avoid: Particles over text; Distracting density; Random movement required for navigation. Keep motion restrained and optional, respect reduced motion, and provide a static fallback. Adapt the appearance to the requested output format. Keep text legible, controls accessible, and content editable where supported. Resolve mandatory brand conflicts explicitly. Return the design and accurately report performed and unperformed checks.",
+      "category": "Motion & texture"
+    },
+    {
+      "version": "0.1.0",
+      "status": "Available style specification; final outputs require format-specific visual checks",
+      "source": "Original interpretations of style names demonstrated in a user-supplied video; not recovered source code.",
+      "outputs": [
+        "web",
+        "slides",
+        "documents",
+        "images"
+      ],
+      "preserve": [
+        "meaning",
+        "required content",
+        "existing visuals",
+        "editable content where supported",
+        "user brand constraints"
+      ],
+      "quality_checks": [
+        "Readable text and measured contrast against rendered colors",
+        "Visible focus and keyboard access",
+        "No information communicated by color alone",
+        "Responsive layout with no horizontal overflow",
+        "Reduced motion and static fallback",
+        "Content remains readable without blur or animation"
+      ],
+      "motion": {
+        "default": "restrained",
+        "reduced_motion": "Remove decorative movement and nonessential transitions",
+        "interaction_ms": 180,
+        "allowed": [
+          "opacity",
+          "small translate"
+        ],
+        "avoid": [
+          "flashing",
+          "infinite essential motion",
+          "movement of reading content"
+        ]
+      },
+      "id": "neumorphism",
+      "name": "Neumorphism",
+      "summary": "Softly raised surfaces with tactile, understated depth.",
+      "use_when": "Use for small tools, settings panels, and focused utility cards.",
+      "avoid_when": "Use sparingly in dense reading and preserve stable, high-contrast text surfaces.",
+      "classification": {
+        "appearance": "Neumorphism",
+        "motion": "Independent, restrained optional behavior"
+      },
+      "tokens": {
+        "colors": {
+          "background": "#e8edf1",
+          "surface": "#e8edf1",
+          "text": "#263544",
+          "muted": "#526171",
+          "accent": "#275c78",
+          "border": "#aab7c3"
+        },
+        "spacing_px": [
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "radius_px": 20,
+        "body_px": 16,
+        "minimum_control_height_px": 44,
+        "reading_width_ch": 65
+      },
+      "typography": "System sans-serif with clear medium-weight labels.",
+      "layout": "Spacious inset and raised groups with explicit labels.",
+      "surfaces": "Paired soft light/dark shadows and clear control outlines.",
+      "essential_traits": [
+        "Raised and inset relief",
+        "Monochrome surface family",
+        "Explicit boundaries on controls"
+      ],
+      "exclude": [
+        "Shadow-only affordances",
+        "Low-contrast text",
+        "Unlabeled states"
+      ],
+      "adaptations": {
+        "web": "Use the tokens and live components; validate keyboard, mobile, contrast, and reduced motion.",
+        "slides": "Preserve hierarchy and palette with native editable shapes and text. Replace motion with static emphasis.",
+        "documents": "Use native headings, readable body text, restrained callouts, and solid reading surfaces.",
+        "images": "Describe composition and material cues; check text and layout separately. Do not claim pixel-exact token fidelity."
+      },
+      "prompt": "Apply Neumorphism to [DELIVERABLE] for [AUDIENCE]. Purpose: [GOAL]. Preserve all supplied content, existing visuals, and required brand constraints. System sans-serif with clear medium-weight labels. Spacious inset and raised groups with explicit labels. Paired soft light/dark shadows and clear control outlines. Palette: background #e8edf1, surface #e8edf1, text #263544, muted #526171, accent #275c78, border #aab7c3. Essential traits: Raised and inset relief; Monochrome surface family; Explicit boundaries on controls. Avoid: Shadow-only affordances; Low-contrast text; Unlabeled states. Keep motion restrained and optional, respect reduced motion, and provide a static fallback. Adapt the appearance to the requested output format. Keep text legible, controls accessible, and content editable where supported. Resolve mandatory brand conflicts explicitly. Return the design and accurately report performed and unperformed checks.",
+      "category": "Motion & texture"
+    },
+    {
+      "version": "0.1.0",
+      "status": "Available style specification; final outputs require format-specific visual checks",
+      "source": "Original interpretations of style names demonstrated in a user-supplied video; not recovered source code.",
+      "outputs": [
+        "web",
+        "slides",
+        "documents",
+        "images"
+      ],
+      "preserve": [
+        "meaning",
+        "required content",
+        "existing visuals",
+        "editable content where supported",
+        "user brand constraints"
+      ],
+      "quality_checks": [
+        "Readable text and measured contrast against rendered colors",
+        "Visible focus and keyboard access",
+        "No information communicated by color alone",
+        "Responsive layout with no horizontal overflow",
+        "Reduced motion and static fallback",
+        "Content remains readable without blur or animation"
+      ],
+      "motion": {
+        "default": "restrained",
+        "reduced_motion": "Remove decorative movement and nonessential transitions",
+        "interaction_ms": 180,
+        "allowed": [
+          "opacity",
+          "small translate"
+        ],
+        "avoid": [
+          "flashing",
+          "infinite essential motion",
+          "movement of reading content"
+        ]
+      },
+      "id": "liquid-morph",
+      "name": "Liquid morph",
+      "summary": "Organic shapes and fluid outlines, with a grounded reading layer.",
+      "use_when": "Use for creative campaigns, playful learning moments, and expressive product cards.",
+      "avoid_when": "Use sparingly in dense reading and preserve stable, high-contrast text surfaces.",
+      "classification": {
+        "appearance": "Liquid morph",
+        "motion": "Independent, restrained optional behavior"
+      },
+      "tokens": {
+        "colors": {
+          "background": "#160d32",
+          "surface": "#261944",
+          "text": "#fcf5ff",
+          "muted": "#d5c0e8",
+          "accent": "#eab0ff",
+          "border": "#8c65b1"
+        },
+        "spacing_px": [
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "radius_px": 12,
+        "body_px": 16,
+        "minimum_control_height_px": 44,
+        "reading_width_ch": 65
+      },
+      "typography": "System sans-serif with bold, compact headings.",
+      "layout": "Organic decoration around a stable, readable rectangular content zone.",
+      "surfaces": "Rounded irregular outer shapes, saturated purple, bounded optional morphing.",
+      "essential_traits": [
+        "Organic silhouette",
+        "Violet and pink accents",
+        "Steady text and action placement"
+      ],
+      "exclude": [
+        "Morphing reading text",
+        "Unbounded motion",
+        "Distorted control shapes"
+      ],
+      "adaptations": {
+        "web": "Use the tokens and live components; validate keyboard, mobile, contrast, and reduced motion.",
+        "slides": "Preserve hierarchy and palette with native editable shapes and text. Replace motion with static emphasis.",
+        "documents": "Use native headings, readable body text, restrained callouts, and solid reading surfaces.",
+        "images": "Describe composition and material cues; check text and layout separately. Do not claim pixel-exact token fidelity."
+      },
+      "prompt": "Apply Liquid morph to [DELIVERABLE] for [AUDIENCE]. Purpose: [GOAL]. Preserve all supplied content, existing visuals, and required brand constraints. System sans-serif with bold, compact headings. Organic decoration around a stable, readable rectangular content zone. Rounded irregular outer shapes, saturated purple, bounded optional morphing. Palette: background #160d32, surface #261944, text #fcf5ff, muted #d5c0e8, accent #eab0ff, border #8c65b1. Essential traits: Organic silhouette; Violet and pink accents; Steady text and action placement. Avoid: Morphing reading text; Unbounded motion; Distorted control shapes. Keep motion restrained and optional, respect reduced motion, and provide a static fallback. Adapt the appearance to the requested output format. Keep text legible, controls accessible, and content editable where supported. Resolve mandatory brand conflicts explicitly. Return the design and accurately report performed and unperformed checks.",
+      "category": "Motion & texture"
+    },
+    {
+      "version": "0.1.0",
+      "status": "Available style specification; final outputs require format-specific visual checks",
+      "source": "Original interpretations of style names demonstrated in a user-supplied video; not recovered source code.",
+      "outputs": [
+        "web",
+        "slides",
+        "documents",
+        "images"
+      ],
+      "preserve": [
+        "meaning",
+        "required content",
+        "existing visuals",
+        "editable content where supported",
+        "user brand constraints"
+      ],
+      "quality_checks": [
+        "Readable text and measured contrast against rendered colors",
+        "Visible focus and keyboard access",
+        "No information communicated by color alone",
+        "Responsive layout with no horizontal overflow",
+        "Reduced motion and static fallback",
+        "Content remains readable without blur or animation"
+      ],
+      "motion": {
+        "default": "restrained",
+        "reduced_motion": "Remove decorative movement and nonessential transitions",
+        "interaction_ms": 180,
+        "allowed": [
+          "opacity",
+          "small translate"
+        ],
+        "avoid": [
+          "flashing",
+          "infinite essential motion",
+          "movement of reading content"
+        ]
+      },
+      "id": "liquid-chrome",
+      "name": "Liquid chrome",
+      "summary": "Sculptural metallic highlights on a near-black field.",
+      "use_when": "Use for premium product showcases, title moments, and creative launch cards.",
+      "avoid_when": "Use sparingly in dense reading and preserve stable, high-contrast text surfaces.",
+      "classification": {
+        "appearance": "Liquid chrome",
+        "motion": "Independent, restrained optional behavior"
+      },
+      "tokens": {
+        "colors": {
+          "background": "#111315",
+          "surface": "#202426",
+          "text": "#f7f8f8",
+          "muted": "#c0c8cd",
+          "accent": "#d8e1e7",
+          "border": "#76858e"
+        },
+        "spacing_px": [
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "radius_px": 12,
+        "body_px": 16,
+        "minimum_control_height_px": 44,
+        "reading_width_ch": 65
+      },
+      "typography": "System sans-serif with sharp heading hierarchy.",
+      "layout": "Minimal composition, metallic edge accents, restrained reflectivity.",
+      "surfaces": "Brushed and polished chrome decorations around matte reading surfaces.",
+      "essential_traits": [
+        "Silver sculptural accents",
+        "Matte text panel",
+        "Near-black negative space"
+      ],
+      "exclude": [
+        "Reflective body text",
+        "Harsh moving highlights",
+        "Metal effects replacing useful hierarchy"
+      ],
+      "adaptations": {
+        "web": "Use the tokens and live components; validate keyboard, mobile, contrast, and reduced motion.",
+        "slides": "Preserve hierarchy and palette with native editable shapes and text. Replace motion with static emphasis.",
+        "documents": "Use native headings, readable body text, restrained callouts, and solid reading surfaces.",
+        "images": "Describe composition and material cues; check text and layout separately. Do not claim pixel-exact token fidelity."
+      },
+      "prompt": "Apply Liquid chrome to [DELIVERABLE] for [AUDIENCE]. Purpose: [GOAL]. Preserve all supplied content, existing visuals, and required brand constraints. System sans-serif with sharp heading hierarchy. Minimal composition, metallic edge accents, restrained reflectivity. Brushed and polished chrome decorations around matte reading surfaces. Palette: background #111315, surface #202426, text #f7f8f8, muted #c0c8cd, accent #d8e1e7, border #76858e. Essential traits: Silver sculptural accents; Matte text panel; Near-black negative space. Avoid: Reflective body text; Harsh moving highlights; Metal effects replacing useful hierarchy. Keep motion restrained and optional, respect reduced motion, and provide a static fallback. Adapt the appearance to the requested output format. Keep text legible, controls accessible, and content editable where supported. Resolve mandatory brand conflicts explicitly. Return the design and accurately report performed and unperformed checks.",
+      "category": "Light & color"
+    },
+    {
+      "version": "0.1.0",
+      "status": "Available style specification; final outputs require format-specific visual checks",
+      "source": "Original interpretations of style names demonstrated in a user-supplied video; not recovered source code.",
+      "outputs": [
+        "web",
+        "slides",
+        "documents",
+        "images"
+      ],
+      "preserve": [
+        "meaning",
+        "required content",
+        "existing visuals",
+        "editable content where supported",
+        "user brand constraints"
+      ],
+      "quality_checks": [
+        "Readable text and measured contrast against rendered colors",
+        "Visible focus and keyboard access",
+        "No information communicated by color alone",
+        "Responsive layout with no horizontal overflow",
+        "Reduced motion and static fallback",
+        "Content remains readable without blur or animation"
+      ],
+      "motion": {
+        "default": "restrained",
+        "reduced_motion": "Remove decorative movement and nonessential transitions",
+        "interaction_ms": 180,
+        "allowed": [
+          "opacity",
+          "small translate"
+        ],
+        "avoid": [
+          "flashing",
+          "infinite essential motion",
+          "movement of reading content"
+        ]
+      },
+      "id": "holographic",
+      "name": "Holographic",
+      "summary": "An iridescent perimeter around calm, legible content.",
+      "use_when": "Use for creative technology, portfolio highlights, and product announcements.",
+      "avoid_when": "Use sparingly in dense reading and preserve stable, high-contrast text surfaces.",
+      "classification": {
+        "appearance": "Holographic",
+        "motion": "Independent, restrained optional behavior"
+      },
+      "tokens": {
+        "colors": {
+          "background": "#111020",
+          "surface": "#211e34",
+          "text": "#f9f6ff",
+          "muted": "#cec6e3",
+          "accent": "#e6d5ff",
+          "border": "#827596"
+        },
+        "spacing_px": [
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "radius_px": 12,
+        "body_px": 16,
+        "minimum_control_height_px": 44,
+        "reading_width_ch": 65
+      },
+      "typography": "System sans-serif with crisp bold headings.",
+      "layout": "Iridescent accents at edges, simple information hierarchy inside.",
+      "surfaces": "Rainbow border treatment over opaque dark violet panels.",
+      "essential_traits": [
+        "Iridescent accents",
+        "Opaque reading zone",
+        "Subtle angle-based color variation"
+      ],
+      "exclude": [
+        "Rainbow body text",
+        "Unstable contrast",
+        "Full-surface glare"
+      ],
+      "adaptations": {
+        "web": "Use the tokens and live components; validate keyboard, mobile, contrast, and reduced motion.",
+        "slides": "Preserve hierarchy and palette with native editable shapes and text. Replace motion with static emphasis.",
+        "documents": "Use native headings, readable body text, restrained callouts, and solid reading surfaces.",
+        "images": "Describe composition and material cues; check text and layout separately. Do not claim pixel-exact token fidelity."
+      },
+      "prompt": "Apply Holographic to [DELIVERABLE] for [AUDIENCE]. Purpose: [GOAL]. Preserve all supplied content, existing visuals, and required brand constraints. System sans-serif with crisp bold headings. Iridescent accents at edges, simple information hierarchy inside. Rainbow border treatment over opaque dark violet panels. Palette: background #111020, surface #211e34, text #f9f6ff, muted #cec6e3, accent #e6d5ff, border #827596. Essential traits: Iridescent accents; Opaque reading zone; Subtle angle-based color variation. Avoid: Rainbow body text; Unstable contrast; Full-surface glare. Keep motion restrained and optional, respect reduced motion, and provide a static fallback. Adapt the appearance to the requested output format. Keep text legible, controls accessible, and content editable where supported. Resolve mandatory brand conflicts explicitly. Return the design and accurately report performed and unperformed checks.",
+      "category": "Light & color"
+    },
+    {
+      "version": "0.1.0",
+      "status": "Available style specification; final outputs require format-specific visual checks",
+      "source": "Original interpretations of style names demonstrated in a user-supplied video; not recovered source code.",
+      "outputs": [
+        "web",
+        "slides",
+        "documents",
+        "images"
+      ],
+      "preserve": [
+        "meaning",
+        "required content",
+        "existing visuals",
+        "editable content where supported",
+        "user brand constraints"
+      ],
+      "quality_checks": [
+        "Readable text and measured contrast against rendered colors",
+        "Visible focus and keyboard access",
+        "No information communicated by color alone",
+        "Responsive layout with no horizontal overflow",
+        "Reduced motion and static fallback",
+        "Content remains readable without blur or animation"
+      ],
+      "motion": {
+        "default": "restrained",
+        "reduced_motion": "Remove decorative movement and nonessential transitions",
+        "interaction_ms": 180,
+        "allowed": [
+          "opacity",
+          "small translate"
+        ],
+        "avoid": [
+          "flashing",
+          "infinite essential motion",
+          "movement of reading content"
+        ]
+      },
+      "id": "gradient-mesh",
+      "name": "Gradient mesh",
+      "summary": "Broad fields of color create atmosphere without adding clutter.",
+      "use_when": "Use for learning hubs, editorial introductions, and product overview pages.",
+      "avoid_when": "Use sparingly in dense reading and preserve stable, high-contrast text surfaces.",
+      "classification": {
+        "appearance": "Gradient mesh",
+        "motion": "Independent, restrained optional behavior"
+      },
+      "tokens": {
+        "colors": {
+          "background": "#202050",
+          "surface": "#282a5a",
+          "text": "#f8f6ff",
+          "muted": "#d4d0ee",
+          "accent": "#efe0ff",
+          "border": "#777ab0"
+        },
+        "spacing_px": [
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "radius_px": 12,
+        "body_px": 16,
+        "minimum_control_height_px": 44,
+        "reading_width_ch": 65
+      },
+      "typography": "System sans-serif with spacious bold headings.",
+      "layout": "Large diffuse color fields and clean aligned content panels.",
+      "surfaces": "Soft overlapping violet, blue, and rose gradients behind solid text surfaces.",
+      "essential_traits": [
+        "Diffuse color transitions",
+        "Simple content structure",
+        "Stable text backgrounds"
+      ],
+      "exclude": [
+        "Gradients behind dense text",
+        "Competing focal points",
+        "Color used as status alone"
+      ],
+      "adaptations": {
+        "web": "Use the tokens and live components; validate keyboard, mobile, contrast, and reduced motion.",
+        "slides": "Preserve hierarchy and palette with native editable shapes and text. Replace motion with static emphasis.",
+        "documents": "Use native headings, readable body text, restrained callouts, and solid reading surfaces.",
+        "images": "Describe composition and material cues; check text and layout separately. Do not claim pixel-exact token fidelity."
+      },
+      "prompt": "Apply Gradient mesh to [DELIVERABLE] for [AUDIENCE]. Purpose: [GOAL]. Preserve all supplied content, existing visuals, and required brand constraints. System sans-serif with spacious bold headings. Large diffuse color fields and clean aligned content panels. Soft overlapping violet, blue, and rose gradients behind solid text surfaces. Palette: background #202050, surface #282a5a, text #f8f6ff, muted #d4d0ee, accent #efe0ff, border #777ab0. Essential traits: Diffuse color transitions; Simple content structure; Stable text backgrounds. Avoid: Gradients behind dense text; Competing focal points; Color used as status alone. Keep motion restrained and optional, respect reduced motion, and provide a static fallback. Adapt the appearance to the requested output format. Keep text legible, controls accessible, and content editable where supported. Resolve mandatory brand conflicts explicitly. Return the design and accurately report performed and unperformed checks.",
+      "category": "Light & color"
+    },
+    {
+      "version": "0.1.0",
+      "status": "Available style specification; final outputs require format-specific visual checks",
+      "source": "Original interpretations of style names demonstrated in a user-supplied video; not recovered source code.",
+      "outputs": [
+        "web",
+        "slides",
+        "documents",
+        "images"
+      ],
+      "preserve": [
+        "meaning",
+        "required content",
+        "existing visuals",
+        "editable content where supported",
+        "user brand constraints"
+      ],
+      "quality_checks": [
+        "Readable text and measured contrast against rendered colors",
+        "Visible focus and keyboard access",
+        "No information communicated by color alone",
+        "Responsive layout with no horizontal overflow",
+        "Reduced motion and static fallback",
+        "Content remains readable without blur or animation"
+      ],
+      "motion": {
+        "default": "restrained",
+        "reduced_motion": "Remove decorative movement and nonessential transitions",
+        "interaction_ms": 180,
+        "allowed": [
+          "opacity",
+          "small translate"
+        ],
+        "avoid": [
+          "flashing",
+          "infinite essential motion",
+          "movement of reading content"
+        ]
+      },
+      "id": "isometric",
+      "name": "Isometric",
+      "summary": "Measured spatial depth, translated into a practical interface.",
+      "use_when": "Use for systems explanations, process overviews, and spatial product demonstrations.",
+      "avoid_when": "Use sparingly in dense reading and preserve stable, high-contrast text surfaces.",
+      "classification": {
+        "appearance": "Isometric",
+        "motion": "Independent, restrained optional behavior"
+      },
+      "tokens": {
+        "colors": {
+          "background": "#e8eff5",
+          "surface": "#ffffff",
+          "text": "#19384d",
+          "muted": "#4c6476",
+          "accent": "#235d80",
+          "border": "#b4c8d5"
+        },
+        "spacing_px": [
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "radius_px": 4,
+        "body_px": 16,
+        "minimum_control_height_px": 44,
+        "reading_width_ch": 65
+      },
+      "typography": "System sans-serif with structured headings.",
+      "layout": "Layered planes, offset rails, and a clear spatial hierarchy.",
+      "surfaces": "Subtle extruded edges and isometric background tiles; live text remains front-facing.",
+      "essential_traits": [
+        "Extruded layers",
+        "Diagonal structural accents",
+        "Readable front-facing content"
+      ],
+      "exclude": [
+        "Skewed body text",
+        "Ambiguous depth order",
+        "Perspective that impairs controls"
+      ],
+      "adaptations": {
+        "web": "Use the tokens and live components; validate keyboard, mobile, contrast, and reduced motion.",
+        "slides": "Preserve hierarchy and palette with native editable shapes and text. Replace motion with static emphasis.",
+        "documents": "Use native headings, readable body text, restrained callouts, and solid reading surfaces.",
+        "images": "Describe composition and material cues; check text and layout separately. Do not claim pixel-exact token fidelity."
+      },
+      "prompt": "Apply Isometric to [DELIVERABLE] for [AUDIENCE]. Purpose: [GOAL]. Preserve all supplied content, existing visuals, and required brand constraints. System sans-serif with structured headings. Layered planes, offset rails, and a clear spatial hierarchy. Subtle extruded edges and isometric background tiles; live text remains front-facing. Palette: background #e8eff5, surface #ffffff, text #19384d, muted #4c6476, accent #235d80, border #b4c8d5. Essential traits: Extruded layers; Diagonal structural accents; Readable front-facing content. Avoid: Skewed body text; Ambiguous depth order; Perspective that impairs controls. Keep motion restrained and optional, respect reduced motion, and provide a static fallback. Adapt the appearance to the requested output format. Keep text legible, controls accessible, and content editable where supported. Resolve mandatory brand conflicts explicitly. Return the design and accurately report performed and unperformed checks.",
+      "category": "Technical"
+    },
+    {
+      "version": "0.1.0",
+      "status": "Available style specification; final outputs require format-specific visual checks",
+      "source": "Original interpretations of style names demonstrated in a user-supplied video; not recovered source code.",
+      "outputs": [
+        "web",
+        "slides",
+        "documents",
+        "images"
+      ],
+      "preserve": [
+        "meaning",
+        "required content",
+        "existing visuals",
+        "editable content where supported",
+        "user brand constraints"
+      ],
+      "quality_checks": [
+        "Readable text and measured contrast against rendered colors",
+        "Visible focus and keyboard access",
+        "No information communicated by color alone",
+        "Responsive layout with no horizontal overflow",
+        "Reduced motion and static fallback",
+        "Content remains readable without blur or animation"
+      ],
+      "motion": {
+        "default": "restrained",
+        "reduced_motion": "Remove decorative movement and nonessential transitions",
+        "interaction_ms": 180,
+        "allowed": [
+          "opacity",
+          "small translate"
+        ],
+        "avoid": [
+          "flashing",
+          "infinite essential motion",
+          "movement of reading content"
+        ]
+      },
+      "id": "clay-3d",
+      "name": "Clay 3D",
+      "summary": "Soft sculpted forms and cheerful color with readable structure.",
+      "use_when": "Use for onboarding, friendly learning activities, and approachable product explainers.",
+      "avoid_when": "Use sparingly in dense reading and preserve stable, high-contrast text surfaces.",
+      "classification": {
+        "appearance": "Clay 3D",
+        "motion": "Independent, restrained optional behavior"
+      },
+      "tokens": {
+        "colors": {
+          "background": "#fff0df",
+          "surface": "#fff8ef",
+          "text": "#43344a",
+          "muted": "#6d5b70",
+          "accent": "#79446e",
+          "border": "#c9a8c1"
+        },
+        "spacing_px": [
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "radius_px": 24,
+        "body_px": 16,
+        "minimum_control_height_px": 44,
+        "reading_width_ch": 65
+      },
+      "typography": "Rounded system sans-serif with strong headings.",
+      "layout": "Roomy soft panels, floating decorative solids, clear action order.",
+      "surfaces": "Pillowy relief, rounded corners, and pastel clay shapes outside reading zones.",
+      "essential_traits": [
+        "Soft sculpted corners",
+        "Pastel decorative solids",
+        "Warm welcoming space"
+      ],
+      "exclude": [
+        "Low-contrast pastel text",
+        "Toy-like controls without labels",
+        "Decorations obscuring information"
+      ],
+      "adaptations": {
+        "web": "Use the tokens and live components; validate keyboard, mobile, contrast, and reduced motion.",
+        "slides": "Preserve hierarchy and palette with native editable shapes and text. Replace motion with static emphasis.",
+        "documents": "Use native headings, readable body text, restrained callouts, and solid reading surfaces.",
+        "images": "Describe composition and material cues; check text and layout separately. Do not claim pixel-exact token fidelity."
+      },
+      "prompt": "Apply Clay 3D to [DELIVERABLE] for [AUDIENCE]. Purpose: [GOAL]. Preserve all supplied content, existing visuals, and required brand constraints. Rounded system sans-serif with strong headings. Roomy soft panels, floating decorative solids, clear action order. Pillowy relief, rounded corners, and pastel clay shapes outside reading zones. Palette: background #fff0df, surface #fff8ef, text #43344a, muted #6d5b70, accent #79446e, border #c9a8c1. Essential traits: Soft sculpted corners; Pastel decorative solids; Warm welcoming space. Avoid: Low-contrast pastel text; Toy-like controls without labels; Decorations obscuring information. Keep motion restrained and optional, respect reduced motion, and provide a static fallback. Adapt the appearance to the requested output format. Keep text legible, controls accessible, and content editable where supported. Resolve mandatory brand conflicts explicitly. Return the design and accurately report performed and unperformed checks.",
+      "category": "Playful"
+    },
+    {
+      "version": "0.1.0",
+      "status": "Available style specification; final outputs require format-specific visual checks",
+      "source": "Original interpretations of style names demonstrated in a user-supplied video; not recovered source code.",
+      "outputs": [
+        "web",
+        "slides",
+        "documents",
+        "images"
+      ],
+      "preserve": [
+        "meaning",
+        "required content",
+        "existing visuals",
+        "editable content where supported",
+        "user brand constraints"
+      ],
+      "quality_checks": [
+        "Readable text and measured contrast against rendered colors",
+        "Visible focus and keyboard access",
+        "No information communicated by color alone",
+        "Responsive layout with no horizontal overflow",
+        "Reduced motion and static fallback",
+        "Content remains readable without blur or animation"
+      ],
+      "motion": {
+        "default": "restrained",
+        "reduced_motion": "Remove decorative movement and nonessential transitions",
+        "interaction_ms": 180,
+        "allowed": [
+          "opacity",
+          "small translate"
+        ],
+        "avoid": [
+          "flashing",
+          "infinite essential motion",
+          "movement of reading content"
+        ]
+      },
+      "id": "wireframe-3d",
+      "name": "Wireframe 3D",
+      "summary": "Structure-first thinking rendered as light technical geometry.",
+      "use_when": "Use for technical concepts, system architecture introductions, and process prototypes.",
+      "avoid_when": "Use sparingly in dense reading and preserve stable, high-contrast text surfaces.",
+      "classification": {
+        "appearance": "Wireframe 3D",
+        "motion": "Independent, restrained optional behavior"
+      },
+      "tokens": {
+        "colors": {
+          "background": "#081b20",
+          "surface": "#102b30",
+          "text": "#edfffa",
+          "muted": "#aed4cb",
+          "accent": "#83ead4",
+          "border": "#497e74"
+        },
+        "spacing_px": [
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "radius_px": 3,
+        "body_px": 16,
+        "minimum_control_height_px": 44,
+        "reading_width_ch": 65
+      },
+      "typography": "System monospace for headings; system sans-serif for body.",
+      "layout": "Geometric wireframe decoration, thin rules, and structured panels.",
+      "surfaces": "Cyan-green line grids, technical frames, matte dark content blocks.",
+      "essential_traits": [
+        "Wire geometry",
+        "Technical section markers",
+        "Stable solid reading surfaces"
+      ],
+      "exclude": [
+        "Lines crossing text",
+        "Overly dense meshes",
+        "Decorative measurements presented as real data"
+      ],
+      "adaptations": {
+        "web": "Use the tokens and live components; validate keyboard, mobile, contrast, and reduced motion.",
+        "slides": "Preserve hierarchy and palette with native editable shapes and text. Replace motion with static emphasis.",
+        "documents": "Use native headings, readable body text, restrained callouts, and solid reading surfaces.",
+        "images": "Describe composition and material cues; check text and layout separately. Do not claim pixel-exact token fidelity."
+      },
+      "prompt": "Apply Wireframe 3D to [DELIVERABLE] for [AUDIENCE]. Purpose: [GOAL]. Preserve all supplied content, existing visuals, and required brand constraints. System monospace for headings; system sans-serif for body. Geometric wireframe decoration, thin rules, and structured panels. Cyan-green line grids, technical frames, matte dark content blocks. Palette: background #081b20, surface #102b30, text #edfffa, muted #aed4cb, accent #83ead4, border #497e74. Essential traits: Wire geometry; Technical section markers; Stable solid reading surfaces. Avoid: Lines crossing text; Overly dense meshes; Decorative measurements presented as real data. Keep motion restrained and optional, respect reduced motion, and provide a static fallback. Adapt the appearance to the requested output format. Keep text legible, controls accessible, and content editable where supported. Resolve mandatory brand conflicts explicitly. Return the design and accurately report performed and unperformed checks.",
+      "category": "Technical"
+    },
+    {
+      "version": "0.1.0",
+      "status": "Available style specification; final outputs require format-specific visual checks",
+      "source": "Original interpretations of style names demonstrated in a user-supplied video; not recovered source code.",
+      "outputs": [
+        "web",
+        "slides",
+        "documents",
+        "images"
+      ],
+      "preserve": [
+        "meaning",
+        "required content",
+        "existing visuals",
+        "editable content where supported",
+        "user brand constraints"
+      ],
+      "quality_checks": [
+        "Readable text and measured contrast against rendered colors",
+        "Visible focus and keyboard access",
+        "No information communicated by color alone",
+        "Responsive layout with no horizontal overflow",
+        "Reduced motion and static fallback",
+        "Content remains readable without blur or animation"
+      ],
+      "motion": {
+        "default": "restrained",
+        "reduced_motion": "Remove decorative movement and nonessential transitions",
+        "interaction_ms": 180,
+        "allowed": [
+          "opacity",
+          "small translate"
+        ],
+        "avoid": [
+          "flashing",
+          "infinite essential motion",
+          "movement of reading content"
+        ]
+      },
+      "id": "paper-cutout",
+      "name": "Paper cutout",
+      "summary": "Layered paper, tactile edges, and a human sense of craft.",
+      "use_when": "Use for learning stories, workshop invitations, and approachable guides.",
+      "avoid_when": "Use sparingly in dense reading and preserve stable, high-contrast text surfaces.",
+      "classification": {
+        "appearance": "Paper cutout",
+        "motion": "Independent, restrained optional behavior"
+      },
+      "tokens": {
+        "colors": {
+          "background": "#f4ecd9",
+          "surface": "#fffdf6",
+          "text": "#3e4637",
+          "muted": "#626b56",
+          "accent": "#476b52",
+          "border": "#c0c7af"
+        },
+        "spacing_px": [
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "radius_px": 12,
+        "body_px": 16,
+        "minimum_control_height_px": 44,
+        "reading_width_ch": 65
+      },
+      "typography": "Georgia serif headings with system sans-serif body.",
+      "layout": "Offset paper layers, broad simple shapes, generous margins.",
+      "surfaces": "Soft paper shadows, slightly uneven borders, earthy cut-paper accents.",
+      "essential_traits": [
+        "Layered paper silhouette",
+        "Warm natural palette",
+        "Handcrafted edge detail"
+      ],
+      "exclude": [
+        "Text on busy textures",
+        "Excess roughness",
+        "Decorations that conceal content"
+      ],
+      "adaptations": {
+        "web": "Use the tokens and live components; validate keyboard, mobile, contrast, and reduced motion.",
+        "slides": "Preserve hierarchy and palette with native editable shapes and text. Replace motion with static emphasis.",
+        "documents": "Use native headings, readable body text, restrained callouts, and solid reading surfaces.",
+        "images": "Describe composition and material cues; check text and layout separately. Do not claim pixel-exact token fidelity."
+      },
+      "prompt": "Apply Paper cutout to [DELIVERABLE] for [AUDIENCE]. Purpose: [GOAL]. Preserve all supplied content, existing visuals, and required brand constraints. Georgia serif headings with system sans-serif body. Offset paper layers, broad simple shapes, generous margins. Soft paper shadows, slightly uneven borders, earthy cut-paper accents. Palette: background #f4ecd9, surface #fffdf6, text #3e4637, muted #626b56, accent #476b52, border #c0c7af. Essential traits: Layered paper silhouette; Warm natural palette; Handcrafted edge detail. Avoid: Text on busy textures; Excess roughness; Decorations that conceal content. Keep motion restrained and optional, respect reduced motion, and provide a static fallback. Adapt the appearance to the requested output format. Keep text legible, controls accessible, and content editable where supported. Resolve mandatory brand conflicts explicitly. Return the design and accurately report performed and unperformed checks.",
+      "category": "Editorial"
+    },
+    {
+      "version": "0.1.0",
+      "status": "Available style specification; final outputs require format-specific visual checks",
+      "source": "Original interpretations of style names demonstrated in a user-supplied video; not recovered source code.",
+      "outputs": [
+        "web",
+        "slides",
+        "documents",
+        "images"
+      ],
+      "preserve": [
+        "meaning",
+        "required content",
+        "existing visuals",
+        "editable content where supported",
+        "user brand constraints"
+      ],
+      "quality_checks": [
+        "Readable text and measured contrast against rendered colors",
+        "Visible focus and keyboard access",
+        "No information communicated by color alone",
+        "Responsive layout with no horizontal overflow",
+        "Reduced motion and static fallback",
+        "Content remains readable without blur or animation"
+      ],
+      "motion": {
+        "default": "restrained",
+        "reduced_motion": "Remove decorative movement and nonessential transitions",
+        "interaction_ms": 180,
+        "allowed": [
+          "opacity",
+          "small translate"
+        ],
+        "avoid": [
+          "flashing",
+          "infinite essential motion",
+          "movement of reading content"
+        ]
+      },
+      "id": "kinetic-type",
+      "name": "Kinetic type",
+      "summary": "Typography takes the lead; motion is an optional accent.",
+      "use_when": "Use for short messages, campaign headlines, and editorial title sequences.",
+      "avoid_when": "Use sparingly in dense reading and preserve stable, high-contrast text surfaces.",
+      "classification": {
+        "appearance": "Kinetic type",
+        "motion": "Independent, restrained optional behavior"
+      },
+      "tokens": {
+        "colors": {
+          "background": "#f7f4ed",
+          "surface": "#fffdf8",
+          "text": "#242820",
+          "muted": "#5e6259",
+          "accent": "#755225",
+          "border": "#c9c9bb"
+        },
+        "spacing_px": [
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "radius_px": 12,
+        "body_px": 16,
+        "minimum_control_height_px": 44,
+        "reading_width_ch": 65
+      },
+      "typography": "Large bold system sans-serif headlines; readable sans-serif body.",
+      "layout": "Oversized heading rhythm, strong line breaks, minimal decoration.",
+      "surfaces": "Clean solid panels with short optional heading entrance.",
+      "essential_traits": [
+        "Typography-led hierarchy",
+        "Deliberate line breaks",
+        "Motion limited to headings"
+      ],
+      "exclude": [
+        "Animated body text",
+        "Reading before text settles",
+        "Motion required to understand the message"
+      ],
+      "adaptations": {
+        "web": "Use the tokens and live components; validate keyboard, mobile, contrast, and reduced motion.",
+        "slides": "Preserve hierarchy and palette with native editable shapes and text. Replace motion with static emphasis.",
+        "documents": "Use native headings, readable body text, restrained callouts, and solid reading surfaces.",
+        "images": "Describe composition and material cues; check text and layout separately. Do not claim pixel-exact token fidelity."
+      },
+      "prompt": "Apply Kinetic type to [DELIVERABLE] for [AUDIENCE]. Purpose: [GOAL]. Preserve all supplied content, existing visuals, and required brand constraints. Large bold system sans-serif headlines; readable sans-serif body. Oversized heading rhythm, strong line breaks, minimal decoration. Clean solid panels with short optional heading entrance. Palette: background #f7f4ed, surface #fffdf8, text #242820, muted #5e6259, accent #755225, border #c9c9bb. Essential traits: Typography-led hierarchy; Deliberate line breaks; Motion limited to headings. Avoid: Animated body text; Reading before text settles; Motion required to understand the message. Keep motion restrained and optional, respect reduced motion, and provide a static fallback. Adapt the appearance to the requested output format. Keep text legible, controls accessible, and content editable where supported. Resolve mandatory brand conflicts explicitly. Return the design and accurately report performed and unperformed checks.",
+      "category": "Editorial"
+    },
+    {
+      "version": "0.1.0",
+      "status": "Available style specification; final outputs require format-specific visual checks",
+      "source": "Original interpretations of style names demonstrated in a user-supplied video; not recovered source code.",
+      "outputs": [
+        "web",
+        "slides",
+        "documents",
+        "images"
+      ],
+      "preserve": [
+        "meaning",
+        "required content",
+        "existing visuals",
+        "editable content where supported",
+        "user brand constraints"
+      ],
+      "quality_checks": [
+        "Readable text and measured contrast against rendered colors",
+        "Visible focus and keyboard access",
+        "No information communicated by color alone",
+        "Responsive layout with no horizontal overflow",
+        "Reduced motion and static fallback",
+        "Content remains readable without blur or animation"
+      ],
+      "motion": {
+        "default": "restrained",
+        "reduced_motion": "Remove decorative movement and nonessential transitions",
+        "interaction_ms": 180,
+        "allowed": [
+          "opacity",
+          "small translate"
+        ],
+        "avoid": [
+          "flashing",
+          "infinite essential motion",
+          "movement of reading content"
+        ]
+      },
+      "id": "split-flap",
+      "name": "Split-flap",
+      "summary": "Departure-board precision with a mechanical editorial character.",
+      "use_when": "Use for status summaries, scheduled learning, and progress milestones.",
+      "avoid_when": "Use sparingly in dense reading and preserve stable, high-contrast text surfaces.",
+      "classification": {
+        "appearance": "Split-flap",
+        "motion": "Independent, restrained optional behavior"
+      },
+      "tokens": {
+        "colors": {
+          "background": "#121514",
+          "surface": "#202522",
+          "text": "#f4f5e9",
+          "muted": "#c0c5b7",
+          "accent": "#ebd8a8",
+          "border": "#687263"
+        },
+        "spacing_px": [
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "radius_px": 3,
+        "body_px": 16,
+        "minimum_control_height_px": 44,
+        "reading_width_ch": 65
+      },
+      "typography": "System monospace with uppercase short labels; sentence-case body.",
+      "layout": "Segmented labels, crisp alignment, and clear numeric hierarchy.",
+      "surfaces": "Dark mechanical panels, fine separators, optional short label flip.",
+      "essential_traits": [
+        "Segmented mechanical headings",
+        "Matte board surfaces",
+        "Legible state labels"
+      ],
+      "exclude": [
+        "Continuous flipping",
+        "All-caps paragraphs",
+        "Animations that hide current values"
+      ],
+      "adaptations": {
+        "web": "Use the tokens and live components; validate keyboard, mobile, contrast, and reduced motion.",
+        "slides": "Preserve hierarchy and palette with native editable shapes and text. Replace motion with static emphasis.",
+        "documents": "Use native headings, readable body text, restrained callouts, and solid reading surfaces.",
+        "images": "Describe composition and material cues; check text and layout separately. Do not claim pixel-exact token fidelity."
+      },
+      "prompt": "Apply Split-flap to [DELIVERABLE] for [AUDIENCE]. Purpose: [GOAL]. Preserve all supplied content, existing visuals, and required brand constraints. System monospace with uppercase short labels; sentence-case body. Segmented labels, crisp alignment, and clear numeric hierarchy. Dark mechanical panels, fine separators, optional short label flip. Palette: background #121514, surface #202522, text #f4f5e9, muted #c0c5b7, accent #ebd8a8, border #687263. Essential traits: Segmented mechanical headings; Matte board surfaces; Legible state labels. Avoid: Continuous flipping; All-caps paragraphs; Animations that hide current values. Keep motion restrained and optional, respect reduced motion, and provide a static fallback. Adapt the appearance to the requested output format. Keep text legible, controls accessible, and content editable where supported. Resolve mandatory brand conflicts explicitly. Return the design and accurately report performed and unperformed checks.",
+      "category": "Motion & texture"
+    },
+    {
+      "version": "0.1.0",
+      "status": "Available style specification; final outputs require format-specific visual checks",
+      "source": "Original interpretations of style names demonstrated in a user-supplied video; not recovered source code.",
+      "outputs": [
+        "web",
+        "slides",
+        "documents",
+        "images"
+      ],
+      "preserve": [
+        "meaning",
+        "required content",
+        "existing visuals",
+        "editable content where supported",
+        "user brand constraints"
+      ],
+      "quality_checks": [
+        "Readable text and measured contrast against rendered colors",
+        "Visible focus and keyboard access",
+        "No information communicated by color alone",
+        "Responsive layout with no horizontal overflow",
+        "Reduced motion and static fallback",
+        "Content remains readable without blur or animation"
+      ],
+      "motion": {
+        "default": "restrained",
+        "reduced_motion": "Remove decorative movement and nonessential transitions",
+        "interaction_ms": 180,
+        "allowed": [
+          "opacity",
+          "small translate"
+        ],
+        "avoid": [
+          "flashing",
+          "infinite essential motion",
+          "movement of reading content"
+        ]
+      },
+      "id": "retro-vhs",
+      "name": "Retro VHS",
+      "summary": "Analog warmth and archival character without sacrificing clarity.",
+      "use_when": "Use for nostalgic campaigns, story introductions, and informal creative explainers.",
+      "avoid_when": "Use sparingly in dense reading and preserve stable, high-contrast text surfaces.",
+      "classification": {
+        "appearance": "Retro VHS",
+        "motion": "Independent, restrained optional behavior"
+      },
+      "tokens": {
+        "colors": {
+          "background": "#eee3c9",
+          "surface": "#fff7e5",
+          "text": "#40362f",
+          "muted": "#6e5e50",
+          "accent": "#78502e",
+          "border": "#c9b28d"
+        },
+        "spacing_px": [
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "radius_px": 12,
+        "body_px": 16,
+        "minimum_control_height_px": 44,
+        "reading_width_ch": 65
+      },
+      "typography": "Georgia serif headings; system monospace short metadata.",
+      "layout": "Framed archival feel with precise content hierarchy.",
+      "surfaces": "Warm paper, restrained grain, subtle timestamp-like decorative labels.",
+      "essential_traits": [
+        "Warm archival palette",
+        "Subtle analog texture",
+        "Clean foreground text"
+      ],
+      "exclude": [
+        "Glitching instructions",
+        "Flicker",
+        "False timestamps presented as recorded evidence"
+      ],
+      "adaptations": {
+        "web": "Use the tokens and live components; validate keyboard, mobile, contrast, and reduced motion.",
+        "slides": "Preserve hierarchy and palette with native editable shapes and text. Replace motion with static emphasis.",
+        "documents": "Use native headings, readable body text, restrained callouts, and solid reading surfaces.",
+        "images": "Describe composition and material cues; check text and layout separately. Do not claim pixel-exact token fidelity."
+      },
+      "prompt": "Apply Retro VHS to [DELIVERABLE] for [AUDIENCE]. Purpose: [GOAL]. Preserve all supplied content, existing visuals, and required brand constraints. Georgia serif headings; system monospace short metadata. Framed archival feel with precise content hierarchy. Warm paper, restrained grain, subtle timestamp-like decorative labels. Palette: background #eee3c9, surface #fff7e5, text #40362f, muted #6e5e50, accent #78502e, border #c9b28d. Essential traits: Warm archival palette; Subtle analog texture; Clean foreground text. Avoid: Glitching instructions; Flicker; False timestamps presented as recorded evidence. Keep motion restrained and optional, respect reduced motion, and provide a static fallback. Adapt the appearance to the requested output format. Keep text legible, controls accessible, and content editable where supported. Resolve mandatory brand conflicts explicitly. Return the design and accurately report performed and unperformed checks.",
+      "category": "Editorial"
+    },
+    {
+      "version": "0.1.0",
+      "status": "Available style specification; final outputs require format-specific visual checks",
+      "source": "Original interpretations of style names demonstrated in a user-supplied video; not recovered source code.",
+      "outputs": [
+        "web",
+        "slides",
+        "documents",
+        "images"
+      ],
+      "preserve": [
+        "meaning",
+        "required content",
+        "existing visuals",
+        "editable content where supported",
+        "user brand constraints"
+      ],
+      "quality_checks": [
+        "Readable text and measured contrast against rendered colors",
+        "Visible focus and keyboard access",
+        "No information communicated by color alone",
+        "Responsive layout with no horizontal overflow",
+        "Reduced motion and static fallback",
+        "Content remains readable without blur or animation"
+      ],
+      "motion": {
+        "default": "restrained",
+        "reduced_motion": "Remove decorative movement and nonessential transitions",
+        "interaction_ms": 180,
+        "allowed": [
+          "opacity",
+          "small translate"
+        ],
+        "avoid": [
+          "flashing",
+          "infinite essential motion",
+          "movement of reading content"
+        ]
+      },
+      "id": "synthwave",
+      "name": "Synthwave",
+      "summary": "A retro-future horizon with a restrained neon foreground.",
+      "use_when": "Use for creative technology launches, game-like learning, and campaign heroes.",
+      "avoid_when": "Use sparingly in dense reading and preserve stable, high-contrast text surfaces.",
+      "classification": {
+        "appearance": "Synthwave",
+        "motion": "Independent, restrained optional behavior"
+      },
+      "tokens": {
+        "colors": {
+          "background": "#180e32",
+          "surface": "#291b45",
+          "text": "#fff3ff",
+          "muted": "#d8bde7",
+          "accent": "#ffa9d9",
+          "border": "#956cad"
+        },
+        "spacing_px": [
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "radius_px": 12,
+        "body_px": 16,
+        "minimum_control_height_px": 44,
+        "reading_width_ch": 65
+      },
+      "typography": "Bold system sans-serif headings with monospace labels.",
+      "layout": "Horizon grid and sunset geometry behind a stable foreground.",
+      "surfaces": "Deep violet, magenta outlines, and a warm stylized sun.",
+      "essential_traits": [
+        "Retro horizon grid",
+        "Pink-violet palette",
+        "Clean readable panels"
+      ],
+      "exclude": [
+        "Flashing neon",
+        "Overloaded gradients",
+        "Low-contrast purple text"
+      ],
+      "adaptations": {
+        "web": "Use the tokens and live components; validate keyboard, mobile, contrast, and reduced motion.",
+        "slides": "Preserve hierarchy and palette with native editable shapes and text. Replace motion with static emphasis.",
+        "documents": "Use native headings, readable body text, restrained callouts, and solid reading surfaces.",
+        "images": "Describe composition and material cues; check text and layout separately. Do not claim pixel-exact token fidelity."
+      },
+      "prompt": "Apply Synthwave to [DELIVERABLE] for [AUDIENCE]. Purpose: [GOAL]. Preserve all supplied content, existing visuals, and required brand constraints. Bold system sans-serif headings with monospace labels. Horizon grid and sunset geometry behind a stable foreground. Deep violet, magenta outlines, and a warm stylized sun. Palette: background #180e32, surface #291b45, text #fff3ff, muted #d8bde7, accent #ffa9d9, border #956cad. Essential traits: Retro horizon grid; Pink-violet palette; Clean readable panels. Avoid: Flashing neon; Overloaded gradients; Low-contrast purple text. Keep motion restrained and optional, respect reduced motion, and provide a static fallback. Adapt the appearance to the requested output format. Keep text legible, controls accessible, and content editable where supported. Resolve mandatory brand conflicts explicitly. Return the design and accurately report performed and unperformed checks.",
+      "category": "Light & color"
+    },
+    {
+      "version": "0.1.0",
+      "status": "Available style specification; final outputs require format-specific visual checks",
+      "source": "Original interpretations of style names demonstrated in a user-supplied video; not recovered source code.",
+      "outputs": [
+        "web",
+        "slides",
+        "documents",
+        "images"
+      ],
+      "preserve": [
+        "meaning",
+        "required content",
+        "existing visuals",
+        "editable content where supported",
+        "user brand constraints"
+      ],
+      "quality_checks": [
+        "Readable text and measured contrast against rendered colors",
+        "Visible focus and keyboard access",
+        "No information communicated by color alone",
+        "Responsive layout with no horizontal overflow",
+        "Reduced motion and static fallback",
+        "Content remains readable without blur or animation"
+      ],
+      "motion": {
+        "default": "restrained",
+        "reduced_motion": "Remove decorative movement and nonessential transitions",
+        "interaction_ms": 180,
+        "allowed": [
+          "opacity",
+          "small translate"
+        ],
+        "avoid": [
+          "flashing",
+          "infinite essential motion",
+          "movement of reading content"
+        ]
+      },
+      "id": "pixel-art",
+      "name": "Pixel art",
+      "summary": "Crisp blocks, deliberate steps, and a playful digital character.",
+      "use_when": "Use for game-like learning, progress cards, and playful internal campaigns.",
+      "avoid_when": "Use sparingly in dense reading and preserve stable, high-contrast text surfaces.",
+      "classification": {
+        "appearance": "Pixel art",
+        "motion": "Independent, restrained optional behavior"
+      },
+      "tokens": {
+        "colors": {
+          "background": "#182039",
+          "surface": "#24304e",
+          "text": "#f5f5ff",
+          "muted": "#c5cee7",
+          "accent": "#ffe49b",
+          "border": "#7181aa"
+        },
+        "spacing_px": [
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "radius_px": 0,
+        "body_px": 16,
+        "minimum_control_height_px": 44,
+        "reading_width_ch": 65
+      },
+      "typography": "System monospace with bold short headings; avoid unavailable pixel fonts.",
+      "layout": "Stepped frames, square corners, simple block motifs.",
+      "surfaces": "Hard-edged borders and offset pixel shadows.",
+      "essential_traits": [
+        "Square pixel geometry",
+        "Monospace rhythm",
+        "Limited high-contrast palette"
+      ],
+      "exclude": [
+        "Blurred pixel boundaries",
+        "Tiny unreadable text",
+        "Symbols replacing necessary labels"
+      ],
+      "adaptations": {
+        "web": "Use the tokens and live components; validate keyboard, mobile, contrast, and reduced motion.",
+        "slides": "Preserve hierarchy and palette with native editable shapes and text. Replace motion with static emphasis.",
+        "documents": "Use native headings, readable body text, restrained callouts, and solid reading surfaces.",
+        "images": "Describe composition and material cues; check text and layout separately. Do not claim pixel-exact token fidelity."
+      },
+      "prompt": "Apply Pixel art to [DELIVERABLE] for [AUDIENCE]. Purpose: [GOAL]. Preserve all supplied content, existing visuals, and required brand constraints. System monospace with bold short headings; avoid unavailable pixel fonts. Stepped frames, square corners, simple block motifs. Hard-edged borders and offset pixel shadows. Palette: background #182039, surface #24304e, text #f5f5ff, muted #c5cee7, accent #ffe49b, border #7181aa. Essential traits: Square pixel geometry; Monospace rhythm; Limited high-contrast palette. Avoid: Blurred pixel boundaries; Tiny unreadable text; Symbols replacing necessary labels. Keep motion restrained and optional, respect reduced motion, and provide a static fallback. Adapt the appearance to the requested output format. Keep text legible, controls accessible, and content editable where supported. Resolve mandatory brand conflicts explicitly. Return the design and accurately report performed and unperformed checks.",
+      "category": "Playful"
+    },
+    {
+      "version": "0.1.0",
+      "status": "Available style specification; final outputs require format-specific visual checks",
+      "source": "Original interpretations of style names demonstrated in a user-supplied video; not recovered source code.",
+      "outputs": [
+        "web",
+        "slides",
+        "documents",
+        "images"
+      ],
+      "preserve": [
+        "meaning",
+        "required content",
+        "existing visuals",
+        "editable content where supported",
+        "user brand constraints"
+      ],
+      "quality_checks": [
+        "Readable text and measured contrast against rendered colors",
+        "Visible focus and keyboard access",
+        "No information communicated by color alone",
+        "Responsive layout with no horizontal overflow",
+        "Reduced motion and static fallback",
+        "Content remains readable without blur or animation"
+      ],
+      "motion": {
+        "default": "restrained",
+        "reduced_motion": "Remove decorative movement and nonessential transitions",
+        "interaction_ms": 180,
+        "allowed": [
+          "opacity",
+          "small translate"
+        ],
+        "avoid": [
+          "flashing",
+          "infinite essential motion",
+          "movement of reading content"
+        ]
+      },
+      "id": "ascii-art",
+      "name": "ASCII art",
+      "summary": "Terminal-inspired simplicity with text-shaped decoration.",
+      "use_when": "Use for developer learning, technical demos, and playful command-center displays.",
+      "avoid_when": "Use sparingly in dense reading and preserve stable, high-contrast text surfaces.",
+      "classification": {
+        "appearance": "ASCII art",
+        "motion": "Independent, restrained optional behavior"
+      },
+      "tokens": {
+        "colors": {
+          "background": "#081a12",
+          "surface": "#10291d",
+          "text": "#eaffef",
+          "muted": "#b0d7ba",
+          "accent": "#99f1b2",
+          "border": "#4e8460"
+        },
+        "spacing_px": [
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "radius_px": 0,
+        "body_px": 16,
+        "minimum_control_height_px": 44,
+        "reading_width_ch": 65
+      },
+      "typography": "System monospace throughout.",
+      "layout": "Terminal alignment, short labels, and bounded character patterns.",
+      "surfaces": "Green-on-dark panels with decorative text patterns outside content.",
+      "essential_traits": [
+        "Monospace structure",
+        "Terminal markers",
+        "Sparse character texture"
+      ],
+      "exclude": [
+        "ASCII diagrams replacing precise visuals",
+        "Decorative screen-reader noise",
+        "Tiny terminal text"
+      ],
+      "adaptations": {
+        "web": "Use the tokens and live components; validate keyboard, mobile, contrast, and reduced motion.",
+        "slides": "Preserve hierarchy and palette with native editable shapes and text. Replace motion with static emphasis.",
+        "documents": "Use native headings, readable body text, restrained callouts, and solid reading surfaces.",
+        "images": "Describe composition and material cues; check text and layout separately. Do not claim pixel-exact token fidelity."
+      },
+      "prompt": "Apply ASCII art to [DELIVERABLE] for [AUDIENCE]. Purpose: [GOAL]. Preserve all supplied content, existing visuals, and required brand constraints. System monospace throughout. Terminal alignment, short labels, and bounded character patterns. Green-on-dark panels with decorative text patterns outside content. Palette: background #081a12, surface #10291d, text #eaffef, muted #b0d7ba, accent #99f1b2, border #4e8460. Essential traits: Monospace structure; Terminal markers; Sparse character texture. Avoid: ASCII diagrams replacing precise visuals; Decorative screen-reader noise; Tiny terminal text. Keep motion restrained and optional, respect reduced motion, and provide a static fallback. Adapt the appearance to the requested output format. Keep text legible, controls accessible, and content editable where supported. Resolve mandatory brand conflicts explicitly. Return the design and accurately report performed and unperformed checks.",
+      "category": "Technical"
+    },
+    {
+      "version": "0.1.0",
+      "status": "Available style specification; final outputs require format-specific visual checks",
+      "source": "Original interpretations of style names demonstrated in a user-supplied video; not recovered source code.",
+      "outputs": [
+        "web",
+        "slides",
+        "documents",
+        "images"
+      ],
+      "preserve": [
+        "meaning",
+        "required content",
+        "existing visuals",
+        "editable content where supported",
+        "user brand constraints"
+      ],
+      "quality_checks": [
+        "Readable text and measured contrast against rendered colors",
+        "Visible focus and keyboard access",
+        "No information communicated by color alone",
+        "Responsive layout with no horizontal overflow",
+        "Reduced motion and static fallback",
+        "Content remains readable without blur or animation"
+      ],
+      "motion": {
+        "default": "restrained",
+        "reduced_motion": "Remove decorative movement and nonessential transitions",
+        "interaction_ms": 180,
+        "allowed": [
+          "opacity",
+          "small translate"
+        ],
+        "avoid": [
+          "flashing",
+          "infinite essential motion",
+          "movement of reading content"
+        ]
+      },
+      "id": "comic-book",
+      "name": "Comic book",
+      "summary": "Bold outlines and confident emphasis with a playful editorial voice.",
+      "use_when": "Use for campaign explainers, memorable tips, and short learning challenges.",
+      "avoid_when": "Use sparingly in dense reading and preserve stable, high-contrast text surfaces.",
+      "classification": {
+        "appearance": "Comic book",
+        "motion": "Independent, restrained optional behavior"
+      },
+      "tokens": {
+        "colors": {
+          "background": "#ffdc67",
+          "surface": "#fff9e5",
+          "text": "#252520",
+          "muted": "#59563d",
+          "accent": "#94332b",
+          "border": "#766e4c"
+        },
+        "spacing_px": [
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "radius_px": 3,
+        "body_px": 16,
+        "minimum_control_height_px": 44,
+        "reading_width_ch": 65
+      },
+      "typography": "Heavy system sans-serif headings with readable body text.",
+      "layout": "Strong outlined blocks, occasional angular accents, clear reading order.",
+      "surfaces": "Halftone accents and offset black shadows.",
+      "essential_traits": [
+        "Bold dark outlines",
+        "Limited primary palette",
+        "Halftone outside text"
+      ],
+      "exclude": [
+        "All-caps body copy",
+        "Cluttered speech bubbles",
+        "Effects overpowering instructional content"
+      ],
+      "adaptations": {
+        "web": "Use the tokens and live components; validate keyboard, mobile, contrast, and reduced motion.",
+        "slides": "Preserve hierarchy and palette with native editable shapes and text. Replace motion with static emphasis.",
+        "documents": "Use native headings, readable body text, restrained callouts, and solid reading surfaces.",
+        "images": "Describe composition and material cues; check text and layout separately. Do not claim pixel-exact token fidelity."
+      },
+      "prompt": "Apply Comic book to [DELIVERABLE] for [AUDIENCE]. Purpose: [GOAL]. Preserve all supplied content, existing visuals, and required brand constraints. Heavy system sans-serif headings with readable body text. Strong outlined blocks, occasional angular accents, clear reading order. Halftone accents and offset black shadows. Palette: background #ffdc67, surface #fff9e5, text #252520, muted #59563d, accent #94332b, border #766e4c. Essential traits: Bold dark outlines; Limited primary palette; Halftone outside text. Avoid: All-caps body copy; Cluttered speech bubbles; Effects overpowering instructional content. Keep motion restrained and optional, respect reduced motion, and provide a static fallback. Adapt the appearance to the requested output format. Keep text legible, controls accessible, and content editable where supported. Resolve mandatory brand conflicts explicitly. Return the design and accurately report performed and unperformed checks.",
+      "category": "Playful"
+    },
+    {
+      "version": "0.1.0",
+      "status": "Available style specification; final outputs require format-specific visual checks",
+      "source": "Original interpretations of style names demonstrated in a user-supplied video; not recovered source code.",
+      "outputs": [
+        "web",
+        "slides",
+        "documents",
+        "images"
+      ],
+      "preserve": [
+        "meaning",
+        "required content",
+        "existing visuals",
+        "editable content where supported",
+        "user brand constraints"
+      ],
+      "quality_checks": [
+        "Readable text and measured contrast against rendered colors",
+        "Visible focus and keyboard access",
+        "No information communicated by color alone",
+        "Responsive layout with no horizontal overflow",
+        "Reduced motion and static fallback",
+        "Content remains readable without blur or animation"
+      ],
+      "motion": {
+        "default": "restrained",
+        "reduced_motion": "Remove decorative movement and nonessential transitions",
+        "interaction_ms": 180,
+        "allowed": [
+          "opacity",
+          "small translate"
+        ],
+        "avoid": [
+          "flashing",
+          "infinite essential motion",
+          "movement of reading content"
+        ]
+      },
+      "id": "hand-drawn-sketch",
+      "name": "Hand-drawn sketch",
+      "summary": "A thoughtful notebook feel, with deliberately clear information.",
+      "use_when": "Use for workshop activities, early concepts, and collaborative learning guides.",
+      "avoid_when": "Use sparingly in dense reading and preserve stable, high-contrast text surfaces.",
+      "classification": {
+        "appearance": "Hand-drawn sketch",
+        "motion": "Independent, restrained optional behavior"
+      },
+      "tokens": {
+        "colors": {
+          "background": "#faf7e9",
+          "surface": "#fffdf5",
+          "text": "#343d42",
+          "muted": "#58646c",
+          "accent": "#335e7a",
+          "border": "#a6afb1"
+        },
+        "spacing_px": [
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "radius_px": 12,
+        "body_px": 16,
+        "minimum_control_height_px": 44,
+        "reading_width_ch": 65
+      },
+      "typography": "Georgia italic headings paired with system sans-serif body.",
+      "layout": "Notebook spacing, hand-marked accents, and short clear content groups.",
+      "surfaces": "Slightly irregular outlines, ruled paper, and sketched emphasis.",
+      "essential_traits": [
+        "Hand-marked accents",
+        "Notebook rhythm",
+        "Readable native text"
+      ],
+      "exclude": [
+        "Unreadable script fonts",
+        "Excess scribbles",
+        "Roughness used as a substitute for structure"
+      ],
+      "adaptations": {
+        "web": "Use the tokens and live components; validate keyboard, mobile, contrast, and reduced motion.",
+        "slides": "Preserve hierarchy and palette with native editable shapes and text. Replace motion with static emphasis.",
+        "documents": "Use native headings, readable body text, restrained callouts, and solid reading surfaces.",
+        "images": "Describe composition and material cues; check text and layout separately. Do not claim pixel-exact token fidelity."
+      },
+      "prompt": "Apply Hand-drawn sketch to [DELIVERABLE] for [AUDIENCE]. Purpose: [GOAL]. Preserve all supplied content, existing visuals, and required brand constraints. Georgia italic headings paired with system sans-serif body. Notebook spacing, hand-marked accents, and short clear content groups. Slightly irregular outlines, ruled paper, and sketched emphasis. Palette: background #faf7e9, surface #fffdf5, text #343d42, muted #58646c, accent #335e7a, border #a6afb1. Essential traits: Hand-marked accents; Notebook rhythm; Readable native text. Avoid: Unreadable script fonts; Excess scribbles; Roughness used as a substitute for structure. Keep motion restrained and optional, respect reduced motion, and provide a static fallback. Adapt the appearance to the requested output format. Keep text legible, controls accessible, and content editable where supported. Resolve mandatory brand conflicts explicitly. Return the design and accurately report performed and unperformed checks.",
+      "category": "Editorial"
+    },
+    {
+      "version": "0.1.0",
+      "status": "Available style specification; final outputs require format-specific visual checks",
+      "source": "Original interpretations of style names demonstrated in a user-supplied video; not recovered source code.",
+      "outputs": [
+        "web",
+        "slides",
+        "documents",
+        "images"
+      ],
+      "preserve": [
+        "meaning",
+        "required content",
+        "existing visuals",
+        "editable content where supported",
+        "user brand constraints"
+      ],
+      "quality_checks": [
+        "Readable text and measured contrast against rendered colors",
+        "Visible focus and keyboard access",
+        "No information communicated by color alone",
+        "Responsive layout with no horizontal overflow",
+        "Reduced motion and static fallback",
+        "Content remains readable without blur or animation"
+      ],
+      "motion": {
+        "default": "restrained",
+        "reduced_motion": "Remove decorative movement and nonessential transitions",
+        "interaction_ms": 180,
+        "allowed": [
+          "opacity",
+          "small translate"
+        ],
+        "avoid": [
+          "flashing",
+          "infinite essential motion",
+          "movement of reading content"
+        ]
+      },
+      "id": "bauhaus",
+      "name": "Bauhaus",
+      "summary": "Geometric order, primary color, and confident functional hierarchy.",
+      "use_when": "Use for design education, clear process stories, and bold editorial pages.",
+      "avoid_when": "Use sparingly in dense reading and preserve stable, high-contrast text surfaces.",
+      "classification": {
+        "appearance": "Bauhaus",
+        "motion": "Independent, restrained optional behavior"
+      },
+      "tokens": {
+        "colors": {
+          "background": "#f3efde",
+          "surface": "#fffdf1",
+          "text": "#242821",
+          "muted": "#58604e",
+          "accent": "#a52e27",
+          "border": "#a6ad94"
+        },
+        "spacing_px": [
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "radius_px": 0,
+        "body_px": 16,
+        "minimum_control_height_px": 44,
+        "reading_width_ch": 65
+      },
+      "typography": "Bold system sans-serif headings with geometric spacing.",
+      "layout": "Asymmetric geometry balanced by a strict alignment grid.",
+      "surfaces": "Circle and rectangle accents in red, blue, and yellow outside text.",
+      "essential_traits": [
+        "Primary geometric accents",
+        "Strong grid",
+        "Functional hierarchy"
+      ],
+      "exclude": [
+        "Uncontrolled asymmetry",
+        "Shapes covering data",
+        "Primary colors used as status alone"
+      ],
+      "adaptations": {
+        "web": "Use the tokens and live components; validate keyboard, mobile, contrast, and reduced motion.",
+        "slides": "Preserve hierarchy and palette with native editable shapes and text. Replace motion with static emphasis.",
+        "documents": "Use native headings, readable body text, restrained callouts, and solid reading surfaces.",
+        "images": "Describe composition and material cues; check text and layout separately. Do not claim pixel-exact token fidelity."
+      },
+      "prompt": "Apply Bauhaus to [DELIVERABLE] for [AUDIENCE]. Purpose: [GOAL]. Preserve all supplied content, existing visuals, and required brand constraints. Bold system sans-serif headings with geometric spacing. Asymmetric geometry balanced by a strict alignment grid. Circle and rectangle accents in red, blue, and yellow outside text. Palette: background #f3efde, surface #fffdf1, text #242821, muted #58604e, accent #a52e27, border #a6ad94. Essential traits: Primary geometric accents; Strong grid; Functional hierarchy. Avoid: Uncontrolled asymmetry; Shapes covering data; Primary colors used as status alone. Keep motion restrained and optional, respect reduced motion, and provide a static fallback. Adapt the appearance to the requested output format. Keep text legible, controls accessible, and content editable where supported. Resolve mandatory brand conflicts explicitly. Return the design and accurately report performed and unperformed checks.",
+      "category": "Playful"
+    },
+    {
+      "version": "0.1.0",
+      "status": "Available style specification; final outputs require format-specific visual checks",
+      "source": "Original interpretations of style names demonstrated in a user-supplied video; not recovered source code.",
+      "outputs": [
+        "web",
+        "slides",
+        "documents",
+        "images"
+      ],
+      "preserve": [
+        "meaning",
+        "required content",
+        "existing visuals",
+        "editable content where supported",
+        "user brand constraints"
+      ],
+      "quality_checks": [
+        "Readable text and measured contrast against rendered colors",
+        "Visible focus and keyboard access",
+        "No information communicated by color alone",
+        "Responsive layout with no horizontal overflow",
+        "Reduced motion and static fallback",
+        "Content remains readable without blur or animation"
+      ],
+      "motion": {
+        "default": "restrained",
+        "reduced_motion": "Remove decorative movement and nonessential transitions",
+        "interaction_ms": 180,
+        "allowed": [
+          "opacity",
+          "small translate"
+        ],
+        "avoid": [
+          "flashing",
+          "infinite essential motion",
+          "movement of reading content"
+        ]
+      },
+      "id": "art-deco",
+      "name": "Art deco",
+      "summary": "Architectural rhythm and gold detail with quiet elegance.",
+      "use_when": "Use for premium event pages, leadership communication, and milestone presentations.",
+      "avoid_when": "Use sparingly in dense reading and preserve stable, high-contrast text surfaces.",
+      "classification": {
+        "appearance": "Art deco",
+        "motion": "Independent, restrained optional behavior"
+      },
+      "tokens": {
+        "colors": {
+          "background": "#111d2d",
+          "surface": "#192a3b",
+          "text": "#fbf2db",
+          "muted": "#d4c6a3",
+          "accent": "#e3c789",
+          "border": "#8e7d56"
+        },
+        "spacing_px": [
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "radius_px": 12,
+        "body_px": 16,
+        "minimum_control_height_px": 44,
+        "reading_width_ch": 65
+      },
+      "typography": "Georgia serif headings with widely spaced short labels.",
+      "layout": "Symmetrical alignment, vertical rhythm, and restrained ornamental framing.",
+      "surfaces": "Deep navy, thin gold rules, and stepped geometric corners.",
+      "essential_traits": [
+        "Stepped ornamental border",
+        "Gold-on-navy contrast",
+        "Symmetrical composition"
+      ],
+      "exclude": [
+        "Thin gold body text",
+        "Ornament behind reading text",
+        "Decorative fonts at small sizes"
+      ],
+      "adaptations": {
+        "web": "Use the tokens and live components; validate keyboard, mobile, contrast, and reduced motion.",
+        "slides": "Preserve hierarchy and palette with native editable shapes and text. Replace motion with static emphasis.",
+        "documents": "Use native headings, readable body text, restrained callouts, and solid reading surfaces.",
+        "images": "Describe composition and material cues; check text and layout separately. Do not claim pixel-exact token fidelity."
+      },
+      "prompt": "Apply Art deco to [DELIVERABLE] for [AUDIENCE]. Purpose: [GOAL]. Preserve all supplied content, existing visuals, and required brand constraints. Georgia serif headings with widely spaced short labels. Symmetrical alignment, vertical rhythm, and restrained ornamental framing. Deep navy, thin gold rules, and stepped geometric corners. Palette: background #111d2d, surface #192a3b, text #fbf2db, muted #d4c6a3, accent #e3c789, border #8e7d56. Essential traits: Stepped ornamental border; Gold-on-navy contrast; Symmetrical composition. Avoid: Thin gold body text; Ornament behind reading text; Decorative fonts at small sizes. Keep motion restrained and optional, respect reduced motion, and provide a static fallback. Adapt the appearance to the requested output format. Keep text legible, controls accessible, and content editable where supported. Resolve mandatory brand conflicts explicitly. Return the design and accurately report performed and unperformed checks.",
+      "category": "Editorial"
+    },
+    {
+      "version": "0.1.0",
+      "status": "Available style specification; final outputs require format-specific visual checks",
+      "source": "Original interpretations of style names demonstrated in a user-supplied video; not recovered source code.",
+      "outputs": [
+        "web",
+        "slides",
+        "documents",
+        "images"
+      ],
+      "preserve": [
+        "meaning",
+        "required content",
+        "existing visuals",
+        "editable content where supported",
+        "user brand constraints"
+      ],
+      "quality_checks": [
+        "Readable text and measured contrast against rendered colors",
+        "Visible focus and keyboard access",
+        "No information communicated by color alone",
+        "Responsive layout with no horizontal overflow",
+        "Reduced motion and static fallback",
+        "Content remains readable without blur or animation"
+      ],
+      "motion": {
+        "default": "restrained",
+        "reduced_motion": "Remove decorative movement and nonessential transitions",
+        "interaction_ms": 180,
+        "allowed": [
+          "opacity",
+          "small translate"
+        ],
+        "avoid": [
+          "flashing",
+          "infinite essential motion",
+          "movement of reading content"
+        ]
+      },
+      "id": "neo-brutalism",
+      "name": "Neo-brutalism",
+      "summary": "Direct, graphic, and unapologetically clear.",
+      "use_when": "Use for bold internal campaigns, creative tools, and memorable learning cards.",
+      "avoid_when": "Use sparingly in dense reading and preserve stable, high-contrast text surfaces.",
+      "classification": {
+        "appearance": "Neo-brutalism",
+        "motion": "Independent, restrained optional behavior"
+      },
+      "tokens": {
+        "colors": {
+          "background": "#f3f1e5",
+          "surface": "#fffef7",
+          "text": "#22251f",
+          "muted": "#565c4e",
+          "accent": "#614e94",
+          "border": "#22251f"
+        },
+        "spacing_px": [
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "radius_px": 0,
+        "body_px": 16,
+        "minimum_control_height_px": 44,
+        "reading_width_ch": 65
+      },
+      "typography": "Bold system sans-serif headlines with sturdy body type.",
+      "layout": "Strong boxes, explicit labels, and clear hierarchy.",
+      "surfaces": "Heavy dark borders, hard offset shadows, bright pastel accents.",
+      "essential_traits": [
+        "Hard offset shadow",
+        "Thick visible borders",
+        "Direct bold typography"
+      ],
+      "exclude": [
+        "Decoration that obscures affordance",
+        "Uncontrolled visual noise",
+        "Color-only controls"
+      ],
+      "adaptations": {
+        "web": "Use the tokens and live components; validate keyboard, mobile, contrast, and reduced motion.",
+        "slides": "Preserve hierarchy and palette with native editable shapes and text. Replace motion with static emphasis.",
+        "documents": "Use native headings, readable body text, restrained callouts, and solid reading surfaces.",
+        "images": "Describe composition and material cues; check text and layout separately. Do not claim pixel-exact token fidelity."
+      },
+      "prompt": "Apply Neo-brutalism to [DELIVERABLE] for [AUDIENCE]. Purpose: [GOAL]. Preserve all supplied content, existing visuals, and required brand constraints. Bold system sans-serif headlines with sturdy body type. Strong boxes, explicit labels, and clear hierarchy. Heavy dark borders, hard offset shadows, bright pastel accents. Palette: background #f3f1e5, surface #fffef7, text #22251f, muted #565c4e, accent #614e94, border #22251f. Essential traits: Hard offset shadow; Thick visible borders; Direct bold typography. Avoid: Decoration that obscures affordance; Uncontrolled visual noise; Color-only controls. Keep motion restrained and optional, respect reduced motion, and provide a static fallback. Adapt the appearance to the requested output format. Keep text legible, controls accessible, and content editable where supported. Resolve mandatory brand conflicts explicitly. Return the design and accurately report performed and unperformed checks.",
+      "category": "Playful"
+    }
+  ]
+}

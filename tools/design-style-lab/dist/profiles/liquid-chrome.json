@@ -1,0 +1,93 @@
+{
+  "version": "0.1.0",
+  "status": "Available style specification; final outputs require format-specific visual checks",
+  "source": "Original interpretations of style names demonstrated in a user-supplied video; not recovered source code.",
+  "outputs": [
+    "web",
+    "slides",
+    "documents",
+    "images"
+  ],
+  "preserve": [
+    "meaning",
+    "required content",
+    "existing visuals",
+    "editable content where supported",
+    "user brand constraints"
+  ],
+  "quality_checks": [
+    "Readable text and measured contrast against rendered colors",
+    "Visible focus and keyboard access",
+    "No information communicated by color alone",
+    "Responsive layout with no horizontal overflow",
+    "Reduced motion and static fallback",
+    "Content remains readable without blur or animation"
+  ],
+  "motion": {
+    "default": "restrained",
+    "reduced_motion": "Remove decorative movement and nonessential transitions",
+    "interaction_ms": 180,
+    "allowed": [
+      "opacity",
+      "small translate"
+    ],
+    "avoid": [
+      "flashing",
+      "infinite essential motion",
+      "movement of reading content"
+    ]
+  },
+  "id": "liquid-chrome",
+  "name": "Liquid chrome",
+  "summary": "Sculptural metallic highlights on a near-black field.",
+  "use_when": "Use for premium product showcases, title moments, and creative launch cards.",
+  "avoid_when": "Use sparingly in dense reading and preserve stable, high-contrast text surfaces.",
+  "classification": {
+    "appearance": "Liquid chrome",
+    "motion": "Independent, restrained optional behavior"
+  },
+  "tokens": {
+    "colors": {
+      "background": "#111315",
+      "surface": "#202426",
+      "text": "#f7f8f8",
+      "muted": "#c0c8cd",
+      "accent": "#d8e1e7",
+      "border": "#76858e"
+    },
+    "spacing_px": [
+      4,
+      8,
+      12,
+      16,
+      24,
+      32,
+      48
+    ],
+    "radius_px": 12,
+    "body_px": 16,
+    "minimum_control_height_px": 44,
+    "reading_width_ch": 65
+  },
+  "typography": "System sans-serif with sharp heading hierarchy.",
+  "layout": "Minimal composition, metallic edge accents, restrained reflectivity.",
+  "surfaces": "Brushed and polished chrome decorations around matte reading surfaces.",
+  "essential_traits": [
+    "Silver sculptural accents",
+    "Matte text panel",
+    "Near-black negative space"
+  ],
+  "exclude": [
+    "Reflective body text",
+    "Harsh moving highlights",
+    "Metal effects replacing useful hierarchy"
+  ],
+  "adaptations": {
+    "web": "Use the tokens and live components; validate keyboard, mobile, contrast, and reduced motion.",
+    "slides": "Preserve hierarchy and palette with native editable shapes and text. Replace motion with static emphasis.",
+    "documents": "Use native headings, readable body text, restrained callouts, and solid reading surfaces.",
+    "images": "Describe composition and material cues; check text and layout separately. Do not claim pixel-exact token fidelity."
+  },
+  "prompt": "Apply Liquid chrome to [DELIVERABLE] for [AUDIENCE]. Purpose: [GOAL]. Preserve all supplied content, existing visuals, and required brand constraints. System sans-serif with sharp heading hierarchy. Minimal composition, metallic edge accents, restrained reflectivity. Brushed and polished chrome decorations around matte reading surfaces. Palette: background #111315, surface #202426, text #f7f8f8, muted #c0c8cd, accent #d8e1e7, border #76858e. Essential traits: Silver sculptural accents; Matte text panel; Near-black negative space. Avoid: Reflective body text; Harsh moving highlights; Metal effects replacing useful hierarchy. Keep motion restrained and optional, respect reduced motion, and provide a static fallback. Adapt the appearance to the requested output format. Keep text legible, controls accessible, and content editable where supported. Resolve mandatory brand conflicts explicitly. Return the design and accurately report performed and unperformed checks.",
+  "category": "Light & color"
+}

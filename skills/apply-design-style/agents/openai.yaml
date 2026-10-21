@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design Style Lab"
+  short_description: "Apply 25 styles to workplace content and assets"
+  default_prompt: "Use $apply-design-style to style my content for a workplace deliverable."

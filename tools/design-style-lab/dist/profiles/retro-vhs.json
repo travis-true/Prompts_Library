@@ -1,0 +1,93 @@
+{
+  "version": "0.1.0",
+  "status": "Available style specification; final outputs require format-specific visual checks",
+  "source": "Original interpretations of style names demonstrated in a user-supplied video; not recovered source code.",
+  "outputs": [
+    "web",
+    "slides",
+    "documents",
+    "images"
+  ],
+  "preserve": [
+    "meaning",
+    "required content",
+    "existing visuals",
+    "editable content where supported",
+    "user brand constraints"
+  ],
+  "quality_checks": [
+    "Readable text and measured contrast against rendered colors",
+    "Visible focus and keyboard access",
+    "No information communicated by color alone",
+    "Responsive layout with no horizontal overflow",
+    "Reduced motion and static fallback",
+    "Content remains readable without blur or animation"
+  ],
+  "motion": {
+    "default": "restrained",
+    "reduced_motion": "Remove decorative movement and nonessential transitions",
+    "interaction_ms": 180,
+    "allowed": [
+      "opacity",
+      "small translate"
+    ],
+    "avoid": [
+      "flashing",
+      "infinite essential motion",
+      "movement of reading content"
+    ]
+  },
+  "id": "retro-vhs",
+  "name": "Retro VHS",
+  "summary": "Analog warmth and archival character without sacrificing clarity.",
+  "use_when": "Use for nostalgic campaigns, story introductions, and informal creative explainers.",
+  "avoid_when": "Use sparingly in dense reading and preserve stable, high-contrast text surfaces.",
+  "classification": {
+    "appearance": "Retro VHS",
+    "motion": "Independent, restrained optional behavior"
+  },
+  "tokens": {
+    "colors": {
+      "background": "#eee3c9",
+      "surface": "#fff7e5",
+      "text": "#40362f",
+      "muted": "#6e5e50",
+      "accent": "#78502e",
+      "border": "#c9b28d"
+    },
+    "spacing_px": [
+      4,
+      8,
+      12,
+      16,
+      24,
+      32,
+      48
+    ],
+    "radius_px": 12,
+    "body_px": 16,
+    "minimum_control_height_px": 44,
+    "reading_width_ch": 65
+  },
+  "typography": "Georgia serif headings; system monospace short metadata.",
+  "layout": "Framed archival feel with precise content hierarchy.",
+  "surfaces": "Warm paper, restrained grain, subtle timestamp-like decorative labels.",
+  "essential_traits": [
+    "Warm archival palette",
+    "Subtle analog texture",
+    "Clean foreground text"
+  ],
+  "exclude": [
+    "Glitching instructions",
+    "Flicker",
+    "False timestamps presented as recorded evidence"
+  ],
+  "adaptations": {
+    "web": "Use the tokens and live components; validate keyboard, mobile, contrast, and reduced motion.",
+    "slides": "Preserve hierarchy and palette with native editable shapes and text. Replace motion with static emphasis.",
+    "documents": "Use native headings, readable body text, restrained callouts, and solid reading surfaces.",
+    "images": "Describe composition and material cues; check text and layout separately. Do not claim pixel-exact token fidelity."
+  },
+  "prompt": "Apply Retro VHS to [DELIVERABLE] for [AUDIENCE]. Purpose: [GOAL]. Preserve all supplied content, existing visuals, and required brand constraints. Georgia serif headings; system monospace short metadata. Framed archival feel with precise content hierarchy. Warm paper, restrained grain, subtle timestamp-like decorative labels. Palette: background #eee3c9, surface #fff7e5, text #40362f, muted #6e5e50, accent #78502e, border #c9b28d. Essential traits: Warm archival palette; Subtle analog texture; Clean foreground text. Avoid: Glitching instructions; Flicker; False timestamps presented as recorded evidence. Keep motion restrained and optional, respect reduced motion, and provide a static fallback. Adapt the appearance to the requested output format. Keep text legible, controls accessible, and content editable where supported. Resolve mandatory brand conflicts explicitly. Return the design and accurately report performed and unperformed checks.",
+  "category": "Editorial"
+}

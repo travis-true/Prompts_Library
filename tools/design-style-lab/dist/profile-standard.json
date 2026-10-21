@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "purpose": "A consistent standard for all 25 available design styles.",
+  "required_fields": [
+    "id",
+    "name",
+    "version",
+    "summary",
+    "source",
+    "classification",
+    "use_when",
+    "avoid_when",
+    "tokens",
+    "typography",
+    "layout",
+    "surfaces",
+    "essential_traits",
+    "exclude",
+    "motion",
+    "adaptations",
+    "quality_checks",
+    "prompt"
+  ],
+  "comparison_fixture": "The same employee-learning card, content page, and dashboard for all 25 styles. Data is fictional.",
+  "acceptance": [
+    "All required fields are present",
+    "Style can be recognized without its label",
+    "Same source content and actions survive every variation",
+    "Appearance and motion are separate",
+    "Every output format has adaptation guidance",
+    "Critical text has stable readable background",
+    "Controls remain keyboard accessible",
+    "Brand requirements win over optional aesthetic choices",
+    "Unperformed tests remain disclosed"
+  ],
+  "expansion_gate": "Review every style on card, page, dashboard, narrow screen, keyboard, and reduced motion when updating the library.",
+  "available_styles": 25
+}

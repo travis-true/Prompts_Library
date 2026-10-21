@@ -39,3 +39,5 @@
 | [Wiifm Statement Writer](wiifm-statement-writer/SKILL.md) | Write learner-benefit statements that explain why a training session matters to its audience. |
 | [Social Media Asset Sizing](social-media-asset-sizing/SKILL.md) | Choose social-media dimensions, adapt compositions, and check exports for the intended placement. |
 | [Reference Video to Production Brief](reference-video-to-production-brief/SKILL.md) | Turn reference videos into shot breakdowns, generation prompts, continuity plans, and targeted revisions. |
+
+| [Design Style Lab](apply-design-style/SKILL.md) | Apply 25 design styles to workplace content with format adaptations, brand controls, and accessibility review. |

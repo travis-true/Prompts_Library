@@ -9,7 +9,7 @@ root = pathlib.Path(__file__).resolve().parents[1]
 errors = []
 catalog = json.loads((root / 'catalog.json').read_text())
 counts = dict(Counter(item['type'] for item in catalog))
-expected = {'prompts': 58, 'skills': 35, 'workflows': 7, 'resources': 7}
+expected = {'prompts': 58, 'skills': 36, 'workflows': 7, 'resources': 7}
 if counts != expected:
     errors.append(f'Catalog counts: {counts}; expected {expected}')
 paths = [item['path'] for item in catalog]
@@ -65,4 +65,4 @@ if len(list((root/'planned').glob('*.md'))) - 1 != 7:
 if errors:
     print('\n'.join(errors))
     sys.exit(1)
-print('PASS: 107 active resources, 35 skills, 25 workplace prompt adaptations, 7 planned ideas; sections, skill frontmatter, catalog, local links, source markup, and workplace vocabulary checks passed.')
+print('PASS: 108 active resources, 36 skills, 25 workplace prompt adaptations, 7 planned ideas; sections, skill frontmatter, catalog, local links, source markup, and workplace vocabulary checks passed.')

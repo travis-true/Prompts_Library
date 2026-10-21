@@ -5,10 +5,14 @@ Practical workplace prompts, skills, workflows, and training resources by Travis
 | Collection | Resources | Use it for |
 | --- | ---: | --- |
 | [Prompts](prompts/README.md) | 58 | A focused task with a copy-ready prompt, input guide, example, and checks |
-| [Skills](skills/README.md) | 35 | Reusable processes in readable `SKILL.md` folders |
+| [Skills](skills/README.md) | 36 | Reusable processes in readable `SKILL.md` folders |
 | [Workflows](workflows/README.md) | 7 | A sequence from intake through review and follow-through |
 | [Training resources](resources/README.md) | 7 | Adaptable checklists, worksheets, blueprints, and prompt packs |
 | [Planned resources](planned/README.md) | 7 ideas | Descriptions awaiting complete instructions |
+
+## Interactive tools
+
+**[Open Design Style Lab](https://trueprompt-design-style-lab.travistrue1.chatgpt.site)** — Compare 25 styles across seven layouts, edit content, apply brand settings, and prepare production briefs. [Source and usage](tools/design-style-lab/README.md).
 
 ## Start here
 
@@ -101,6 +105,7 @@ Browse every entry below, or open a collection README for its focused list.
 
 | Resource | Description |
 | --- | --- |
+| [Design Style Lab](skills/apply-design-style/SKILL.md) | Apply 25 design styles to workplace content with format adaptations, brand controls, and accessibility review. |
 | [Context-Efficient Work Partner](skills/context-efficient-work-partner/SKILL.md) | Help users complete complex or ongoing work efficiently while preserving accuracy, useful context, and continuity. |
 | [Humanizer](skills/humanizer/SKILL.md) | Make ordinary workplace writing clear, natural, and audience-appropriate while preserving facts, meaning, attribution, and uncertainty. |
 | [Excel Data Analysis & Workbook Builder](skills/excel-data-analysis-workbook-builder/SKILL.md) | Clean and analyze Excel data, build or improve workbooks, and verify the result through the path the task requires. |

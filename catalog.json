@@ -961,5 +961,14 @@
     "purpose": "Turn reference videos into shot breakdowns, generation prompts, continuity plans, and targeted revisions.",
     "status": "Installed skill import",
     "short_description": "Turn reference videos into shot breakdowns, generation prompts, continuity plans, and targeted revisions."
+  },
+  {
+    "title": "Design Style Lab",
+    "type": "skills",
+    "path": "skills/apply-design-style/SKILL.md",
+    "function": "Design",
+    "purpose": "Apply 25 design styles to workplace content with format adaptations, brand controls, and accessibility review.",
+    "status": "Installed skill import",
+    "short_description": "Apply 25 design styles to workplace content with format adaptations, brand controls, and accessibility review."
   }
 ]

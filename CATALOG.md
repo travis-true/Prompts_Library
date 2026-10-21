@@ -123,3 +123,5 @@
 | [Source-to-job-aid workflow](planned/source-to-job-aid-workflow.md) | Converts authoritative source material into a concise, task-centered job aid with quality checks. Planned; not yet complete. |
 | [Training asset request to publishable resource](planned/training-asset-request-to-publishable-resource.md) | Moves a training request through intake, diagnosis, design, production, QA, approval, and publication. Planned; not yet complete. |
 | [Workflow & Decision-Support QRG Builder](planned/workflow-decision-support-qrg-builder.md) | Builds point-of-need guides that help people choose actions, avoid mistakes, and troubleshoot. Planned; not yet complete. |
+
+| skills | [Design Style Lab](skills/apply-design-style/SKILL.md) | Apply 25 design styles to workplace content with format adaptations, brand controls, and accessibility review. |

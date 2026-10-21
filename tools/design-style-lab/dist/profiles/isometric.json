@@ -1,0 +1,93 @@
+{
+  "version": "0.1.0",
+  "status": "Available style specification; final outputs require format-specific visual checks",
+  "source": "Original interpretations of style names demonstrated in a user-supplied video; not recovered source code.",
+  "outputs": [
+    "web",
+    "slides",
+    "documents",
+    "images"
+  ],
+  "preserve": [
+    "meaning",
+    "required content",
+    "existing visuals",
+    "editable content where supported",
+    "user brand constraints"
+  ],
+  "quality_checks": [
+    "Readable text and measured contrast against rendered colors",
+    "Visible focus and keyboard access",
+    "No information communicated by color alone",
+    "Responsive layout with no horizontal overflow",
+    "Reduced motion and static fallback",
+    "Content remains readable without blur or animation"
+  ],
+  "motion": {
+    "default": "restrained",
+    "reduced_motion": "Remove decorative movement and nonessential transitions",
+    "interaction_ms": 180,
+    "allowed": [
+      "opacity",
+      "small translate"
+    ],
+    "avoid": [
+      "flashing",
+      "infinite essential motion",
+      "movement of reading content"
+    ]
+  },
+  "id": "isometric",
+  "name": "Isometric",
+  "summary": "Measured spatial depth, translated into a practical interface.",
+  "use_when": "Use for systems explanations, process overviews, and spatial product demonstrations.",
+  "avoid_when": "Use sparingly in dense reading and preserve stable, high-contrast text surfaces.",
+  "classification": {
+    "appearance": "Isometric",
+    "motion": "Independent, restrained optional behavior"
+  },
+  "tokens": {
+    "colors": {
+      "background": "#e8eff5",
+      "surface": "#ffffff",
+      "text": "#19384d",
+      "muted": "#4c6476",
+      "accent": "#235d80",
+      "border": "#b4c8d5"
+    },
+    "spacing_px": [
+      4,
+      8,
+      12,
+      16,
+      24,
+      32,
+      48
+    ],
+    "radius_px": 4,
+    "body_px": 16,
+    "minimum_control_height_px": 44,
+    "reading_width_ch": 65
+  },
+  "typography": "System sans-serif with structured headings.",
+  "layout": "Layered planes, offset rails, and a clear spatial hierarchy.",
+  "surfaces": "Subtle extruded edges and isometric background tiles; live text remains front-facing.",
+  "essential_traits": [
+    "Extruded layers",
+    "Diagonal structural accents",
+    "Readable front-facing content"
+  ],
+  "exclude": [
+    "Skewed body text",
+    "Ambiguous depth order",
+    "Perspective that impairs controls"
+  ],
+  "adaptations": {
+    "web": "Use the tokens and live components; validate keyboard, mobile, contrast, and reduced motion.",
+    "slides": "Preserve hierarchy and palette with native editable shapes and text. Replace motion with static emphasis.",
+    "documents": "Use native headings, readable body text, restrained callouts, and solid reading surfaces.",
+    "images": "Describe composition and material cues; check text and layout separately. Do not claim pixel-exact token fidelity."
+  },
+  "prompt": "Apply Isometric to [DELIVERABLE] for [AUDIENCE]. Purpose: [GOAL]. Preserve all supplied content, existing visuals, and required brand constraints. System sans-serif with structured headings. Layered planes, offset rails, and a clear spatial hierarchy. Subtle extruded edges and isometric background tiles; live text remains front-facing. Palette: background #e8eff5, surface #ffffff, text #19384d, muted #4c6476, accent #235d80, border #b4c8d5. Essential traits: Extruded layers; Diagonal structural accents; Readable front-facing content. Avoid: Skewed body text; Ambiguous depth order; Perspective that impairs controls. Keep motion restrained and optional, respect reduced motion, and provide a static fallback. Adapt the appearance to the requested output format. Keep text legible, controls accessible, and content editable where supported. Resolve mandatory brand conflicts explicitly. Return the design and accurately report performed and unperformed checks.",
+  "category": "Technical"
+}
