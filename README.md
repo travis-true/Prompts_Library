@@ -4,7 +4,7 @@ Practical workplace prompts, skills, workflows, and training resources by Travis
 
 | Collection | Resources | Use it for |
 | --- | ---: | --- |
-| [Prompts](prompts/README.md) | 58 | A focused task with a copy-ready prompt, input guide, example, and checks |
+| [Prompts](prompts/README.md) | 59 | A focused task with a copy-ready prompt, input guide, example, and checks |
 | [Skills](skills/README.md) | 36 | Reusable processes in readable `SKILL.md` folders |
 | [Workflows](workflows/README.md) | 7 | A sequence from intake through review and follow-through |
 | [Training resources](resources/README.md) | 7 | Adaptable checklists, worksheets, blueprints, and prompt packs |
@@ -110,6 +110,7 @@ Browse every entry below, or open a collection README for its focused list.
 | [Present information as a scannable table](prompts/present-information-as-a-scannable-table.md) | Reformat source information without losing material facts. |
 | [Review a training asset for quality](prompts/review-a-training-asset-for-quality.md) | Identify prioritized issues in a training resource before release. |
 | [Improve a prompt for rigor and verifiable results](prompts/improve-a-prompt-for-rigor-and-verifiable-results.md) | Strengthen a prompt with relevant evidence, suitable methods, and observable acceptance criteria. |
+| [Select and apply installed skills](prompts/select-and-apply-installed-skills.md) | Select and apply available skills for an ongoing project while preserving authorization and approval gates. |
 
 ### Skills
 
