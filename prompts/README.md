@@ -62,3 +62,4 @@
 | [Present information as a scannable table](present-information-as-a-scannable-table.md) | Reformat source information without losing material facts. |
 | [Review a training asset for quality](review-a-training-asset-for-quality.md) | Identify prioritized issues in a training resource before release. |
 | [Improve a prompt for rigor and verifiable results](improve-a-prompt-for-rigor-and-verifiable-results.md) | Strengthen a prompt with relevant evidence, suitable methods, and observable acceptance criteria. |
+| [Select and apply installed skills](select-and-apply-installed-skills.md) | Select and apply available skills for an ongoing project while preserving authorization and approval gates. |
