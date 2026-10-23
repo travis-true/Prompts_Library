@@ -972,5 +972,14 @@
     "purpose": "Apply 25 design styles to workplace content with format adaptations, brand controls, and accessibility review.",
     "status": "Installed skill import",
     "short_description": "Apply 25 design styles to workplace content with format adaptations, brand controls, and accessibility review."
+  },
+  {
+    "title": "Select and apply installed skills",
+    "type": "prompts",
+    "path": "prompts/select-and-apply-installed-skills.md",
+    "function": "Productivity",
+    "purpose": "Select and apply available skills for an ongoing project while preserving authorization and approval gates.",
+    "status": "New",
+    "short_description": "Select and apply available skills for an ongoing project while preserving authorization and approval gates."
   }
 ]
