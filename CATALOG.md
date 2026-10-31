@@ -63,6 +63,7 @@
 | prompts | [Review a training asset for quality](prompts/review-a-training-asset-for-quality.md) | Identify prioritized issues in a training resource before release. |
 | prompts | [Turn rough notes into a presentation outline](prompts/turn-rough-notes-into-a-presentation-outline.md) | Turn rough notes or reports into a concise PowerPoint outline with takeaway headlines, supporting points, and visual suggestions. |
 
+| prompts | [Animate a PowerPoint slide with Copilot](prompts/animate-a-powerpoint-slide-with-copilot.md) | Turn a slide image into a restrained animation brief for Copilot, requesting an MP4 when supported and a precise PowerPoint animation plan otherwise. |
 | skills | [Context-Efficient Work Partner](skills/context-efficient-work-partner/SKILL.md) | Help users complete complex or ongoing work efficiently while preserving accuracy, useful context, and continuity. |
 | skills | [Humanizer](skills/humanizer/SKILL.md) | Make ordinary workplace writing clear, natural, and audience-appropriate while preserving facts, meaning, attribution, and uncertainty. |
 | skills | [Excel Data Analysis & Workbook Builder](skills/excel-data-analysis-workbook-builder/SKILL.md) | Clean and analyze Excel data, build or improve workbooks, and verify the result through the path the task requires. |

@@ -66,3 +66,4 @@
 | [Solve a problem using first-principles thinking](solve-a-problem-using-first-principles-thinking.md) | Challenge assumptions, identify fundamental facts, and build a practical solution with a small validation test. |
 | [Alignment Before Execution with first-principles thinking](alignment-before-execution-with-first-principles-thinking.md) | Clarify a request one question at a time, challenge assumptions, and require explicit approval before first-principles execution. |
 | [Turn rough notes into a presentation outline](turn-rough-notes-into-a-presentation-outline.md) | Turn rough notes or reports into a concise PowerPoint outline with takeaway headlines, supporting points, and visual suggestions. |
+| [Animate a PowerPoint slide with Copilot](animate-a-powerpoint-slide-with-copilot.md) | Turn a slide image into a restrained animation brief for Copilot, requesting an MP4 when supported and a precise PowerPoint animation plan otherwise. |

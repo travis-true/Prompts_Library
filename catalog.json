@@ -513,6 +513,15 @@
     "short_description": "Identify prioritized issues in a training resource before release."
   },
   {
+    "title": "Animate a PowerPoint slide with Copilot",
+    "type": "prompts",
+    "path": "prompts/animate-a-powerpoint-slide-with-copilot.md",
+    "function": "Writing",
+    "purpose": "Turn a slide image into a restrained animation brief for Copilot, requesting an MP4 when supported and a precise PowerPoint animation plan otherwise.",
+    "status": "Adapted",
+    "short_description": "Turn a slide image into a restrained animation brief for Copilot, requesting an MP4 when supported and a precise PowerPoint animation plan otherwise."
+  },
+  {
     "title": "Context-Efficient Work Partner",
     "type": "skills",
     "path": "skills/context-efficient-work-partner/SKILL.md",
