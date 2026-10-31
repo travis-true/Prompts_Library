@@ -981,5 +981,23 @@
     "purpose": "Select and apply available skills for an ongoing project while preserving authorization and approval gates.",
     "status": "New",
     "short_description": "Select and apply available skills for an ongoing project while preserving authorization and approval gates."
+  },
+  {
+    "title": "Solve a problem using first-principles thinking",
+    "type": "prompts",
+    "path": "prompts/solve-a-problem-using-first-principles-thinking.md",
+    "function": "Analysis",
+    "purpose": "Challenge assumptions, identify fundamental facts, and build a practical solution with a small validation test.",
+    "status": "New",
+    "short_description": "Challenge assumptions, identify fundamental facts, and build a practical solution with a small validation test."
+  },
+  {
+    "title": "Alignment Before Execution with first-principles thinking",
+    "type": "prompts",
+    "path": "prompts/alignment-before-execution-with-first-principles-thinking.md",
+    "function": "Analysis",
+    "purpose": "Clarify a request one question at a time, challenge assumptions, and require explicit approval before first-principles execution.",
+    "status": "New",
+    "short_description": "Clarify a request one question at a time, challenge assumptions, and require explicit approval before first-principles execution."
   }
 ]

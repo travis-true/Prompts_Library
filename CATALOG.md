@@ -113,6 +113,9 @@
 | skills | [Reference Video to Production Brief](skills/reference-video-to-production-brief/SKILL.md) | Turn reference videos into shot breakdowns, generation prompts, continuity plans, and targeted revisions. |
 | prompts | [Select and apply installed skills](prompts/select-and-apply-installed-skills.md) | Select and apply available skills for an ongoing project while preserving authorization and approval gates. |
 
+| prompts | [Solve a problem using first-principles thinking](prompts/solve-a-problem-using-first-principles-thinking.md) | Challenge assumptions, identify fundamental facts, and build a practical solution with a small validation test. |
+| prompts | [Alignment Before Execution with first-principles thinking](prompts/alignment-before-execution-with-first-principles-thinking.md) | Clarify a request one question at a time, challenge assumptions, and require explicit approval before first-principles execution. |
+
 ## Planned ideas
 
 | Resource | Description |

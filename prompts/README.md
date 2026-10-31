@@ -63,3 +63,5 @@
 | [Review a training asset for quality](review-a-training-asset-for-quality.md) | Identify prioritized issues in a training resource before release. |
 | [Improve a prompt for rigor and verifiable results](improve-a-prompt-for-rigor-and-verifiable-results.md) | Strengthen a prompt with relevant evidence, suitable methods, and observable acceptance criteria. |
 | [Select and apply installed skills](select-and-apply-installed-skills.md) | Select and apply available skills for an ongoing project while preserving authorization and approval gates. |
+| [Solve a problem using first-principles thinking](solve-a-problem-using-first-principles-thinking.md) | Challenge assumptions, identify fundamental facts, and build a practical solution with a small validation test. |
+| [Alignment Before Execution with first-principles thinking](alignment-before-execution-with-first-principles-thinking.md) | Clarify a request one question at a time, challenge assumptions, and require explicit approval before first-principles execution. |
