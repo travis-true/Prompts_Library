@@ -61,6 +61,8 @@
 | prompts | [Draft a usable first version](prompts/draft-a-usable-first-version.md) | Create a source-grounded first draft in the requested format. |
 | prompts | [Present information as a scannable table](prompts/present-information-as-a-scannable-table.md) | Reformat source information without losing material facts. |
 | prompts | [Review a training asset for quality](prompts/review-a-training-asset-for-quality.md) | Identify prioritized issues in a training resource before release. |
+| prompts | [Turn rough notes into a presentation outline](prompts/turn-rough-notes-into-a-presentation-outline.md) | Turn rough notes or reports into a concise PowerPoint outline with takeaway headlines, supporting points, and visual suggestions. |
+
 | skills | [Context-Efficient Work Partner](skills/context-efficient-work-partner/SKILL.md) | Help users complete complex or ongoing work efficiently while preserving accuracy, useful context, and continuity. |
 | skills | [Humanizer](skills/humanizer/SKILL.md) | Make ordinary workplace writing clear, natural, and audience-appropriate while preserving facts, meaning, attribution, and uncertainty. |
 | skills | [Excel Data Analysis & Workbook Builder](skills/excel-data-analysis-workbook-builder/SKILL.md) | Clean and analyze Excel data, build or improve workbooks, and verify the result through the path the task requires. |

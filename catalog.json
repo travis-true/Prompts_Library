@@ -999,5 +999,14 @@
     "purpose": "Clarify a request one question at a time, challenge assumptions, and require explicit approval before first-principles execution.",
     "status": "New",
     "short_description": "Clarify a request one question at a time, challenge assumptions, and require explicit approval before first-principles execution."
+  },
+  {
+    "title": "Turn rough notes into a presentation outline",
+    "type": "prompts",
+    "path": "prompts/turn-rough-notes-into-a-presentation-outline.md",
+    "function": "Writing",
+    "purpose": "Turn rough notes or reports into a concise PowerPoint outline with takeaway headlines, supporting points, and visual suggestions.",
+    "status": "Adapted",
+    "short_description": "Turn rough notes or reports into a concise PowerPoint outline with takeaway headlines, supporting points, and visual suggestions."
   }
 ]

@@ -4,7 +4,7 @@ Practical workplace prompts, skills, workflows, and training resources by Travis
 
 | Collection | Resources | Use it for |
 | --- | ---: | --- |
-| [Prompts](prompts/README.md) | 61 | A focused task with a copy-ready prompt, input guide, example, and checks |
+| [Prompts](prompts/README.md) | 62 | A focused task with a copy-ready prompt, input guide, example, and checks |
 | [Skills](skills/README.md) | 36 | Reusable processes in readable `SKILL.md` folders |
 | [Workflows](workflows/README.md) | 7 | A sequence from intake through review and follow-through |
 | [Training resources](resources/README.md) | 7 | Adaptable checklists, worksheets, blueprints, and prompt packs |
@@ -113,6 +113,7 @@ Browse every entry below, or open a collection README for its focused list.
 | [Select and apply installed skills](prompts/select-and-apply-installed-skills.md) | Select and apply available skills for an ongoing project while preserving authorization and approval gates. |
 | [Solve a problem using first-principles thinking](prompts/solve-a-problem-using-first-principles-thinking.md) | Challenge assumptions, identify fundamental facts, and build a practical solution with a small validation test. |
 | [Alignment Before Execution with first-principles thinking](prompts/alignment-before-execution-with-first-principles-thinking.md) | Clarify a request one question at a time, challenge assumptions, and require explicit approval before first-principles execution. |
+| [Turn rough notes into a presentation outline](prompts/turn-rough-notes-into-a-presentation-outline.md) | Turn rough notes or reports into a concise PowerPoint outline with takeaway headlines, supporting points, and visual suggestions. |
 
 ### Skills
 
