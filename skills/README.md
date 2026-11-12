@@ -42,3 +42,4 @@
 | [Reference Video to Production Brief](reference-video-to-production-brief/SKILL.md) | Turn reference videos into shot breakdowns, generation prompts, continuity plans, and targeted revisions. |
 
 | [Design Style Lab](apply-design-style/SKILL.md) | Apply 25 design styles to workplace content with format adaptations, brand controls, and accessibility review. |
+| [Learning Transfer and Evaluation](learning-transfer-and-evaluation/SKILL.md) | Plan post-training application, point-of-need support, and evidence of workplace use. |

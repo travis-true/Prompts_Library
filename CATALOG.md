@@ -133,3 +133,4 @@
 | [Workflow & Decision-Support QRG Builder](planned/workflow-decision-support-qrg-builder.md) | Builds point-of-need guides that help people choose actions, avoid mistakes, and troubleshoot. Planned; not yet complete. |
 
 | skills | [Design Style Lab](skills/apply-design-style/SKILL.md) | Apply 25 design styles to workplace content with format adaptations, brand controls, and accessibility review. |
+| skills | [Learning Transfer and Evaluation](skills/learning-transfer-and-evaluation/SKILL.md) | Plan post-training application, point-of-need support, and evidence of workplace use. |

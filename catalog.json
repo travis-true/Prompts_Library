@@ -992,6 +992,15 @@
     "short_description": "Apply 25 design styles to workplace content with format adaptations, brand controls, and accessibility review."
   },
   {
+    "title": "Learning Transfer and Evaluation",
+    "type": "skills",
+    "path": "skills/learning-transfer-and-evaluation/SKILL.md",
+    "function": "Workplace workflow",
+    "purpose": "Plan, review, or evaluate on-the-job application after corporate training, IT workshops, onboarding, or adoption campaigns. Use for learning transfer, workplace follow-up, point-of-need job aids, behavior measures, evaluation plans, and stakeholder reports on training results. Applies disciplines D4–D6 from The Six Disciplines of Breakthrough Learning.",
+    "status": "Installed skill import",
+    "short_description": "Plan post-training application, point-of-need support, and evidence of workplace use."
+  },
+  {
     "title": "Select and apply installed skills",
     "type": "prompts",
     "path": "prompts/select-and-apply-installed-skills.md",

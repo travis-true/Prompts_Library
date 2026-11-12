@@ -1,0 +1,14 @@
+interface:
+  display_name: Learning Transfer and Evaluation
+  short_description: Plan workplace use, support, and evidence
+  default_prompt: Use $learning-transfer-and-evaluation to draft a one-page workplace
+    follow-up plan for this training.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
