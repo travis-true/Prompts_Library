@@ -1001,6 +1001,15 @@
     "short_description": "Plan post-training application, point-of-need support, and evidence of workplace use."
   },
   {
+    "title": "Action Mapping & Performance Design",
+    "type": "skills",
+    "path": "skills/action-mapping-performance-design/SKILL.md",
+    "function": "Training & performance design",
+    "purpose": "Analyze workplace performance problems, map critical actions, distinguish training from non-training barriers, and design or review authentic practice and evaluation.",
+    "status": "Installed skill import",
+    "short_description": "Map workplace actions, diagnose barriers, design authentic practice, and review performance alignment."
+  },
+  {
     "title": "Select and apply installed skills",
     "type": "prompts",
     "path": "prompts/select-and-apply-installed-skills.md",

@@ -5,7 +5,7 @@ Practical workplace prompts, skills, workflows, and training resources by Travis
 | Collection | Resources | Use it for |
 | --- | ---: | --- |
 | [Prompts](prompts/README.md) | 63 | A focused task with a copy-ready prompt, input guide, example, and checks |
-| [Skills](skills/README.md) | 38 | Reusable processes in readable `SKILL.md` folders |
+| [Skills](skills/README.md) | 39 | Reusable processes in readable `SKILL.md` folders |
 | [Workflows](workflows/README.md) | 7 | A sequence from intake through review and follow-through |
 | [Training resources](resources/README.md) | 7 | Adaptable checklists, worksheets, blueprints, and prompt packs |
 | [Planned resources](planned/README.md) | 7 ideas | Descriptions awaiting complete instructions |
@@ -158,6 +158,7 @@ Browse every entry below, or open a collection README for its focused list.
 | [Wiifm Statement Writer](skills/wiifm-statement-writer/SKILL.md) | Write learner-benefit statements that explain why a training session matters to its audience. |
 | [Social Media Asset Sizing](skills/social-media-asset-sizing/SKILL.md) | Choose social-media dimensions, adapt compositions, and check exports for the intended placement. |
 | [Reference Video to Production Brief](skills/reference-video-to-production-brief/SKILL.md) | Turn reference videos into shot breakdowns, generation prompts, continuity plans, and targeted revisions. |
+| [Action Mapping & Performance Design](skills/action-mapping-performance-design/SKILL.md) | Analyze workplace performance problems, map critical actions, distinguish training from non-training barriers, and design or review authentic practice and evaluation. |
 
 ### Workflows
 

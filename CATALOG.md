@@ -134,3 +134,4 @@
 
 | skills | [Design Style Lab](skills/apply-design-style/SKILL.md) | Apply 25 design styles to workplace content with format adaptations, brand controls, and accessibility review. |
 | skills | [Learning Transfer and Evaluation](skills/learning-transfer-and-evaluation/SKILL.md) | Plan post-training application, point-of-need support, and evidence of workplace use. |
+| skills | [Action Mapping & Performance Design](skills/action-mapping-performance-design/SKILL.md) | Analyze workplace performance problems, map critical actions, distinguish training from non-training barriers, and design or review authentic practice and evaluation. |
