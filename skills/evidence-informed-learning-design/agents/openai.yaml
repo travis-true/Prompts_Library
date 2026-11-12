@@ -1,0 +1,14 @@
+interface:
+  display_name: Evidence-Informed Learning Design
+  short_description: Design practice, feedback, and performance checks
+  default_prompt: Use $evidence-informed-learning-design to review my demo, guided
+    practice, and independent task.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

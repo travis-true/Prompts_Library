@@ -802,6 +802,15 @@
     "short_description": "Plan complete training sessions, including delivery, practice, contingencies, evaluation, and reinforcement."
   },
   {
+    "title": "Evidence-Informed Learning Design",
+    "type": "skills",
+    "path": "skills/evidence-informed-learning-design/SKILL.md",
+    "function": "Workplace workflow",
+    "purpose": "Design or review workplace learning using learning science and local evidence. Use for IT enablement, software workshops, live demos, e-learning, and job aids when planning worked examples, guided and independent practice, feedback, spaced follow-up, or observable performance checks.",
+    "status": "Installed skill import",
+    "short_description": "Design practice, feedback, and performance checks using learning research and workplace evidence."
+  },
+  {
     "title": "Build Slide Decks",
     "type": "skills",
     "path": "skills/build-slide-decks/SKILL.md",
