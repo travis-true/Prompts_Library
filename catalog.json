@@ -838,6 +838,15 @@
     "short_description": "Turn IT training into a workplace challenge with targeted feedback, an independent retry, and reflection."
   },
   {
+    "title": "L&D Strategic Business Partner",
+    "type": "skills",
+    "path": "skills/ld-strategic-business-partner/SKILL.md",
+    "function": "Stakeholder partnership",
+    "purpose": "Help learning and development, IT training, and enablement specialists partner with stakeholders on business priorities. Use to prepare for sponsor conversations, clarify ownership and success criteria, negotiate scope and capacity, make a strategic yes or no, prioritize competing requests, or document an agreed response to a training or adoption request.",
+    "status": "Installed skill import",
+    "short_description": "Prepare for stakeholder conversations, negotiate training scope and tradeoffs, and document shared decisions."
+  },
+  {
     "title": "Build Slide Decks",
     "type": "skills",
     "path": "skills/build-slide-decks/SKILL.md",

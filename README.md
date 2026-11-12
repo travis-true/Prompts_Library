@@ -5,7 +5,7 @@ Practical workplace prompts, skills, workflows, and training resources by Travis
 | Collection | Resources | Use it for |
 | --- | ---: | --- |
 | [Prompts](prompts/README.md) | 63 | A focused task with a copy-ready prompt, input guide, example, and checks |
-| [Skills](skills/README.md) | 42 | Reusable processes in readable `SKILL.md` folders |
+| [Skills](skills/README.md) | 43 | Reusable processes in readable `SKILL.md` folders |
 | [Workflows](workflows/README.md) | 7 | A sequence from intake through review and follow-through |
 | [Training resources](resources/README.md) | 7 | Adaptable checklists, worksheets, blueprints, and prompt packs |
 | [Planned resources](planned/README.md) | 7 ideas | Descriptions awaiting complete instructions |
@@ -143,6 +143,7 @@ Browse every entry below, or open a collection README for its focused list.
 | [Multimedia Instruction Design](skills/multimedia-instruction-design/SKILL.md) | Design or review software demos, e-learning, training slides, and job aids for clarity, pacing, and accessibility. |
 | [AI Enablement Pilot Planner](skills/ai-enablement-pilot-planner/SKILL.md) | Plan and evaluate a workplace AI pilot with readiness checks, baseline comparison, and clear criteria for expansion. |
 | [Action-First Learning Design](skills/action-first-learning-design/SKILL.md) | Turn IT training into a workplace challenge with targeted feedback, an independent retry, and reflection. |
+| [L&D Strategic Business Partner](skills/ld-strategic-business-partner/SKILL.md) | Prepare for stakeholder conversations, negotiate training scope and tradeoffs, and document shared decisions. |
 | [Build Slide Decks](skills/build-slide-decks/SKILL.md) | Create or improve editable presentations with clear narratives, accessible layouts, speaker guidance, and visual checks. |
 | [Build Assessments And Evaluations](skills/build-assessments-and-evaluations/SKILL.md) | Design assessments and evaluation plans with source-grounded scoring, live-training practice, fallback-equivalence checks, validation, and traceable handoffs. |
 | [Qa And Release Assets](skills/qa-and-release-assets/SKILL.md) | Review deliverables and training outlines with traceable findings, validation, development handoffs, and separate QA and release decisions. |

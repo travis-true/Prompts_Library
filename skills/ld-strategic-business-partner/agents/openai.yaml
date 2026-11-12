@@ -1,0 +1,14 @@
+interface:
+  display_name: L&D Strategic Business Partner
+  short_description: Prepare, negotiate, and record stakeholder decisions
+  default_prompt: Use $ld-strategic-business-partner to prepare for a sponsor conversation
+    about a department-wide Copilot training request.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
