@@ -820,6 +820,15 @@
     "short_description": "Design or review software demos, e-learning, training slides, and job aids for clarity, pacing, and accessibility."
   },
   {
+    "title": "AI Enablement Pilot Planner",
+    "type": "skills",
+    "path": "skills/ai-enablement-pilot-planner/SKILL.md",
+    "function": "Workplace workflow",
+    "purpose": "Plan or review a bounded workplace AI pilot and produce a one-page readiness and measurement plan. Use when IT enablement or L&D needs to decide whether an AI-assisted workflow is ready to test, compare it with current practice, or decide whether to revise, pause, or expand a pilot. Applies to Microsoft Copilot and other workplace AI tools, including AI used in training production, learner practice, and everyday work.",
+    "status": "Installed skill import",
+    "short_description": "Plan and evaluate a workplace AI pilot with readiness checks, baseline comparison, and clear criteria for expansion."
+  },
+  {
     "title": "Build Slide Decks",
     "type": "skills",
     "path": "skills/build-slide-decks/SKILL.md",

@@ -1,0 +1,14 @@
+interface:
+  display_name: AI Enablement Pilot Planner
+  short_description: Plan and evaluate workplace AI pilots
+  default_prompt: Use $ai-enablement-pilot-planner to draft a one-page Copilot pilot
+    plan for meeting follow-up.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
