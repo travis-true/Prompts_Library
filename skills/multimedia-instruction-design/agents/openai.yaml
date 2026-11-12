@@ -1,0 +1,14 @@
+interface:
+  display_name: Multimedia Instruction Design
+  short_description: Review demos, e-learning, slides, and job aids
+  default_prompt: Use $multimedia-instruction-design to review this software demo
+    and job aid, and prioritize edits by timestamp or page.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

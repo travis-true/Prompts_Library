@@ -811,6 +811,15 @@
     "short_description": "Design practice, feedback, and performance checks using learning research and workplace evidence."
   },
   {
+    "title": "Multimedia Instruction Design",
+    "type": "skills",
+    "path": "skills/multimedia-instruction-design/SKILL.md",
+    "function": "Workplace workflow",
+    "purpose": "Design or review workplace instructional media screen by screen using Clark and Mayer's multimedia learning principles. Use for Rise 360 and other e-learning, Camtasia and other software demos, storyboards, narration and overlays, Teams training slides, annotated screenshots, and quick reference job aids when reviewing visual cues, timing, pacing, clarity, or access.",
+    "status": "Installed skill import",
+    "short_description": "Design or review software demos, e-learning, training slides, and job aids for clarity, pacing, and accessibility."
+  },
+  {
     "title": "Build Slide Decks",
     "type": "skills",
     "path": "skills/build-slide-decks/SKILL.md",

@@ -22,6 +22,7 @@
 | [Deconstruct Knowledge](deconstruct-knowledge/SKILL.md) | Turn source material into traceable workflows, decisions, rules, and reusable operational knowledge. |
 | [Architect Training Sessions](architect-training-sessions/SKILL.md) | Plan complete training sessions, including delivery, practice, contingencies, evaluation, and reinforcement. |
 | [Evidence-Informed Learning Design](evidence-informed-learning-design/SKILL.md) | Design practice, feedback, and performance checks using learning research and workplace evidence. |
+| [Multimedia Instruction Design](multimedia-instruction-design/SKILL.md) | Design or review software demos, e-learning, training slides, and job aids for clarity, pacing, and accessibility. |
 | [Build Slide Decks](build-slide-decks/SKILL.md) | Create or improve editable presentations with clear narratives, accessible layouts, speaker guidance, and visual checks. |
 | [Build Assessments And Evaluations](build-assessments-and-evaluations/SKILL.md) | Design assessments and evaluation plans with source-grounded scoring, live-training practice, fallback-equivalence checks, validation, and traceable handoffs. |
 | [Qa And Release Assets](qa-and-release-assets/SKILL.md) | Review deliverables and training outlines with traceable findings, validation, development handoffs, and separate QA and release decisions. |
