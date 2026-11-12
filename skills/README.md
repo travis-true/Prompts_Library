@@ -26,6 +26,7 @@
 | [AI Enablement Pilot Planner](ai-enablement-pilot-planner/SKILL.md) | Plan and evaluate a workplace AI pilot with readiness checks, baseline comparison, and clear criteria for expansion. |
 | [Action-First Learning Design](action-first-learning-design/SKILL.md) | Turn IT training into a workplace challenge with targeted feedback, an independent retry, and reflection. |
 | [L&D Strategic Business Partner](ld-strategic-business-partner/SKILL.md) | Prepare for stakeholder conversations, negotiate training scope and tradeoffs, and document shared decisions. |
+| [Accessible IT Training Design](accessible-it-training-design/SKILL.md) | Design or review accessible IT training and check whether employees can find instructions, complete the task, and verify the result. |
 | [Build Slide Decks](build-slide-decks/SKILL.md) | Create or improve editable presentations with clear narratives, accessible layouts, speaker guidance, and visual checks. |
 | [Build Assessments And Evaluations](build-assessments-and-evaluations/SKILL.md) | Design assessments and evaluation plans with source-grounded scoring, live-training practice, fallback-equivalence checks, validation, and traceable handoffs. |
 | [Qa And Release Assets](qa-and-release-assets/SKILL.md) | Review deliverables and training outlines with traceable findings, validation, development handoffs, and separate QA and release decisions. |

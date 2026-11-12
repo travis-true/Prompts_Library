@@ -1,0 +1,14 @@
+interface:
+  display_name: Accessible IT Training Design
+  short_description: Design and review accessible workplace IT training
+  default_prompt: Use $accessible-it-training-design to review this IT training asset
+    for barriers and give me a short learner test.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

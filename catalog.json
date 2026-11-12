@@ -847,6 +847,15 @@
     "short_description": "Prepare for stakeholder conversations, negotiate training scope and tradeoffs, and document shared decisions."
   },
   {
+    "title": "Accessible IT Training Design",
+    "type": "skills",
+    "path": "skills/accessible-it-training-design/SKILL.md",
+    "function": "Training accessibility",
+    "purpose": "Design or review accessible workplace IT training across the employee task, from opening instructions to doing the work and verifying the result. Use for inclusive Teams workshops, software demos, captioned videos, Microsoft 365 and Copilot job aids, PowerPoint decks, Word workbooks, fillable PDFs, and LMS activities when accessibility, Universal Design for Learning, assistive technology, or learner usability is part of the request.",
+    "status": "Installed skill import",
+    "short_description": "Design or review accessible IT training and check whether employees can find instructions, complete the task, and verify the result."
+  },
+  {
     "title": "Build Slide Decks",
     "type": "skills",
     "path": "skills/build-slide-decks/SKILL.md",
