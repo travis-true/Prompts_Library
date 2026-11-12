@@ -1,0 +1,14 @@
+interface:
+  display_name: Action-First Learning Design
+  short_description: Turn training into workplace practice with feedback
+  default_prompt: Use $action-first-learning-design to redesign this IT training segment
+    around a workplace challenge and an independent retry.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

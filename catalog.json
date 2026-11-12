@@ -829,6 +829,15 @@
     "short_description": "Plan and evaluate a workplace AI pilot with readiness checks, baseline comparison, and clear criteria for expansion."
   },
   {
+    "title": "Action-First Learning Design",
+    "type": "skills",
+    "path": "skills/action-first-learning-design/SKILL.md",
+    "function": "Training & performance design",
+    "purpose": "Design, revise, or review an IT training segment so learners attempt a realistic workplace task early, receive targeted feedback and instruction, and independently retry on a fresh case. Use for action-first learning, lecture-to-practice conversions, Teams workshops, software demos, short e-learning scenarios, and Copilot verification exercises with an identifiable job task.",
+    "status": "Installed skill import",
+    "short_description": "Turn IT training into a workplace challenge with targeted feedback, an independent retry, and reflection."
+  },
+  {
     "title": "Build Slide Decks",
     "type": "skills",
     "path": "skills/build-slide-decks/SKILL.md",
