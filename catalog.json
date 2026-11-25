@@ -90,6 +90,15 @@
     "short_description": "Create distinct adoption messages grounded in one workplace behavior."
   },
   {
+    "title": "Fresh Microsoft 365 Tip Ideas",
+    "type": "prompts",
+    "path": "prompts/fresh-microsoft-365-tip-ideas.md",
+    "function": "Planning",
+    "purpose": "Generate five practical Microsoft 365 tip ideas by screening out employee tasks already covered in your Microsoft 365 and Copilot campaigns. Get a 45-minute test for each idea and a ranked shortlist of the two most useful and feasible options.",
+    "status": "New",
+    "short_description": "Generate five practical Microsoft 365 tip ideas by screening out employee tasks already covered in your Microsoft 365 and Copilot campaigns. Get a 45-minute test for each idea and a ranked shortlist of the two most useful and feasible options."
+  },
+  {
     "title": "Video to actionable learning brief",
     "type": "prompts",
     "path": "prompts/video-to-actionable-learning-brief.md",

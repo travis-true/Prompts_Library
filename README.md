@@ -4,7 +4,7 @@ Practical workplace prompts, skills, workflows, and training resources by Travis
 
 | Collection | Resources | Use it for |
 | --- | ---: | --- |
-| [Prompts](prompts/README.md) | 63 | A focused task with a copy-ready prompt, input guide, example, and checks |
+| [Prompts](prompts/README.md) | 64 | A focused task with a copy-ready prompt, input guide, example, and checks |
 | [Skills](skills/README.md) | 44 | Reusable processes in readable `SKILL.md` folders |
 | [Workflows](workflows/README.md) | 7 | A sequence from intake through review and follow-through |
 | [Training resources](resources/README.md) | 7 | Adaptable checklists, worksheets, blueprints, and prompt packs |
@@ -62,6 +62,7 @@ Browse every entry below, or open a collection README for its focused list.
 | [Review professional work and prioritize fixes](prompts/review-professional-work-and-prioritize-fixes.md) | Identify the highest-impact weaknesses in professional work and provide precise, prioritized fixes. |
 | [Turn one workplace idea into five posts](prompts/turn-one-workplace-idea-into-five-posts.md) | Turn one workplace idea into five distinct, platform-ready content posts. |
 | [Turn one enablement idea into five employee posts](prompts/turn-one-enablement-idea-into-five-employee-posts.md) | Create distinct adoption messages grounded in one workplace behavior. |
+| [Fresh Microsoft 365 Tip Ideas](prompts/fresh-microsoft-365-tip-ideas.md) | Generate five practical Microsoft 365 tip ideas by screening out employee tasks already covered in your Microsoft 365 and Copilot campaigns. Get a 45-minute test for each idea and a ranked shortlist of the two most useful and feasible options. |
 | [Video to actionable learning brief](prompts/video-to-actionable-learning-brief.md) | Turn video or transcript content into a source-grounded learning brief tailored to your role, knowledge level, and goal. |
 | [Employee FAQ from approved sources](prompts/employee-faq-from-approved-sources.md) | Answer recurring questions consistently. |
 | [Source summary to verified actions](prompts/source-summary-to-verified-actions.md) | Extract source-supported decisions and actions from notes, threads, or updates. |
