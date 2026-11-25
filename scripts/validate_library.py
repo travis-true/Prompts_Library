@@ -9,7 +9,7 @@ root = pathlib.Path(__file__).resolve().parents[1]
 errors = []
 catalog = json.loads((root / 'catalog.json').read_text())
 counts = dict(Counter(item['type'] for item in catalog))
-expected = {'prompts': 71, 'skills': 45, 'workflows': 7, 'resources': 7}
+expected = {'prompts': 71, 'skills': 46, 'workflows': 7, 'resources': 7}
 if counts != expected:
     errors.append(f'Catalog counts: {counts}; expected {expected}')
 paths = [item['path'] for item in catalog]

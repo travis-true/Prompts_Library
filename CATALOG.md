@@ -149,3 +149,4 @@
 | skills | [Learning Transfer and Evaluation](skills/learning-transfer-and-evaluation/SKILL.md) | Plan post-training application, point-of-need support, and evidence of workplace use. |
 | skills | [Action Mapping & Performance Design](skills/action-mapping-performance-design/SKILL.md) | Analyze workplace performance problems, map critical actions, distinguish training from non-training barriers, and design or review authentic practice and evaluation. |
 | skills | [IT Training Roundtable](skills/it-training-roundtable/SKILL.md) | Review IT training and enablement decisions through published L&D perspectives, weigh tradeoffs, and choose one action to test this week. |
+| skills | [Build IT Training Videos](skills/build-it-training-videos/SKILL.md) | Turn approved IT guides into timed storyboards, Camtasia handoffs, or Remotion videos with a visible learner success check. |

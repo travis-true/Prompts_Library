@@ -1136,6 +1136,15 @@
     "short_description": "Review IT training and enablement decisions through published L&D perspectives, weigh tradeoffs, and choose one action to test this week."
   },
   {
+    "title": "Build IT Training Videos",
+    "type": "skills",
+    "path": "skills/build-it-training-videos/SKILL.md",
+    "function": "Training & performance design",
+    "purpose": "Turn approved scripts, quick reference guides, and verified workflows into short workplace IT training videos. Use for Microsoft 365 or Copilot tips, software walkthroughs, new-hire IT explainers, and post-training refreshers that need an approval-ready timed storyboard, a Camtasia handoff, or an editable Remotion video and MP4.",
+    "status": "Installed skill import",
+    "short_description": "Turn approved IT guides into timed storyboards, Camtasia handoffs, or Remotion videos with a visible learner success check."
+  },
+  {
     "title": "Select and apply installed skills",
     "type": "prompts",
     "path": "prompts/select-and-apply-installed-skills.md",

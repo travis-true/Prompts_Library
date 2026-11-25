@@ -1,0 +1,14 @@
+interface:
+  display_name: Build IT Training Videos
+  short_description: Storyboard and produce short IT training videos
+  default_prompt: Use $build-it-training-videos to turn my approved guide into a 60-second
+    Camtasia storyboard with a learner success check.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
