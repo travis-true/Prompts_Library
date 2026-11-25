@@ -1127,6 +1127,15 @@
     "short_description": "Map workplace actions, diagnose barriers, design authentic practice, and review performance alignment."
   },
   {
+    "title": "IT Training Roundtable",
+    "type": "skills",
+    "path": "skills/it-training-roundtable/SKILL.md",
+    "function": "Training & performance design",
+    "purpose": "Review IT training and enablement decisions through published L&D perspectives, weigh tradeoffs, and choose one action to test this week.",
+    "status": "Installed skill import",
+    "short_description": "Review IT training and enablement decisions through published L&D perspectives, weigh tradeoffs, and choose one action to test this week."
+  },
+  {
     "title": "Select and apply installed skills",
     "type": "prompts",
     "path": "prompts/select-and-apply-installed-skills.md",

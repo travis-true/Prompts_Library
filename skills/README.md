@@ -49,3 +49,4 @@
 | [Design Style Lab](apply-design-style/SKILL.md) | Apply 25 design styles to workplace content with format adaptations, brand controls, and accessibility review. |
 | [Learning Transfer and Evaluation](learning-transfer-and-evaluation/SKILL.md) | Plan post-training application, point-of-need support, and evidence of workplace use. |
 | [Action Mapping & Performance Design](action-mapping-performance-design/SKILL.md) | Analyze workplace performance problems, map critical actions, distinguish training from non-training barriers, and design or review authentic practice and evaluation. |
+| [IT Training Roundtable](it-training-roundtable/SKILL.md) | Review IT training and enablement decisions through published L&D perspectives, weigh tradeoffs, and choose one action to test this week. |

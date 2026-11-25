@@ -1,0 +1,14 @@
+interface:
+  display_name: IT Training Roundtable
+  short_description: Get a second opinion on IT training decisions
+  default_prompt: Use $it-training-roundtable to review my IT training decision and
+    recommend one action I can take this week.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
