@@ -4,6 +4,13 @@
 
 | Type | Resource | Description |
 | --- | --- | --- |
+| prompts | [Plan a 90-day content series](prompts/plan-a-90-day-content-series.md) | Build a realistic 90-day plan for workplace tips or professional videos, with a publishing schedule, a baseline, and measurable goals. |
+| prompts | [Script a short workplace video](prompts/script-a-short-workplace-video.md) | Write a concise video script that opens with a real work problem, demonstrates one action, and shows viewers how to verify success. |
+| prompts | [Storyboard a software demo](prompts/storyboard-a-software-demo.md) | Turn a verified script into a timed shot list with screen captures, readable overlays, and editing cues. |
+| prompts | [Write feedback questions for training content](prompts/write-feedback-questions-for-training-content.md) | Draft low-effort questions for comments, polls, or replies that can guide revisions and future training topics. |
+| prompts | [Build a visual kit for a content series](prompts/build-a-visual-kit-for-a-content-series.md) | Define reusable branding and layout directions for a workplace training series or professional channel. |
+| prompts | [Connect a short video to a useful next step](prompts/connect-a-short-video-to-a-useful-next-step.md) | Plan a clear path from a short video to a practice activity, guide, registration page, or professional resource. |
+| prompts | [Repurpose one source into training content](prompts/repurpose-one-source-into-training-content.md) | Turn one approved source into coordinated videos, a channel post, and a quick-reference guide with a shared fact check. |
 | prompts | [Turn a UI visual into a component specification](prompts/turn-a-ui-visual-into-a-component-specification.md) | Convert a UI visual into a developer-ready component specification for a selected tech stack. |
 | prompts | [Explain a workplace concept with an accurate analogy](prompts/explain-a-workplace-concept-with-an-accurate-analogy.md) | Make a complex work concept understandable without distorting it. |
 | prompts | [Turn a rough request into a clear prompt](prompts/turn-a-rough-request-into-a-clear-prompt.md) | Turn an incomplete task description into a clear, reusable prompt. |

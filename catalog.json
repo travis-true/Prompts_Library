@@ -1,5 +1,68 @@
 [
   {
+    "title": "Plan a 90-day content series",
+    "type": "prompts",
+    "path": "prompts/plan-a-90-day-content-series.md",
+    "function": "Planning",
+    "purpose": "Build a realistic 90-day plan for workplace tips or professional videos, with a publishing schedule, a baseline, and measurable goals.",
+    "status": "Adapted",
+    "short_description": "Build a realistic 90-day plan for workplace tips or professional videos, with a publishing schedule, a baseline, and measurable goals."
+  },
+  {
+    "title": "Script a short workplace video",
+    "type": "prompts",
+    "path": "prompts/script-a-short-workplace-video.md",
+    "function": "Writing",
+    "purpose": "Write a concise video script that opens with a real work problem, demonstrates one action, and shows viewers how to verify success.",
+    "status": "Adapted",
+    "short_description": "Write a concise video script that opens with a real work problem, demonstrates one action, and shows viewers how to verify success."
+  },
+  {
+    "title": "Storyboard a software demo",
+    "type": "prompts",
+    "path": "prompts/storyboard-a-software-demo.md",
+    "function": "Documentation",
+    "purpose": "Turn a verified script into a timed shot list with screen captures, readable overlays, and editing cues.",
+    "status": "Adapted",
+    "short_description": "Turn a verified script into a timed shot list with screen captures, readable overlays, and editing cues."
+  },
+  {
+    "title": "Write feedback questions for training content",
+    "type": "prompts",
+    "path": "prompts/write-feedback-questions-for-training-content.md",
+    "function": "Feedback",
+    "purpose": "Draft low-effort questions for comments, polls, or replies that can guide revisions and future training topics.",
+    "status": "Adapted",
+    "short_description": "Draft low-effort questions for comments, polls, or replies that can guide revisions and future training topics."
+  },
+  {
+    "title": "Build a visual kit for a content series",
+    "type": "prompts",
+    "path": "prompts/build-a-visual-kit-for-a-content-series.md",
+    "function": "Documentation",
+    "purpose": "Define reusable branding and layout directions for a workplace training series or professional channel.",
+    "status": "Adapted",
+    "short_description": "Define reusable branding and layout directions for a workplace training series or professional channel."
+  },
+  {
+    "title": "Connect a short video to a useful next step",
+    "type": "prompts",
+    "path": "prompts/connect-a-short-video-to-a-useful-next-step.md",
+    "function": "Writing",
+    "purpose": "Plan a clear path from a short video to a practice activity, guide, registration page, or professional resource.",
+    "status": "Adapted",
+    "short_description": "Plan a clear path from a short video to a practice activity, guide, registration page, or professional resource."
+  },
+  {
+    "title": "Repurpose one source into training content",
+    "type": "prompts",
+    "path": "prompts/repurpose-one-source-into-training-content.md",
+    "function": "Learning Design",
+    "purpose": "Turn one approved source into coordinated videos, a channel post, and a quick-reference guide with a shared fact check.",
+    "status": "Adapted",
+    "short_description": "Turn one approved source into coordinated videos, a channel post, and a quick-reference guide with a shared fact check."
+  },
+  {
     "title": "Turn a UI visual into a component specification",
     "type": "prompts",
     "path": "prompts/turn-a-ui-visual-into-a-component-specification.md",
